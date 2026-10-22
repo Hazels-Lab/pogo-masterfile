@@ -219,8 +219,6 @@ pub enum SingletonsTemplateId {
     PowerUpPokestopSharedSettings,
     #[serde(rename = "PRIMAL_EVO_SETTINGS")]
     PrimalEvoSettings,
-    #[serde(rename = "PTC_OAUTH_SETTINGS")]
-    PtcOauthSettings,
     #[serde(rename = "QUEST_DIALOGUE_INBOX_SETTINGS")]
     QuestDialogueInboxSettings,
     #[serde(rename = "RAID_CLIENT_SETTINGS")]

@@ -55,8 +55,6 @@ pub enum FeatureGateTemplateId {
     EventTicketDatetimeRangeFeatureGate,
     #[serde(rename = "FORT_STABLE_DATA_DIFFING_FEATURE_GATE")]
     FortStableDataDiffingFeatureGate,
-    #[serde(rename = "FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE")]
-    FriendshipResyncOnReadFeatureGate,
     #[serde(rename = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE")]
     GamesiteWebviewNearbyButtonsFeatureGate,
     #[serde(rename = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE")]
@@ -73,10 +71,6 @@ pub enum FeatureGateTemplateId {
     LuckyTradeNewStringsFeatureGate,
     #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]
     MeetupReminderNotificationsFeatureGate,
-    #[serde(rename = "MEP_EGG_READ_MIGRATION_FEATURE_GATE")]
-    MepEggReadMigrationFeatureGate,
-    #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
-    MepEggWriteMigrationFeatureGate,
     #[serde(rename = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE")]
     MichelinMapLureBottomRingRemovalFeatureGate,
     #[serde(rename = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE")]
@@ -89,6 +83,8 @@ pub enum FeatureGateTemplateId {
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE")]
+    TodayViewV3MultiPageGoPassFeatureGate,
     #[serde(rename = "TRANSFER_FEATURE_GATE")]
     TransferFeatureGate,
     #[serde(rename = "VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE")]

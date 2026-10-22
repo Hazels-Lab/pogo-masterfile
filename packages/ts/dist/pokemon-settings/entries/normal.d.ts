@@ -16348,6 +16348,7 @@ export type PokemonSettingsV0676PokemonFurfrou = S<
 		"V0676_POKEMON_FURFROU",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16370,7 +16371,7 @@ export type PokemonSettingsV0676PokemonFurfrou = S<
 			familyId: "FAMILY_FURFROU";
 			formChange: [
 				{
-					availableForm: ["FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16388,7 +16389,6 @@ export type PokemonSettingsV0676PokemonFurfrou = S<
 			pokedexWeightKg: 28;
 			pokemonId: "FURFROU";
 			quickMoves: ["TAKE_DOWN_FAST", "BITE_FAST", "SUCKER_PUNCH_FAST", "SAND_ATTACK_FAST"];
-			raidBossDistanceOffset: 3;
 			stats: {
 				baseAttack: 164;
 				baseDefense: 167;
@@ -16408,6 +16408,7 @@ export type PokemonSettingsV0676PokemonFurfrouDandy = S<
 		"V0676_POKEMON_FURFROU_DANDY",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16431,7 +16432,7 @@ export type PokemonSettingsV0676PokemonFurfrouDandy = S<
 			form: "FURFROU_DANDY";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_MATRON"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_MATRON"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16469,6 +16470,7 @@ export type PokemonSettingsV0676PokemonFurfrouDebutante = S<
 		"V0676_POKEMON_FURFROU_DEBUTANTE",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16492,7 +16494,7 @@ export type PokemonSettingsV0676PokemonFurfrouDebutante = S<
 			form: "FURFROU_DEBUTANTE";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16530,6 +16532,7 @@ export type PokemonSettingsV0676PokemonFurfrouDiamond = S<
 		"V0676_POKEMON_FURFROU_DIAMOND",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16591,6 +16594,7 @@ export type PokemonSettingsV0676PokemonFurfrouHeart = S<
 		"V0676_POKEMON_FURFROU_HEART",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16614,7 +16618,7 @@ export type PokemonSettingsV0676PokemonFurfrouHeart = S<
 			form: "FURFROU_HEART";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16652,6 +16656,7 @@ export type PokemonSettingsV0676PokemonFurfrouKabuki = S<
 		"V0676_POKEMON_FURFROU_KABUKI",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16675,7 +16680,7 @@ export type PokemonSettingsV0676PokemonFurfrouKabuki = S<
 			form: "FURFROU_KABUKI";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16713,6 +16718,7 @@ export type PokemonSettingsV0676PokemonFurfrouLaReine = S<
 		"V0676_POKEMON_FURFROU_LA_REINE",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16736,7 +16742,7 @@ export type PokemonSettingsV0676PokemonFurfrouLaReine = S<
 			form: "FURFROU_LA_REINE";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16774,6 +16780,7 @@ export type PokemonSettingsV0676PokemonFurfrouMatron = S<
 		"V0676_POKEMON_FURFROU_MATRON",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16797,7 +16804,7 @@ export type PokemonSettingsV0676PokemonFurfrouMatron = S<
 			form: "FURFROU_MATRON";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16835,6 +16842,7 @@ export type PokemonSettingsV0676PokemonFurfrouNatural = S<
 		"V0676_POKEMON_FURFROU_NATURAL",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16858,7 +16866,7 @@ export type PokemonSettingsV0676PokemonFurfrouNatural = S<
 			form: "FURFROU_NATURAL";
 			formChange: [
 				{
-					availableForm: ["FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16896,6 +16904,7 @@ export type PokemonSettingsV0676PokemonFurfrouPharaoh = S<
 		"V0676_POKEMON_FURFROU_PHARAOH",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16919,7 +16928,7 @@ export type PokemonSettingsV0676PokemonFurfrouPharaoh = S<
 			form: "FURFROU_PHARAOH";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},
@@ -16957,6 +16966,7 @@ export type PokemonSettingsV0676PokemonFurfrouStar = S<
 		"V0676_POKEMON_FURFROU_STAR",
 		{
 			animationTime: [1.9, 0.6666, 1.7666, 0, 2.4, 0.08667, 0];
+			breadTierGroup: "GROUP_3";
 			camera: {
 				cylinderHeightM: 1.65;
 				cylinderRadiusM: 0.8;
@@ -16980,7 +16990,7 @@ export type PokemonSettingsV0676PokemonFurfrouStar = S<
 			form: "FURFROU_STAR";
 			formChange: [
 				{
-					availableForm: ["FURFROU_NATURAL", "FURFROU_DIAMOND", "FURFROU_MATRON", "FURFROU_DANDY"];
+					availableForm: ["FURFROU_NATURAL", "FURFROU_MATRON", "FURFROU_DANDY"];
 					candyCost: 25;
 					stardustCost: 10000;
 				},

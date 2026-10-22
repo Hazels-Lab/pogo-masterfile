@@ -242,10 +242,6 @@ import type {
 	SettingsOverrideRuleAndroid14Onward,
 	SettingsOverrideRuleBase,
 	SettingsOverrideRuleDenyAndroid14,
-	SettingsOverrideRuleDenyGooglepixel10,
-	SettingsOverrideRuleDenyGooglepixel10pro,
-	SettingsOverrideRuleDenyGooglepixel10profold,
-	SettingsOverrideRuleDenyGooglepixel10proxl,
 	SettingsOverrideRuleDenyIpad4,
 	SettingsOverrideRuleDenyIpad5,
 	SettingsOverrideRuleDenyIpad6,
@@ -496,10 +492,6 @@ export interface SettingsOverrideRuleLookup {
 	SETTINGS_RULES_ANDROID_14_ONWARD: SettingsOverrideRuleAndroid14Onward;
 	SETTINGS_RULES_BASE: SettingsOverrideRuleBase;
 	SETTINGS_RULES_DENY_ANDROID14: SettingsOverrideRuleDenyAndroid14;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10: SettingsOverrideRuleDenyGooglepixel10;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO: SettingsOverrideRuleDenyGooglepixel10pro;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD: SettingsOverrideRuleDenyGooglepixel10profold;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL: SettingsOverrideRuleDenyGooglepixel10proxl;
 	SETTINGS_RULES_DENY_IPAD4: SettingsOverrideRuleDenyIpad4;
 	SETTINGS_RULES_DENY_IPAD5: SettingsOverrideRuleDenyIpad5;
 	SETTINGS_RULES_DENY_IPAD6: SettingsOverrideRuleDenyIpad6;

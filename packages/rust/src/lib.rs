@@ -205,8 +205,8 @@ pub enum MasterfileEntry {
     TemporaryEvolutionSettings(temporary_evolution_settings::TemporaryEvolutionSettingsEntry),
     ClientQuestTemplate(client_quest_template::ClientQuestTemplateEntry),
     VsSeekerLoot(vs_seeker_loot::VsSeekerLootEntry),
-    FeatureGate(feature_gate::FeatureGateEntry),
     PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
+    FeatureGate(feature_gate::FeatureGateEntry),
     EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
@@ -353,7 +353,6 @@ pub enum MasterfileEntry {
     PostcardCollectionSettings(singletons::PostcardCollectionSettingsEntry),
     PowerUpPokestopsSettings(singletons::PowerUpPokestopsSettingsEntry),
     PrimalEvoSettings(singletons::PrimalEvoSettingsEntry),
-    PtcOauthSettings(singletons::PtcOauthSettingsEntry),
     QuestDialogueInboxSettings(singletons::QuestDialogueInboxSettingsEntry),
     RaidEntryCostSettings(singletons::RaidEntryCostSettingsEntry),
     RaidLobbyCounterSettings(singletons::RaidLobbyCounterSettingsEntry),
@@ -468,10 +467,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::ClientQuestTemplate)
                 }
                 "vsSeekerLoot" => serde_json::from_value(value).map(Self::VsSeekerLoot),
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "photoSetsSettingsProto" => {
                     serde_json::from_value(value).map(Self::PhotoSetsSettingsProto)
                 }
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "evolutionQuestTemplate" => {
                     serde_json::from_value(value).map(Self::EvolutionQuestTemplate)
                 }
@@ -785,7 +784,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::PowerUpPokestopsSettings)
                 }
                 "primalEvoSettings" => serde_json::from_value(value).map(Self::PrimalEvoSettings),
-                "ptcOauthSettings" => serde_json::from_value(value).map(Self::PtcOauthSettings),
                 "questDialogueInboxSettings" => {
                     serde_json::from_value(value).map(Self::QuestDialogueInboxSettings)
                 }

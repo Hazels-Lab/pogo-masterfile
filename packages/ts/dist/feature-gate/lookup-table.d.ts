@@ -25,7 +25,6 @@ import type {
 	FeatureGateEventPassMilestoneRewards,
 	FeatureGateEventTicketDatetimeRange,
 	FeatureGateFortStableDataDiffing,
-	FeatureGateFriendshipResyncOnRead,
 	FeatureGateGamesiteWebviewNearbyButtons,
 	FeatureGateGetGmtAnalysisForPlayer,
 	FeatureGateGmoWildPokemonS2Location,
@@ -34,14 +33,13 @@ import type {
 	FeatureGateHideUiInMiniorIbfc,
 	FeatureGateLuckyTradeNewStrings,
 	FeatureGateMeetupReminderNotifications,
-	FeatureGateMepEggReadMigration,
-	FeatureGateMepEggWriteMigration,
 	FeatureGateMichelinMapLureBottomRingRemoval,
 	FeatureGateMichelinMapZygardeCellReward,
 	FeatureGatePokemonSpawnAvoidanceRework,
 	FeatureGateRegisterDevice,
 	FeatureGateRemoteTradeImprovements,
 	FeatureGateSeafGetMapObjectsRateLimiter,
+	FeatureGateTodayViewV3MultiPageGoPass,
 	FeatureGateTransfer,
 	FeatureGateVnextFastAttackInputType,
 	FeatureGateVnextPreResponseInputBlockingBehavior,
@@ -74,7 +72,6 @@ export interface FeatureGateLookup {
 	EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE: FeatureGateEventPassMilestoneRewards;
 	EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE: FeatureGateEventTicketDatetimeRange;
 	FORT_STABLE_DATA_DIFFING_FEATURE_GATE: FeatureGateFortStableDataDiffing;
-	FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE: FeatureGateFriendshipResyncOnRead;
 	GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE: FeatureGateGamesiteWebviewNearbyButtons;
 	GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE: FeatureGateGetGmtAnalysisForPlayer;
 	GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE: FeatureGateGmoWildPokemonS2Location;
@@ -83,14 +80,13 @@ export interface FeatureGateLookup {
 	HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE: FeatureGateHideUiInMiniorIbfc;
 	LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE: FeatureGateLuckyTradeNewStrings;
 	MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE: FeatureGateMeetupReminderNotifications;
-	MEP_EGG_READ_MIGRATION_FEATURE_GATE: FeatureGateMepEggReadMigration;
-	MEP_EGG_WRITE_MIGRATION_FEATURE_GATE: FeatureGateMepEggWriteMigration;
 	MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE: FeatureGateMichelinMapLureBottomRingRemoval;
 	MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE: FeatureGateMichelinMapZygardeCellReward;
 	POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE: FeatureGatePokemonSpawnAvoidanceRework;
 	REGISTER_DEVICE_FEATURE_GATE: FeatureGateRegisterDevice;
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
+	TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE: FeatureGateTodayViewV3MultiPageGoPass;
 	TRANSFER_FEATURE_GATE: FeatureGateTransfer;
 	VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE: FeatureGateVnextFastAttackInputType;
 	VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE: FeatureGateVnextPreResponseInputBlockingBehavior;
