@@ -1616,12 +1616,6 @@ type PrimalEvoSettings struct {
 	TypeBoosts         [3]PrimalEvoSettingsTypeBoosts      `json:"typeBoosts"`
 }
 
-type PtcOauthSettings struct {
-	EndTimeMs                string `json:"endTimeMs"`
-	LinkingRewardItem        string `json:"linkingRewardItem"`
-	PtcAccountLinkingEnabled bool   `json:"ptcAccountLinkingEnabled"`
-}
-
 type QuestDialogueInboxSettingsQuestDialogueTriggers struct {
 	NumberOfInteractions uint64 `json:"numberOfInteractions"`
 	Trigger              string `json:"trigger"`
@@ -3452,18 +3446,6 @@ func (PrimalEvoSettingsEntry) MasterfileEntry() {}
 type PrimalEvoSettingsEntryData struct {
 	TemplateID        string            `json:"templateId"`
 	PrimalEvoSettings PrimalEvoSettings `json:"primalEvoSettings"`
-}
-
-type PtcOauthSettingsEntry struct {
-	TemplateID string                    `json:"templateId"`
-	Data       PtcOauthSettingsEntryData `json:"data"`
-}
-
-func (PtcOauthSettingsEntry) MasterfileEntry() {}
-
-type PtcOauthSettingsEntryData struct {
-	TemplateID       string           `json:"templateId"`
-	PtcOauthSettings PtcOauthSettings `json:"ptcOauthSettings"`
 }
 
 type QuestDialogueInboxSettingsEntry struct {

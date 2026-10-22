@@ -204,7 +204,6 @@ export interface PokemonSettingsData {
 	formChange?: Array<{
 		availableForm: Array<
 			| "FURFROU_DANDY"
-			| "FURFROU_DIAMOND"
 			| "FURFROU_MATRON"
 			| "FURFROU_NATURAL"
 			| "HOOPA_CONFINED"

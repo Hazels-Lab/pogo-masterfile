@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "settingsOverrideRule", split "meshing-enabled-rule-value-vps-enabled", 249 entries.
+// Generated from Pokémon GO masterfile — group "settingsOverrideRule", split "meshing-enabled-rule-value-vps-enabled", 245 entries.
 
 import type { S } from "../../_utils";
 import type { SettingsOverrideRule } from "../types";
@@ -3349,62 +3349,6 @@ export type SettingsOverrideRuleDenyAndroid14 = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleDenyGooglepixel10 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleDenyGooglepixel10pro = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10 Pro";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleDenyGooglepixel10profold = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10 Pro Fold";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleDenyGooglepixel10proxl = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10 Pro XL";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleDenyIpad4 = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_DENY_IPAD4",
@@ -3730,10 +3674,6 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowXiaomim2102k1ac
 	| SettingsOverrideRuleAndroid
 	| SettingsOverrideRuleDenyAndroid14
-	| SettingsOverrideRuleDenyGooglepixel10
-	| SettingsOverrideRuleDenyGooglepixel10pro
-	| SettingsOverrideRuleDenyGooglepixel10profold
-	| SettingsOverrideRuleDenyGooglepixel10proxl
 	| SettingsOverrideRuleDenyIpad4
 	| SettingsOverrideRuleDenyIpad5
 	| SettingsOverrideRuleDenyIpad6

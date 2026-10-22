@@ -246,10 +246,6 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid14Onward             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ANDROID_14_ONWARD"
 	SettingsOverrideRuleTemplateIDSettingsRulesBase                        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_BASE"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyAndroid14               SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_ANDROID14"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10pro        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10profold    SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10proxl      SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad4                   SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_IPAD4"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad5                   SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_IPAD5"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad6                   SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_IPAD6"
@@ -500,10 +496,6 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid14Onward,
 	SettingsOverrideRuleTemplateIDSettingsRulesBase,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyAndroid14,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10pro,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10profold,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10proxl,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad4,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad5,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad6,

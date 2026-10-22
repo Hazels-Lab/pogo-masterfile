@@ -4,6 +4,36 @@ All notable changes to the Go runtime API module are recorded here. The format i
 
 > Note: Go module releases for this package are tagged as `packages/go-api/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.76] - 2026-10-22
+
+Automated regeneration from upstream masterfile commit `7d56597a43670be4616a4d9c791b92662ae65078`.
+
+### Added template IDs (12)
+
+- BADGE_EVENT_0252
+- BADGE_EVENT_0281
+- BADGE_EVENT_0282
+- BADGE_EVENT_0283
+- BADGE_EVENT_0284
+- BADGE_EVENT_0285
+- BADGE_EVENT_0286
+- BADGE_EVENT_0287
+- BADGE_EVENT_0288
+- BADGE_EVENT_0289
+- BADGE_EVENT_0290
+- TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE
+
+### Removed template IDs (8)
+
+- FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE
+- MEP_EGG_READ_MIGRATION_FEATURE_GATE
+- MEP_EGG_WRITE_MIGRATION_FEATURE_GATE
+- PTC_OAUTH_SETTINGS
+- SETTINGS_RULES_DENY_GOOGLEPIXEL10
+- SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO
+- SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD
+- SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL
+
 ## [0.1.75] - 2026-10-20
 
 Automated regeneration from upstream masterfile commit `92dd4004629a14404e31bd7e84a49d5883b25b95`.

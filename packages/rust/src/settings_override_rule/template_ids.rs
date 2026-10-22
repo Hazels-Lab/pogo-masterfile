@@ -489,14 +489,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesBase,
     #[serde(rename = "SETTINGS_RULES_DENY_ANDROID14")]
     SettingsRulesDenyAndroid14,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10")]
-    SettingsRulesDenyGooglepixel10,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO")]
-    SettingsRulesDenyGooglepixel10pro,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD")]
-    SettingsRulesDenyGooglepixel10profold,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL")]
-    SettingsRulesDenyGooglepixel10proxl,
     #[serde(rename = "SETTINGS_RULES_DENY_IPAD4")]
     SettingsRulesDenyIpad4,
     #[serde(rename = "SETTINGS_RULES_DENY_IPAD5")]

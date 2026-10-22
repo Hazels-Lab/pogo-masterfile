@@ -194,6 +194,7 @@ import type {
 	BadgeSettingsEvent0243,
 	BadgeSettingsEvent0244,
 	BadgeSettingsEvent0245,
+	BadgeSettingsEvent0252,
 	BadgeSettingsEvent0253,
 	BadgeSettingsEvent0259,
 	BadgeSettingsEvent0260,
@@ -202,6 +203,16 @@ import type {
 	BadgeSettingsEvent0273,
 	BadgeSettingsEvent0279,
 	BadgeSettingsEvent0280,
+	BadgeSettingsEvent0281,
+	BadgeSettingsEvent0282,
+	BadgeSettingsEvent0283,
+	BadgeSettingsEvent0284,
+	BadgeSettingsEvent0285,
+	BadgeSettingsEvent0286,
+	BadgeSettingsEvent0287,
+	BadgeSettingsEvent0288,
+	BadgeSettingsEvent0289,
+	BadgeSettingsEvent0290,
 	BadgeSettingsEvolvedTotal,
 	BadgeSettingsGlobalTicketedEvent,
 	BadgeSettingsGofest2019AmericasDay00NorthEarlyaccess,
@@ -1295,6 +1306,7 @@ export interface BadgeSettingsLookup {
 	BADGE_EVENT_0243: BadgeSettingsEvent0243;
 	BADGE_EVENT_0244: BadgeSettingsEvent0244;
 	BADGE_EVENT_0245: BadgeSettingsEvent0245;
+	BADGE_EVENT_0252: BadgeSettingsEvent0252;
 	BADGE_EVENT_0253: BadgeSettingsEvent0253;
 	BADGE_EVENT_0259: BadgeSettingsEvent0259;
 	BADGE_EVENT_0260: BadgeSettingsEvent0260;
@@ -1303,6 +1315,16 @@ export interface BadgeSettingsLookup {
 	BADGE_EVENT_0273: BadgeSettingsEvent0273;
 	BADGE_EVENT_0279: BadgeSettingsEvent0279;
 	BADGE_EVENT_0280: BadgeSettingsEvent0280;
+	BADGE_EVENT_0281: BadgeSettingsEvent0281;
+	BADGE_EVENT_0282: BadgeSettingsEvent0282;
+	BADGE_EVENT_0283: BadgeSettingsEvent0283;
+	BADGE_EVENT_0284: BadgeSettingsEvent0284;
+	BADGE_EVENT_0285: BadgeSettingsEvent0285;
+	BADGE_EVENT_0286: BadgeSettingsEvent0286;
+	BADGE_EVENT_0287: BadgeSettingsEvent0287;
+	BADGE_EVENT_0288: BadgeSettingsEvent0288;
+	BADGE_EVENT_0289: BadgeSettingsEvent0289;
+	BADGE_EVENT_0290: BadgeSettingsEvent0290;
 	BADGE_EVOLVED_TOTAL: BadgeSettingsEvolvedTotal;
 	BADGE_GLOBAL_TICKETED_EVENT: BadgeSettingsGlobalTicketedEvent;
 	BADGE_GO_TOUR_2025_GLOBAL_BLACK_VERSION: BadgeSettingsGoTour2025GlobalBlackVersion;
