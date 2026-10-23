@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 520 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 400 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,14 +14,12 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "BUDDY" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
 			text:
-				| "5x_mega_energy_electrike_manectric_buddy"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "incense_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -30,14 +28,12 @@ export interface EventPassTierSettingsData {
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "BUDDY" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
 			text:
-				| "5x_mega_energy_electrike_manectric_buddy"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "incense_duration_double"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
@@ -110,16 +106,9 @@ export interface EventPassTierSettingsData {
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
 		};
-		megaResource?: {
-			amount: number;
-			pokemonId: "MANECTRIC";
-		};
 		playerAttribute?: {
 			durationMins: number;
 			key:
-				| "fallmarathon2026_season_pass_entitlement"
-				| "fallmarathon2026_season_pass_rank_01"
-				| "fallmarathon2026_season_pass_rank_02"
 				| "october2026_season_pass_entitlement"
 				| "october2026_season_pass_rank_01"
 				| "october2026_season_pass_rank_02"
@@ -132,14 +121,9 @@ export interface EventPassTierSettingsData {
 				breadModeEnum?: "BREAD_MODE";
 				form:
 					| "AMPHAROS_NORMAL"
-					| "BLITZLE_NORMAL"
 					| "BOUNSWEET_NORMAL"
-					| "BRAMBLIN_NORMAL"
-					| "CACNEA_NORMAL"
 					| "CHANSEY_NORMAL"
 					| "DEDENNE_NORMAL"
-					| "DWEBBLE_NORMAL"
-					| "ELECTRIKE_NORMAL"
 					| "FINNEON_NORMAL"
 					| "FLITTLE_NORMAL"
 					| "FOMANTIS_NORMAL"
@@ -147,16 +131,12 @@ export interface EventPassTierSettingsData {
 					| "FURFROU_NATURAL"
 					| "GASTLY_NORMAL"
 					| "GLIMMET_NORMAL"
-					| "GROWLITHE_HISUIAN"
-					| "HOPPIP_NORMAL"
 					| "KOMALA_NORMAL"
 					| "KYOGRE_NORMAL"
 					| "LARVITAR_NORMAL"
 					| "METANG_NORMAL"
 					| "ORTHWORM_NORMAL"
 					| "PERSIAN_ALOLA"
-					| "PONYTA_GALARIAN"
-					| "PONYTA_NORMAL"
 					| "PORYGON_NORMAL"
 					| "QWILFISH_HISUIAN"
 					| "ROCKRUFF_NORMAL"
@@ -169,14 +149,9 @@ export interface EventPassTierSettingsData {
 			};
 			pokemonId:
 				| "AMPHAROS"
-				| "BLITZLE"
 				| "BOUNSWEET"
-				| "BRAMBLIN"
-				| "CACNEA"
 				| "CHANSEY"
 				| "DEDENNE"
-				| "DWEBBLE"
-				| "ELECTRIKE"
 				| "FINNEON"
 				| "FLITTLE"
 				| "FOMANTIS"
@@ -184,8 +159,6 @@ export interface EventPassTierSettingsData {
 				| "FURFROU"
 				| "GASTLY"
 				| "GLIMMET"
-				| "GROWLITHE"
-				| "HOPPIP"
 				| "KOMALA"
 				| "KYOGRE"
 				| "LARVITAR"
@@ -193,7 +166,6 @@ export interface EventPassTierSettingsData {
 				| "ORTHWORM"
 				| "PERSIAN"
 				| "POLTCHAGEIST"
-				| "PONYTA"
 				| "PORYGON"
 				| "QWILFISH"
 				| "ROCKRUFF"
@@ -209,7 +181,7 @@ export interface EventPassTierSettingsData {
 			};
 		};
 		stardust?: number;
-		type: "CANDY" | "EXPERIENCE" | "ITEM" | "MEGA_RESOURCE" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:
