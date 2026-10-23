@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1090 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1089 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -43,6 +43,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
@@ -57,12 +58,13 @@ export interface IapItemDisplayData {
 		| "2024-11-30T20:00:00"
 		| "2025-09-16T20:00:00"
 		| "2025-10-07T20:00:00"
+		| "2025-10-21T20:00:00"
 		| "2026-01-25T23:59:00"
 		| "2026-05-02T17:00:00"
 		| "2026-09-24T20:00:00"
 		| "2026-10-08T10:00:00"
 		| "2026-10-10T17:00:00"
-		| "2026-10-21T20:00:00"
+		| "2026-10-24T17:00:00"
 		| "2026-11-05T10:00:00"
 		| "2026-11-15T20:00:00";
 	skuDisableTimeUtcMs?:
@@ -70,12 +72,13 @@ export interface IapItemDisplayData {
 		| "1732996800000"
 		| "1758052800000"
 		| "1759867200000"
+		| "1761076800000"
 		| "1769385540000"
 		| "1777741200000"
 		| "1790280000000"
 		| "1791453600000"
 		| "1791651600000"
-		| "1792612800000"
+		| "1792861200000"
 		| "1793872800000"
 		| "1794772800000";
 	skuEnableTime?:
@@ -89,7 +92,8 @@ export interface IapItemDisplayData {
 		| "2025-09-16T10:00:00"
 		| "2025-09-29T10:00:00"
 		| "2025-10-06T10:00:00"
-		| "2025-10-13T10:00:00";
+		| "2025-10-13T10:00:00"
+		| "2025-10-22T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
@@ -101,12 +105,13 @@ export interface IapItemDisplayData {
 		| "1758016800000"
 		| "1759140000000"
 		| "1759744800000"
-		| "1760349600000";
+		| "1760349600000"
+		| "1761127200000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;
 	totalValue?: number;
 	useEnvironmentPrefix?: boolean;
-	webstoreSkuId?: "web-gowa-global-2026-ticket" | "web-shadow-entei-raid-box-ultra";
+	webstoreSkuId?: "web-gowa-global-2026-ticket" | "web-lake-guardians-max-battle-ultra" | "web-shadow-entei-raid-box-ultra";
 	webstoreSkuPriceE6?: number;
 }

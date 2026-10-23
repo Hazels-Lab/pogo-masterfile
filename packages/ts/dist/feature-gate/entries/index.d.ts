@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 46 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 44 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -202,14 +202,6 @@ export type FeatureGateFortStableDataDiffing = S<
 		}
 	>
 >;
-export type FeatureGateFriendshipResyncOnRead = S<
-	FeatureGate<
-		"FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE",
-		{
-			status: 1;
-		}
-	>
->;
 export type FeatureGateGamesiteWebviewNearbyButtons = S<
 	FeatureGate<
 		"GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE",
@@ -291,22 +283,6 @@ export type FeatureGateMeetupReminderNotifications = S<
 		}
 	>
 >;
-export type FeatureGateMepEggReadMigration = S<
-	FeatureGate<
-		"MEP_EGG_READ_MIGRATION_FEATURE_GATE",
-		{
-			status: 13;
-		}
-	>
->;
-export type FeatureGateMepEggWriteMigration = S<
-	FeatureGate<
-		"MEP_EGG_WRITE_MIGRATION_FEATURE_GATE",
-		{
-			status: 12;
-		}
-	>
->;
 export type FeatureGateMichelinMapLureBottomRingRemoval = S<
 	FeatureGate<
 		"MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE",
@@ -352,6 +328,21 @@ export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateTodayViewV3MultiPageGoPass = S<
+	FeatureGate<
+		"TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE",
+		{
+			status: 1;
+			subFeatureGateList: [
+				{
+					name: "TODAY_VIEW_V3_GO_PASS_NEIGHBOR_PRELOAD_SUB_FEATURE_GATE";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+			];
 		}
 	>
 >;
@@ -435,7 +426,6 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateEventPassMilestoneRewards
 	| FeatureGateEventTicketDatetimeRange
 	| FeatureGateFortStableDataDiffing
-	| FeatureGateFriendshipResyncOnRead
 	| FeatureGateGamesiteWebviewNearbyButtons
 	| FeatureGateGetGmtAnalysisForPlayer
 	| FeatureGateGmoWildPokemonS2Location
@@ -444,14 +434,13 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateHideUiInMiniorIbfc
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMeetupReminderNotifications
-	| FeatureGateMepEggReadMigration
-	| FeatureGateMepEggWriteMigration
 	| FeatureGateMichelinMapLureBottomRingRemoval
 	| FeatureGateMichelinMapZygardeCellReward
 	| FeatureGatePokemonSpawnAvoidanceRework
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
+	| FeatureGateTodayViewV3MultiPageGoPass
 	| FeatureGateTransfer
 	| FeatureGateVnextFastAttackInputType
 	| FeatureGateVnextPreResponseInputBlockingBehavior
