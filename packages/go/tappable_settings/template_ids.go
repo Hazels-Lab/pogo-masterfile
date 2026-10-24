@@ -7,6 +7,7 @@ type TappableSettingsTemplateID string
 const (
 	TappableSettingsTemplateIDTappableSettings          TappableSettingsTemplateID = "TAPPABLE_SETTINGS"
 	TappableSettingsTemplateIDTappableSettingsBreakfast TappableSettingsTemplateID = "TAPPABLE_SETTINGS_BREAKFAST"
+	TappableSettingsTemplateIDTappableTypeBox           TappableSettingsTemplateID = "TAPPABLE_TYPE_BOX"
 	TappableSettingsTemplateIDTappableTypeHat           TappableSettingsTemplateID = "TAPPABLE_TYPE_HAT"
 	TappableSettingsTemplateIDTappableTypeMaple         TappableSettingsTemplateID = "TAPPABLE_TYPE_MAPLE"
 	TappableSettingsTemplateIDTappableTypePokeball      TappableSettingsTemplateID = "TAPPABLE_TYPE_POKEBALL"
@@ -15,6 +16,7 @@ const (
 var TappableSettingsTemplateIDValues = [...]TappableSettingsTemplateID{
 	TappableSettingsTemplateIDTappableSettings,
 	TappableSettingsTemplateIDTappableSettingsBreakfast,
+	TappableSettingsTemplateIDTappableTypeBox,
 	TappableSettingsTemplateIDTappableTypeHat,
 	TappableSettingsTemplateIDTappableTypeMaple,
 	TappableSettingsTemplateIDTappableTypePokeball,

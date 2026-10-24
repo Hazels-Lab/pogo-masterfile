@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "tappableSettings", 5 entries (structural types).
+// Generated from Pokémon GO masterfile — group "tappableSettings", 6 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -19,6 +19,6 @@ export interface TappableSettingsData {
 	movementRespawnThresholdMeters?: number;
 	removeWhenTapped?: boolean;
 	spawnAngleDegrees?: number;
-	tappableAssetKey?: "TAPPABLE_TYPE_HAT" | "TAPPABLE_TYPE_MAPLE" | "TAPPABLE_TYPE_POKEBALL";
+	tappableAssetKey?: "TAPPABLE_TYPE_BOX" | "TAPPABLE_TYPE_HAT" | "TAPPABLE_TYPE_MAPLE" | "TAPPABLE_TYPE_POKEBALL";
 	type?: "TAPPABLE_TYPE_BREAKFAST";
 }
