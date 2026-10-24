@@ -79,7 +79,7 @@ export type ItemSettingsItemEventPassPointGoWildArea01 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_GOWA_2025";
+				eventPassId: "EVENT_PASS_GOWA2026_GLOBAL";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -167,7 +167,7 @@ export type ItemSettingsItemEventPassPointLiveOps04 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 500;
+					limit: 300;
 				};
 			};
 		}

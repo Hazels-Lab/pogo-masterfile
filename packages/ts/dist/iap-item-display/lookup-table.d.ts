@@ -258,6 +258,7 @@ import type {
 	IapItemDisplayFlairFreeBundle0,
 	IapItemDisplayGeneral1Ticket5,
 	IapItemDisplayGeneral2Ticket3,
+	IapItemDisplayGeneral2Ticket6,
 	IapItemDisplayGeneral2Ticket11,
 	IapItemDisplayGeneral4Medium1,
 	IapItemDisplayGeneral6Small1,
@@ -351,8 +352,6 @@ import type {
 	IapItemDisplayPgoreleaseBundleThailandspec20231,
 	IapItemDisplayPgoreleaseBundleWalkeratlantic20221,
 	IapItemDisplayPgoreleaseBundleWalkeratlantic20222,
-	IapItemDisplayPgoreleaseOctober12026DeluxeEventPassTrackUnlock,
-	IapItemDisplayPgoreleaseOctober12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayPgoreleasePokecoin2750,
 	IapItemDisplayPgoreleasePokecoin5720,
 	IapItemDisplayPgoreleasePokecoin15950,
@@ -1351,6 +1350,7 @@ export interface IapItemDisplayLookup {
 	FLAIR_FREE_BUNDLE_0: IapItemDisplayFlairFreeBundle0;
 	"general1.ticket.5": IapItemDisplayGeneral1Ticket5;
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
+	"general2.ticket.6": IapItemDisplayGeneral2Ticket6;
 	"general2.ticket.11": IapItemDisplayGeneral2Ticket11;
 	"general4.medium.1": IapItemDisplayGeneral4Medium1;
 	"general6.small.1": IapItemDisplayGeneral6Small1;
@@ -1444,8 +1444,6 @@ export interface IapItemDisplayLookup {
 	"pgorelease.bundle.thailandspec2023.1": IapItemDisplayPgoreleaseBundleThailandspec20231;
 	"pgorelease.bundle.walkeratlantic2022.1": IapItemDisplayPgoreleaseBundleWalkeratlantic20221;
 	"pgorelease.bundle.walkeratlantic2022.2": IapItemDisplayPgoreleaseBundleWalkeratlantic20222;
-	"pgorelease.october1_2026_deluxe_event_pass_track_unlock": IapItemDisplayPgoreleaseOctober12026DeluxeEventPassTrackUnlock;
-	"pgorelease.october1_2026_deluxe_event_pass_track_unlock_plus_points": IapItemDisplayPgoreleaseOctober12026DeluxeEventPassTrackUnlockPlusPoints;
 	"pgorelease.pokecoin.2750": IapItemDisplayPgoreleasePokecoin2750;
 	"pgorelease.pokecoin.5720": IapItemDisplayPgoreleasePokecoin5720;
 	"pgorelease.pokecoin.15950": IapItemDisplayPgoreleasePokecoin15950;

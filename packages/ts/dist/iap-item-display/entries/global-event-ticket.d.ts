@@ -43,6 +43,26 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		}
 	>
 >;
+export type IapItemDisplayGeneral2Ticket6 = S<
+	IapItemDisplay<
+		"general2.ticket.6",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg";
+			sku: "pgorelease.general2.ticket.6";
+			skuDisableTime: "2026-10-24T17:00:00";
+			skuDisableTimeUtcMs: "1792861200000";
+			skuEnableTime: "2025-10-22T10:00:00";
+			skuEnableTimeUtcMs: "1761127200000";
+			sortOrder: 1;
+			spriteId: "general2.ticket.6";
+			title: "general2.ticket.6.DMAX_SINNOH_LAKE_MAX_BATTLE";
+			useEnvironmentPrefix: true;
+			webstoreSkuId: "web-lake-guardians-max-battle-ultra";
+			webstoreSkuPriceE6: 4990000;
+		}
+	>
+>;
 export type IapItemDisplayGeneral2Ticket11 = S<
 	IapItemDisplay<
 		"general2.ticket.11",
@@ -80,27 +100,10 @@ export type IapItemDisplayMonth2DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect = S<
-	IapItemDisplay<
-		"OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.october1_2026_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-10-21T20:00:00";
-			skuDisableTimeUtcMs: "1792612800000";
-			skuEnableTime: "2025-10-13T10:00:00";
-			skuEnableTimeUtcMs: "1760349600000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_fall_marathon_2026";
-		}
-	>
->;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
+	| IapItemDisplayGeneral2Ticket6
 	| IapItemDisplayGeneral2Ticket11
-	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect
-	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect;
+	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect;

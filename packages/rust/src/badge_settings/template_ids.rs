@@ -375,6 +375,8 @@ pub enum BadgeSettingsTemplateId {
     BadgeEvent0233,
     #[serde(rename = "BADGE_EVENT_0234")]
     BadgeEvent0234,
+    #[serde(rename = "BADGE_EVENT_0235")]
+    BadgeEvent0235,
     #[serde(rename = "BADGE_EVENT_0236")]
     BadgeEvent0236,
     #[serde(rename = "BADGE_EVENT_0237")]
@@ -393,6 +395,8 @@ pub enum BadgeSettingsTemplateId {
     BadgeEvent0244,
     #[serde(rename = "BADGE_EVENT_0245")]
     BadgeEvent0245,
+    #[serde(rename = "BADGE_EVENT_0252")]
+    BadgeEvent0252,
     #[serde(rename = "BADGE_EVENT_0253")]
     BadgeEvent0253,
     #[serde(rename = "BADGE_EVENT_0259")]
@@ -409,6 +413,28 @@ pub enum BadgeSettingsTemplateId {
     BadgeEvent0279,
     #[serde(rename = "BADGE_EVENT_0280")]
     BadgeEvent0280,
+    #[serde(rename = "BADGE_EVENT_0281")]
+    BadgeEvent0281,
+    #[serde(rename = "BADGE_EVENT_0282")]
+    BadgeEvent0282,
+    #[serde(rename = "BADGE_EVENT_0283")]
+    BadgeEvent0283,
+    #[serde(rename = "BADGE_EVENT_0284")]
+    BadgeEvent0284,
+    #[serde(rename = "BADGE_EVENT_0285")]
+    BadgeEvent0285,
+    #[serde(rename = "BADGE_EVENT_0286")]
+    BadgeEvent0286,
+    #[serde(rename = "BADGE_EVENT_0287")]
+    BadgeEvent0287,
+    #[serde(rename = "BADGE_EVENT_0288")]
+    BadgeEvent0288,
+    #[serde(rename = "BADGE_EVENT_0289")]
+    BadgeEvent0289,
+    #[serde(rename = "BADGE_EVENT_0290")]
+    BadgeEvent0290,
+    #[serde(rename = "BADGE_EVENT_0295")]
+    BadgeEvent0295,
     #[serde(rename = "BADGE_EVOLVED_TOTAL")]
     BadgeEvolvedTotal,
     #[serde(rename = "BADGE_GLOBAL_TICKETED_EVENT")]

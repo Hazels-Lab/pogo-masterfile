@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 46 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 45 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -202,39 +202,6 @@ export type FeatureGateFortStableDataDiffing = S<
 		}
 	>
 >;
-export type FeatureGateFriendshipResyncOnRead = S<
-	FeatureGate<
-		"FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE",
-		{
-			status: 1;
-		}
-	>
->;
-export type FeatureGateGamesiteWebviewNearbyButtons = S<
-	FeatureGate<
-		"GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE",
-		{
-			status: 1;
-			subFeatureGateList: [
-				{
-					name: "RAIDS";
-					rolloutPercentage: 100;
-					status: 1;
-				},
-				{
-					name: "STATIONS";
-					rolloutPercentage: 100;
-					status: 1;
-				},
-				{
-					name: "ROUTES";
-					rolloutPercentage: 100;
-					status: 1;
-				},
-			];
-		}
-	>
->;
 export type FeatureGateGetGmtAnalysisForPlayer = S<
 	FeatureGate<
 		"GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE",
@@ -259,9 +226,9 @@ export type FeatureGateGmoWildPokemonS2LocationServer = S<
 		}
 	>
 >;
-export type FeatureGateHideCampfireMapButtons = S<
+export type FeatureGateGrantCheckInBadgeWithoutRewards = S<
 	FeatureGate<
-		"HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE",
+		"GRANT_CHECK_IN_BADGE_WITHOUT_REWARDS_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -291,22 +258,6 @@ export type FeatureGateMeetupReminderNotifications = S<
 		}
 	>
 >;
-export type FeatureGateMepEggReadMigration = S<
-	FeatureGate<
-		"MEP_EGG_READ_MIGRATION_FEATURE_GATE",
-		{
-			status: 13;
-		}
-	>
->;
-export type FeatureGateMepEggWriteMigration = S<
-	FeatureGate<
-		"MEP_EGG_WRITE_MIGRATION_FEATURE_GATE",
-		{
-			status: 12;
-		}
-	>
->;
 export type FeatureGateMichelinMapLureBottomRingRemoval = S<
 	FeatureGate<
 		"MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE",
@@ -323,11 +274,39 @@ export type FeatureGateMichelinMapZygardeCellReward = S<
 		}
 	>
 >;
+export type FeatureGatePlayerEncounterRandomizationSalt = S<
+	FeatureGate<
+		"PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGatePokemonSpawnAvoidanceRework = S<
 	FeatureGate<
 		"POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE",
 		{
 			status: 67485911;
+		}
+	>
+>;
+export type FeatureGatePrivateMaxLobbies = S<
+	FeatureGate<
+		"PRIVATE_MAX_LOBBIES_FEATURE_GATE",
+		{
+			status: 1;
+			subFeatureGateList: [
+				{
+					name: "INVITE_BY_CODE";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+				{
+					name: "INVITE_FRIENDS";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+			];
 		}
 	>
 >;
@@ -352,6 +331,21 @@ export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateTodayViewV3MultiPageGoPass = S<
+	FeatureGate<
+		"TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE",
+		{
+			status: 1;
+			subFeatureGateList: [
+				{
+					name: "TODAY_VIEW_V3_GO_PASS_NEIGHBOR_PRELOAD_SUB_FEATURE_GATE";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+			];
 		}
 	>
 >;
@@ -435,23 +429,22 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateEventPassMilestoneRewards
 	| FeatureGateEventTicketDatetimeRange
 	| FeatureGateFortStableDataDiffing
-	| FeatureGateFriendshipResyncOnRead
-	| FeatureGateGamesiteWebviewNearbyButtons
 	| FeatureGateGetGmtAnalysisForPlayer
 	| FeatureGateGmoWildPokemonS2Location
 	| FeatureGateGmoWildPokemonS2LocationServer
-	| FeatureGateHideCampfireMapButtons
+	| FeatureGateGrantCheckInBadgeWithoutRewards
 	| FeatureGateHideUiInMiniorIbfc
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMeetupReminderNotifications
-	| FeatureGateMepEggReadMigration
-	| FeatureGateMepEggWriteMigration
 	| FeatureGateMichelinMapLureBottomRingRemoval
 	| FeatureGateMichelinMapZygardeCellReward
+	| FeatureGatePlayerEncounterRandomizationSalt
 	| FeatureGatePokemonSpawnAvoidanceRework
+	| FeatureGatePrivateMaxLobbies
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
+	| FeatureGateTodayViewV3MultiPageGoPass
 	| FeatureGateTransfer
 	| FeatureGateVnextFastAttackInputType
 	| FeatureGateVnextPreResponseInputBlockingBehavior
