@@ -8,8 +8,8 @@ import "encoding/json"
 // MasterfileEntry is a masterfile entry with a deprecated templateId.
 //
 // Deprecated: historical masterfile entry type for templates removed from upstream.
-// Currently tracking 12595 deprecated templateIds across 52 discriminators.
-// Most recently deprecated: 2026-10-08.
+// Currently tracking 12602 deprecated templateIds across 52 discriminators.
+// Most recently deprecated: 2026-10-25.
 // See deprecated.d.ts (TypeScript) for the full enumerated list.
 type MasterfileEntry struct {
 	TemplateID string          `json:"templateId"`

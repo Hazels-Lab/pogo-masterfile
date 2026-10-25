@@ -262,6 +262,7 @@ const (
 	IapItemDisplayTemplateIDFlairFreeBundle0                                           IapItemDisplayTemplateID = "FLAIR_FREE_BUNDLE_0"
 	IapItemDisplayTemplateIDGeneral1Ticket5                                            IapItemDisplayTemplateID = "general1.ticket.5"
 	IapItemDisplayTemplateIDGeneral2Ticket3                                            IapItemDisplayTemplateID = "general2.ticket.3"
+	IapItemDisplayTemplateIDGeneral2Ticket6                                            IapItemDisplayTemplateID = "general2.ticket.6"
 	IapItemDisplayTemplateIDGeneral2Ticket11                                           IapItemDisplayTemplateID = "general2.ticket.11"
 	IapItemDisplayTemplateIDGeneral4Medium1                                            IapItemDisplayTemplateID = "general4.medium.1"
 	IapItemDisplayTemplateIDGeneral6Small1                                             IapItemDisplayTemplateID = "general6.small.1"
@@ -355,8 +356,6 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231                          IapItemDisplayTemplateID = "pgorelease.bundle.thailandspec2023.1"
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221                        IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.1"
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222                        IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.2"
-	IapItemDisplayTemplateIDPgoreleaseOctober12026DeluxeEventPassTrackUnlock           IapItemDisplayTemplateID = "pgorelease.october1_2026_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDPgoreleaseOctober12026DeluxeEventPassTrackUnlockPlusPoints IapItemDisplayTemplateID = "pgorelease.october1_2026_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                     IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                     IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                    IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
@@ -1355,6 +1354,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDFlairFreeBundle0,
 	IapItemDisplayTemplateIDGeneral1Ticket5,
 	IapItemDisplayTemplateIDGeneral2Ticket3,
+	IapItemDisplayTemplateIDGeneral2Ticket6,
 	IapItemDisplayTemplateIDGeneral2Ticket11,
 	IapItemDisplayTemplateIDGeneral4Medium1,
 	IapItemDisplayTemplateIDGeneral6Small1,
@@ -1448,8 +1448,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231,
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221,
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222,
-	IapItemDisplayTemplateIDPgoreleaseOctober12026DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDPgoreleaseOctober12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950,

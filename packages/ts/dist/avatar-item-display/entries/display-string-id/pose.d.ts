@@ -772,7 +772,7 @@ export type AvatarItemDisplayNPoseMachamp = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_pose_machamp",
 		{
-			displayStringId: "avatar_pose_machamp";
+			displayStringId: "avatar_pose_gowa2026";
 			iconAddress: "n_pose_machamp_icon";
 		}
 	>

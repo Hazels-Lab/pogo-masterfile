@@ -11,6 +11,8 @@ pub enum TappableSettingsTemplateId {
     TappableSettings,
     #[serde(rename = "TAPPABLE_SETTINGS_BREAKFAST")]
     TappableSettingsBreakfast,
+    #[serde(rename = "TAPPABLE_TYPE_BOX")]
+    TappableTypeBox,
     #[serde(rename = "TAPPABLE_TYPE_HAT")]
     TappableTypeHat,
     #[serde(rename = "TAPPABLE_TYPE_MAPLE")]
