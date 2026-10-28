@@ -100,6 +100,7 @@ jobs:
           fi
 
       - name: Open pull request
+        id: cpr
         if:
           steps.upstream.outputs.changed == 'true' && steps.diff.outputs.has_diff ==
           'true'
@@ -118,3 +119,18 @@ jobs:
             <41898282+github-actions[bot]@users.noreply.github.com>
           committer: github-actions[bot]
             <41898282+github-actions[bot]@users.noreply.github.com>
+
+      # Every autoupdate PR diffs against main, so the newest one is a superset
+      # of any older open ones. Merging the older ones first would only conflict
+      # (versions, CHANGELOGs) and leave the newer PR's deprecation baseline stale.
+      - name: Close superseded autoupdate PRs
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.AUTOUPDATE_TOKEN }}
+          NEW_PR: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          gh pr list --label autoupdate --state open --json number --jq '.[].number' |
+            while read -r pr; do
+              [ "$pr" = "$NEW_PR" ] && continue
+              gh pr close "$pr" --delete-branch --comment "Superseded by #$NEW_PR."
+            done
