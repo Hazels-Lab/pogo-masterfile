@@ -37,8 +37,6 @@ export interface ItemExpirationSettingsData {
 		| "2026-11-15T18:00:00"
 		| "2026-12-05T10:00:00";
 	expirationTime:
-		| "2025-11-16T18:00:00"
-		| "2025-11-24T23:59:59"
 		| "2026-01-13T10:00:00"
 		| "2026-02-22T17:00:00"
 		| "2026-03-03T18:00:00"
@@ -59,6 +57,8 @@ export interface ItemExpirationSettingsData {
 		| "2026-11-08T23:59:00"
 		| "2026-11-09T20:00:00"
 		| "2026-11-15T18:00:00"
+		| "2026-11-17T23:59:59"
+		| "2026-11-22T23:59:59"
 		| "2026-12-03T10:00:00";
 	itemEnablementSettings?: {
 		enabledTimePeriods: [

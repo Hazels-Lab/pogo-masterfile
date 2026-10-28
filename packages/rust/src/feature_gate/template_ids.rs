@@ -45,56 +45,46 @@ pub enum FeatureGateTemplateId {
     EnhancedCurrencyOverflowStardustFeatureGate,
     #[serde(rename = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE")]
     EventPassBonusMilestoneSeparationFeatureGate,
-    #[serde(rename = "EVENT_PASS_BONUS_RANKS_FEATURE_GATE")]
-    EventPassBonusRanksFeatureGate,
-    #[serde(rename = "EVENT_PASS_CLAIMABLE_REWARD_TOGGLE_FEATURE_GATE")]
-    EventPassClaimableRewardToggleFeatureGate,
-    #[serde(rename = "EVENT_PASS_MILESTONE_REWARDS_FEATURE_GATE")]
-    EventPassMilestoneRewardsFeatureGate,
     #[serde(rename = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE")]
     EventTicketDatetimeRangeFeatureGate,
     #[serde(rename = "FORT_STABLE_DATA_DIFFING_FEATURE_GATE")]
     FortStableDataDiffingFeatureGate,
-    #[serde(rename = "FRIENDSHIP_RESYNC_ON_READ_FEATURE_GATE")]
-    FriendshipResyncOnReadFeatureGate,
-    #[serde(rename = "GAMESITE_WEBVIEW_NEARBY_BUTTONS_FEATURE_GATE")]
-    GamesiteWebviewNearbyButtonsFeatureGate,
     #[serde(rename = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE")]
     GetGmtAnalysisForPlayerFeatureGate,
     #[serde(rename = "GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE")]
     GmoWildPokemonS2LocationFeatureGate,
     #[serde(rename = "GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE")]
     GmoWildPokemonS2LocationServerFeatureGate,
-    #[serde(rename = "HIDE_CAMPFIRE_MAP_BUTTONS_FEATURE_GATE")]
-    HideCampfireMapButtonsFeatureGate,
+    #[serde(rename = "GRANT_CHECK_IN_BADGE_WITHOUT_REWARDS_FEATURE_GATE")]
+    GrantCheckInBadgeWithoutRewardsFeatureGate,
     #[serde(rename = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE")]
     HideUiInMiniorIbfcFeatureGate,
     #[serde(rename = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE")]
     LuckyTradeNewStringsFeatureGate,
     #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]
     MeetupReminderNotificationsFeatureGate,
-    #[serde(rename = "MEP_EGG_READ_MIGRATION_FEATURE_GATE")]
-    MepEggReadMigrationFeatureGate,
-    #[serde(rename = "MEP_EGG_WRITE_MIGRATION_FEATURE_GATE")]
-    MepEggWriteMigrationFeatureGate,
     #[serde(rename = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE")]
     MichelinMapLureBottomRingRemovalFeatureGate,
     #[serde(rename = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE")]
     MichelinMapZygardeCellRewardFeatureGate,
+    #[serde(rename = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE")]
+    PlayerEncounterRandomizationSaltFeatureGate,
     #[serde(rename = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE")]
     PokemonSpawnAvoidanceReworkFeatureGate,
+    #[serde(rename = "PRIVATE_MAX_LOBBIES_FEATURE_GATE")]
+    PrivateMaxLobbiesFeatureGate,
     #[serde(rename = "REGISTER_DEVICE_FEATURE_GATE")]
     RegisterDeviceFeatureGate,
     #[serde(rename = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE")]
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE")]
+    TodayViewV3MultiPageGoPassFeatureGate,
     #[serde(rename = "TRANSFER_FEATURE_GATE")]
     TransferFeatureGate,
     #[serde(rename = "VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE")]
     VnextFastAttackInputTypeFeatureGate,
-    #[serde(rename = "VNEXT_PRE_RESPONSE_INPUT_BLOCKING_BEHAVIOR_FEATURE_GATE")]
-    VnextPreResponseInputBlockingBehaviorFeatureGate,
     #[serde(rename = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE")]
     WayfarerSubmitLinkoutFeatureGate,
     #[serde(rename = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR")]
