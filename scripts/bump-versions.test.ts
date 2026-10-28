@@ -1,5 +1,6 @@
 import { describe, expect, test } from "bun:test";
-import { formatTemplateIdDiff } from "./bump-versions.ts";
+import { readFileSync } from "node:fs";
+import { formatTemplateIdDiff, syncBunLockVersions } from "./bump-versions.ts";
 
 describe("formatTemplateIdDiff", () => {
 	test("empty before + empty after → empty string", () => {
@@ -58,5 +59,28 @@ describe("formatTemplateIdDiff", () => {
 		const after = "A\nB\nC";
 		const out = formatTemplateIdDiff(before, after);
 		expect(out).toBe("\n\n### Added template IDs (1)\n\n- C");
+	});
+});
+
+describe("syncBunLockVersions", () => {
+	const lock = readFileSync("bun.lock", "utf8");
+	const tsVersion = (l: string) => /"packages\/ts": \{[^}]*?"version": "([^"]+)"/.exec(l)?.[1];
+	const apiVersion = (l: string) => /"packages\/ts-api": \{[^}]*?"version": "([^"]+)"/.exec(l)?.[1];
+
+	test("patches only the bumped workspace versions", () => {
+		const out = syncBunLockVersions(lock, { "packages/ts": "9.9.9", "packages/ts-api": "8.8.8" });
+		expect(tsVersion(out)).toBe("9.9.9");
+		expect(apiVersion(out)).toBe("8.8.8");
+		expect(out.split("\n").length).toBe(lock.split("\n").length);
+	});
+
+	test("leaves the lockfile untouched for non-npm bumps", () => {
+		expect(syncBunLockVersions(lock, { "packages/rust": "9.9.9", "packages/go": "9.9.9" })).toBe(lock);
+	});
+
+	test("never touches resolved dependency pins", () => {
+		const out = syncBunLockVersions(lock, { "packages/ts": "9.9.9" });
+		const pins = (l: string) => l.slice(l.indexOf('"packages": {\n    "@'));
+		expect(pins(out)).toBe(pins(lock));
 	});
 });

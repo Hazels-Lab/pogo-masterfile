@@ -128,29 +128,30 @@ function syncCargoLockIfRustBumped(bumps: Record<string, string>): void {
 
 // Sync bun.lock whenever ts packages bump. Same drift-prevention motivation as
 // the Cargo case, but with a bun-specific quirk: `bun install` (even with
-// --force) does NOT pick up workspace `version` field changes — only deleting
-// the lockfile and re-resolving does. Without this, the lockfile records stale
-// workspace versions and `bun pm pack` resolves `workspace:^` against them
-// instead of against the freshly-bumped package.json.
-function syncBunLockIfTsBumped(bumps: Record<string, string>): void {
-	const tsBumped = Object.keys(bumps).some((p) => {
-		const pkg = PACKAGES.find((x) => x.path === p);
-		return pkg?.manifest?.type === "package.json";
-	});
-	if (!tsBumped) return;
-
-	const rm = Bun.spawnSync({ cmd: ["rm", "-f", "bun.lock"], stderr: "inherit" });
-	if (rm.exitCode !== 0) throw new Error("rm bun.lock failed");
-
-	const proc = Bun.spawnSync({
-		cmd: ["bun", "install"],
-		stdout: "inherit",
-		stderr: "inherit",
-	});
-	if (proc.exitCode !== 0) {
-		throw new Error("bun install failed — bun.lock not synced.");
+// --force) does NOT pick up workspace `version` field changes. Without this,
+// the lockfile records stale workspace versions and `bun pm pack` resolves
+// `workspace:^` against them instead of against the freshly-bumped package.json.
+//
+// Patches only the workspace `version` fields in place. Deleting bun.lock and
+// re-resolving (the old approach) also floated every caret range to its latest
+// release, which is how an autoupdate PR silently upgraded biome and broke lint.
+export function syncBunLockVersions(lock: string, bumps: Record<string, string>): string {
+	for (const [path, version] of Object.entries(bumps)) {
+		const pkg = PACKAGES.find((x) => x.path === path);
+		if (pkg?.manifest?.type !== "package.json") continue;
+		const re = new RegExp(`("${path}": \\{[^}]*?"version": ")[^"]+"`);
+		if (!re.test(lock)) throw new Error(`bun.lock: no workspace entry for ${path}`);
+		lock = lock.replace(re, `$1${version}"`);
 	}
-	console.log("bun.lock: synced via `rm bun.lock && bun install`");
+	return lock;
+}
+
+function syncBunLockIfTsBumped(bumps: Record<string, string>): void {
+	const lock = readFileSync("bun.lock", "utf8");
+	const synced = syncBunLockVersions(lock, bumps);
+	if (synced === lock) return;
+	writeFileSync("bun.lock", synced);
+	console.log("bun.lock: synced workspace versions in place");
 }
 
 function appendChangelog(p: PkgInfo, version: string, body: string): void {
