@@ -64,7 +64,6 @@ pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
-    pub mega_resource: Option<Candy>,
     pub player_attribute: Option<PlayerAttribute>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,

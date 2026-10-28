@@ -707,10 +707,6 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseBundleWalkeratlantic20221,
     #[serde(rename = "pgorelease.bundle.walkeratlantic2022.2")]
     PgoreleaseBundleWalkeratlantic20222,
-    #[serde(rename = "pgorelease.october1_2026_deluxe_event_pass_track_unlock")]
-    PgoreleaseOctober12026DeluxeEventPassTrackUnlock,
-    #[serde(rename = "pgorelease.october1_2026_deluxe_event_pass_track_unlock_plus_points")]
-    PgoreleaseOctober12026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "pgorelease.pokecoin.2750")]
     PgoreleasePokecoin2750,
     #[serde(rename = "pgorelease.pokecoin.5720")]

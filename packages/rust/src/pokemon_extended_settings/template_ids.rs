@@ -127,24 +127,20 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0024PokemonArbok,
     #[serde(rename = "EXTENDED_V0024_POKEMON_ARBOK_NORMAL")]
     ExtendedV0024PokemonArbokNormal,
-    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_MALAYSIA_01")]
-    ExtendedV0025PikachuAnniversary2026Malaysia01,
-    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01")]
-    ExtendedV0025PikachuAnniversary2026Philippine01,
-    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01")]
-    ExtendedV0025PikachuAnniversary2026Singapore01,
-    #[serde(rename = "EXTENDED_V0025_PIKACHU_ANNIVERSARY_2026_TAIWAN_01")]
-    ExtendedV0025PikachuAnniversary2026Taiwan01,
-    #[serde(rename = "EXTENDED_V0025_PIKACHU_GLASS_HELMET_2026")]
-    ExtendedV0025PikachuGlassHelmet2026,
-    #[serde(rename = "EXTENDED_V0025_PIKACHU_HALLOWEEN_2026")]
-    ExtendedV0025PikachuHalloween2026,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU")]
     ExtendedV0025PokemonPikachu,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ADVENTURE_HAT_2020")]
     ExtendedV0025PokemonPikachuAdventureHat2020,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026")]
     ExtendedV0025PokemonPikachuAnniversary2026,
+    #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_MALAYSIA_01")]
+    ExtendedV0025PokemonPikachuAnniversary2026Malaysia01,
+    #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_PHILIPPINE_01")]
+    ExtendedV0025PokemonPikachuAnniversary2026Philippine01,
+    #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_SINGAPORE_01")]
+    ExtendedV0025PokemonPikachuAnniversary2026Singapore01,
+    #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_ANNIVERSARY_2026_TAIWAN_01")]
+    ExtendedV0025PokemonPikachuAnniversary2026Taiwan01,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_BB_2026")]
     ExtendedV0025PokemonPikachuBb2026,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_COPY_2019")]
@@ -171,6 +167,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0025PokemonPikachuFlyingOkinawa,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_FOSSIL_2026")]
     ExtendedV0025PokemonPikachuFossil2026,
+    #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_GLASS_HELMET_2026")]
+    ExtendedV0025PokemonPikachuGlassHelmet2026,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_GOFEST_2022")]
     ExtendedV0025PokemonPikachuGofest2022,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_GOFEST_2024_MTIARA")]
@@ -223,6 +221,8 @@ pub enum PokemonExtendedSettingsTemplateId {
     ExtendedV0025PokemonPikachuGotour2026C,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_GOTOUR_2026_C_02")]
     ExtendedV0025PokemonPikachuGotour2026C02,
+    #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_HALLOWEEN_2026")]
+    ExtendedV0025PokemonPikachuHalloween2026,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_HORIZONS")]
     ExtendedV0025PokemonPikachuHorizons,
     #[serde(rename = "EXTENDED_V0025_POKEMON_PIKACHU_JEJU")]

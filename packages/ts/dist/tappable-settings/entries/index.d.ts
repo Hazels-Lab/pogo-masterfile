@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "tappableSettings", 5 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "tappableSettings", 6 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TappableSettings } from "../types";
@@ -24,6 +24,15 @@ export type TappableSettingsSettingsBreakfast = S<
 			removeWhenTapped: true;
 			spawnAngleDegrees: 45;
 			type: "TAPPABLE_TYPE_BREAKFAST";
+		}
+	>
+>;
+export type TappableSettingsTypeBox = S<
+	TappableSettings<
+		"TAPPABLE_TYPE_BOX",
+		{
+			removeWhenTapped: true;
+			tappableAssetKey: "TAPPABLE_TYPE_BOX";
 		}
 	>
 >;
@@ -58,6 +67,7 @@ export type TappableSettingsTypePokeball = S<
 export type TappableSettingsMasterfileEntry =
 	| TappableSettingsSettings
 	| TappableSettingsSettingsBreakfast
+	| TappableSettingsTypeBox
 	| TappableSettingsTypeHat
 	| TappableSettingsTypeMaple
 	| TappableSettingsTypePokeball;
