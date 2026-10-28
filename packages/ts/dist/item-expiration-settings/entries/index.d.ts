@@ -39,7 +39,7 @@ export type ItemExpirationSettingsEventPassPointGoWildArea01 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01",
 		{
-			expirationTime: "2025-11-16T18:00:00";
+			expirationTime: "2026-11-17T23:59:59";
 		}
 	>
 >;
@@ -188,7 +188,7 @@ export type ItemExpirationSettingsSingleStatIncrease = S<
 					},
 				];
 			};
-			expirationTime: "2025-11-24T23:59:59";
+			expirationTime: "2026-11-22T23:59:59";
 		}
 	>
 >;

@@ -519,6 +519,8 @@ pub enum LocationCardSettingsTemplateId {
     LcSpecialbackgroundBatik2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_CON2025")]
     LcSpecialbackgroundCon2025,
+    #[serde(rename = "LC_SPECIALBACKGROUND_DIA_DE_LOS_MUERTOS_2026")]
+    LcSpecialbackgroundDiaDeLosMuertos2026,
     #[serde(rename = "LC_SPECIALBACKGROUND_EXTRA_2025_01")]
     LcSpecialbackgroundExtra202501,
     #[serde(rename = "LC_SPECIALBACKGROUND_EXTRA_2025_02")]
