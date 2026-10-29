@@ -157,6 +157,62 @@ export type SettingsOverrideRuleAllowGooglepixel9pro = S<
 		}
 	>
 >;
+export type SettingsOverrideRuleAllowGooglepixel10 = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_GOOGLEPIXEL10",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Google Pixel 10";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowGooglepixel10pro = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PRO",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Google Pixel 10 Pro";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowGooglepixel10profold = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROFOLD",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Google Pixel 10 Pro Fold";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
+export type SettingsOverrideRuleAllowGooglepixel10proxl = S<
+	SettingsOverrideRule<
+		"SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROXL",
+		{
+			meshingEnabled: "TRUE";
+			occlusionEnabled: "TRUE";
+			ruleType: "DEVICE_MODEL";
+			ruleValue: "Google Pixel 10 Pro XL";
+			semanticsEnabled: "TRUE";
+			sortOrder: 50;
+			vpsEnabled: "TRUE";
+		}
+	>
+>;
 export type SettingsOverrideRuleAllowGooglepixelprofold = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_ALLOW_GOOGLEPIXELPROFOLD",
@@ -3349,62 +3405,6 @@ export type SettingsOverrideRuleDenyAndroid14 = S<
 		}
 	>
 >;
-export type SettingsOverrideRuleDenyGooglepixel10 = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleDenyGooglepixel10pro = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10 Pro";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleDenyGooglepixel10profold = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10 Pro Fold";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
-export type SettingsOverrideRuleDenyGooglepixel10proxl = S<
-	SettingsOverrideRule<
-		"SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL",
-		{
-			meshingEnabled: "TRUE";
-			occlusionEnabled: "TRUE";
-			ruleType: "DEVICE_MODEL";
-			ruleValue: "Google Pixel 10 Pro XL";
-			semanticsEnabled: "TRUE";
-			sortOrder: 50;
-			vpsEnabled: "TRUE";
-		}
-	>
->;
 export type SettingsOverrideRuleDenyIpad4 = S<
 	SettingsOverrideRule<
 		"SETTINGS_RULES_DENY_IPAD4",
@@ -3502,6 +3502,10 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowGooglepixel8pro
 	| SettingsOverrideRuleAllowGooglepixel9
 	| SettingsOverrideRuleAllowGooglepixel9pro
+	| SettingsOverrideRuleAllowGooglepixel10
+	| SettingsOverrideRuleAllowGooglepixel10pro
+	| SettingsOverrideRuleAllowGooglepixel10profold
+	| SettingsOverrideRuleAllowGooglepixel10proxl
 	| SettingsOverrideRuleAllowGooglepixelprofold
 	| SettingsOverrideRuleAllowGooglepixelproxl
 	| SettingsOverrideRuleAllowLgelmV600
@@ -3730,10 +3734,6 @@ export type SettingsOverrideRuleMeshingEnabledRuleValueVpsEnabledMasterfileEntry
 	| SettingsOverrideRuleAllowXiaomim2102k1ac
 	| SettingsOverrideRuleAndroid
 	| SettingsOverrideRuleDenyAndroid14
-	| SettingsOverrideRuleDenyGooglepixel10
-	| SettingsOverrideRuleDenyGooglepixel10pro
-	| SettingsOverrideRuleDenyGooglepixel10profold
-	| SettingsOverrideRuleDenyGooglepixel10proxl
 	| SettingsOverrideRuleDenyIpad4
 	| SettingsOverrideRuleDenyIpad5
 	| SettingsOverrideRuleDenyIpad6

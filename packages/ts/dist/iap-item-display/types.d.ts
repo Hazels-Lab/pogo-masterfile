@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1088 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1092 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -39,12 +39,14 @@ export interface IapItemDisplayData {
 	imageUrl?:
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F452fd1a0_PGO-MCS_Chandelure_Super_Mega_Raid_Day_v3_1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb20824cf_PGO-MCS_GO_Pass_Halloween_2026-v2-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg";
 	maxLevel?: number;
@@ -60,11 +62,15 @@ export interface IapItemDisplayData {
 		| "2025-10-21T20:00:00"
 		| "2026-01-25T23:59:00"
 		| "2026-05-02T17:00:00"
+		| "2026-09-20T17:00:00"
 		| "2026-09-24T20:00:00"
 		| "2026-10-08T10:00:00"
-		| "2026-10-10T17:00:00"
+		| "2026-10-31T17:00:00"
+		| "2026-11-01T22:00:00"
 		| "2026-11-05T10:00:00"
-		| "2026-11-15T20:00:00";
+		| "2026-11-07T20:00:00"
+		| "2026-11-15T20:00:00"
+		| "2026-11-21T17:00:00";
 	skuDisableTimeUtcMs?:
 		| "1718456400000"
 		| "1732996800000"
@@ -73,15 +79,20 @@ export interface IapItemDisplayData {
 		| "1761076800000"
 		| "1769385540000"
 		| "1777741200000"
+		| "1789923600000"
 		| "1790280000000"
 		| "1791453600000"
-		| "1791651600000"
+		| "1793466000000"
+		| "1793570400000"
 		| "1793872800000"
-		| "1794772800000";
+		| "1794081600000"
+		| "1794772800000"
+		| "1795280400000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
 		| "2020-01-01T00:00:00"
+		| "2022-10-13T12:00:00"
 		| "2023-02-27T20:00:00"
 		| "2023-10-10T11:00:00"
 		| "2025-06-02T10:00:00"
@@ -89,11 +100,13 @@ export interface IapItemDisplayData {
 		| "2025-09-16T10:00:00"
 		| "2025-09-29T10:00:00"
 		| "2025-10-06T10:00:00"
-		| "2025-10-13T10:00:00";
+		| "2025-10-13T10:00:00"
+		| "2025-10-27T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
 		| "1577836800000"
+		| "1665662400000"
 		| "1677528000000"
 		| "1696935600000"
 		| "1748858400000"
@@ -101,7 +114,8 @@ export interface IapItemDisplayData {
 		| "1758016800000"
 		| "1759140000000"
 		| "1759744800000"
-		| "1760349600000";
+		| "1760349600000"
+		| "1761559200000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;

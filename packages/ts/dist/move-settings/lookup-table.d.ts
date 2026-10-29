@@ -329,6 +329,7 @@ import type {
 	MoveSettingsV0593MoveDive,
 	MoveSettingsV0594MoveGulpMissileGulping,
 	MoveSettingsV0595MoveGulpMissileGorging,
+	MoveSettingsV0615MoveKowtowCleave,
 	MoveSettingsVmMoveTempEvolutionMegaV0015PokemonBeedrill,
 	MoveSettingsVmMoveTempEvolutionMegaV0071PokemonVictreebel,
 	MoveSettingsVmMoveTempEvolutionMegaV0121PokemonStarmie,
@@ -740,6 +741,7 @@ export interface MoveSettingsLookup {
 	V0593_MOVE_DIVE: MoveSettingsV0593MoveDive;
 	V0594_MOVE_GULP_MISSILE_GULPING: MoveSettingsV0594MoveGulpMissileGulping;
 	V0595_MOVE_GULP_MISSILE_GORGING: MoveSettingsV0595MoveGulpMissileGorging;
+	V0615_MOVE_KOWTOW_CLEAVE: MoveSettingsV0615MoveKowtowCleave;
 	VM_MOVE_TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL: MoveSettingsVmMoveTempEvolutionMegaV0015PokemonBeedrill;
 	VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL: MoveSettingsVmMoveTempEvolutionMegaV0071PokemonVictreebel;
 	VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE: MoveSettingsVmMoveTempEvolutionMegaV0121PokemonStarmie;

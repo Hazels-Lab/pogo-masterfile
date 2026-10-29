@@ -16,6 +16,10 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel8pro        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL8PRO"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel9           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL9"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel9pro        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL9PRO"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10          SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10pro       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PRO"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10profold   SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROFOLD"
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10proxl     SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROXL"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixelprofold     SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXELPROFOLD"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixelproxl       SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_GOOGLEPIXELPROXL"
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowLgelmV600              SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ALLOW_LGELM_V600"
@@ -246,10 +250,6 @@ const (
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid14Onward             SettingsOverrideRuleTemplateID = "SETTINGS_RULES_ANDROID_14_ONWARD"
 	SettingsOverrideRuleTemplateIDSettingsRulesBase                        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_BASE"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyAndroid14               SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_ANDROID14"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10           SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10pro        SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10profold    SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD"
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10proxl      SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad4                   SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_IPAD4"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad5                   SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_IPAD5"
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad6                   SettingsOverrideRuleTemplateID = "SETTINGS_RULES_DENY_IPAD6"
@@ -270,6 +270,10 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel8pro,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel9,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel9pro,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10pro,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10profold,
+	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixel10proxl,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixelprofold,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowGooglepixelproxl,
 	SettingsOverrideRuleTemplateIDSettingsRulesAllowLgelmV600,
@@ -500,10 +504,6 @@ var SettingsOverrideRuleTemplateIDValues = [...]SettingsOverrideRuleTemplateID{
 	SettingsOverrideRuleTemplateIDSettingsRulesAndroid14Onward,
 	SettingsOverrideRuleTemplateIDSettingsRulesBase,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyAndroid14,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10pro,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10profold,
-	SettingsOverrideRuleTemplateIDSettingsRulesDenyGooglepixel10proxl,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad4,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad5,
 	SettingsOverrideRuleTemplateIDSettingsRulesDenyIpad6,

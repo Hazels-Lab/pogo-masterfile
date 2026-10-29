@@ -11,6 +11,13 @@ pub struct Buffs {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum UniqueIdValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CombatMove {
     pub buffs: Option<Buffs>,
@@ -18,7 +25,7 @@ pub struct CombatMove {
     pub energy_delta: Option<i64>,
     pub power: Option<f64>,
     pub r#type: String,
-    pub unique_id: String,
+    pub unique_id: UniqueIdValue,
     pub vfx_name: String,
 }
 

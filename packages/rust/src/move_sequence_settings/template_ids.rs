@@ -307,6 +307,8 @@ pub enum MoveSequenceSettingsTemplateId {
     SequenceIronTailFast,
     #[serde(rename = "sequence_karate_chop_fast")]
     SequenceKarateChopFast,
+    #[serde(rename = "sequence_kowtow_cleave")]
+    SequenceKowtowCleave,
     #[serde(rename = "sequence_last_resort")]
     SequenceLastResort,
     #[serde(rename = "sequence_leaf_blade")]

@@ -21,8 +21,12 @@ pub enum FeatureGateTemplateId {
     AmsFeatureGate,
     #[serde(rename = "AMS_FRONTEND_FEATURE_GATE")]
     AmsFrontendFeatureGate,
+    #[serde(rename = "AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE")]
+    AvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate,
     #[serde(rename = "BADGE_SERVICE_FEATURE_GATE")]
     BadgeServiceFeatureGate,
+    #[serde(rename = "BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE")]
+    BuddySwapPlayerSnapshotFeatureGate,
     #[serde(rename = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE")]
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
@@ -35,6 +39,8 @@ pub enum FeatureGateTemplateId {
     CombineCompassAndWeatherFeatureGate,
     #[serde(rename = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE")]
     DailyEncounterGenerationContextFeatureGate,
+    #[serde(rename = "DEPRECATE_VERIFY_ELIGIBILITY_FEATURE_GATE")]
+    DeprecateVerifyEligibilityFeatureGate,
     #[serde(rename = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE")]
     DisableLegacyNearbyPokemonFeatureGate,
     #[serde(rename = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE")]
@@ -59,6 +65,8 @@ pub enum FeatureGateTemplateId {
     GrantCheckInBadgeWithoutRewardsFeatureGate,
     #[serde(rename = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE")]
     HideUiInMiniorIbfcFeatureGate,
+    #[serde(rename = "LOCATION_CARD_ROLL_FEATURE_GATE")]
+    LocationCardRollFeatureGate,
     #[serde(rename = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE")]
     LuckyTradeNewStringsFeatureGate,
     #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]
@@ -79,12 +87,30 @@ pub enum FeatureGateTemplateId {
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_CLAIM_RERENDER_FEATURE_GATE")]
+    TodayViewV3ClaimRerenderFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_COLLAPSE_REDRAW_FEATURE_GATE")]
+    TodayViewV3CollapseRedrawFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_DEFERRED_TAB_LOAD_FEATURE_GATE")]
+    TodayViewV3DeferredTabLoadFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_INCREMENTAL_CLEANUP_FEATURE_GATE")]
+    TodayViewV3IncrementalCleanupFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_LOAD_PRESENTATION_FEATURE_GATE")]
+    TodayViewV3LoadPresentationFeatureGate,
     #[serde(rename = "TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE")]
     TodayViewV3MultiPageGoPassFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_SWIPE_GUARD_FEATURE_GATE")]
+    TodayViewV3SwipeGuardFeatureGate,
+    #[serde(rename = "TODAY_VIEW_V3_TAB_RESTORE_FEATURE_GATE")]
+    TodayViewV3TabRestoreFeatureGate,
     #[serde(rename = "TRANSFER_FEATURE_GATE")]
     TransferFeatureGate,
+    #[serde(rename = "USE_HALF_LEVELS_FOR_CP_LIMITER_FEATURE_GATE")]
+    UseHalfLevelsForCpLimiterFeatureGate,
     #[serde(rename = "VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE")]
     VnextFastAttackInputTypeFeatureGate,
+    #[serde(rename = "WAIT_FOR_DOWNSCALED_STATS_BEFORE_ENTER_STATE_FEATURE_GATE")]
+    WaitForDownscaledStatsBeforeEnterStateFeatureGate,
     #[serde(rename = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE")]
     WayfarerSubmitLinkoutFeatureGate,
     #[serde(rename = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR")]

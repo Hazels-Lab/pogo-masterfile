@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 337 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 338 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { MoveSequenceSettings } from "../types";
@@ -1507,6 +1507,14 @@ export type MoveSequenceSettingsKarateChopFast = S<
 				"sys ui-sync",
 				"sys complete",
 			];
+		}
+	>
+>;
+export type MoveSequenceSettingsKowtowCleave = S<
+	MoveSequenceSettings<
+		"sequence_kowtow_cleave",
+		{
+			sequence: ["anim attacker atk-move", "wait 0.5", "vfx kowtow_cleave", "sfx attacker 018-0_darkest_lariat", "wait 1.0", "sys ui-sync", "sys complete"];
 		}
 	>
 >;
@@ -3562,6 +3570,7 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsIronHead
 	| MoveSequenceSettingsIronTailFast
 	| MoveSequenceSettingsKarateChopFast
+	| MoveSequenceSettingsKowtowCleave
 	| MoveSequenceSettingsLastResort
 	| MoveSequenceSettingsLeafBlade
 	| MoveSequenceSettingsLeafStorm

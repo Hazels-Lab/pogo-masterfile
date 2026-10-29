@@ -151,6 +151,7 @@ import type {
 	MoveSequenceSettingsIronHead,
 	MoveSequenceSettingsIronTailFast,
 	MoveSequenceSettingsKarateChopFast,
+	MoveSequenceSettingsKowtowCleave,
 	MoveSequenceSettingsLastResort,
 	MoveSequenceSettingsLeafageFast,
 	MoveSequenceSettingsLeafBlade,
@@ -491,6 +492,7 @@ export interface MoveSequenceSettingsLookup {
 	sequence_iron_head: MoveSequenceSettingsIronHead;
 	sequence_iron_tail_fast: MoveSequenceSettingsIronTailFast;
 	sequence_karate_chop_fast: MoveSequenceSettingsKarateChopFast;
+	sequence_kowtow_cleave: MoveSequenceSettingsKowtowCleave;
 	sequence_last_resort: MoveSequenceSettingsLastResort;
 	sequence_leaf_blade: MoveSequenceSettingsLeafBlade;
 	sequence_leaf_storm: MoveSequenceSettingsLeafStorm;

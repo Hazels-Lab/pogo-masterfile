@@ -206,6 +206,7 @@ const (
 	BadgeSettingsTemplateIDBadgeEvent0271                                   BadgeSettingsTemplateID = "BADGE_EVENT_0271"
 	BadgeSettingsTemplateIDBadgeEvent0272                                   BadgeSettingsTemplateID = "BADGE_EVENT_0272"
 	BadgeSettingsTemplateIDBadgeEvent0273                                   BadgeSettingsTemplateID = "BADGE_EVENT_0273"
+	BadgeSettingsTemplateIDBadgeEvent0275                                   BadgeSettingsTemplateID = "BADGE_EVENT_0275"
 	BadgeSettingsTemplateIDBadgeEvent0279                                   BadgeSettingsTemplateID = "BADGE_EVENT_0279"
 	BadgeSettingsTemplateIDBadgeEvent0280                                   BadgeSettingsTemplateID = "BADGE_EVENT_0280"
 	BadgeSettingsTemplateIDBadgeEvent0281                                   BadgeSettingsTemplateID = "BADGE_EVENT_0281"
@@ -1320,6 +1321,7 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeEvent0271,
 	BadgeSettingsTemplateIDBadgeEvent0272,
 	BadgeSettingsTemplateIDBadgeEvent0273,
+	BadgeSettingsTemplateIDBadgeEvent0275,
 	BadgeSettingsTemplateIDBadgeEvent0279,
 	BadgeSettingsTemplateIDBadgeEvent0280,
 	BadgeSettingsTemplateIDBadgeEvent0281,

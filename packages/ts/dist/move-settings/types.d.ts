@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", 408 entries (structural types).
+// Generated from Pokémon GO masterfile — group "moveSettings", 409 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -22,7 +22,7 @@ export interface MoveSettingsData {
 	energyDelta?: number;
 	healScalar?: number;
 	isLocked?: boolean;
-	movementId: string;
+	movementId: number | string;
 	pokemonType: TypeEffectiveTemplateID;
 	power?: number;
 	staminaLossScalar?: number;

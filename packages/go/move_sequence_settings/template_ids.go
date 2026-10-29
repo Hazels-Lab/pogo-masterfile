@@ -155,6 +155,7 @@ const (
 	MoveSequenceSettingsTemplateIDSequenceIronHead              MoveSequenceSettingsTemplateID = "sequence_iron_head"
 	MoveSequenceSettingsTemplateIDSequenceIronTailFast          MoveSequenceSettingsTemplateID = "sequence_iron_tail_fast"
 	MoveSequenceSettingsTemplateIDSequenceKarateChopFast        MoveSequenceSettingsTemplateID = "sequence_karate_chop_fast"
+	MoveSequenceSettingsTemplateIDSequenceKowtowCleave          MoveSequenceSettingsTemplateID = "sequence_kowtow_cleave"
 	MoveSequenceSettingsTemplateIDSequenceLastResort            MoveSequenceSettingsTemplateID = "sequence_last_resort"
 	MoveSequenceSettingsTemplateIDSequenceLeafBlade             MoveSequenceSettingsTemplateID = "sequence_leaf_blade"
 	MoveSequenceSettingsTemplateIDSequenceLeafStorm             MoveSequenceSettingsTemplateID = "sequence_leaf_storm"
@@ -495,6 +496,7 @@ var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequenceIronHead,
 	MoveSequenceSettingsTemplateIDSequenceIronTailFast,
 	MoveSequenceSettingsTemplateIDSequenceKarateChopFast,
+	MoveSequenceSettingsTemplateIDSequenceKowtowCleave,
 	MoveSequenceSettingsTemplateIDSequenceLastResort,
 	MoveSequenceSettingsTemplateIDSequenceLeafBlade,
 	MoveSequenceSettingsTemplateIDSequenceLeafStorm,

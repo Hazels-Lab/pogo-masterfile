@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 226 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides-form", 228 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -9109,6 +9109,82 @@ export type PokemonExtendedSettingsV0780PokemonDrampaNormal = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0808PokemonMeltanNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0808_POKEMON_MELTAN_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -8;
+						yOffset: -2.5;
+					};
+					maxBattleVisualSettings: {
+						scale: 104;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 52;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1.1;
+					};
+					maxStationVisualSettings: {
+						scale: 8;
+					};
+				},
+			];
+			form: "MELTAN_NORMAL";
+			sizeSettings: {
+				mLowerBound: 0.15;
+				mUpperBound: 0.25;
+				xlUpperBound: 0.3;
+				xsLowerBound: 0.1;
+				xxlUpperBound: 0.35;
+				xxsLowerBound: 0.098;
+			};
+			uniqueId: "MELTAN";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0809PokemonMelmetalNormal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0809_POKEMON_MELMETAL_NORMAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 10.5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 35;
+						maxReticleSize: 14;
+						scale: 6;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1.15;
+					};
+					maxStationVisualSettings: {
+						scale: 0.825;
+					};
+				},
+			];
+			form: "MELMETAL_NORMAL";
+			sizeSettings: {
+				mLowerBound: 1.875;
+				mUpperBound: 3.125;
+				xlUpperBound: 3.75;
+				xsLowerBound: 1.25;
+				xxlUpperBound: 3.875;
+				xxsLowerBound: 1.225;
+			};
+			uniqueId: "MELMETAL";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0810PokemonGrookeyNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0810_POKEMON_GROOKEY_NORMAL",
@@ -10616,6 +10692,8 @@ export type PokemonExtendedSettingsBreadOverridesFormMasterfileEntry =
 	| PokemonExtendedSettingsV0763PokemonTsareenaNormal
 	| PokemonExtendedSettingsV0766PokemonPassimianNormal
 	| PokemonExtendedSettingsV0780PokemonDrampaNormal
+	| PokemonExtendedSettingsV0808PokemonMeltanNormal
+	| PokemonExtendedSettingsV0809PokemonMelmetalNormal
 	| PokemonExtendedSettingsV0810PokemonGrookeyNormal
 	| PokemonExtendedSettingsV0811PokemonThwackeyNormal
 	| PokemonExtendedSettingsV0812PokemonRillaboomNormal

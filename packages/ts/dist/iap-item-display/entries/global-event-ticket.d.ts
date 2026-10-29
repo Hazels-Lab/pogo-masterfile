@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -30,15 +30,33 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg";
 			sku: "pgorelease.general2.ticket.3";
-			skuDisableTime: "2026-10-10T17:00:00";
-			skuDisableTimeUtcMs: "1791651600000";
+			skuDisableTime: "2026-11-21T17:00:00";
+			skuDisableTimeUtcMs: "1795280400000";
 			skuEnableTime: "2019-03-14T08:00:00";
 			skuEnableTimeUtcMs: "1552550400000";
 			sortOrder: 2;
 			spriteId: "general1.ticket.2";
-			title: "general1.ticket_CD_Zorua26_title";
+			title: "general1.ticket_CD_Pawniard26_title";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
+export type IapItemDisplayGeneral2Ticket5 = S<
+	IapItemDisplay<
+		"general2.ticket.5",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F452fd1a0_PGO-MCS_Chandelure_Super_Mega_Raid_Day_v3_1024x576.jpg";
+			sku: "pgorelease.general2.ticket.5";
+			skuDisableTime: "2026-10-31T17:00:00";
+			skuDisableTimeUtcMs: "1793466000000";
+			skuEnableTime: "2019-03-14T08:00:00";
+			skuEnableTimeUtcMs: "1552550400000";
+			sortOrder: 2;
+			spriteId: "general2.ticket.5";
+			title: "general2.ticket.5_MegaChandelureRaidDay";
 			useEnvironmentPrefix: true;
 		}
 	>
@@ -80,9 +98,29 @@ export type IapItemDisplayMonth2DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
+export type IapItemDisplayOctober22026DeluxeEventPassTrackUnlockRedirect = S<
+	IapItemDisplay<
+		"OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb20824cf_PGO-MCS_GO_Pass_Halloween_2026-v2-1024x576.jpg";
+			sku: "pgorelease.october2_2026_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-11-07T20:00:00";
+			skuDisableTimeUtcMs: "1794081600000";
+			skuEnableTime: "2025-10-27T10:00:00";
+			skuEnableTimeUtcMs: "1761559200000";
+			sortOrder: 1;
+			title: "season_pass_premium_track_title_halloween2026";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
+	| IapItemDisplayGeneral2Ticket5
 	| IapItemDisplayGeneral2Ticket11
-	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect;
+	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect
+	| IapItemDisplayOctober22026DeluxeEventPassTrackUnlockRedirect;

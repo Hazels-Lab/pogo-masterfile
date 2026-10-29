@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 146 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "bread-overrides", 148 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -4274,6 +4274,80 @@ export type PokemonExtendedSettingsV0780PokemonDrampa = S<
 		}
 	>
 >;
+export type PokemonExtendedSettingsV0808PokemonMeltan = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0808_POKEMON_MELTAN",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleTrainerVisualSettings: {
+						xOffset: -8;
+						yOffset: -2.5;
+					};
+					maxBattleVisualSettings: {
+						scale: 104;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 28;
+						maxReticleSize: 14;
+						scale: 52;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1.1;
+					};
+					maxStationVisualSettings: {
+						scale: 8;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 0.15;
+				mUpperBound: 0.25;
+				xlUpperBound: 0.3;
+				xsLowerBound: 0.1;
+				xxlUpperBound: 0.35;
+				xxsLowerBound: 0.098;
+			};
+			uniqueId: "MELTAN";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0809PokemonMelmetal = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0809_POKEMON_MELMETAL",
+		{
+			breadOverrides: [
+				{
+					breadMode: "BREAD_MODE";
+					maxBattleVisualSettings: {
+						scale: 10.5;
+					};
+					maxEncounterVisualSettings: {
+						cameraDistance: 35;
+						maxReticleSize: 14;
+						scale: 6;
+					};
+					maxPowerspotTopperVisualSettings: {
+						scale: 1.15;
+					};
+					maxStationVisualSettings: {
+						scale: 0.825;
+					};
+				},
+			];
+			sizeSettings: {
+				mLowerBound: 1.875;
+				mUpperBound: 3.125;
+				xlUpperBound: 3.75;
+				xsLowerBound: 1.25;
+				xxlUpperBound: 3.875;
+				xxsLowerBound: 1.225;
+			};
+			uniqueId: "MELMETAL";
+		}
+	>
+>;
 export type PokemonExtendedSettingsV0810PokemonGrookey = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0810_POKEMON_GROOKEY",
@@ -5509,6 +5583,8 @@ export type PokemonExtendedSettingsBreadOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0763PokemonTsareena
 	| PokemonExtendedSettingsV0766PokemonPassimian
 	| PokemonExtendedSettingsV0780PokemonDrampa
+	| PokemonExtendedSettingsV0808PokemonMeltan
+	| PokemonExtendedSettingsV0809PokemonMelmetal
 	| PokemonExtendedSettingsV0810PokemonGrookey
 	| PokemonExtendedSettingsV0811PokemonThwackey
 	| PokemonExtendedSettingsV0812PokemonRillaboom

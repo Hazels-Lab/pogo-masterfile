@@ -117,6 +117,7 @@ pub mod combat_npc_personality;
 pub mod combat_npc_trainer;
 pub mod combat_ranking_proto_settings;
 pub mod combat_type;
+pub mod event_pass_settings;
 pub mod event_pass_tier_settings;
 pub mod evolution_chain_display_settings;
 pub mod evolution_quest_template;
@@ -186,9 +187,9 @@ pub enum MasterfileEntry {
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
@@ -203,9 +204,9 @@ pub enum MasterfileEntry {
     ),
     TemporaryEvolutionSettings(temporary_evolution_settings::TemporaryEvolutionSettingsEntry),
     ClientQuestTemplate(client_quest_template::ClientQuestTemplateEntry),
+    FeatureGate(feature_gate::FeatureGateEntry),
     VsSeekerLoot(vs_seeker_loot::VsSeekerLootEntry),
     PhotoSetsSettingsProto(photo_sets_settings_proto::PhotoSetsSettingsProtoEntry),
-    FeatureGate(feature_gate::FeatureGateEntry),
     EvolutionQuestTemplate(evolution_quest_template::EvolutionQuestTemplateEntry),
     LimitedPurchaseSkuSettings(limited_purchase_sku_settings::LimitedPurchaseSkuSettingsEntry),
     ItemExpirationSettings(item_expiration_settings::ItemExpirationSettingsEntry),
@@ -239,6 +240,7 @@ pub enum MasterfileEntry {
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
+    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
@@ -293,7 +295,6 @@ pub enum MasterfileEntry {
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
     EventMapRefreshSettings(singletons::EventMapRefreshSettingsEntry),
-    EventPassSettings(singletons::EventPassSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -327,6 +328,7 @@ pub enum MasterfileEntry {
     MegaEvoSettings(singletons::MegaEvoSettingsEntry),
     MonodepthSettings(singletons::MonodepthSettingsEntry),
     MpSettings(singletons::MpSettingsEntry),
+    MusicSettings(singletons::MusicSettingsEntry),
     NaturalArtDayNightFeatureSettings(singletons::NaturalArtDayNightFeatureSettingsEntry),
     NearbyPokemonSettings(singletons::NearbyPokemonSettingsEntry),
     NeutralAvatarSettings(singletons::NeutralAvatarSettingsEntry),
@@ -433,11 +435,11 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
-                "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
-                "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
                 "eventPassTierSettings" => {
                     serde_json::from_value(value).map(Self::EventPassTierSettings)
                 }
+                "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
+                "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
                 "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
@@ -466,11 +468,11 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "clientQuestTemplate" => {
                     serde_json::from_value(value).map(Self::ClientQuestTemplate)
                 }
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "vsSeekerLoot" => serde_json::from_value(value).map(Self::VsSeekerLoot),
                 "photoSetsSettingsProto" => {
                     serde_json::from_value(value).map(Self::PhotoSetsSettingsProto)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "evolutionQuestTemplate" => {
                     serde_json::from_value(value).map(Self::EvolutionQuestTemplate)
                 }
@@ -536,6 +538,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }
@@ -668,7 +671,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "eventMapRefreshSettings" => {
                     serde_json::from_value(value).map(Self::EventMapRefreshSettings)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }
@@ -727,6 +729,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "megaEvoSettings" => serde_json::from_value(value).map(Self::MegaEvoSettings),
                 "monodepthSettings" => serde_json::from_value(value).map(Self::MonodepthSettings),
                 "mpSettings" => serde_json::from_value(value).map(Self::MpSettings),
+                "musicSettings" => serde_json::from_value(value).map(Self::MusicSettings),
                 "naturalArtDayNightFeatureSettings" => {
                     serde_json::from_value(value).map(Self::NaturalArtDayNightFeatureSettings)
                 }

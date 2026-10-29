@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 59 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 61 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1415,6 +1415,78 @@ export type ItemSettingsItemEventTicketS24Nov9Gowaol = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS24Nov21Community = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_NOV21_COMMUNITY",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CD_Pawniard26";
+			globalEventTicket: {
+				backgroundImageUrl: "https://storage.googleapis.com/prod-public-images/pink-ticket-generic1024x512.jpg";
+				clientEventEndTimeUtcMs: "1795280400000";
+				clientEventStartTimeUtcMs: "1795269600000";
+				detailsLinkKey: "details_link_key";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg";
+				eventEndTime: "2026-11-21T17:00:00";
+				eventStartTime: "2026-11-21T14:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_NOV21_COMMUNITY_TO_GIFT";
+				iconRewards: [
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "KINGAMBIT_NORMAL";
+							};
+							pokemonId: "KINGAMBIT";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_INCUBATOR_BASIC";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							amount: 1;
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Pawniard26";
+				textRewardsKey: "text_rewards_key_CD_Pawniard26";
+			};
+			ignoreInventorySpace: true;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CD_Pawniard26_title";
+		}
+	>
+>;
+export type ItemSettingsItemEventTicketS24Nov21CommunityToGift = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_NOV21_COMMUNITY_TO_GIFT",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_pink_details_CD_Pawniard26";
+			globalEventTicket: {
+				clientEventEndTimeUtcMs: "1795280400000";
+				clientEventStartTimeUtcMs: "1795269600000";
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg";
+				eventEndTime: "2026-11-21T17:00:00";
+				eventStartTime: "2026-11-21T14:00:00";
+				itemBagDescriptionKey: "item_event_ticket_pink_desc_CD_Pawniard26";
+				ticketItem: "ITEM_EVENT_TICKET_S24_NOV21_COMMUNITY";
+			};
+			ignoreInventorySpace: true;
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general1.ticket_CD_Pawniard26_title";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS24Oct3Maxbattle = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE",
@@ -2065,6 +2137,8 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS23202612
 	| ItemSettingsItemEventTicketS23202612ToGift
 	| ItemSettingsItemEventTicketS24Nov9Gowaol
+	| ItemSettingsItemEventTicketS24Nov21Community
+	| ItemSettingsItemEventTicketS24Nov21CommunityToGift
 	| ItemSettingsItemEventTicketS24Oct3Maxbattle
 	| ItemSettingsItemEventTicketS24Oct10Community
 	| ItemSettingsItemEventTicketS24Oct10CommunityToGift

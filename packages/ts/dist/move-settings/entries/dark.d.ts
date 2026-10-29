@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "dark", 17 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "dark", 18 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -267,6 +267,26 @@ export type MoveSettingsV0407MoveAuraWheelDark = S<
 		}
 	>
 >;
+export type MoveSettingsV0615MoveKowtowCleave = S<
+	MoveSettings<
+		"V0615_MOVE_KOWTOW_CLEAVE",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			damageWindowEndMs: 1900;
+			damageWindowStartMs: 1300;
+			durationMs: 2000;
+			energyDelta: -50;
+			movementId: 615;
+			pokemonType: "POKEMON_TYPE_DARK";
+			power: 85;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "kowtow_cleave";
+		}
+	>
+>;
 export type MoveSettingsVmMoveTempEvolutionMegaV0229PokemonHoundoom = S<
 	MoveSettings<
 		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0229_POKEMON_HOUNDOOM",
@@ -358,6 +378,7 @@ export type MoveSettingsDarkMasterfileEntry =
 	| MoveSettingsV0370MoveObstruct
 	| MoveSettingsV0400MoveDarkestLariat
 	| MoveSettingsV0407MoveAuraWheelDark
+	| MoveSettingsV0615MoveKowtowCleave
 	| MoveSettingsVmMoveTempEvolutionMegaV0229PokemonHoundoom
 	| MoveSettingsVnBm016
 	| MoveSettingsVnBm041

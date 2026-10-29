@@ -30,16 +30,31 @@ pub struct Item {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct NeutralAvatarItemTemplate {
+    pub display_template_id: String,
+    pub item_template_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct PlayerAttribute {
-    pub duration_mins: u64,
+    pub duration_mins: Option<u64>,
     pub key: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum FormValue {
+    Uint(u64),
+    String(String),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
-    pub form: String,
+    pub costume: Option<String>,
+    pub form: FormValue,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -64,6 +79,7 @@ pub struct Rewards {
     pub candy: Option<Candy>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
+    pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
     pub player_attribute: Option<PlayerAttribute>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
