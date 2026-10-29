@@ -258,6 +258,7 @@ import type {
 	IapItemDisplayFlairFreeBundle0,
 	IapItemDisplayGeneral1Ticket5,
 	IapItemDisplayGeneral2Ticket3,
+	IapItemDisplayGeneral2Ticket5,
 	IapItemDisplayGeneral2Ticket11,
 	IapItemDisplayGeneral4Medium1,
 	IapItemDisplayGeneral6Small1,
@@ -292,6 +293,9 @@ import type {
 	IapItemDisplayOctober12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayOctober12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect,
+	IapItemDisplayOctober22026DeluxeEventPassTrackUnlock,
+	IapItemDisplayOctober22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayOctober22026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayPaidraidticket1,
 	IapItemDisplayPaidraidticket3,
 	IapItemDisplayPgoreleaseBundle1,
@@ -1349,6 +1353,7 @@ export interface IapItemDisplayLookup {
 	FLAIR_FREE_BUNDLE_0: IapItemDisplayFlairFreeBundle0;
 	"general1.ticket.5": IapItemDisplayGeneral1Ticket5;
 	"general2.ticket.3": IapItemDisplayGeneral2Ticket3;
+	"general2.ticket.5": IapItemDisplayGeneral2Ticket5;
 	"general2.ticket.11": IapItemDisplayGeneral2Ticket11;
 	"general4.medium.1": IapItemDisplayGeneral4Medium1;
 	"general6.small.1": IapItemDisplayGeneral6Small1;
@@ -1383,6 +1388,9 @@ export interface IapItemDisplayLookup {
 	OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayOctober12026DeluxeEventPassTrackUnlock;
 	OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayOctober12026DeluxeEventPassTrackUnlockPlusPoints;
 	OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT: IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect;
+	OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayOctober22026DeluxeEventPassTrackUnlock;
+	OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayOctober22026DeluxeEventPassTrackUnlockPlusPoints;
+	OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT: IapItemDisplayOctober22026DeluxeEventPassTrackUnlockRedirect;
 	"paidraidticket.1": IapItemDisplayPaidraidticket1;
 	"paidraidticket.3": IapItemDisplayPaidraidticket3;
 	"pgorelease.bundle.1": IapItemDisplayPgoreleaseBundle1;

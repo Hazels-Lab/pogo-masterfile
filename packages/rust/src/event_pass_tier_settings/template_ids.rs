@@ -7,6 +7,438 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum EventPassTierSettingsTemplateId {
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_1_FREE")]
+    EventPassHalloween2026Event1Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_1_PREMIUM")]
+    EventPassHalloween2026Event1Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_2_FREE")]
+    EventPassHalloween2026Event2Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_2_PREMIUM")]
+    EventPassHalloween2026Event2Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_3_FREE")]
+    EventPassHalloween2026Event3Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_3_PREMIUM")]
+    EventPassHalloween2026Event3Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_4_FREE")]
+    EventPassHalloween2026Event4Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_4_PREMIUM")]
+    EventPassHalloween2026Event4Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_5_FREE")]
+    EventPassHalloween2026Event5Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_5_PREMIUM")]
+    EventPassHalloween2026Event5Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_6_FREE")]
+    EventPassHalloween2026Event6Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_6_PREMIUM")]
+    EventPassHalloween2026Event6Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_7_FREE")]
+    EventPassHalloween2026Event7Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_7_PREMIUM")]
+    EventPassHalloween2026Event7Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_8_FREE")]
+    EventPassHalloween2026Event8Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_8_PREMIUM")]
+    EventPassHalloween2026Event8Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_9_FREE")]
+    EventPassHalloween2026Event9Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_9_PREMIUM")]
+    EventPassHalloween2026Event9Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_10_FREE")]
+    EventPassHalloween2026Event10Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_10_PREMIUM")]
+    EventPassHalloween2026Event10Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_11_FREE")]
+    EventPassHalloween2026Event11Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_11_PREMIUM")]
+    EventPassHalloween2026Event11Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_12_FREE")]
+    EventPassHalloween2026Event12Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_12_PREMIUM")]
+    EventPassHalloween2026Event12Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_13_FREE")]
+    EventPassHalloween2026Event13Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_13_PREMIUM")]
+    EventPassHalloween2026Event13Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_14_FREE")]
+    EventPassHalloween2026Event14Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_14_PREMIUM")]
+    EventPassHalloween2026Event14Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_15_FREE")]
+    EventPassHalloween2026Event15Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_15_PREMIUM")]
+    EventPassHalloween2026Event15Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_16_FREE")]
+    EventPassHalloween2026Event16Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_16_PREMIUM")]
+    EventPassHalloween2026Event16Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_17_FREE")]
+    EventPassHalloween2026Event17Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_17_PREMIUM")]
+    EventPassHalloween2026Event17Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_18_FREE")]
+    EventPassHalloween2026Event18Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_18_PREMIUM")]
+    EventPassHalloween2026Event18Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_19_FREE")]
+    EventPassHalloween2026Event19Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_19_PREMIUM")]
+    EventPassHalloween2026Event19Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_20_FREE")]
+    EventPassHalloween2026Event20Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_20_PREMIUM")]
+    EventPassHalloween2026Event20Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_21_FREE")]
+    EventPassHalloween2026Event21Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_21_PREMIUM")]
+    EventPassHalloween2026Event21Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_22_FREE")]
+    EventPassHalloween2026Event22Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_22_PREMIUM")]
+    EventPassHalloween2026Event22Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_23_FREE")]
+    EventPassHalloween2026Event23Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_23_PREMIUM")]
+    EventPassHalloween2026Event23Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_24_FREE")]
+    EventPassHalloween2026Event24Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_24_PREMIUM")]
+    EventPassHalloween2026Event24Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_25_FREE")]
+    EventPassHalloween2026Event25Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_25_PREMIUM")]
+    EventPassHalloween2026Event25Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_26_FREE")]
+    EventPassHalloween2026Event26Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_26_PREMIUM")]
+    EventPassHalloween2026Event26Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_27_FREE")]
+    EventPassHalloween2026Event27Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_27_PREMIUM")]
+    EventPassHalloween2026Event27Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_28_FREE")]
+    EventPassHalloween2026Event28Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_28_PREMIUM")]
+    EventPassHalloween2026Event28Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_29_FREE")]
+    EventPassHalloween2026Event29Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_29_PREMIUM")]
+    EventPassHalloween2026Event29Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_30_FREE")]
+    EventPassHalloween2026Event30Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_30_PREMIUM")]
+    EventPassHalloween2026Event30Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_31_FREE")]
+    EventPassHalloween2026Event31Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_31_PREMIUM")]
+    EventPassHalloween2026Event31Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_32_FREE")]
+    EventPassHalloween2026Event32Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_32_PREMIUM")]
+    EventPassHalloween2026Event32Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_33_FREE")]
+    EventPassHalloween2026Event33Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_33_PREMIUM")]
+    EventPassHalloween2026Event33Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_34_FREE")]
+    EventPassHalloween2026Event34Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_34_PREMIUM")]
+    EventPassHalloween2026Event34Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_35_FREE")]
+    EventPassHalloween2026Event35Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_35_PREMIUM")]
+    EventPassHalloween2026Event35Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_36_FREE")]
+    EventPassHalloween2026Event36Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_36_PREMIUM")]
+    EventPassHalloween2026Event36Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_37_FREE")]
+    EventPassHalloween2026Event37Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_37_PREMIUM")]
+    EventPassHalloween2026Event37Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_38_FREE")]
+    EventPassHalloween2026Event38Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_38_PREMIUM")]
+    EventPassHalloween2026Event38Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_39_FREE")]
+    EventPassHalloween2026Event39Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_39_PREMIUM")]
+    EventPassHalloween2026Event39Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_40_FREE")]
+    EventPassHalloween2026Event40Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_40_PREMIUM")]
+    EventPassHalloween2026Event40Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_41_FREE")]
+    EventPassHalloween2026Event41Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_41_PREMIUM")]
+    EventPassHalloween2026Event41Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_42_FREE")]
+    EventPassHalloween2026Event42Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_42_PREMIUM")]
+    EventPassHalloween2026Event42Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_43_FREE")]
+    EventPassHalloween2026Event43Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_43_PREMIUM")]
+    EventPassHalloween2026Event43Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_44_FREE")]
+    EventPassHalloween2026Event44Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_44_PREMIUM")]
+    EventPassHalloween2026Event44Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_45_FREE")]
+    EventPassHalloween2026Event45Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_45_PREMIUM")]
+    EventPassHalloween2026Event45Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_46_FREE")]
+    EventPassHalloween2026Event46Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_46_PREMIUM")]
+    EventPassHalloween2026Event46Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_47_FREE")]
+    EventPassHalloween2026Event47Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_47_PREMIUM")]
+    EventPassHalloween2026Event47Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_48_FREE")]
+    EventPassHalloween2026Event48Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_48_PREMIUM")]
+    EventPassHalloween2026Event48Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_49_FREE")]
+    EventPassHalloween2026Event49Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_49_PREMIUM")]
+    EventPassHalloween2026Event49Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_50_FREE")]
+    EventPassHalloween2026Event50Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_50_PREMIUM")]
+    EventPassHalloween2026Event50Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_51_FREE")]
+    EventPassHalloween2026Event51Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_51_PREMIUM")]
+    EventPassHalloween2026Event51Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_52_FREE")]
+    EventPassHalloween2026Event52Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_52_PREMIUM")]
+    EventPassHalloween2026Event52Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_53_FREE")]
+    EventPassHalloween2026Event53Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_53_PREMIUM")]
+    EventPassHalloween2026Event53Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_54_FREE")]
+    EventPassHalloween2026Event54Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_54_PREMIUM")]
+    EventPassHalloween2026Event54Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_55_FREE")]
+    EventPassHalloween2026Event55Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_55_PREMIUM")]
+    EventPassHalloween2026Event55Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_56_FREE")]
+    EventPassHalloween2026Event56Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_56_PREMIUM")]
+    EventPassHalloween2026Event56Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_57_FREE")]
+    EventPassHalloween2026Event57Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_57_PREMIUM")]
+    EventPassHalloween2026Event57Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_58_FREE")]
+    EventPassHalloween2026Event58Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_58_PREMIUM")]
+    EventPassHalloween2026Event58Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_59_FREE")]
+    EventPassHalloween2026Event59Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_59_PREMIUM")]
+    EventPassHalloween2026Event59Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_60_FREE")]
+    EventPassHalloween2026Event60Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_60_PREMIUM")]
+    EventPassHalloween2026Event60Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_61_FREE")]
+    EventPassHalloween2026Event61Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_61_PREMIUM")]
+    EventPassHalloween2026Event61Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_62_FREE")]
+    EventPassHalloween2026Event62Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_62_PREMIUM")]
+    EventPassHalloween2026Event62Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_63_FREE")]
+    EventPassHalloween2026Event63Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_63_PREMIUM")]
+    EventPassHalloween2026Event63Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_64_FREE")]
+    EventPassHalloween2026Event64Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_64_PREMIUM")]
+    EventPassHalloween2026Event64Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_65_FREE")]
+    EventPassHalloween2026Event65Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_65_PREMIUM")]
+    EventPassHalloween2026Event65Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_66_FREE")]
+    EventPassHalloween2026Event66Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_66_PREMIUM")]
+    EventPassHalloween2026Event66Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_67_FREE")]
+    EventPassHalloween2026Event67Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_67_PREMIUM")]
+    EventPassHalloween2026Event67Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_68_FREE")]
+    EventPassHalloween2026Event68Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_68_PREMIUM")]
+    EventPassHalloween2026Event68Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_69_FREE")]
+    EventPassHalloween2026Event69Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_69_PREMIUM")]
+    EventPassHalloween2026Event69Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_70_FREE")]
+    EventPassHalloween2026Event70Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_70_PREMIUM")]
+    EventPassHalloween2026Event70Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_71_FREE")]
+    EventPassHalloween2026Event71Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_71_PREMIUM")]
+    EventPassHalloween2026Event71Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_72_FREE")]
+    EventPassHalloween2026Event72Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_72_PREMIUM")]
+    EventPassHalloween2026Event72Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_73_FREE")]
+    EventPassHalloween2026Event73Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_73_PREMIUM")]
+    EventPassHalloween2026Event73Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_74_FREE")]
+    EventPassHalloween2026Event74Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_74_PREMIUM")]
+    EventPassHalloween2026Event74Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_75_FREE")]
+    EventPassHalloween2026Event75Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_75_PREMIUM")]
+    EventPassHalloween2026Event75Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_76_FREE")]
+    EventPassHalloween2026Event76Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_76_PREMIUM")]
+    EventPassHalloween2026Event76Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_77_FREE")]
+    EventPassHalloween2026Event77Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_77_PREMIUM")]
+    EventPassHalloween2026Event77Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_78_FREE")]
+    EventPassHalloween2026Event78Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_78_PREMIUM")]
+    EventPassHalloween2026Event78Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_79_FREE")]
+    EventPassHalloween2026Event79Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_79_PREMIUM")]
+    EventPassHalloween2026Event79Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_80_FREE")]
+    EventPassHalloween2026Event80Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_80_PREMIUM")]
+    EventPassHalloween2026Event80Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_81_FREE")]
+    EventPassHalloween2026Event81Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_81_PREMIUM")]
+    EventPassHalloween2026Event81Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_82_FREE")]
+    EventPassHalloween2026Event82Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_82_PREMIUM")]
+    EventPassHalloween2026Event82Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_83_FREE")]
+    EventPassHalloween2026Event83Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_83_PREMIUM")]
+    EventPassHalloween2026Event83Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_84_FREE")]
+    EventPassHalloween2026Event84Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_84_PREMIUM")]
+    EventPassHalloween2026Event84Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_85_FREE")]
+    EventPassHalloween2026Event85Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_85_PREMIUM")]
+    EventPassHalloween2026Event85Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_86_FREE")]
+    EventPassHalloween2026Event86Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_86_PREMIUM")]
+    EventPassHalloween2026Event86Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_87_FREE")]
+    EventPassHalloween2026Event87Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_87_PREMIUM")]
+    EventPassHalloween2026Event87Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_88_FREE")]
+    EventPassHalloween2026Event88Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_88_PREMIUM")]
+    EventPassHalloween2026Event88Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_89_FREE")]
+    EventPassHalloween2026Event89Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_89_PREMIUM")]
+    EventPassHalloween2026Event89Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_90_FREE")]
+    EventPassHalloween2026Event90Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_90_PREMIUM")]
+    EventPassHalloween2026Event90Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_91_FREE")]
+    EventPassHalloween2026Event91Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_91_PREMIUM")]
+    EventPassHalloween2026Event91Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_92_FREE")]
+    EventPassHalloween2026Event92Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_92_PREMIUM")]
+    EventPassHalloween2026Event92Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_93_FREE")]
+    EventPassHalloween2026Event93Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_93_PREMIUM")]
+    EventPassHalloween2026Event93Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_94_FREE")]
+    EventPassHalloween2026Event94Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_94_PREMIUM")]
+    EventPassHalloween2026Event94Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_95_FREE")]
+    EventPassHalloween2026Event95Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_95_PREMIUM")]
+    EventPassHalloween2026Event95Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_96_FREE")]
+    EventPassHalloween2026Event96Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_96_PREMIUM")]
+    EventPassHalloween2026Event96Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_97_FREE")]
+    EventPassHalloween2026Event97Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_97_PREMIUM")]
+    EventPassHalloween2026Event97Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_98_FREE")]
+    EventPassHalloween2026Event98Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_98_PREMIUM")]
+    EventPassHalloween2026Event98Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_99_FREE")]
+    EventPassHalloween2026Event99Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_99_PREMIUM")]
+    EventPassHalloween2026Event99Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_100_FREE")]
+    EventPassHalloween2026Event100Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_100_PREMIUM")]
+    EventPassHalloween2026Event100Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_101_FREE")]
+    EventPassHalloween2026Event101Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_101_PREMIUM")]
+    EventPassHalloween2026Event101Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_102_FREE")]
+    EventPassHalloween2026Event102Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_102_PREMIUM")]
+    EventPassHalloween2026Event102Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_103_FREE")]
+    EventPassHalloween2026Event103Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_103_PREMIUM")]
+    EventPassHalloween2026Event103Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_104_FREE")]
+    EventPassHalloween2026Event104Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_104_PREMIUM")]
+    EventPassHalloween2026Event104Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_105_FREE")]
+    EventPassHalloween2026Event105Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_105_PREMIUM")]
+    EventPassHalloween2026Event105Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_106_FREE")]
+    EventPassHalloween2026Event106Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_106_PREMIUM")]
+    EventPassHalloween2026Event106Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_107_FREE")]
+    EventPassHalloween2026Event107Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_107_PREMIUM")]
+    EventPassHalloween2026Event107Premium,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_108_FREE")]
+    EventPassHalloween2026Event108Free,
+    #[serde(rename = "EVENT_PASS_HALLOWEEN_2026_EVENT_108_PREMIUM")]
+    EventPassHalloween2026Event108Premium,
     #[serde(rename = "EVENT_PASS_OCTOBER2026_SEASON_1_FREE")]
     EventPassOctober2026Season1Free,
     #[serde(rename = "EVENT_PASS_OCTOBER2026_SEASON_1_PREMIUM")]

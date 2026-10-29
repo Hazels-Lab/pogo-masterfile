@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 173 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 175 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -73,6 +73,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_gray_details_SandileHatchDay26"
 		| "item_event_ticket_pink_details_CD_Frigibax26"
 		| "item_event_ticket_pink_details_CD_Nickit26"
+		| "item_event_ticket_pink_details_CD_Pawniard26"
 		| "item_event_ticket_pink_details_CD_Sobble26"
 		| "item_event_ticket_pink_details_CD_Zorua26"
 		| "item_event_ticket_pink_details_CDC_Deino26"
@@ -204,7 +205,8 @@ export interface ItemSettingsData {
 			| "1792256400000"
 			| "1792861200000"
 			| "1793466000000"
-			| "1794765600000";
+			| "1794765600000"
+			| "1795280400000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -242,7 +244,8 @@ export interface ItemSettingsData {
 			| "1792234800000"
 			| "1792850400000"
 			| "1793455200000"
-			| "1794650400000";
+			| "1794650400000"
+			| "1795269600000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -280,6 +283,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fgo_tour_kalos_1024x512.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_CD_KeyArt_Frigibax_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FPGO_MCS_MasterBall_KeyArt_TK_GP_V2_S14_1024x512_nologo.jpg"
@@ -365,7 +369,8 @@ export interface ItemSettingsData {
 			| "2026-10-17T17:00:00"
 			| "2026-10-24T17:00:00"
 			| "2026-10-31T17:00:00"
-			| "2026-11-15T18:00:00";
+			| "2026-11-15T18:00:00"
+			| "2026-11-21T17:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -403,7 +408,8 @@ export interface ItemSettingsData {
 			| "2026-10-17T11:00:00"
 			| "2026-10-24T14:00:00"
 			| "2026-10-31T14:00:00"
-			| "2026-11-14T10:00:00";
+			| "2026-11-14T10:00:00"
+			| "2026-11-21T14:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
@@ -428,6 +434,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_10_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S23_2026_12_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT"
+			| "ITEM_EVENT_TICKET_S24_NOV21_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY_TO_GIFT"
 			| "ITEM_EVENT_TICKET_S24_OCT_17_HATCH_TO_GIFT"
@@ -481,6 +488,7 @@ export interface ItemSettingsData {
 						| "HYDREIGON_NORMAL"
 						| "INTELEON_NORMAL"
 						| "KELDEO_ORDINARY"
+						| "KINGAMBIT_NORMAL"
 						| "LATIAS_NORMAL"
 						| "LATIOS_NORMAL"
 						| "LOTAD_NORMAL"
@@ -506,6 +514,7 @@ export interface ItemSettingsData {
 					| "HYDREIGON"
 					| "INTELEON"
 					| "KELDEO"
+					| "KINGAMBIT"
 					| "LATIAS"
 					| "LATIOS"
 					| "LOTAD"
@@ -552,6 +561,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_gray_details_shayminmasterworkrerun"
 			| "item_event_ticket_pink_desc_CD_Frigibax26"
 			| "item_event_ticket_pink_desc_CD_Nickit26"
+			| "item_event_ticket_pink_desc_CD_Pawniard26"
 			| "item_event_ticket_pink_desc_CD_Sobble26"
 			| "item_event_ticket_pink_desc_CD_Zorua26"
 			| "item_event_ticket_pink_desc_CDC_Deino26"
@@ -572,6 +582,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_catch_mastery_Phantump"
 			| "text_rewards_key_CD_Frigibax26"
 			| "text_rewards_key_CD_Nickit26"
+			| "text_rewards_key_CD_Pawniard26"
 			| "text_rewards_key_CD_Sobble26"
 			| "text_rewards_key_CD_Zorua26"
 			| "text_rewards_key_CDC_Deino26"
@@ -618,6 +629,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S23_2026_08"
 			| "ITEM_EVENT_TICKET_S23_2026_10"
 			| "ITEM_EVENT_TICKET_S23_2026_12"
+			| "ITEM_EVENT_TICKET_S24_NOV21_COMMUNITY"
 			| "ITEM_EVENT_TICKET_S24_OCT_10_COMMUNITY"
 			| "ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY"
 			| "ITEM_EVERGREEN_TICKET"
@@ -676,6 +688,7 @@ export interface ItemSettingsData {
 	nameOverride?:
 		| "general1.ticket_CD_Frigibax26_title"
 		| "general1.ticket_CD_Nickit26_title"
+		| "general1.ticket_CD_Pawniard26_title"
 		| "general1.ticket_CD_Sobble26_title"
 		| "general1.ticket_CD_Zorua26_title"
 		| "general1.ticket_CDC_Deino26_title"

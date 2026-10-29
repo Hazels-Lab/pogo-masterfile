@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "dark", 14 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "dark", 15 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -179,6 +179,18 @@ export type CombatMoveV0407MoveAuraWheelDark = S<
 		}
 	>
 >;
+export type CombatMoveV0615MoveKowtowCleave = S<
+	CombatMove<
+		"COMBAT_V0615_MOVE_KOWTOW_CLEAVE",
+		{
+			energyDelta: -40;
+			power: 75;
+			type: "POKEMON_TYPE_DARK";
+			uniqueId: 615;
+			vfxName: "kowtow_cleave";
+		}
+	>
+>;
 export type CombatMoveVmMoveTempEvolutionMegaV0229PokemonHoundoom = S<
 	CombatMove<
 		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0229_POKEMON_HOUNDOOM",
@@ -206,4 +218,5 @@ export type CombatMoveDarkMasterfileEntry =
 	| CombatMoveV0370MoveObstruct
 	| CombatMoveV0400MoveDarkestLariat
 	| CombatMoveV0407MoveAuraWheelDark
+	| CombatMoveV0615MoveKowtowCleave
 	| CombatMoveVmMoveTempEvolutionMegaV0229PokemonHoundoom;

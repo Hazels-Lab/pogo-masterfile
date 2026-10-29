@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 824 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "misc", 822 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -10162,38 +10162,6 @@ export type PokemonExtendedSettingsV0807PokemonZeraora = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0808PokemonMeltan = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0808_POKEMON_MELTAN",
-		{
-			sizeSettings: {
-				mLowerBound: 0.15;
-				mUpperBound: 0.25;
-				xlUpperBound: 0.3;
-				xsLowerBound: 0.1;
-				xxlUpperBound: 0.35;
-				xxsLowerBound: 0.098;
-			};
-			uniqueId: "MELTAN";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0809PokemonMelmetal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0809_POKEMON_MELMETAL",
-		{
-			sizeSettings: {
-				mLowerBound: 1.875;
-				mUpperBound: 3.125;
-				xlUpperBound: 3.75;
-				xsLowerBound: 1.25;
-				xxlUpperBound: 3.875;
-				xxsLowerBound: 1.225;
-			};
-			uniqueId: "MELMETAL";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0824PokemonBlipbug = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0824_POKEMON_BLIPBUG",
@@ -13838,8 +13806,6 @@ export type PokemonExtendedSettingsMiscMasterfileEntry =
 	| PokemonExtendedSettingsV0805PokemonStakataka
 	| PokemonExtendedSettingsV0806PokemonBlacephalon
 	| PokemonExtendedSettingsV0807PokemonZeraora
-	| PokemonExtendedSettingsV0808PokemonMeltan
-	| PokemonExtendedSettingsV0809PokemonMelmetal
 	| PokemonExtendedSettingsV0824PokemonBlipbug
 	| PokemonExtendedSettingsV0825PokemonDottler
 	| PokemonExtendedSettingsV0826PokemonOrbeetle

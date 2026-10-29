@@ -29,6 +29,14 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesAllowGooglepixel9,
     #[serde(rename = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL9PRO")]
     SettingsRulesAllowGooglepixel9pro,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10")]
+    SettingsRulesAllowGooglepixel10,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PRO")]
+    SettingsRulesAllowGooglepixel10pro,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROFOLD")]
+    SettingsRulesAllowGooglepixel10profold,
+    #[serde(rename = "SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROXL")]
+    SettingsRulesAllowGooglepixel10proxl,
     #[serde(rename = "SETTINGS_RULES_ALLOW_GOOGLEPIXELPROFOLD")]
     SettingsRulesAllowGooglepixelprofold,
     #[serde(rename = "SETTINGS_RULES_ALLOW_GOOGLEPIXELPROXL")]
@@ -489,14 +497,6 @@ pub enum SettingsOverrideRuleTemplateId {
     SettingsRulesBase,
     #[serde(rename = "SETTINGS_RULES_DENY_ANDROID14")]
     SettingsRulesDenyAndroid14,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10")]
-    SettingsRulesDenyGooglepixel10,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO")]
-    SettingsRulesDenyGooglepixel10pro,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD")]
-    SettingsRulesDenyGooglepixel10profold,
-    #[serde(rename = "SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL")]
-    SettingsRulesDenyGooglepixel10proxl,
     #[serde(rename = "SETTINGS_RULES_DENY_IPAD4")]
     SettingsRulesDenyIpad4,
     #[serde(rename = "SETTINGS_RULES_DENY_IPAD5")]

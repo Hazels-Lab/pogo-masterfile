@@ -12,6 +12,10 @@ import type {
 	SettingsOverrideRuleAllowGooglepixel8pro,
 	SettingsOverrideRuleAllowGooglepixel9,
 	SettingsOverrideRuleAllowGooglepixel9pro,
+	SettingsOverrideRuleAllowGooglepixel10,
+	SettingsOverrideRuleAllowGooglepixel10pro,
+	SettingsOverrideRuleAllowGooglepixel10profold,
+	SettingsOverrideRuleAllowGooglepixel10proxl,
 	SettingsOverrideRuleAllowGooglepixelprofold,
 	SettingsOverrideRuleAllowGooglepixelproxl,
 	SettingsOverrideRuleAllowLgelmV600,
@@ -242,10 +246,6 @@ import type {
 	SettingsOverrideRuleAndroid14Onward,
 	SettingsOverrideRuleBase,
 	SettingsOverrideRuleDenyAndroid14,
-	SettingsOverrideRuleDenyGooglepixel10,
-	SettingsOverrideRuleDenyGooglepixel10pro,
-	SettingsOverrideRuleDenyGooglepixel10profold,
-	SettingsOverrideRuleDenyGooglepixel10proxl,
 	SettingsOverrideRuleDenyIpad4,
 	SettingsOverrideRuleDenyIpad5,
 	SettingsOverrideRuleDenyIpad6,
@@ -266,6 +266,10 @@ export interface SettingsOverrideRuleLookup {
 	SETTINGS_RULES_ALLOW_GOOGLEPIXEL8PRO: SettingsOverrideRuleAllowGooglepixel8pro;
 	SETTINGS_RULES_ALLOW_GOOGLEPIXEL9: SettingsOverrideRuleAllowGooglepixel9;
 	SETTINGS_RULES_ALLOW_GOOGLEPIXEL9PRO: SettingsOverrideRuleAllowGooglepixel9pro;
+	SETTINGS_RULES_ALLOW_GOOGLEPIXEL10: SettingsOverrideRuleAllowGooglepixel10;
+	SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PRO: SettingsOverrideRuleAllowGooglepixel10pro;
+	SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROFOLD: SettingsOverrideRuleAllowGooglepixel10profold;
+	SETTINGS_RULES_ALLOW_GOOGLEPIXEL10PROXL: SettingsOverrideRuleAllowGooglepixel10proxl;
 	SETTINGS_RULES_ALLOW_GOOGLEPIXELPROFOLD: SettingsOverrideRuleAllowGooglepixelprofold;
 	SETTINGS_RULES_ALLOW_GOOGLEPIXELPROXL: SettingsOverrideRuleAllowGooglepixelproxl;
 	SETTINGS_RULES_ALLOW_LGELM_V600: SettingsOverrideRuleAllowLgelmV600;
@@ -496,10 +500,6 @@ export interface SettingsOverrideRuleLookup {
 	SETTINGS_RULES_ANDROID_14_ONWARD: SettingsOverrideRuleAndroid14Onward;
 	SETTINGS_RULES_BASE: SettingsOverrideRuleBase;
 	SETTINGS_RULES_DENY_ANDROID14: SettingsOverrideRuleDenyAndroid14;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10: SettingsOverrideRuleDenyGooglepixel10;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10PRO: SettingsOverrideRuleDenyGooglepixel10pro;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10PROFOLD: SettingsOverrideRuleDenyGooglepixel10profold;
-	SETTINGS_RULES_DENY_GOOGLEPIXEL10PROXL: SettingsOverrideRuleDenyGooglepixel10proxl;
 	SETTINGS_RULES_DENY_IPAD4: SettingsOverrideRuleDenyIpad4;
 	SETTINGS_RULES_DENY_IPAD5: SettingsOverrideRuleDenyIpad5;
 	SETTINGS_RULES_DENY_IPAD6: SettingsOverrideRuleDenyIpad6;

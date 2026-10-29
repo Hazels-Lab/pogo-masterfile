@@ -23,6 +23,7 @@ import (
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_npc_trainer"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_ranking_proto_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/combat_type"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/event_pass_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/event_pass_tier_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/evolution_chain_display_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/evolution_quest_template"
@@ -93,6 +94,7 @@ type Masterfile struct {
 	CombatMove                           *accessor.CombatMoveAccessor
 	CodeGateProto                        *accessor.CodeGateProtoAccessor
 	PokemonHomeEnergyCosts               *accessor.PokemonHomeEnergyCostsAccessor
+	EventPassSettings                    *accessor.EventPassSettingsAccessor
 	EventPassTierSettings                *accessor.EventPassTierSettingsAccessor
 	EvolutionChainDisplaySettings        *accessor.EvolutionChainDisplaySettingsAccessor
 	PokemonExtendedSettings              *accessor.PokemonExtendedSettingsAccessor
@@ -158,6 +160,7 @@ var GroupNames = []string{
 	"combatMove",
 	"codeGateProto",
 	"pokemonHomeEnergyCosts",
+	"eventPassSettings",
 	"eventPassTierSettings",
 	"evolutionChainDisplaySettings",
 	"pokemonExtendedSettings",
@@ -225,6 +228,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	combatMoveBucket := []combat_move.CombatMoveEntry{}
 	codeGateProtoBucket := []code_gate_proto.CodeGateProtoEntry{}
 	pokemonHomeEnergyCostsBucket := []pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry{}
+	eventPassSettingsBucket := []event_pass_settings.EventPassSettingsEntry{}
 	eventPassTierSettingsBucket := []event_pass_tier_settings.EventPassTierSettingsEntry{}
 	evolutionChainDisplaySettingsBucket := []evolution_chain_display_settings.EvolutionChainDisplaySettingsEntry{}
 	pokemonExtendedSettingsBucket := []pokemon_extended_settings.PokemonExtendedSettingsEntry{}
@@ -325,6 +329,9 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry:
 			m.byID[v.TemplateID] = i
 			pokemonHomeEnergyCostsBucket = append(pokemonHomeEnergyCostsBucket, v)
+		case event_pass_settings.EventPassSettingsEntry:
+			m.byID[v.TemplateID] = i
+			eventPassSettingsBucket = append(eventPassSettingsBucket, v)
 		case event_pass_tier_settings.EventPassTierSettingsEntry:
 			m.byID[v.TemplateID] = i
 			eventPassTierSettingsBucket = append(eventPassTierSettingsBucket, v)
@@ -476,6 +483,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.CombatMove = accessor.NewCombatMoveAccessor(combatMoveBucket)
 	m.CodeGateProto = accessor.NewCodeGateProtoAccessor(codeGateProtoBucket)
 	m.PokemonHomeEnergyCosts = accessor.NewPokemonHomeEnergyCostsAccessor(pokemonHomeEnergyCostsBucket)
+	m.EventPassSettings = accessor.NewEventPassSettingsAccessor(eventPassSettingsBucket)
 	m.EventPassTierSettings = accessor.NewEventPassTierSettingsAccessor(eventPassTierSettingsBucket)
 	m.EvolutionChainDisplaySettings = accessor.NewEvolutionChainDisplaySettingsAccessor(evolutionChainDisplaySettingsBucket)
 	m.PokemonExtendedSettings = accessor.NewPokemonExtendedSettingsAccessor(pokemonExtendedSettingsBucket)

@@ -1194,73 +1194,6 @@ pub struct EventMapRefreshSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BonusBoxes {
-    pub icon_type: String,
-    pub quantity: u64,
-    pub text: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct EventPassTrackUpgradeDescriptions {
-    pub details_link_key: String,
-    pub event_duration_key: String,
-    pub event_pass_track_to_upgrade_to: String,
-    pub pass_track_upgrade_header_description: String,
-    pub ranks_to_highlight_rewards: [u64; 3],
-    pub track_unlock_image_url: String,
-    pub track_unlock_plus_points_image_url: String,
-    pub track_unlock_plus_points_sku_id: String,
-    pub track_unlock_sku_id: String,
-    pub upgrade_description_key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct EventPassDisplaySettings {
-    pub bonus_boxes: [BonusBoxes; 3],
-    pub event_pass_title_key: String,
-    pub event_pass_track_upgrade_descriptions: [EventPassTrackUpgradeDescriptions; 1],
-    pub header_icon_url: String,
-    pub premium_reward_banner_bottom: String,
-    pub premium_reward_banner_image_url: String,
-    pub premium_reward_banner_middle: String,
-    pub premium_reward_banner_top: String,
-    pub premium_rewards_description: String,
-    pub section_display_priority: u64,
-    pub today_view_section: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct TrackConditions {
-    pub track: String,
-    pub track_title_key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct TrackConditionsV2 {
-    pub badge: String,
-    pub track: String,
-    pub track_title_key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct EventPassSettings {
-    pub additional_bonus_tiers_level: u64,
-    pub event_pass_display_settings: EventPassDisplaySettings,
-    pub expiration_time: String,
-    pub grace_period_end_time: String,
-    pub max_tier_level: u64,
-    pub points_item_id: String,
-    pub prefix: String,
-    pub track_conditions: (TrackConditions, TrackConditionsV2),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct EventPlannerPopularNotificationSettings {
     pub battle_levels: [u64; 9],
     pub first_scan_offset_seconds: String,
@@ -1644,7 +1577,9 @@ pub struct MainMenuChanges {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MapDisplaySettings {
+    pub event_theme_name: String,
     pub show_enhanced_sky: bool,
+    pub sky_effect_name: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1729,6 +1664,12 @@ pub struct MpSettings {
     pub num_meters_goal: u64,
     pub num_mp_from_loot_station: u64,
     pub num_mp_from_walk_quest: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MusicSettings {
+    pub map_music_night_override: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2963,11 +2904,13 @@ pub struct VerboseLogRaidSettings {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct VistaGeneralSettings {
+    pub environment_season: String,
     pub is_feature_enabled: bool,
     pub is_vista_battle_enabled: bool,
     pub is_vista_encounter_enabled: bool,
     pub is_vista_map_enabled: bool,
     pub is_vista_spawns_enabled: bool,
+    pub theme_override: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3001,7 +2944,7 @@ pub struct VnextBattleConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct VsSeekerClientSettings {
-    pub allowed_vs_seeker_league_template_id: [String; 3],
+    pub allowed_vs_seeker_league_template_id: [String; 2],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3214,8 +3157,6 @@ crate::masterfile_entry!(ErrorReportingSettingsEntry, ErrorReportingSettingsEntr
 
 crate::masterfile_entry!(EventMapRefreshSettingsEntry, EventMapRefreshSettingsEntryData, event_map_refresh_settings: EventMapRefreshSettings);
 
-crate::masterfile_entry!(EventPassSettingsEntry, EventPassSettingsEntryData, event_pass_settings: EventPassSettings);
-
 crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
 
 crate::masterfile_entry!(ExternalAddressableAssetsSettingsEntry, ExternalAddressableAssetsSettingsEntryData, external_addressable_assets_settings: ExternalAddressableAssetsSettings);
@@ -3286,6 +3227,8 @@ crate::masterfile_entry!(MegaEvoSettingsEntry, MegaEvoSettingsEntryData, mega_ev
 crate::masterfile_entry!(MonodepthSettingsEntry, MonodepthSettingsEntryData, monodepth_settings: MonodepthSettings);
 
 crate::masterfile_entry!(MpSettingsEntry, MpSettingsEntryData, mp_settings: MpSettings);
+
+crate::masterfile_entry!(MusicSettingsEntry, MusicSettingsEntryData, music_settings: MusicSettings);
 
 crate::masterfile_entry!(NaturalArtDayNightFeatureSettingsEntry, NaturalArtDayNightFeatureSettingsEntryData, natural_art_day_night_feature_settings: NaturalArtDayNightFeatureSettings);
 

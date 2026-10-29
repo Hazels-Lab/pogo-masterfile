@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 400 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 616 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,8 +14,12 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "CANDY_GENERAL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE";
 			text:
+				| "catch_candy_double"
+				| "catch_candy_triple"
+				| "catch_stardust_double"
+				| "catch_stardust_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
@@ -28,8 +32,12 @@ export interface EventPassTierSettingsData {
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "TRADE";
+			iconType: "CANDY_GENERAL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE";
 			text:
+				| "catch_candy_double"
+				| "catch_candy_triple"
+				| "catch_stardust_double"
+				| "catch_stardust_triple"
 				| "dai_duration_double"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
@@ -55,6 +63,8 @@ export interface EventPassTierSettingsData {
 				| "BOUNSWEET"
 				| "CHANSEY"
 				| "DEDENNE"
+				| "DRIFLOON"
+				| "DUSKULL"
 				| "FINNEON"
 				| "FLITTLE"
 				| "FOMANTIS"
@@ -62,22 +72,29 @@ export interface EventPassTierSettingsData {
 				| "FURFROU"
 				| "GASTLY"
 				| "GLIMMET"
+				| "GREAVARD"
 				| "KOMALA"
 				| "KYOGRE"
 				| "LARVITAR"
 				| "MAREEP"
 				| "MEOWTH"
+				| "MISDREAVUS"
 				| "ORTHWORM"
 				| "POLTCHAGEIST"
 				| "PORYGON"
 				| "QWILFISH"
 				| "ROCKRUFF"
+				| "SABLEYE"
+				| "SANDYGAST"
 				| "SHINX"
+				| "SHUPPET"
+				| "SINISTEA"
 				| "SKARMORY"
 				| "SKIDDO"
 				| "SNOM"
 				| "TYMPOLE"
-				| "YAMASK";
+				| "YAMASK"
+				| "ZUBAT";
 		};
 		exp?: number;
 		item?: {
@@ -106,9 +123,18 @@ export interface EventPassTierSettingsData {
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
 		};
+		neutralAvatarItemTemplate?: {
+			displayTemplateId: "N_DISPLAY_n_pants_halloween2026" | "N_DISPLAY_n_shirt_halloween2026";
+			itemTemplateId: "N_AVATAR_n_pants_halloween2026" | "N_AVATAR_n_shirt_halloween2026";
+		};
 		playerAttribute?: {
-			durationMins: number;
+			durationMins?: number;
 			key:
+				| "halloween2026_season_pass_entitlement"
+				| "halloween2026_season_pass_rank_01"
+				| "halloween2026_season_pass_rank_01_paid"
+				| "halloween2026_season_pass_rank_02"
+				| "halloween2026_season_pass_rank_02_paid"
 				| "october2026_season_pass_entitlement"
 				| "october2026_season_pass_rank_01"
 				| "october2026_season_pass_rank_02"
@@ -119,31 +145,48 @@ export interface EventPassTierSettingsData {
 			isFeaturedPokemon?: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
+				costume?: "FALL_2022_NOEVOLVE" | "FALL_2024" | "HALLOWEEN_2021_NOEVOLVE" | "HALLOWEEN_2025";
 				form:
+					| number
 					| "AMPHAROS_NORMAL"
 					| "BOUNSWEET_NORMAL"
 					| "CHANSEY_NORMAL"
 					| "DEDENNE_NORMAL"
+					| "DRIFBLIM_NORMAL"
+					| "DUSKULL_NORMAL"
 					| "FINNEON_NORMAL"
 					| "FLITTLE_NORMAL"
 					| "FOMANTIS_NORMAL"
 					| "FRILLISH_FEMALE"
+					| "FROAKIE_NORMAL"
 					| "FURFROU_NATURAL"
 					| "GASTLY_NORMAL"
+					| "GENGAR_NORMAL"
 					| "GLIMMET_NORMAL"
+					| "GREAVARD_NORMAL"
 					| "KOMALA_NORMAL"
 					| "KYOGRE_NORMAL"
 					| "LARVITAR_NORMAL"
 					| "METANG_NORMAL"
+					| "MISDREAVUS_NORMAL"
+					| "NOIBAT_NORMAL"
 					| "ORTHWORM_NORMAL"
 					| "PERSIAN_ALOLA"
+					| "PIKACHU_HALLOWEEN_2026"
+					| "PIPLUP_NORMAL"
 					| "PORYGON_NORMAL"
 					| "QWILFISH_HISUIAN"
 					| "ROCKRUFF_NORMAL"
+					| "ROTOM_NORMAL"
+					| "ROWLET_NORMAL"
+					| "SABLEYE_NORMAL"
+					| "SANDYGAST_NORMAL"
 					| "SHINX_NORMAL"
+					| "SHUPPET_NORMAL"
 					| "SKARMORY_NORMAL"
 					| "SKIDDO_NORMAL"
 					| "SNOM_NORMAL"
+					| "SPIRITOMB_NORMAL"
 					| "TYMPOLE_NORMAL"
 					| "YAMASK_GALARIAN";
 			};
@@ -152,36 +195,53 @@ export interface EventPassTierSettingsData {
 				| "BOUNSWEET"
 				| "CHANSEY"
 				| "DEDENNE"
+				| "DRIFBLIM"
+				| "DUSKULL"
 				| "FINNEON"
 				| "FLITTLE"
 				| "FOMANTIS"
 				| "FRILLISH"
+				| "FROAKIE"
 				| "FURFROU"
 				| "GASTLY"
+				| "GENGAR"
 				| "GLIMMET"
+				| "GREAVARD"
 				| "KOMALA"
 				| "KYOGRE"
 				| "LARVITAR"
 				| "METANG"
+				| "MISDREAVUS"
+				| "NOIBAT"
 				| "ORTHWORM"
 				| "PERSIAN"
+				| "PIKACHU"
+				| "PIPLUP"
 				| "POLTCHAGEIST"
 				| "PORYGON"
 				| "QWILFISH"
 				| "ROCKRUFF"
+				| "ROTOM"
+				| "ROWLET"
+				| "SABLEYE"
+				| "SANDYGAST"
 				| "SHINX"
+				| "SHUPPET"
+				| "SINISTEA"
 				| "SKARMORY"
 				| "SKIDDO"
 				| "SNOM"
+				| "SPIRITOMB"
 				| "TYMPOLE"
-				| "YAMASK";
+				| "YAMASK"
+				| "ZUBAT";
 			statsLimitsOverride?: {
 				maxPokemonLevel: number;
 				minPokemonLevel: number;
 			};
 		};
 		stardust?: number;
-		type: "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:
@@ -189,18 +249,23 @@ export interface EventPassTierSettingsData {
 				| "BOUNSWEET"
 				| "CHANSEY"
 				| "DEDENNE"
+				| "DUSKULL"
 				| "FINNEON"
 				| "FOMANTIS"
 				| "FRILLISH"
 				| "FURFROU"
 				| "GASTLY"
 				| "GLIMMET"
+				| "GREAVARD"
 				| "KYOGRE"
 				| "LARVITAR"
 				| "MEOWTH"
+				| "MISDREAVUS"
 				| "PORYGON"
 				| "QWILFISH"
+				| "SANDYGAST"
 				| "SHINX"
+				| "SHUPPET"
 				| "SKARMORY"
 				| "SNOM"
 				| "TYMPOLE"

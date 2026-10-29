@@ -2938,7 +2938,7 @@ export type PokemonSettingsV0169PokemonCrobatHalloween202601 = S<
 			pokedexHeightM: 1.8;
 			pokedexWeightKg: 75;
 			pokemonId: "CROBAT";
-			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST"];
+			quickMoves: ["AIR_SLASH_FAST", "BITE_FAST", "GUST_FAST"];
 			shadow: {
 				purificationCandyNeeded: 1;
 				purificationStardustNeeded: 1000;

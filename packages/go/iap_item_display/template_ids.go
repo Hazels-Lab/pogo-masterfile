@@ -262,6 +262,7 @@ const (
 	IapItemDisplayTemplateIDFlairFreeBundle0                                           IapItemDisplayTemplateID = "FLAIR_FREE_BUNDLE_0"
 	IapItemDisplayTemplateIDGeneral1Ticket5                                            IapItemDisplayTemplateID = "general1.ticket.5"
 	IapItemDisplayTemplateIDGeneral2Ticket3                                            IapItemDisplayTemplateID = "general2.ticket.3"
+	IapItemDisplayTemplateIDGeneral2Ticket5                                            IapItemDisplayTemplateID = "general2.ticket.5"
 	IapItemDisplayTemplateIDGeneral2Ticket11                                           IapItemDisplayTemplateID = "general2.ticket.11"
 	IapItemDisplayTemplateIDGeneral4Medium1                                            IapItemDisplayTemplateID = "general4.medium.1"
 	IapItemDisplayTemplateIDGeneral6Small1                                             IapItemDisplayTemplateID = "general6.small.1"
@@ -296,6 +297,9 @@ const (
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockRedirect             IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT"
+	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockRedirect             IapItemDisplayTemplateID = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT"
 	IapItemDisplayTemplateIDPaidraidticket1                                            IapItemDisplayTemplateID = "paidraidticket.1"
 	IapItemDisplayTemplateIDPaidraidticket3                                            IapItemDisplayTemplateID = "paidraidticket.3"
 	IapItemDisplayTemplateIDPgoreleaseBundle1                                          IapItemDisplayTemplateID = "pgorelease.bundle.1"
@@ -1353,6 +1357,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDFlairFreeBundle0,
 	IapItemDisplayTemplateIDGeneral1Ticket5,
 	IapItemDisplayTemplateIDGeneral2Ticket3,
+	IapItemDisplayTemplateIDGeneral2Ticket5,
 	IapItemDisplayTemplateIDGeneral2Ticket11,
 	IapItemDisplayTemplateIDGeneral4Medium1,
 	IapItemDisplayTemplateIDGeneral6Small1,
@@ -1387,6 +1392,9 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockRedirect,
+	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDPaidraidticket1,
 	IapItemDisplayTemplateIDPaidraidticket3,
 	IapItemDisplayTemplateIDPgoreleaseBundle1,

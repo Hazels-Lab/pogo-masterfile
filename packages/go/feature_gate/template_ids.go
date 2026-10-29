@@ -5,47 +5,60 @@ package feature_gate
 type FeatureGateTemplateID string
 
 const (
-	FeatureGateTemplateIDAcForegroundCatchEncounterFeatureGate              FeatureGateTemplateID = "AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE"
-	FeatureGateTemplateIDAcForegroundCatchMapFocusFeatureGate               FeatureGateTemplateID = "AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE"
-	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate               FeatureGateTemplateID = "AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE"
-	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate              FeatureGateTemplateID = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE"
-	FeatureGateTemplateIDAdvSyncTwoFeatureGate                              FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
-	FeatureGateTemplateIDAmsFeatureGate                                     FeatureGateTemplateID = "AMS_FEATURE_GATE"
-	FeatureGateTemplateIDAmsFrontendFeatureGate                             FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
-	FeatureGateTemplateIDBadgeServiceFeatureGate                            FeatureGateTemplateID = "BADGE_SERVICE_FEATURE_GATE"
-	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
-	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate             FeatureGateTemplateID = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE"
-	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate                 FeatureGateTemplateID = "COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE"
-	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate         FeatureGateTemplateID = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE"
-	FeatureGateTemplateIDCombineCompassAndWeatherFeatureGate                FeatureGateTemplateID = "COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE"
-	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate         FeatureGateTemplateID = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE"
-	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate              FeatureGateTemplateID = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE"
-	FeatureGateTemplateIDEnableNearbyPokemonSnapshotFeatureGate             FeatureGateTemplateID = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE"
-	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate               FeatureGateTemplateID = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE"
-	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate        FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
-	FeatureGateTemplateIDEventPassBonusMilestoneSeparationFeatureGate       FeatureGateTemplateID = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE"
-	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate                FeatureGateTemplateID = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE"
-	FeatureGateTemplateIDFortStableDataDiffingFeatureGate                   FeatureGateTemplateID = "FORT_STABLE_DATA_DIFFING_FEATURE_GATE"
-	FeatureGateTemplateIDGetGmtAnalysisForPlayerFeatureGate                 FeatureGateTemplateID = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE"
-	FeatureGateTemplateIDGmoWildPokemonS2LocationFeatureGate                FeatureGateTemplateID = "GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE"
-	FeatureGateTemplateIDGmoWildPokemonS2LocationServerFeatureGate          FeatureGateTemplateID = "GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE"
-	FeatureGateTemplateIDGrantCheckInBadgeWithoutRewardsFeatureGate         FeatureGateTemplateID = "GRANT_CHECK_IN_BADGE_WITHOUT_REWARDS_FEATURE_GATE"
-	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate                      FeatureGateTemplateID = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE"
-	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate                    FeatureGateTemplateID = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE"
-	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate             FeatureGateTemplateID = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE"
-	FeatureGateTemplateIDMichelinMapLureBottomRingRemovalFeatureGate        FeatureGateTemplateID = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE"
-	FeatureGateTemplateIDMichelinMapZygardeCellRewardFeatureGate            FeatureGateTemplateID = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE"
-	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate        FeatureGateTemplateID = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE"
-	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate             FeatureGateTemplateID = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE"
-	FeatureGateTemplateIDPrivateMaxLobbiesFeatureGate                       FeatureGateTemplateID = "PRIVATE_MAX_LOBBIES_FEATURE_GATE"
-	FeatureGateTemplateIDRegisterDeviceFeatureGate                          FeatureGateTemplateID = "REGISTER_DEVICE_FEATURE_GATE"
-	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                 FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
-	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate            FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
-	FeatureGateTemplateIDTodayViewV3MultiPageGoPassFeatureGate              FeatureGateTemplateID = "TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE"
-	FeatureGateTemplateIDTransferFeatureGate                                FeatureGateTemplateID = "TRANSFER_FEATURE_GATE"
-	FeatureGateTemplateIDVnextFastAttackInputTypeFeatureGate                FeatureGateTemplateID = "VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE"
-	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate                   FeatureGateTemplateID = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE"
-	FeatureGateTemplateIDZygardeCellRewardQuestFixFeatureGateSr             FeatureGateTemplateID = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR"
+	FeatureGateTemplateIDAcForegroundCatchEncounterFeatureGate                      FeatureGateTemplateID = "AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE"
+	FeatureGateTemplateIDAcForegroundCatchMapFocusFeatureGate                       FeatureGateTemplateID = "AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE"
+	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate                       FeatureGateTemplateID = "AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE"
+	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate                      FeatureGateTemplateID = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE"
+	FeatureGateTemplateIDAdvSyncTwoFeatureGate                                      FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
+	FeatureGateTemplateIDAmsFeatureGate                                             FeatureGateTemplateID = "AMS_FEATURE_GATE"
+	FeatureGateTemplateIDAmsFrontendFeatureGate                                     FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
+	FeatureGateTemplateIDAvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate FeatureGateTemplateID = "AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE"
+	FeatureGateTemplateIDBadgeServiceFeatureGate                                    FeatureGateTemplateID = "BADGE_SERVICE_FEATURE_GATE"
+	FeatureGateTemplateIDBuddySwapPlayerSnapshotFeatureGate                         FeatureGateTemplateID = "BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE"
+	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate         FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
+	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate                     FeatureGateTemplateID = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE"
+	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate                         FeatureGateTemplateID = "COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE"
+	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate                 FeatureGateTemplateID = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE"
+	FeatureGateTemplateIDCombineCompassAndWeatherFeatureGate                        FeatureGateTemplateID = "COMBINE_COMPASS_AND_WEATHER_FEATURE_GATE"
+	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate                 FeatureGateTemplateID = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE"
+	FeatureGateTemplateIDDeprecateVerifyEligibilityFeatureGate                      FeatureGateTemplateID = "DEPRECATE_VERIFY_ELIGIBILITY_FEATURE_GATE"
+	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate                      FeatureGateTemplateID = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE"
+	FeatureGateTemplateIDEnableNearbyPokemonSnapshotFeatureGate                     FeatureGateTemplateID = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE"
+	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate                       FeatureGateTemplateID = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE"
+	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate                FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
+	FeatureGateTemplateIDEventPassBonusMilestoneSeparationFeatureGate               FeatureGateTemplateID = "EVENT_PASS_BONUS_MILESTONE_SEPARATION_FEATURE_GATE"
+	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate                        FeatureGateTemplateID = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE"
+	FeatureGateTemplateIDFortStableDataDiffingFeatureGate                           FeatureGateTemplateID = "FORT_STABLE_DATA_DIFFING_FEATURE_GATE"
+	FeatureGateTemplateIDGetGmtAnalysisForPlayerFeatureGate                         FeatureGateTemplateID = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE"
+	FeatureGateTemplateIDGmoWildPokemonS2LocationFeatureGate                        FeatureGateTemplateID = "GMO_WILD_POKEMON_S2_LOCATION_FEATURE_GATE"
+	FeatureGateTemplateIDGmoWildPokemonS2LocationServerFeatureGate                  FeatureGateTemplateID = "GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE"
+	FeatureGateTemplateIDGrantCheckInBadgeWithoutRewardsFeatureGate                 FeatureGateTemplateID = "GRANT_CHECK_IN_BADGE_WITHOUT_REWARDS_FEATURE_GATE"
+	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate                              FeatureGateTemplateID = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE"
+	FeatureGateTemplateIDLocationCardRollFeatureGate                                FeatureGateTemplateID = "LOCATION_CARD_ROLL_FEATURE_GATE"
+	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate                            FeatureGateTemplateID = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE"
+	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate                     FeatureGateTemplateID = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE"
+	FeatureGateTemplateIDMichelinMapLureBottomRingRemovalFeatureGate                FeatureGateTemplateID = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE"
+	FeatureGateTemplateIDMichelinMapZygardeCellRewardFeatureGate                    FeatureGateTemplateID = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE"
+	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate                FeatureGateTemplateID = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE"
+	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate                     FeatureGateTemplateID = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE"
+	FeatureGateTemplateIDPrivateMaxLobbiesFeatureGate                               FeatureGateTemplateID = "PRIVATE_MAX_LOBBIES_FEATURE_GATE"
+	FeatureGateTemplateIDRegisterDeviceFeatureGate                                  FeatureGateTemplateID = "REGISTER_DEVICE_FEATURE_GATE"
+	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                         FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
+	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate                    FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3ClaimRerenderFeatureGate                        FeatureGateTemplateID = "TODAY_VIEW_V3_CLAIM_RERENDER_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3CollapseRedrawFeatureGate                       FeatureGateTemplateID = "TODAY_VIEW_V3_COLLAPSE_REDRAW_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3DeferredTabLoadFeatureGate                      FeatureGateTemplateID = "TODAY_VIEW_V3_DEFERRED_TAB_LOAD_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3IncrementalCleanupFeatureGate                   FeatureGateTemplateID = "TODAY_VIEW_V3_INCREMENTAL_CLEANUP_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3LoadPresentationFeatureGate                     FeatureGateTemplateID = "TODAY_VIEW_V3_LOAD_PRESENTATION_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3MultiPageGoPassFeatureGate                      FeatureGateTemplateID = "TODAY_VIEW_V3_MULTI_PAGE_GO_PASS_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3SwipeGuardFeatureGate                           FeatureGateTemplateID = "TODAY_VIEW_V3_SWIPE_GUARD_FEATURE_GATE"
+	FeatureGateTemplateIDTodayViewV3TabRestoreFeatureGate                           FeatureGateTemplateID = "TODAY_VIEW_V3_TAB_RESTORE_FEATURE_GATE"
+	FeatureGateTemplateIDTransferFeatureGate                                        FeatureGateTemplateID = "TRANSFER_FEATURE_GATE"
+	FeatureGateTemplateIDUseHalfLevelsForCpLimiterFeatureGate                       FeatureGateTemplateID = "USE_HALF_LEVELS_FOR_CP_LIMITER_FEATURE_GATE"
+	FeatureGateTemplateIDVnextFastAttackInputTypeFeatureGate                        FeatureGateTemplateID = "VNEXT_FAST_ATTACK_INPUT_TYPE_FEATURE_GATE"
+	FeatureGateTemplateIDWaitForDownscaledStatsBeforeEnterStateFeatureGate          FeatureGateTemplateID = "WAIT_FOR_DOWNSCALED_STATS_BEFORE_ENTER_STATE_FEATURE_GATE"
+	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate                           FeatureGateTemplateID = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE"
+	FeatureGateTemplateIDZygardeCellRewardQuestFixFeatureGateSr                     FeatureGateTemplateID = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR"
 )
 
 var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
@@ -56,13 +69,16 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
+	FeatureGateTemplateIDAvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate,
 	FeatureGateTemplateIDBadgeServiceFeatureGate,
+	FeatureGateTemplateIDBuddySwapPlayerSnapshotFeatureGate,
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate,
 	FeatureGateTemplateIDCombatVnextInitializeBdLastFeatureGate,
 	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate,
 	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate,
 	FeatureGateTemplateIDCombineCompassAndWeatherFeatureGate,
 	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate,
+	FeatureGateTemplateIDDeprecateVerifyEligibilityFeatureGate,
 	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate,
 	FeatureGateTemplateIDEnableNearbyPokemonSnapshotFeatureGate,
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate,
@@ -75,6 +91,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDGmoWildPokemonS2LocationServerFeatureGate,
 	FeatureGateTemplateIDGrantCheckInBadgeWithoutRewardsFeatureGate,
 	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate,
+	FeatureGateTemplateIDLocationCardRollFeatureGate,
 	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate,
 	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate,
 	FeatureGateTemplateIDMichelinMapLureBottomRingRemovalFeatureGate,
@@ -85,9 +102,18 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDRegisterDeviceFeatureGate,
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
+	FeatureGateTemplateIDTodayViewV3ClaimRerenderFeatureGate,
+	FeatureGateTemplateIDTodayViewV3CollapseRedrawFeatureGate,
+	FeatureGateTemplateIDTodayViewV3DeferredTabLoadFeatureGate,
+	FeatureGateTemplateIDTodayViewV3IncrementalCleanupFeatureGate,
+	FeatureGateTemplateIDTodayViewV3LoadPresentationFeatureGate,
 	FeatureGateTemplateIDTodayViewV3MultiPageGoPassFeatureGate,
+	FeatureGateTemplateIDTodayViewV3SwipeGuardFeatureGate,
+	FeatureGateTemplateIDTodayViewV3TabRestoreFeatureGate,
 	FeatureGateTemplateIDTransferFeatureGate,
+	FeatureGateTemplateIDUseHalfLevelsForCpLimiterFeatureGate,
 	FeatureGateTemplateIDVnextFastAttackInputTypeFeatureGate,
+	FeatureGateTemplateIDWaitForDownscaledStatsBeforeEnterStateFeatureGate,
 	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate,
 	FeatureGateTemplateIDZygardeCellRewardQuestFixFeatureGateSr,
 }
