@@ -669,6 +669,8 @@ pub enum CombatMoveTemplateId {
     CombatVmMoveTempEvolutionMegaV0227PokemonSkarmory,
     #[serde(rename = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0229_POKEMON_HOUNDOOM")]
     CombatVmMoveTempEvolutionMegaV0229PokemonHoundoom,
+    #[serde(rename = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE")]
+    CombatVmMoveTempEvolutionMegaV0302PokemonSableye,
     #[serde(rename = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0310_POKEMON_MANECTRIC")]
     CombatVmMoveTempEvolutionMegaV0310PokemonManectric,
     #[serde(rename = "COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0398_POKEMON_STARAPTOR")]

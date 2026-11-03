@@ -1963,6 +1963,7 @@ export type PokemonSettingsV0302PokemonSableye = S<
 					};
 					modelHeight: 0.5;
 					modelScaleV2: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE";
 					stats: {
 						baseAttack: 151;
 						baseDefense: 216;
@@ -2066,6 +2067,7 @@ export type PokemonSettingsV0302PokemonSableyeCostume2020 = S<
 					};
 					modelHeight: 0.5;
 					modelScaleV2: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE";
 					stats: {
 						baseAttack: 151;
 						baseDefense: 216;
@@ -2169,6 +2171,7 @@ export type PokemonSettingsV0302PokemonSableyeNormal = S<
 					};
 					modelHeight: 0.5;
 					modelScaleV2: 1;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE";
 					stats: {
 						baseAttack: 151;
 						baseDefense: 216;

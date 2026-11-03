@@ -212,8 +212,8 @@ export type ItemExpirationSettingsWildBall = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_WILD_BALL",
 		{
-			emergencyExpirationTime: "2026-11-15T18:00:00";
-			expirationTime: "2026-11-15T18:00:00";
+			emergencyExpirationTime: "2026-11-08T18:00:00";
+			expirationTime: "2026-11-08T18:00:00";
 			itemEnablementSettings: {
 				enabledTimePeriods: [
 					{

@@ -286,7 +286,7 @@ export type FeatureGatePlayerEncounterRandomizationSalt = S<
 	FeatureGate<
 		"PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE",
 		{
-			status: 1;
+			status: 2;
 		}
 	>
 >;
