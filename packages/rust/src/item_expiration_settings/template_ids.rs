@@ -17,6 +17,8 @@ pub enum ItemExpirationSettingsTemplateId {
     ItemExpirationItemEventPassPointGoTour02,
     #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01")]
     ItemExpirationItemEventPassPointGoWildArea01,
+    #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_WILD_AREA_02")]
+    ItemExpirationItemEventPassPointGoWildArea02,
     #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_01")]
     ItemExpirationItemEventPassPointLiveOps01,
     #[serde(rename = "ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_02")]

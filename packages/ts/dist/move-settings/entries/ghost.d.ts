@@ -344,7 +344,7 @@ export type MoveSettingsVmMoveTempEvolutionMegaV0609PokemonChandelure = S<
 			isLocked: true;
 			movementId: "TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE";
 			pokemonType: "POKEMON_TYPE_GHOST";
-			power: 145;
+			power: 174;
 			staminaLossScalar: 0.06;
 			trainerLevelMax: 100;
 			trainerLevelMin: 1;

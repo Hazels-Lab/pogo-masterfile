@@ -435,7 +435,7 @@ type DeprecatedClientQuestTemplateIds =
 	| "LEVEL_50_CAP_SUB_2"
 	| "LEVEL_50_CAP_SUB_3";
 
-/** @deprecated lastSeen 2026-10-07 — 43 entries */
+/** @deprecated lastSeen 2026-11-03 — 44 entries */
 type DeprecatedCodeGateProtoIds =
 	| "AGE_CONFIRM_CODE_GATE"
 	| "AR_PHOTO_MULTIPLE_CONCURRENT_CAMPAIGN_CODE_GATE"
@@ -443,6 +443,7 @@ type DeprecatedCodeGateProtoIds =
 	| "BATTLE_REWARDS_CODE_GATE"
 	| "BF_PLUS_ROLLOUT_CODE_GATE"
 	| "BREAD_CODE_GATE"
+	| "COMBAT_VNEXT_CODE_GATE"
 	| "DISABLE_POKEBALL_SOFTLOCK_FIX_CODE_GATE"
 	| "DISABLE_ROUTE_SHORT_CODES"
 	| "EVENT_PASS_CODE_GATE"

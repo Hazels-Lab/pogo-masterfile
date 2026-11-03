@@ -1033,6 +1033,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNHatWhimsicottearmuff0,
     #[serde(rename = "N_DISPLAY_n_hat_willowglasses_0")]
     NDisplayNHatWillowglasses0,
+    #[serde(rename = "N_DISPLAY_n_hat_winona")]
+    NDisplayNHatWinona,
     #[serde(rename = "N_DISPLAY_n_hat_woobatearrings_0")]
     NDisplayNHatWoobatearrings0,
     #[serde(rename = "N_DISPLAY_n_hat_xerneasitems_0")]
@@ -1571,6 +1573,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNPoseS23gbl,
     #[serde(rename = "N_DISPLAY_n_pose_s24gbl")]
     NDisplayNPoseS24gbl,
+    #[serde(rename = "N_DISPLAY_n_pose_s25gbl")]
+    NDisplayNPoseS25gbl,
     #[serde(rename = "N_DISPLAY_n_pose_sustainability")]
     NDisplayNPoseSustainability,
     #[serde(rename = "N_DISPLAY_n_pose_teapot")]
@@ -2503,6 +2507,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtWhitecoat0,
     #[serde(rename = "N_DISPLAY_n_shirt_willow")]
     NDisplayNShirtWillow,
+    #[serde(rename = "N_DISPLAY_n_shirt_winona")]
+    NDisplayNShirtWinona,
     #[serde(rename = "N_DISPLAY_n_shirt_wintersweater2023_0")]
     NDisplayNShirtWintersweater20230,
     #[serde(rename = "N_DISPLAY_n_shirt_yveltaljacket")]
@@ -2831,6 +2837,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShoesWcs2026winnersitems,
     #[serde(rename = "N_DISPLAY_n_shoes_willow")]
     NDisplayNShoesWillow,
+    #[serde(rename = "N_DISPLAY_n_shoes_winona")]
+    NDisplayNShoesWinona,
     #[serde(rename = "N_DISPLAY_n_shoes_winterboots_0")]
     NDisplayNShoesWinterboots0,
     #[serde(rename = "N_DISPLAY_n_shoes_winterboots_1")]

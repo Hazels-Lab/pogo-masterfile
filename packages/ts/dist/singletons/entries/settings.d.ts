@@ -3680,7 +3680,7 @@ export interface MapObjectsInteractionRangeSettings {
 		mapObjectsInteractionRangeSettings: {
 			farInteractionRangeMeters: 2000;
 			interactionRangeMeters: 80;
-			remoteInteractionRangeMeters: 3500;
+			remoteInteractionRangeMeters: 2050;
 			whitePulseRadiusMeters: 50;
 		};
 	};
@@ -5435,12 +5435,12 @@ export interface SoftSfidaSettings {
 	data: {
 		templateId: "SOFT_SFIDA_SETTINGS";
 		softSfidaSettings: {
-			catchActionDelayMs: 3000;
+			catchActionDelayMs: 2000;
 			enable: true;
 			geofenceSizeM: 50;
 			minPlayerLevel: 20;
 			reservedGeofenceCount: 4;
-			spinActionDelayMs: 3000;
+			spinActionDelayMs: 2000;
 		};
 	};
 }

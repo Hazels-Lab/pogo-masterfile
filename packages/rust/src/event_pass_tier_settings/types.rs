@@ -81,6 +81,7 @@ pub struct Rewards {
     pub item: Option<Item>,
     pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
     pub player_attribute: Option<PlayerAttribute>,
+    pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
     pub r#type: String,

@@ -289,6 +289,9 @@ const (
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackRedirect                         IapItemDisplayTemplateID = "month2_deluxe_event_pass_track_redirect"
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock                           IapItemDisplayTemplateID = "month2_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlockPlusPoints                 IapItemDisplayTemplateID = "month2_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackRedirect                         IapItemDisplayTemplateID = "month3_deluxe_event_pass_track_redirect"
+	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlock                           IapItemDisplayTemplateID = "month3_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlockPlusPoints                 IapItemDisplayTemplateID = "month3_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDMpReplenishRrp1                                            IapItemDisplayTemplateID = "mp_replenish_rrp.1"
 	IapItemDisplayTemplateIDMpReplenishRrp3                                            IapItemDisplayTemplateID = "mp_replenish_rrp.3"
 	IapItemDisplayTemplateIDMpReplenish1                                               IapItemDisplayTemplateID = "mp_replenish.1"
@@ -1383,6 +1386,9 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackRedirect,
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackRedirect,
+	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDMpReplenishRrp1,
 	IapItemDisplayTemplateIDMpReplenishRrp3,
 	IapItemDisplayTemplateIDMpReplenish1,

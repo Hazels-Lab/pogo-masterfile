@@ -285,6 +285,9 @@ import type {
 	IapItemDisplayMonth2DeluxeEventPassTrackRedirect,
 	IapItemDisplayMonth2DeluxeEventPassTrackUnlock,
 	IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayMonth3DeluxeEventPassTrackRedirect,
+	IapItemDisplayMonth3DeluxeEventPassTrackUnlock,
+	IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayMpReplenish1,
 	IapItemDisplayMpReplenish3,
 	IapItemDisplayMpReplenishRrp1,
@@ -1379,6 +1382,9 @@ export interface IapItemDisplayLookup {
 	month2_deluxe_event_pass_track_redirect: IapItemDisplayMonth2DeluxeEventPassTrackRedirect;
 	month2_deluxe_event_pass_track_unlock: IapItemDisplayMonth2DeluxeEventPassTrackUnlock;
 	month2_deluxe_event_pass_track_unlock_plus_points: IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints;
+	month3_deluxe_event_pass_track_redirect: IapItemDisplayMonth3DeluxeEventPassTrackRedirect;
+	month3_deluxe_event_pass_track_unlock: IapItemDisplayMonth3DeluxeEventPassTrackUnlock;
+	month3_deluxe_event_pass_track_unlock_plus_points: IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints;
 	"mp_replenish_rrp.1": IapItemDisplayMpReplenishRrp1;
 	"mp_replenish_rrp.3": IapItemDisplayMpReplenishRrp3;
 	"mp_replenish.1": IapItemDisplayMpReplenish1;

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 175 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 176 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -107,6 +107,7 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_GOTOUR2026_GLOBAL"
 			| "EVENT_PASS_GOTOUR2026_IRL"
 			| "EVENT_PASS_GOWA2026_GLOBAL"
+			| "EVENT_PASS_GOWA2026_LEADOUT"
 			| "EVENT_PASS_HALLOWEEN_2026_EVENT"
 			| "EVENT_PASS_HARVESTFESTIVAL2026_EVENT"
 			| "EVENT_PASS_HORIZONS_FALL_2026_EVENT"
@@ -740,7 +741,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit: number;
+			limit?: number;
 		};
 	};
 	xpBoost?: {

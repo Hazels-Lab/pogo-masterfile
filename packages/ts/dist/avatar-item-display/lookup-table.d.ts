@@ -514,6 +514,7 @@ import type {
 	AvatarItemDisplayNHatWcs20250,
 	AvatarItemDisplayNHatWhimsicottearmuff0,
 	AvatarItemDisplayNHatWillowglasses0,
+	AvatarItemDisplayNHatWinona,
 	AvatarItemDisplayNHatWoobatearrings0,
 	AvatarItemDisplayNHatXerneasitems0,
 	AvatarItemDisplayNHatYamaskhat0,
@@ -783,6 +784,7 @@ import type {
 	AvatarItemDisplayNPoseS22gbl,
 	AvatarItemDisplayNPoseS23gbl,
 	AvatarItemDisplayNPoseS24gbl,
+	AvatarItemDisplayNPoseS25gbl,
 	AvatarItemDisplayNPoseSustainability,
 	AvatarItemDisplayNPoseTeapot,
 	AvatarItemDisplayNPoseTinkatonhammer,
@@ -1249,6 +1251,7 @@ import type {
 	AvatarItemDisplayNShirtWcsyokohama0,
 	AvatarItemDisplayNShirtWhitecoat0,
 	AvatarItemDisplayNShirtWillow,
+	AvatarItemDisplayNShirtWinona,
 	AvatarItemDisplayNShirtWintersweater20230,
 	AvatarItemDisplayNShirtYveltaljacket,
 	AvatarItemDisplayNShirtZacostumeA0,
@@ -1413,6 +1416,7 @@ import type {
 	AvatarItemDisplayNShoesWcs2024winnersitems0,
 	AvatarItemDisplayNShoesWcs2026winnersitems,
 	AvatarItemDisplayNShoesWillow,
+	AvatarItemDisplayNShoesWinona,
 	AvatarItemDisplayNShoesWinterboots0,
 	AvatarItemDisplayNShoesWinterboots1,
 	AvatarItemDisplayNShoesWinterboots2,
@@ -2225,6 +2229,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_wcs2026winnersitems: AvatarItemDisplayNHatWcs2026winnersitems;
 	N_DISPLAY_n_hat_whimsicottearmuff_0: AvatarItemDisplayNHatWhimsicottearmuff0;
 	N_DISPLAY_n_hat_willowglasses_0: AvatarItemDisplayNHatWillowglasses0;
+	N_DISPLAY_n_hat_winona: AvatarItemDisplayNHatWinona;
 	N_DISPLAY_n_hat_woobatearrings_0: AvatarItemDisplayNHatWoobatearrings0;
 	N_DISPLAY_n_hat_xerneasitems_0: AvatarItemDisplayNHatXerneasitems0;
 	N_DISPLAY_n_hat_yamaskhat_0: AvatarItemDisplayNHatYamaskhat0;
@@ -2494,6 +2499,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pose_s22gbl: AvatarItemDisplayNPoseS22gbl;
 	N_DISPLAY_n_pose_s23gbl: AvatarItemDisplayNPoseS23gbl;
 	N_DISPLAY_n_pose_s24gbl: AvatarItemDisplayNPoseS24gbl;
+	N_DISPLAY_n_pose_s25gbl: AvatarItemDisplayNPoseS25gbl;
 	N_DISPLAY_n_pose_sustainability: AvatarItemDisplayNPoseSustainability;
 	N_DISPLAY_n_pose_teapot: AvatarItemDisplayNPoseTeapot;
 	N_DISPLAY_n_pose_tinkatonhammer: AvatarItemDisplayNPoseTinkatonhammer;
@@ -2960,6 +2966,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_wcsyokohama_0: AvatarItemDisplayNShirtWcsyokohama0;
 	N_DISPLAY_n_shirt_whitecoat_0: AvatarItemDisplayNShirtWhitecoat0;
 	N_DISPLAY_n_shirt_willow: AvatarItemDisplayNShirtWillow;
+	N_DISPLAY_n_shirt_winona: AvatarItemDisplayNShirtWinona;
 	N_DISPLAY_n_shirt_wintersweater2023_0: AvatarItemDisplayNShirtWintersweater20230;
 	N_DISPLAY_n_shirt_yveltaljacket: AvatarItemDisplayNShirtYveltaljacket;
 	N_DISPLAY_n_shirt_zacostume_a_0: AvatarItemDisplayNShirtZacostumeA0;
@@ -3124,6 +3131,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_wcs2024winnersitems_0: AvatarItemDisplayNShoesWcs2024winnersitems0;
 	N_DISPLAY_n_shoes_wcs2026winnersitems: AvatarItemDisplayNShoesWcs2026winnersitems;
 	N_DISPLAY_n_shoes_willow: AvatarItemDisplayNShoesWillow;
+	N_DISPLAY_n_shoes_winona: AvatarItemDisplayNShoesWinona;
 	N_DISPLAY_n_shoes_winterboots_0: AvatarItemDisplayNShoesWinterboots0;
 	N_DISPLAY_n_shoes_winterboots_1: AvatarItemDisplayNShoesWinterboots1;
 	N_DISPLAY_n_shoes_winterboots_2: AvatarItemDisplayNShoesWinterboots2;

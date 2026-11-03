@@ -22,6 +22,7 @@ const (
 	ItemSettingsTemplateIDItemEventPassPointGoTour01             ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_GO_TOUR_01"
 	ItemSettingsTemplateIDItemEventPassPointGoTour02             ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_GO_TOUR_02"
 	ItemSettingsTemplateIDItemEventPassPointGoWildArea01         ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01"
+	ItemSettingsTemplateIDItemEventPassPointGoWildArea02         ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_02"
 	ItemSettingsTemplateIDItemEventPassPointLiveOps01            ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_01"
 	ItemSettingsTemplateIDItemEventPassPointLiveOps02            ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_02"
 	ItemSettingsTemplateIDItemEventPassPointLiveOps03            ItemSettingsTemplateID = "ITEM_EVENT_PASS_POINT_LIVE_OPS_03"
@@ -200,6 +201,7 @@ var ItemSettingsTemplateIDValues = [...]ItemSettingsTemplateID{
 	ItemSettingsTemplateIDItemEventPassPointGoTour01,
 	ItemSettingsTemplateIDItemEventPassPointGoTour02,
 	ItemSettingsTemplateIDItemEventPassPointGoWildArea01,
+	ItemSettingsTemplateIDItemEventPassPointGoWildArea02,
 	ItemSettingsTemplateIDItemEventPassPointLiveOps01,
 	ItemSettingsTemplateIDItemEventPassPointLiveOps02,
 	ItemSettingsTemplateIDItemEventPassPointLiveOps03,
