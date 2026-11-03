@@ -4,6 +4,23 @@ All notable changes to the Go module are recorded here. The format is based on [
 
 > Note: Go module releases for this package are tagged as `packages/go/vX.Y.Z` (subdirectory-prefixed), per Go's monorepo tagging rules.
 
+## [0.1.78] - 2026-11-03
+
+Automated regeneration from upstream masterfile commit `6ba90bf8aff184f16074230579a313ba189a92e0`.
+
+### Added template IDs (6)
+
+- COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE
+- MEGA_EVOLUTION_LEVEL_4_V0302_POKEMON_SABLEYE
+- N_DISPLAY_n_backpack_gmaxduraludon
+- N_DISPLAY_n_hat_duraludon
+- N_DISPLAY_n_shirt_gowamachamp
+- VM_MOVE_TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE
+
+### Removed template IDs (1)
+
+- general2.ticket.5
+
 ## [0.1.77] - 2026-10-29
 
 Automated regeneration from upstream masterfile commit `b4a31cc552a1a089335dce0156b6c236d6f7f62d`.

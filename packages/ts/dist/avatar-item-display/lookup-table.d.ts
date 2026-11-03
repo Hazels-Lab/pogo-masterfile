@@ -37,6 +37,7 @@ import type {
 	AvatarItemDisplayNBackpackGenesecteventitem0,
 	AvatarItemDisplayNBackpackGengar0,
 	AvatarItemDisplayNBackpackGiratinaitems0,
+	AvatarItemDisplayNBackpackGmaxduraludon,
 	AvatarItemDisplayNBackpackGoruckgengar0,
 	AvatarItemDisplayNBackpackGoruckpikachu0,
 	AvatarItemDisplayNBackpackGoruckwobbuffet0,
@@ -346,6 +347,7 @@ import type {
 	AvatarItemDisplayNHatDpB0,
 	AvatarItemDisplayNHatDrifloon0,
 	AvatarItemDisplayNHatDrpikachu0,
+	AvatarItemDisplayNHatDuraludon,
 	AvatarItemDisplayNHatDusclopsmummy0,
 	AvatarItemDisplayNHatEarringsburmyplant0,
 	AvatarItemDisplayNHatEarringsburmysandy0,
@@ -943,6 +945,7 @@ import type {
 	AvatarItemDisplayNShirtGowa20240,
 	AvatarItemDisplayNShirtGowa20250,
 	AvatarItemDisplayNShirtGowa20251,
+	AvatarItemDisplayNShirtGowamachamp,
 	AvatarItemDisplayNShirtGreedentsweater0,
 	AvatarItemDisplayNShirtGreen0,
 	AvatarItemDisplayNShirtGreencoat0,
@@ -1745,6 +1748,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_backpack_genesecteventitem_0: AvatarItemDisplayNBackpackGenesecteventitem0;
 	N_DISPLAY_n_backpack_gengar_0: AvatarItemDisplayNBackpackGengar0;
 	N_DISPLAY_n_backpack_giratinaitems_0: AvatarItemDisplayNBackpackGiratinaitems0;
+	N_DISPLAY_n_backpack_gmaxduraludon: AvatarItemDisplayNBackpackGmaxduraludon;
 	N_DISPLAY_n_backpack_goruckgengar_0: AvatarItemDisplayNBackpackGoruckgengar0;
 	N_DISPLAY_n_backpack_goruckpikachu_0: AvatarItemDisplayNBackpackGoruckpikachu0;
 	N_DISPLAY_n_backpack_goruckwobbuffet_0: AvatarItemDisplayNBackpackGoruckwobbuffet0;
@@ -2054,6 +2058,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_hat_dp_b_0: AvatarItemDisplayNHatDpB0;
 	N_DISPLAY_n_hat_drifloon_0: AvatarItemDisplayNHatDrifloon0;
 	N_DISPLAY_n_hat_drpikachu_0: AvatarItemDisplayNHatDrpikachu0;
+	N_DISPLAY_n_hat_duraludon: AvatarItemDisplayNHatDuraludon;
 	N_DISPLAY_n_hat_dusclopsmummy_0: AvatarItemDisplayNHatDusclopsmummy0;
 	N_DISPLAY_n_hat_earringsburmyplant_0: AvatarItemDisplayNHatEarringsburmyplant0;
 	N_DISPLAY_n_hat_earringsburmysandy_0: AvatarItemDisplayNHatEarringsburmysandy0;
@@ -2651,6 +2656,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shirt_gowa2025_1: AvatarItemDisplayNShirtGowa20251;
 	"N_DISPLAY_n_shirt_gowa2026-maroon": AvatarItemDisplayNShirtGowa2026Maroon;
 	"N_DISPLAY_n_shirt_gowa2026-navy": AvatarItemDisplayNShirtGowa2026Navy;
+	N_DISPLAY_n_shirt_gowamachamp: AvatarItemDisplayNShirtGowamachamp;
 	N_DISPLAY_n_shirt_greedentsweater_0: AvatarItemDisplayNShirtGreedentsweater0;
 	N_DISPLAY_n_shirt_green_0: AvatarItemDisplayNShirtGreen0;
 	N_DISPLAY_n_shirt_greencoat_0: AvatarItemDisplayNShirtGreencoat0;

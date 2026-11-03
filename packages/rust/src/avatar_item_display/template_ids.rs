@@ -79,6 +79,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNBackpackGengar0,
     #[serde(rename = "N_DISPLAY_n_backpack_giratinaitems_0")]
     NDisplayNBackpackGiratinaitems0,
+    #[serde(rename = "N_DISPLAY_n_backpack_gmaxduraludon")]
+    NDisplayNBackpackGmaxduraludon,
     #[serde(rename = "N_DISPLAY_n_backpack_goruckgengar_0")]
     NDisplayNBackpackGoruckgengar0,
     #[serde(rename = "N_DISPLAY_n_backpack_goruckpikachu_0")]
@@ -697,6 +699,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNHatDrifloon0,
     #[serde(rename = "N_DISPLAY_n_hat_drpikachu_0")]
     NDisplayNHatDrpikachu0,
+    #[serde(rename = "N_DISPLAY_n_hat_duraludon")]
+    NDisplayNHatDuraludon,
     #[serde(rename = "N_DISPLAY_n_hat_dusclopsmummy_0")]
     NDisplayNHatDusclopsmummy0,
     #[serde(rename = "N_DISPLAY_n_hat_earringsburmyplant_0")]
@@ -1891,6 +1895,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShirtGowa2026Maroon,
     #[serde(rename = "N_DISPLAY_n_shirt_gowa2026-navy")]
     NDisplayNShirtGowa2026Navy,
+    #[serde(rename = "N_DISPLAY_n_shirt_gowamachamp")]
+    NDisplayNShirtGowamachamp,
     #[serde(rename = "N_DISPLAY_n_shirt_greedentsweater_0")]
     NDisplayNShirtGreedentsweater0,
     #[serde(rename = "N_DISPLAY_n_shirt_green_0")]

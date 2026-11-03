@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 225 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/hat", 226 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -450,6 +450,15 @@ export type AvatarItemDisplayNHatDrpikachu0 = S<
 		{
 			displayStringId: "n_hat_drpikachu_0_display_name";
 			iconAddress: "n_hat_drpikachu_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNHatDuraludon = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_hat_duraludon",
+		{
+			displayStringId: "avatar_hat_duraludon";
+			iconAddress: "n_hat_duraludon_icon";
 		}
 	>
 >;
@@ -2080,6 +2089,7 @@ export type AvatarItemDisplayDisplayStringIdHatMasterfileEntry =
 	| AvatarItemDisplayNHatDpB0
 	| AvatarItemDisplayNHatDrifloon0
 	| AvatarItemDisplayNHatDrpikachu0
+	| AvatarItemDisplayNHatDuraludon
 	| AvatarItemDisplayNHatDusclopsmummy0
 	| AvatarItemDisplayNHatEarringsburmyplant0
 	| AvatarItemDisplayNHatEarringsburmysandy0

@@ -41,6 +41,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGenesecteventitem0          AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_genesecteventitem_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGengar0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_gengar_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGiratinaitems0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_giratinaitems_0"
+	AvatarItemDisplayTemplateIDNDisplayNBackpackGmaxduraludon               AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_gmaxduraludon"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGoruckgengar0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_goruckgengar_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGoruckpikachu0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_goruckpikachu_0"
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGoruckwobbuffet0            AvatarItemDisplayTemplateID = "N_DISPLAY_n_backpack_goruckwobbuffet_0"
@@ -350,6 +351,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNHatDpB0                             AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_dp_b_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatDrifloon0                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_drifloon_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatDrpikachu0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_drpikachu_0"
+	AvatarItemDisplayTemplateIDNDisplayNHatDuraludon                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_duraludon"
 	AvatarItemDisplayTemplateIDNDisplayNHatDusclopsmummy0                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_dusclopsmummy_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatEarringsburmyplant0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_earringsburmyplant_0"
 	AvatarItemDisplayTemplateIDNDisplayNHatEarringsburmysandy0              AvatarItemDisplayTemplateID = "N_DISPLAY_n_hat_earringsburmysandy_0"
@@ -947,6 +949,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20251                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2025_1"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Maroon                 AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2026-maroon"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Navy                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowa2026-navy"
+	AvatarItemDisplayTemplateIDNDisplayNShirtGowamachamp                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_gowamachamp"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreedentsweater0               AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_greedentsweater_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreen0                         AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_green_0"
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreencoat0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shirt_greencoat_0"
@@ -1749,6 +1752,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGenesecteventitem0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGengar0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGiratinaitems0,
+	AvatarItemDisplayTemplateIDNDisplayNBackpackGmaxduraludon,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGoruckgengar0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGoruckpikachu0,
 	AvatarItemDisplayTemplateIDNDisplayNBackpackGoruckwobbuffet0,
@@ -2058,6 +2062,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNHatDpB0,
 	AvatarItemDisplayTemplateIDNDisplayNHatDrifloon0,
 	AvatarItemDisplayTemplateIDNDisplayNHatDrpikachu0,
+	AvatarItemDisplayTemplateIDNDisplayNHatDuraludon,
 	AvatarItemDisplayTemplateIDNDisplayNHatDusclopsmummy0,
 	AvatarItemDisplayTemplateIDNDisplayNHatEarringsburmyplant0,
 	AvatarItemDisplayTemplateIDNDisplayNHatEarringsburmysandy0,
@@ -2655,6 +2660,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa20251,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Maroon,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGowa2026Navy,
+	AvatarItemDisplayTemplateIDNDisplayNShirtGowamachamp,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreedentsweater0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreen0,
 	AvatarItemDisplayTemplateIDNDisplayNShirtGreencoat0,

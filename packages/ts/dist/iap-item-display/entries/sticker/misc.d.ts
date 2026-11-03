@@ -1249,7 +1249,7 @@ export type IapItemDisplayStickerHalloween21Ghostpika3 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_HALLOWEEN21_GHOSTPIKA.3";
-			sortOrder: 10;
+			sortOrder: 14;
 		}
 	>
 >;
@@ -1259,7 +1259,7 @@ export type IapItemDisplayStickerHalloween21Ghostpika5 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_HALLOWEEN21_GHOSTPIKA.5";
-			sortOrder: 9;
+			sortOrder: 13;
 		}
 	>
 >;
@@ -2409,7 +2409,7 @@ export type IapItemDisplayStickerPikachuJol3 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PIKACHU_JOL.3";
-			sortOrder: 7;
+			sortOrder: 16;
 		}
 	>
 >;
@@ -2419,7 +2419,7 @@ export type IapItemDisplayStickerPikachuJol5 = S<
 		{
 			category: "IAP_CATEGORY_STICKER";
 			sku: "STICKER_PIKACHU_JOL.5";
-			sortOrder: 6;
+			sortOrder: 15;
 		}
 	>
 >;

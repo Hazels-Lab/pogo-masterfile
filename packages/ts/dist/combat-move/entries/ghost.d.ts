@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "ghost", 16 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "ghost", 17 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -203,6 +203,18 @@ export type CombatMoveV0464MoveRageFist = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0302PokemonSableye = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE",
+		{
+			energyDelta: -45;
+			power: 55;
+			type: "POKEMON_TYPE_GHOST";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0302_POKEMON_SABLEYE";
+			vfxName: "night_shade";
+		}
+	>
+>;
 export type CombatMoveVmMoveTempEvolutionMegaV0609PokemonChandelure = S<
 	CombatMove<
 		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0609_POKEMON_CHANDELURE",
@@ -237,4 +249,5 @@ export type CombatMoveGhostMasterfileEntry =
 	| CombatMoveV0398MoveSpiritShackle
 	| CombatMoveV0405MoveMoongeistBeam
 	| CombatMoveV0464MoveRageFist
+	| CombatMoveVmMoveTempEvolutionMegaV0302PokemonSableye
 	| CombatMoveVmMoveTempEvolutionMegaV0609PokemonChandelure;
