@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 23 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "itemExpirationSettings", 24 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { ItemExpirationSettings } from "../types";
@@ -40,6 +40,15 @@ export type ItemExpirationSettingsEventPassPointGoWildArea01 = S<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01",
 		{
 			expirationTime: "2026-11-17T23:59:59";
+		}
+	>
+>;
+export type ItemExpirationSettingsEventPassPointGoWildArea02 = S<
+	ItemExpirationSettings<
+		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_GO_WILD_AREA_02",
+		{
+			emergencyExpirationTime: "2026-11-25T20:00:00";
+			expirationTime: "2026-11-25T20:00:00";
 		}
 	>
 >;
@@ -236,6 +245,7 @@ export type ItemExpirationSettingsMasterfileEntry =
 	| ItemExpirationSettingsEventPassPointGoTour01
 	| ItemExpirationSettingsEventPassPointGoTour02
 	| ItemExpirationSettingsEventPassPointGoWildArea01
+	| ItemExpirationSettingsEventPassPointGoWildArea02
 	| ItemExpirationSettingsEventPassPointLiveOps01
 	| ItemExpirationSettingsEventPassPointLiveOps02
 	| ItemExpirationSettingsEventPassPointLiveOps03

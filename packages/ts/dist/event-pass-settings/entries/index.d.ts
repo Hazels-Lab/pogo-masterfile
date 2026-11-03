@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassSettings", 2 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "eventPassSettings", 3 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { EventPassSettings } from "../types";
@@ -42,6 +42,50 @@ export type EventPassSettingsHalloween2026Event = S<
 					badge: "BADGE_EVENT_0245";
 					track: "PREMIUM";
 					trackTitleKey: "season_pass_premium_track_title_halloween2026";
+				},
+			];
+		}
+	>
+>;
+export type EventPassSettingsNovember2026Season = S<
+	EventPassSettings<
+		"EVENT_PASS_NOVEMBER2026_SEASON",
+		{
+			additionalBonusTiersLevel: 101;
+			eventPassDisplaySettings: {
+				eventPassTitleKey: "season_pass_base_track_title_nov";
+				eventPassTrackUpgradeDescriptions: [
+					{
+						detailsLinkKey: "season_pass_details_link_nov2026";
+						eventDurationKey: "season_pass_nov2026_event_duration";
+						eventPassTrackToUpgradeTo: "PREMIUM";
+						passTrackUpgradeHeaderDescription: "season_pass_nov2026_track_upgrade_header_description";
+						ranksToHighlightRewards: [94, 99, 100];
+						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
+						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
+						trackUnlockPlusPointsSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points";
+						trackUnlockSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock";
+						upgradeDescriptionKey: "season_pass_nov2026_upgrade_description";
+					},
+				];
+				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text";
+				premiumRewardBannerImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F0_poke%CC%81coin.png";
+				premiumRewardBannerMiddle: "today_view_pokecoins_section_title";
+				sectionDisplayPriority: 14;
+			};
+			expirationTime: "2026-12-01T10:00:00";
+			gracePeriodEndTime: "2026-12-03T10:00:00";
+			maxTierLevel: 200;
+			pointsItemId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
+			trackConditions: [
+				{
+					track: "FREE";
+					trackTitleKey: "season_pass_base_track_title_nov";
+				},
+				{
+					badge: "BADGE_EVENT_0238";
+					track: "PREMIUM";
+					trackTitleKey: "season_pass_premium_track_title_nov";
 				},
 			];
 		}
@@ -92,6 +136,6 @@ export type EventPassSettingsOctober2026Season = S<
 	>
 >;
 
-export type EventPassSettingsMasterfileEntry = EventPassSettingsHalloween2026Event | EventPassSettingsOctober2026Season;
+export type EventPassSettingsMasterfileEntry = EventPassSettingsHalloween2026Event | EventPassSettingsNovember2026Season | EventPassSettingsOctober2026Season;
 
 export type EventPassSettingsTemplateID = EventPassSettingsMasterfileEntry["templateId"];

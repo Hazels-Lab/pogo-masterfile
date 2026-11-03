@@ -18,6 +18,7 @@ import type {
 	ItemSettingsItemEventPassPointGoTour01,
 	ItemSettingsItemEventPassPointGoTour02,
 	ItemSettingsItemEventPassPointGoWildArea01,
+	ItemSettingsItemEventPassPointGoWildArea02,
 	ItemSettingsItemEventPassPointLiveOps01,
 	ItemSettingsItemEventPassPointLiveOps02,
 	ItemSettingsItemEventPassPointLiveOps03,
@@ -196,6 +197,7 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_PASS_POINT_GO_TOUR_01: ItemSettingsItemEventPassPointGoTour01;
 	ITEM_EVENT_PASS_POINT_GO_TOUR_02: ItemSettingsItemEventPassPointGoTour02;
 	ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01: ItemSettingsItemEventPassPointGoWildArea01;
+	ITEM_EVENT_PASS_POINT_GO_WILD_AREA_02: ItemSettingsItemEventPassPointGoWildArea02;
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_01: ItemSettingsItemEventPassPointLiveOps01;
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_02: ItemSettingsItemEventPassPointLiveOps02;
 	ITEM_EVENT_PASS_POINT_LIVE_OPS_03: ItemSettingsItemEventPassPointLiveOps03;

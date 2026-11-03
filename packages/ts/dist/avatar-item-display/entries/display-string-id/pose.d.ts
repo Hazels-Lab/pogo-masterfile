@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/pose", 100 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/pose", 101 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -849,6 +849,15 @@ export type AvatarItemDisplayNPoseS24gbl = S<
 		}
 	>
 >;
+export type AvatarItemDisplayNPoseS25gbl = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_pose_s25gbl",
+		{
+			displayStringId: "avatar_pose_winona";
+			iconAddress: "n_pose_s25gbl_icon";
+		}
+	>
+>;
 export type AvatarItemDisplayNPoseSustainability = S<
 	AvatarItemDisplay<
 		"N_DISPLAY_n_pose_sustainability",
@@ -999,6 +1008,7 @@ export type AvatarItemDisplayDisplayStringIdPoseMasterfileEntry =
 	| AvatarItemDisplayNPoseS22gbl
 	| AvatarItemDisplayNPoseS23gbl
 	| AvatarItemDisplayNPoseS24gbl
+	| AvatarItemDisplayNPoseS25gbl
 	| AvatarItemDisplayNPoseSustainability
 	| AvatarItemDisplayNPoseTeapot
 	| AvatarItemDisplayNPoseTinkatonhammer

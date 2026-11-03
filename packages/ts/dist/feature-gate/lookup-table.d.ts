@@ -8,6 +8,7 @@ import type {
 	FeatureGateAdvSyncTwo,
 	FeatureGateAms,
 	FeatureGateAmsFrontend,
+	FeatureGateAppraisal,
 	FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization,
 	FeatureGateBadgeService,
 	FeatureGateBuddySwapPlayerSnapshot,
@@ -19,6 +20,7 @@ import type {
 	FeatureGateDailyEncounterGenerationContext,
 	FeatureGateDeprecateVerifyEligibility,
 	FeatureGateDisableLegacyNearbyPokemon,
+	FeatureGateDmaxGachaSystemRemoval,
 	FeatureGateEnableNearbyPokemonSnapshot,
 	FeatureGateEnablePvpChallengeSpanner,
 	FeatureGateEnhancedCurrencyOverflowStardust,
@@ -30,10 +32,14 @@ import type {
 	FeatureGateGmoWildPokemonS2LocationServer,
 	FeatureGateGrantCheckInBadgeWithoutRewards,
 	FeatureGateHideUiInMiniorIbfc,
+	FeatureGateImmersiveCatchSummary,
 	FeatureGateLocationCardRoll,
 	FeatureGateLuckyTradeNewStrings,
+	FeatureGateMapPokemonRings,
 	FeatureGateMeetupReminderNotifications,
 	FeatureGateMichelinMapLureBottomRingRemoval,
+	FeatureGateMichelinMapPokemonAttractantFog,
+	FeatureGateMichelinMapPokestopSpunContrastUp,
 	FeatureGateMichelinMapZygardeCellReward,
 	FeatureGatePlayerEncounterRandomizationSalt,
 	FeatureGatePokemonSpawnAvoidanceRework,
@@ -41,6 +47,8 @@ import type {
 	FeatureGateRegisterDevice,
 	FeatureGateRemoteTradeImprovements,
 	FeatureGateSeafGetMapObjectsRateLimiter,
+	FeatureGateSoftSfidaAlertUpdate,
+	FeatureGateSoftSfidaWidgetBackgroundColor,
 	FeatureGateTodayViewV3ClaimRerender,
 	FeatureGateTodayViewV3CollapseRedraw,
 	FeatureGateTodayViewV3DeferredTabLoad,
@@ -65,6 +73,7 @@ export interface FeatureGateLookup {
 	ADV_SYNC_TWO_FEATURE_GATE: FeatureGateAdvSyncTwo;
 	AMS_FEATURE_GATE: FeatureGateAms;
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
+	APPRAISAL_FEATURE_GATE: FeatureGateAppraisal;
 	AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE: FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization;
 	BADGE_SERVICE_FEATURE_GATE: FeatureGateBadgeService;
 	BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE: FeatureGateBuddySwapPlayerSnapshot;
@@ -76,6 +85,7 @@ export interface FeatureGateLookup {
 	DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE: FeatureGateDailyEncounterGenerationContext;
 	DEPRECATE_VERIFY_ELIGIBILITY_FEATURE_GATE: FeatureGateDeprecateVerifyEligibility;
 	DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE: FeatureGateDisableLegacyNearbyPokemon;
+	DMAX_GACHA_SYSTEM_REMOVAL_FEATURE_GATE: FeatureGateDmaxGachaSystemRemoval;
 	ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE: FeatureGateEnableNearbyPokemonSnapshot;
 	ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE: FeatureGateEnablePvpChallengeSpanner;
 	ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE: FeatureGateEnhancedCurrencyOverflowStardust;
@@ -87,10 +97,14 @@ export interface FeatureGateLookup {
 	GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE: FeatureGateGmoWildPokemonS2LocationServer;
 	GRANT_CHECK_IN_BADGE_WITHOUT_REWARDS_FEATURE_GATE: FeatureGateGrantCheckInBadgeWithoutRewards;
 	HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE: FeatureGateHideUiInMiniorIbfc;
+	IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE: FeatureGateImmersiveCatchSummary;
 	LOCATION_CARD_ROLL_FEATURE_GATE: FeatureGateLocationCardRoll;
 	LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE: FeatureGateLuckyTradeNewStrings;
+	MAP_POKEMON_RINGS_FEATURE_GATE: FeatureGateMapPokemonRings;
 	MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE: FeatureGateMeetupReminderNotifications;
 	MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE: FeatureGateMichelinMapLureBottomRingRemoval;
+	MICHELIN_MAP_POKEMON_ATTRACTANT_FOG_FEATURE_GATE: FeatureGateMichelinMapPokemonAttractantFog;
+	MICHELIN_MAP_POKESTOP_SPUN_CONTRAST_UP_FEATURE_GATE: FeatureGateMichelinMapPokestopSpunContrastUp;
 	MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE: FeatureGateMichelinMapZygardeCellReward;
 	PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE: FeatureGatePlayerEncounterRandomizationSalt;
 	POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE: FeatureGatePokemonSpawnAvoidanceRework;
@@ -98,6 +112,8 @@ export interface FeatureGateLookup {
 	REGISTER_DEVICE_FEATURE_GATE: FeatureGateRegisterDevice;
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE: FeatureGateSeafGetMapObjectsRateLimiter;
+	SOFT_SFIDA_ALERT_UPDATE_FEATURE_GATE: FeatureGateSoftSfidaAlertUpdate;
+	SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE: FeatureGateSoftSfidaWidgetBackgroundColor;
 	TODAY_VIEW_V3_CLAIM_RERENDER_FEATURE_GATE: FeatureGateTodayViewV3ClaimRerender;
 	TODAY_VIEW_V3_COLLAPSE_REDRAW_FEATURE_GATE: FeatureGateTodayViewV3CollapseRedraw;
 	TODAY_VIEW_V3_DEFERRED_TAB_LOAD_FEATURE_GATE: FeatureGateTodayViewV3DeferredTabLoad;

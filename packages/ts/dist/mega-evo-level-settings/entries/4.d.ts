@@ -279,7 +279,7 @@ export type MegaEvoLevelSettings4V0609PokemonChandelure = S<
 				sameTypeExtraCatchCandy: 3;
 				sameTypeExtraCatchCandyXlChance: 0.3;
 				sameTypeExtraCatchXp: 200;
-				selfCpBoostAdditionalLevel: 2;
+				selfCpBoostAdditionalLevel: 10;
 			};
 			ftueExpirationTimestamp: "1775001600000";
 			level: 4;

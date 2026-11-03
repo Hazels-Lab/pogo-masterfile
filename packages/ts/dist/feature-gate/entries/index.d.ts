@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 54 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "featureGate", 62 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -56,6 +56,21 @@ export type FeatureGateAmsFrontend = S<
 		"AMS_FRONTEND_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateAppraisal = S<
+	FeatureGate<
+		"APPRAISAL_FEATURE_GATE",
+		{
+			status: 1514798484;
+			subFeatureGateList: [
+				{
+					name: "ADD_DETAILS_GUI_SHORTCUT";
+					rolloutPercentage: 100;
+					status: 72927;
+				},
+			];
 		}
 	>
 >;
@@ -144,6 +159,14 @@ export type FeatureGateDisableLegacyNearbyPokemon = S<
 		"DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateDmaxGachaSystemRemoval = S<
+	FeatureGate<
+		"DMAX_GACHA_SYSTEM_REMOVAL_FEATURE_GATE",
+		{
+			status: 883924704;
 		}
 	>
 >;
@@ -242,6 +265,14 @@ export type FeatureGateHideUiInMiniorIbfc = S<
 		}
 	>
 >;
+export type FeatureGateImmersiveCatchSummary = S<
+	FeatureGate<
+		"IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE",
+		{
+			status: 73026;
+		}
+	>
+>;
 export type FeatureGateLocationCardRoll = S<
 	FeatureGate<
 		"LOCATION_CARD_ROLL_FEATURE_GATE",
@@ -258,6 +289,14 @@ export type FeatureGateLuckyTradeNewStrings = S<
 		}
 	>
 >;
+export type FeatureGateMapPokemonRings = S<
+	FeatureGate<
+		"MAP_POKEMON_RINGS_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateMeetupReminderNotifications = S<
 	FeatureGate<
 		"MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE",
@@ -269,6 +308,22 @@ export type FeatureGateMeetupReminderNotifications = S<
 export type FeatureGateMichelinMapLureBottomRingRemoval = S<
 	FeatureGate<
 		"MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateMichelinMapPokemonAttractantFog = S<
+	FeatureGate<
+		"MICHELIN_MAP_POKEMON_ATTRACTANT_FOG_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateMichelinMapPokestopSpunContrastUp = S<
+	FeatureGate<
+		"MICHELIN_MAP_POKESTOP_SPUN_CONTRAST_UP_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -339,6 +394,22 @@ export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateSoftSfidaAlertUpdate = S<
+	FeatureGate<
+		"SOFT_SFIDA_ALERT_UPDATE_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateSoftSfidaWidgetBackgroundColor = S<
+	FeatureGate<
+		"SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE",
+		{
+			status: 1251877992;
 		}
 	>
 >;
@@ -542,6 +613,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateAdvSyncTwo
 	| FeatureGateAms
 	| FeatureGateAmsFrontend
+	| FeatureGateAppraisal
 	| FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization
 	| FeatureGateBadgeService
 	| FeatureGateBuddySwapPlayerSnapshot
@@ -553,6 +625,7 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateDailyEncounterGenerationContext
 	| FeatureGateDeprecateVerifyEligibility
 	| FeatureGateDisableLegacyNearbyPokemon
+	| FeatureGateDmaxGachaSystemRemoval
 	| FeatureGateEnableNearbyPokemonSnapshot
 	| FeatureGateEnablePvpChallengeSpanner
 	| FeatureGateEnhancedCurrencyOverflowStardust
@@ -564,10 +637,14 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateGmoWildPokemonS2LocationServer
 	| FeatureGateGrantCheckInBadgeWithoutRewards
 	| FeatureGateHideUiInMiniorIbfc
+	| FeatureGateImmersiveCatchSummary
 	| FeatureGateLocationCardRoll
 	| FeatureGateLuckyTradeNewStrings
+	| FeatureGateMapPokemonRings
 	| FeatureGateMeetupReminderNotifications
 	| FeatureGateMichelinMapLureBottomRingRemoval
+	| FeatureGateMichelinMapPokemonAttractantFog
+	| FeatureGateMichelinMapPokestopSpunContrastUp
 	| FeatureGateMichelinMapZygardeCellReward
 	| FeatureGatePlayerEncounterRandomizationSalt
 	| FeatureGatePokemonSpawnAvoidanceRework
@@ -575,6 +652,8 @@ export type FeatureGateMasterfileEntry =
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateSeafGetMapObjectsRateLimiter
+	| FeatureGateSoftSfidaAlertUpdate
+	| FeatureGateSoftSfidaWidgetBackgroundColor
 	| FeatureGateTodayViewV3ClaimRerender
 	| FeatureGateTodayViewV3CollapseRedraw
 	| FeatureGateTodayViewV3DeferredTabLoad

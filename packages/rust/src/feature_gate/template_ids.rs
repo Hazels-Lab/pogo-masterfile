@@ -21,6 +21,8 @@ pub enum FeatureGateTemplateId {
     AmsFeatureGate,
     #[serde(rename = "AMS_FRONTEND_FEATURE_GATE")]
     AmsFrontendFeatureGate,
+    #[serde(rename = "APPRAISAL_FEATURE_GATE")]
+    AppraisalFeatureGate,
     #[serde(rename = "AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE")]
     AvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate,
     #[serde(rename = "BADGE_SERVICE_FEATURE_GATE")]
@@ -43,6 +45,8 @@ pub enum FeatureGateTemplateId {
     DeprecateVerifyEligibilityFeatureGate,
     #[serde(rename = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE")]
     DisableLegacyNearbyPokemonFeatureGate,
+    #[serde(rename = "DMAX_GACHA_SYSTEM_REMOVAL_FEATURE_GATE")]
+    DmaxGachaSystemRemovalFeatureGate,
     #[serde(rename = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE")]
     EnableNearbyPokemonSnapshotFeatureGate,
     #[serde(rename = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE")]
@@ -65,14 +69,22 @@ pub enum FeatureGateTemplateId {
     GrantCheckInBadgeWithoutRewardsFeatureGate,
     #[serde(rename = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE")]
     HideUiInMiniorIbfcFeatureGate,
+    #[serde(rename = "IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE")]
+    ImmersiveCatchSummaryFeatureGate,
     #[serde(rename = "LOCATION_CARD_ROLL_FEATURE_GATE")]
     LocationCardRollFeatureGate,
     #[serde(rename = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE")]
     LuckyTradeNewStringsFeatureGate,
+    #[serde(rename = "MAP_POKEMON_RINGS_FEATURE_GATE")]
+    MapPokemonRingsFeatureGate,
     #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]
     MeetupReminderNotificationsFeatureGate,
     #[serde(rename = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE")]
     MichelinMapLureBottomRingRemovalFeatureGate,
+    #[serde(rename = "MICHELIN_MAP_POKEMON_ATTRACTANT_FOG_FEATURE_GATE")]
+    MichelinMapPokemonAttractantFogFeatureGate,
+    #[serde(rename = "MICHELIN_MAP_POKESTOP_SPUN_CONTRAST_UP_FEATURE_GATE")]
+    MichelinMapPokestopSpunContrastUpFeatureGate,
     #[serde(rename = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE")]
     MichelinMapZygardeCellRewardFeatureGate,
     #[serde(rename = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE")]
@@ -87,6 +99,10 @@ pub enum FeatureGateTemplateId {
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
+    #[serde(rename = "SOFT_SFIDA_ALERT_UPDATE_FEATURE_GATE")]
+    SoftSfidaAlertUpdateFeatureGate,
+    #[serde(rename = "SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE")]
+    SoftSfidaWidgetBackgroundColorFeatureGate,
     #[serde(rename = "TODAY_VIEW_V3_CLAIM_RERENDER_FEATURE_GATE")]
     TodayViewV3ClaimRerenderFeatureGate,
     #[serde(rename = "TODAY_VIEW_V3_COLLAPSE_REDRAW_FEATURE_GATE")]

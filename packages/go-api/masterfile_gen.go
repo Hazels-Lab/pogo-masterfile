@@ -92,7 +92,6 @@ type Masterfile struct {
 	CombatType                           *accessor.CombatTypeAccessor
 	CombatRankingProtoSettings           *accessor.CombatRankingProtoSettingsAccessor
 	CombatMove                           *accessor.CombatMoveAccessor
-	CodeGateProto                        *accessor.CodeGateProtoAccessor
 	PokemonHomeEnergyCosts               *accessor.PokemonHomeEnergyCostsAccessor
 	EventPassSettings                    *accessor.EventPassSettingsAccessor
 	EventPassTierSettings                *accessor.EventPassTierSettingsAccessor
@@ -106,6 +105,7 @@ type Masterfile struct {
 	LanguageSettings                     *accessor.LanguageSettingsAccessor
 	IapCategoryDisplay                   *accessor.IapCategoryDisplayAccessor
 	PokestopInvasionAvailabilitySettings *accessor.PokestopInvasionAvailabilitySettingsAccessor
+	CodeGateProto                        *accessor.CodeGateProtoAccessor
 	ItemExpirationSettings               *accessor.ItemExpirationSettingsAccessor
 	LocationCardSettings                 *accessor.LocationCardSettingsAccessor
 	ClientQuestTemplate                  *accessor.ClientQuestTemplateAccessor
@@ -158,7 +158,6 @@ var GroupNames = []string{
 	"combatType",
 	"combatRankingProtoSettings",
 	"combatMove",
-	"codeGateProto",
 	"pokemonHomeEnergyCosts",
 	"eventPassSettings",
 	"eventPassTierSettings",
@@ -172,6 +171,7 @@ var GroupNames = []string{
 	"languageSettings",
 	"iapCategoryDisplay",
 	"pokestopInvasionAvailabilitySettings",
+	"codeGateProto",
 	"itemExpirationSettings",
 	"locationCardSettings",
 	"clientQuestTemplate",
@@ -226,7 +226,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	combatTypeBucket := []combat_type.CombatTypeEntry{}
 	combatRankingProtoSettingsBucket := []combat_ranking_proto_settings.CombatRankingProtoSettingsEntry{}
 	combatMoveBucket := []combat_move.CombatMoveEntry{}
-	codeGateProtoBucket := []code_gate_proto.CodeGateProtoEntry{}
 	pokemonHomeEnergyCostsBucket := []pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry{}
 	eventPassSettingsBucket := []event_pass_settings.EventPassSettingsEntry{}
 	eventPassTierSettingsBucket := []event_pass_tier_settings.EventPassTierSettingsEntry{}
@@ -240,6 +239,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	languageSettingsBucket := []language_settings.LanguageSettingsEntry{}
 	iapCategoryDisplayBucket := []iap_category_display.IapCategoryDisplayEntry{}
 	pokestopInvasionAvailabilitySettingsBucket := []pokestop_invasion_availability_settings.PokestopInvasionAvailabilitySettingsEntry{}
+	codeGateProtoBucket := []code_gate_proto.CodeGateProtoEntry{}
 	itemExpirationSettingsBucket := []item_expiration_settings.ItemExpirationSettingsEntry{}
 	locationCardSettingsBucket := []location_card_settings.LocationCardSettingsEntry{}
 	clientQuestTemplateBucket := []client_quest_template.ClientQuestTemplateEntry{}
@@ -323,9 +323,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case combat_move.CombatMoveEntry:
 			m.byID[v.TemplateID] = i
 			combatMoveBucket = append(combatMoveBucket, v)
-		case code_gate_proto.CodeGateProtoEntry:
-			m.byID[v.TemplateID] = i
-			codeGateProtoBucket = append(codeGateProtoBucket, v)
 		case pokemon_home_energy_costs.PokemonHomeEnergyCostsEntry:
 			m.byID[v.TemplateID] = i
 			pokemonHomeEnergyCostsBucket = append(pokemonHomeEnergyCostsBucket, v)
@@ -365,6 +362,9 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case pokestop_invasion_availability_settings.PokestopInvasionAvailabilitySettingsEntry:
 			m.byID[v.TemplateID] = i
 			pokestopInvasionAvailabilitySettingsBucket = append(pokestopInvasionAvailabilitySettingsBucket, v)
+		case code_gate_proto.CodeGateProtoEntry:
+			m.byID[v.TemplateID] = i
+			codeGateProtoBucket = append(codeGateProtoBucket, v)
 		case item_expiration_settings.ItemExpirationSettingsEntry:
 			m.byID[v.TemplateID] = i
 			itemExpirationSettingsBucket = append(itemExpirationSettingsBucket, v)
@@ -481,7 +481,6 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.CombatType = accessor.NewCombatTypeAccessor(combatTypeBucket)
 	m.CombatRankingProtoSettings = accessor.NewCombatRankingProtoSettingsAccessor(combatRankingProtoSettingsBucket)
 	m.CombatMove = accessor.NewCombatMoveAccessor(combatMoveBucket)
-	m.CodeGateProto = accessor.NewCodeGateProtoAccessor(codeGateProtoBucket)
 	m.PokemonHomeEnergyCosts = accessor.NewPokemonHomeEnergyCostsAccessor(pokemonHomeEnergyCostsBucket)
 	m.EventPassSettings = accessor.NewEventPassSettingsAccessor(eventPassSettingsBucket)
 	m.EventPassTierSettings = accessor.NewEventPassTierSettingsAccessor(eventPassTierSettingsBucket)
@@ -495,6 +494,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.LanguageSettings = accessor.NewLanguageSettingsAccessor(languageSettingsBucket)
 	m.IapCategoryDisplay = accessor.NewIapCategoryDisplayAccessor(iapCategoryDisplayBucket)
 	m.PokestopInvasionAvailabilitySettings = accessor.NewPokestopInvasionAvailabilitySettingsAccessor(pokestopInvasionAvailabilitySettingsBucket)
+	m.CodeGateProto = accessor.NewCodeGateProtoAccessor(codeGateProtoBucket)
 	m.ItemExpirationSettings = accessor.NewItemExpirationSettingsAccessor(itemExpirationSettingsBucket)
 	m.LocationCardSettings = accessor.NewLocationCardSettingsAccessor(locationCardSettingsBucket)
 	m.ClientQuestTemplate = accessor.NewClientQuestTemplateAccessor(clientQuestTemplateBucket)

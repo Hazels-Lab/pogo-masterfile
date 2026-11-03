@@ -2,14 +2,8 @@
 
 package code_gate_proto
 
-type CodeGateProtoSubCodeGateList struct {
-	IsEnabled bool   `json:"isEnabled"`
-	Name      string `json:"name"`
-}
-
 type CodeGateProto struct {
-	IsEnabled       bool                          `json:"isEnabled"`
-	SubCodeGateList *CodeGateProtoSubCodeGateList `json:"subCodeGateList,omitempty"`
+	IsEnabled bool `json:"isEnabled"`
 }
 
 type CodeGateProtoEntry struct {

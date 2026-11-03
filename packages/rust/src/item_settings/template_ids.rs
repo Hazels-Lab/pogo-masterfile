@@ -41,6 +41,8 @@ pub enum ItemSettingsTemplateId {
     ItemEventPassPointGoTour02,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_01")]
     ItemEventPassPointGoWildArea01,
+    #[serde(rename = "ITEM_EVENT_PASS_POINT_GO_WILD_AREA_02")]
+    ItemEventPassPointGoWildArea02,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_LIVE_OPS_01")]
     ItemEventPassPointLiveOps01,
     #[serde(rename = "ITEM_EVENT_PASS_POINT_LIVE_OPS_02")]

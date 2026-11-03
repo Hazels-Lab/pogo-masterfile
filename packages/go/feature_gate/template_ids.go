@@ -12,6 +12,7 @@ const (
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate                                      FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFeatureGate                                             FeatureGateTemplateID = "AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFrontendFeatureGate                                     FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
+	FeatureGateTemplateIDAppraisalFeatureGate                                       FeatureGateTemplateID = "APPRAISAL_FEATURE_GATE"
 	FeatureGateTemplateIDAvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate FeatureGateTemplateID = "AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE"
 	FeatureGateTemplateIDBadgeServiceFeatureGate                                    FeatureGateTemplateID = "BADGE_SERVICE_FEATURE_GATE"
 	FeatureGateTemplateIDBuddySwapPlayerSnapshotFeatureGate                         FeatureGateTemplateID = "BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE"
@@ -23,6 +24,7 @@ const (
 	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate                 FeatureGateTemplateID = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE"
 	FeatureGateTemplateIDDeprecateVerifyEligibilityFeatureGate                      FeatureGateTemplateID = "DEPRECATE_VERIFY_ELIGIBILITY_FEATURE_GATE"
 	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate                      FeatureGateTemplateID = "DISABLE_LEGACY_NEARBY_POKEMON_FEATURE_GATE"
+	FeatureGateTemplateIDDmaxGachaSystemRemovalFeatureGate                          FeatureGateTemplateID = "DMAX_GACHA_SYSTEM_REMOVAL_FEATURE_GATE"
 	FeatureGateTemplateIDEnableNearbyPokemonSnapshotFeatureGate                     FeatureGateTemplateID = "ENABLE_NEARBY_POKEMON_SNAPSHOT_FEATURE_GATE"
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate                       FeatureGateTemplateID = "ENABLE_PVP_CHALLENGE_SPANNER_FEATURE_GATE"
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate                FeatureGateTemplateID = "ENHANCED_CURRENCY_OVERFLOW_STARDUST_FEATURE_GATE"
@@ -34,10 +36,14 @@ const (
 	FeatureGateTemplateIDGmoWildPokemonS2LocationServerFeatureGate                  FeatureGateTemplateID = "GMO_WILD_POKEMON_S2_LOCATION_SERVER_FEATURE_GATE"
 	FeatureGateTemplateIDGrantCheckInBadgeWithoutRewardsFeatureGate                 FeatureGateTemplateID = "GRANT_CHECK_IN_BADGE_WITHOUT_REWARDS_FEATURE_GATE"
 	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate                              FeatureGateTemplateID = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE"
+	FeatureGateTemplateIDImmersiveCatchSummaryFeatureGate                           FeatureGateTemplateID = "IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE"
 	FeatureGateTemplateIDLocationCardRollFeatureGate                                FeatureGateTemplateID = "LOCATION_CARD_ROLL_FEATURE_GATE"
 	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate                            FeatureGateTemplateID = "LUCKY_TRADE_NEW_STRINGS_FEATURE_GATE"
+	FeatureGateTemplateIDMapPokemonRingsFeatureGate                                 FeatureGateTemplateID = "MAP_POKEMON_RINGS_FEATURE_GATE"
 	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate                     FeatureGateTemplateID = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE"
 	FeatureGateTemplateIDMichelinMapLureBottomRingRemovalFeatureGate                FeatureGateTemplateID = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE"
+	FeatureGateTemplateIDMichelinMapPokemonAttractantFogFeatureGate                 FeatureGateTemplateID = "MICHELIN_MAP_POKEMON_ATTRACTANT_FOG_FEATURE_GATE"
+	FeatureGateTemplateIDMichelinMapPokestopSpunContrastUpFeatureGate               FeatureGateTemplateID = "MICHELIN_MAP_POKESTOP_SPUN_CONTRAST_UP_FEATURE_GATE"
 	FeatureGateTemplateIDMichelinMapZygardeCellRewardFeatureGate                    FeatureGateTemplateID = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE"
 	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate                FeatureGateTemplateID = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE"
 	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate                     FeatureGateTemplateID = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE"
@@ -45,6 +51,8 @@ const (
 	FeatureGateTemplateIDRegisterDeviceFeatureGate                                  FeatureGateTemplateID = "REGISTER_DEVICE_FEATURE_GATE"
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                         FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate                    FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
+	FeatureGateTemplateIDSoftSfidaAlertUpdateFeatureGate                            FeatureGateTemplateID = "SOFT_SFIDA_ALERT_UPDATE_FEATURE_GATE"
+	FeatureGateTemplateIDSoftSfidaWidgetBackgroundColorFeatureGate                  FeatureGateTemplateID = "SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE"
 	FeatureGateTemplateIDTodayViewV3ClaimRerenderFeatureGate                        FeatureGateTemplateID = "TODAY_VIEW_V3_CLAIM_RERENDER_FEATURE_GATE"
 	FeatureGateTemplateIDTodayViewV3CollapseRedrawFeatureGate                       FeatureGateTemplateID = "TODAY_VIEW_V3_COLLAPSE_REDRAW_FEATURE_GATE"
 	FeatureGateTemplateIDTodayViewV3DeferredTabLoadFeatureGate                      FeatureGateTemplateID = "TODAY_VIEW_V3_DEFERRED_TAB_LOAD_FEATURE_GATE"
@@ -69,6 +77,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
+	FeatureGateTemplateIDAppraisalFeatureGate,
 	FeatureGateTemplateIDAvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate,
 	FeatureGateTemplateIDBadgeServiceFeatureGate,
 	FeatureGateTemplateIDBuddySwapPlayerSnapshotFeatureGate,
@@ -80,6 +89,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDDailyEncounterGenerationContextFeatureGate,
 	FeatureGateTemplateIDDeprecateVerifyEligibilityFeatureGate,
 	FeatureGateTemplateIDDisableLegacyNearbyPokemonFeatureGate,
+	FeatureGateTemplateIDDmaxGachaSystemRemovalFeatureGate,
 	FeatureGateTemplateIDEnableNearbyPokemonSnapshotFeatureGate,
 	FeatureGateTemplateIDEnablePvpChallengeSpannerFeatureGate,
 	FeatureGateTemplateIDEnhancedCurrencyOverflowStardustFeatureGate,
@@ -91,10 +101,14 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDGmoWildPokemonS2LocationServerFeatureGate,
 	FeatureGateTemplateIDGrantCheckInBadgeWithoutRewardsFeatureGate,
 	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate,
+	FeatureGateTemplateIDImmersiveCatchSummaryFeatureGate,
 	FeatureGateTemplateIDLocationCardRollFeatureGate,
 	FeatureGateTemplateIDLuckyTradeNewStringsFeatureGate,
+	FeatureGateTemplateIDMapPokemonRingsFeatureGate,
 	FeatureGateTemplateIDMeetupReminderNotificationsFeatureGate,
 	FeatureGateTemplateIDMichelinMapLureBottomRingRemovalFeatureGate,
+	FeatureGateTemplateIDMichelinMapPokemonAttractantFogFeatureGate,
+	FeatureGateTemplateIDMichelinMapPokestopSpunContrastUpFeatureGate,
 	FeatureGateTemplateIDMichelinMapZygardeCellRewardFeatureGate,
 	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate,
 	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate,
@@ -102,6 +116,8 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDRegisterDeviceFeatureGate,
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
+	FeatureGateTemplateIDSoftSfidaAlertUpdateFeatureGate,
+	FeatureGateTemplateIDSoftSfidaWidgetBackgroundColorFeatureGate,
 	FeatureGateTemplateIDTodayViewV3ClaimRerenderFeatureGate,
 	FeatureGateTemplateIDTodayViewV3CollapseRedrawFeatureGate,
 	FeatureGateTemplateIDTodayViewV3DeferredTabLoadFeatureGate,

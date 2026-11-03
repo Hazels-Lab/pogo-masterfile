@@ -99,6 +99,10 @@ export type NonCombatMoveSettingsV0466MoveFreezeShock = S<
 				stardustCost: 5000;
 			};
 			durationMs: "600000";
+			innLobbyActivationSettings: {
+				enableActivationInMaxLobby: true;
+				enableActivationInRaidLobby: true;
+			};
 			uniqueId: "FREEZE_SHOCK";
 		}
 	>
@@ -121,6 +125,10 @@ export type NonCombatMoveSettingsV0467MoveIceBurn = S<
 				stardustCost: 5000;
 			};
 			durationMs: "600000";
+			innLobbyActivationSettings: {
+				enableActivationInMaxLobby: true;
+				enableActivationInRaidLobby: true;
+			};
 			uniqueId: "ICE_BURN";
 		}
 	>
@@ -149,6 +157,10 @@ export type NonCombatMoveSettingsV0469MoveBehemothBlade = S<
 				stardustCost: 5000;
 			};
 			durationMs: "360000";
+			innLobbyActivationSettings: {
+				enableActivationInMaxLobby: true;
+				enableActivationInRaidLobby: true;
+			};
 			uniqueId: "BEHEMOTH_BLADE";
 		}
 	>
@@ -177,6 +189,10 @@ export type NonCombatMoveSettingsV0470MoveBehemothBash = S<
 				stardustCost: 5000;
 			};
 			durationMs: "360000";
+			innLobbyActivationSettings: {
+				enableActivationInMaxLobby: true;
+				enableActivationInRaidLobby: true;
+			};
 			uniqueId: "BEHEMOTH_BASH";
 		}
 	>
@@ -197,6 +213,9 @@ export type NonCombatMoveSettingsV0482MoveDynamaxCannon = S<
 				stardustCost: 5000;
 			};
 			durationMs: "600000";
+			innLobbyActivationSettings: {
+				enableActivationInMaxLobby: true;
+			};
 			uniqueId: "DYNAMAX_CANNON";
 		}
 	>

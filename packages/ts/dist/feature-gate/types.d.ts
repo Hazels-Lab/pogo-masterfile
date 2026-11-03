@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 54 entries (structural types).
+// Generated from Pokémon GO masterfile — group "featureGate", 62 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -17,6 +17,7 @@ export interface FeatureGateData {
 	status: number;
 	subFeatureGateList?: Array<{
 		name:
+			| "ADD_DETAILS_GUI_SHORTCUT"
 			| "ALWAYS_USE_EXPANDED_TIME_RANGE"
 			| "COMBAT"
 			| "INVITE_BY_CODE"

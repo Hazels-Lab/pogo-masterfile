@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "event-pass-point", 18 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "event-pass-point", 19 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -88,6 +88,26 @@ export type ItemSettingsItemEventPassPointGoWildArea01 = S<
 			timePeriodCounters: {
 				playerActivity: {
 					limit: 100;
+				};
+			};
+		}
+	>
+>;
+export type ItemSettingsItemEventPassPointGoWildArea02 = S<
+	ItemSettings<
+		"ITEM_EVENT_PASS_POINT_GO_WILD_AREA_02",
+		{
+			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
+			eventPassPoint: {
+				eventPassId: "EVENT_PASS_GOWA2026_LEADOUT";
+			};
+			hideItemInInventory: true;
+			ignoreInventorySpace: true;
+			itemCap: 999999;
+			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
+			timePeriodCounters: {
+				playerActivity: {
+					limit: 900;
 				};
 			};
 		}
@@ -186,9 +206,7 @@ export type ItemSettingsItemEventPassPointLiveOps05 = S<
 			itemCap: 999999;
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
-				playerActivity: {
-					limit: 500;
-				};
+				playerActivity: object;
 			};
 		}
 	>
@@ -364,6 +382,7 @@ export type ItemSettingsEventPassPointMasterfileEntry =
 	| ItemSettingsItemEventPassPointGoTour01
 	| ItemSettingsItemEventPassPointGoTour02
 	| ItemSettingsItemEventPassPointGoWildArea01
+	| ItemSettingsItemEventPassPointGoWildArea02
 	| ItemSettingsItemEventPassPointLiveOps01
 	| ItemSettingsItemEventPassPointLiveOps02
 	| ItemSettingsItemEventPassPointLiveOps03

@@ -168,14 +168,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "stickerMetadata":
-		var e sticker_metadata.StickerMetadataEntry
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
+	case "stickerMetadata":
+		var e sticker_metadata.StickerMetadataEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -252,6 +252,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "temporaryEvolutionSettings":
 		var e temporary_evolution_settings.TemporaryEvolutionSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -260,12 +266,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "clientQuestTemplate":
 		var e client_quest_template.ClientQuestTemplateEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -414,12 +414,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "codeGateProto":
-		var e code_gate_proto.CodeGateProtoEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "fortPowerUpLevelSettings":
 		var e fort_power_up_level_settings.FortPowerUpLevelSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -432,8 +426,20 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "codeGateProto":
+		var e code_gate_proto.CodeGateProtoEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "combatNpcPersonality":
 		var e combat_npc_personality.CombatNpcPersonalityEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "eventPassSettings":
+		var e event_pass_settings.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -452,12 +458,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "avatarGroupOrderSettings":
 		var e avatar_group_order_settings.AvatarGroupOrderSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassSettings":
-		var e event_pass_settings.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
