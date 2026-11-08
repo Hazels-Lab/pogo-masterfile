@@ -6,12 +6,14 @@ type CodeGateProtoTemplateID string
 
 const (
 	CodeGateProtoTemplateIDIsSkuAvailableNoAppIdCodeGate              CodeGateProtoTemplateID = "IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE"
+	CodeGateProtoTemplateIDPokemonLevelCeilingCodeGate                CodeGateProtoTemplateID = "POKEMON_LEVEL_CEILING_CODE_GATE"
 	CodeGateProtoTemplateIDSoftSfidaForegroundDescriptionTextCodeGate CodeGateProtoTemplateID = "SOFT_SFIDA_FOREGROUND_DESCRIPTION_TEXT_CODE_GATE"
 	CodeGateProtoTemplateIDUseGmtSkuDataCodeGate                      CodeGateProtoTemplateID = "USE_GMT_SKU_DATA_CODE_GATE"
 )
 
 var CodeGateProtoTemplateIDValues = [...]CodeGateProtoTemplateID{
 	CodeGateProtoTemplateIDIsSkuAvailableNoAppIdCodeGate,
+	CodeGateProtoTemplateIDPokemonLevelCeilingCodeGate,
 	CodeGateProtoTemplateIDSoftSfidaForegroundDescriptionTextCodeGate,
 	CodeGateProtoTemplateIDUseGmtSkuDataCodeGate,
 }

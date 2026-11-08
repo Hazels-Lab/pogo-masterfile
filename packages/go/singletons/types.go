@@ -639,9 +639,9 @@ type CatchRadiusMultiplierSettings struct {
 }
 
 type CombatCompetitiveSeasonSettings struct {
-	RankingAdjustmentPercentage float64    `json:"rankingAdjustmentPercentage"`
-	RatingAdjustmentPercentage  float64    `json:"ratingAdjustmentPercentage"`
-	SeasonEndTimeTimestamp      [32]string `json:"seasonEndTimeTimestamp"`
+	RankingAdjustmentPercentage float64  `json:"rankingAdjustmentPercentage"`
+	RatingAdjustmentPercentage  float64  `json:"ratingAdjustmentPercentage"`
+	SeasonEndTimeTimestamp      []string `json:"seasonEndTimeTimestamp"`
 }
 
 type CombatLeagueSettings struct {
@@ -830,6 +830,61 @@ type ErrorReportingSettings struct {
 
 type EventMapRefreshSettings struct {
 	EventServerSettingsHash string `json:"eventServerSettingsHash"`
+}
+
+type EventPassSettingsBonusBoxes struct {
+	IconType string `json:"iconType"`
+	Quantity uint64 `json:"quantity"`
+	Text     string `json:"text"`
+}
+
+type EventPassSettingsEventPassTrackUpgradeDescriptions struct {
+	DetailsLinkKey                    string    `json:"detailsLinkKey"`
+	EventDurationKey                  string    `json:"eventDurationKey"`
+	EventPassTrackToUpgradeTo         string    `json:"eventPassTrackToUpgradeTo"`
+	PassTrackUpgradeHeaderDescription string    `json:"passTrackUpgradeHeaderDescription"`
+	RanksToHighlightRewards           [3]uint64 `json:"ranksToHighlightRewards"`
+	TrackUnlockImageUrl               string    `json:"trackUnlockImageUrl"`
+	TrackUnlockPlusPointsImageUrl     string    `json:"trackUnlockPlusPointsImageUrl"`
+	TrackUnlockPlusPointsSkuId        string    `json:"trackUnlockPlusPointsSkuId"`
+	TrackUnlockSkuId                  string    `json:"trackUnlockSkuId"`
+	UpgradeDescriptionKey             string    `json:"upgradeDescriptionKey"`
+}
+
+type EventPassSettingsEventPassDisplaySettings struct {
+	BonusBoxes                        [3]EventPassSettingsBonusBoxes                        `json:"bonusBoxes"`
+	EventPassTitleKey                 string                                                `json:"eventPassTitleKey"`
+	EventPassTrackUpgradeDescriptions [1]EventPassSettingsEventPassTrackUpgradeDescriptions `json:"eventPassTrackUpgradeDescriptions"`
+	HeaderIconUrl                     string                                                `json:"headerIconUrl"`
+	PremiumRewardBannerBottom         string                                                `json:"premiumRewardBannerBottom"`
+	PremiumRewardBannerImageUrl       string                                                `json:"premiumRewardBannerImageUrl"`
+	PremiumRewardBannerMiddle         string                                                `json:"premiumRewardBannerMiddle"`
+	PremiumRewardBannerTop            string                                                `json:"premiumRewardBannerTop"`
+	PremiumRewardsDescription         string                                                `json:"premiumRewardsDescription"`
+	SectionDisplayPriority            uint64                                                `json:"sectionDisplayPriority"`
+	TodayViewSection                  string                                                `json:"todayViewSection"`
+}
+
+type EventPassSettingsTrackConditions struct {
+	Track         string `json:"track"`
+	TrackTitleKey string `json:"trackTitleKey"`
+}
+
+type EventPassSettingsTrackConditionsV2 struct {
+	Badge         string `json:"badge"`
+	Track         string `json:"track"`
+	TrackTitleKey string `json:"trackTitleKey"`
+}
+
+type EventPassSettings struct {
+	AdditionalBonusTiersLevel uint64                                    `json:"additionalBonusTiersLevel"`
+	EventPassDisplaySettings  EventPassSettingsEventPassDisplaySettings `json:"eventPassDisplaySettings"`
+	ExpirationTime            string                                    `json:"expirationTime"`
+	GracePeriodEndTime        string                                    `json:"gracePeriodEndTime"`
+	MaxTierLevel              uint64                                    `json:"maxTierLevel"`
+	PointsItemId              string                                    `json:"pointsItemId"`
+	Prefix                    string                                    `json:"prefix"`
+	TrackConditions           []any                                     `json:"trackConditions"`
 }
 
 type EventPlannerPopularNotificationSettings struct {
@@ -1077,9 +1132,7 @@ type MainMenuChanges struct {
 }
 
 type MapDisplaySettings struct {
-	EventThemeName  string `json:"eventThemeName"`
-	ShowEnhancedSky bool   `json:"showEnhancedSky"`
-	SkyEffectName   string `json:"skyEffectName"`
+	ShowEnhancedSky bool `json:"showEnhancedSky"`
 }
 
 type MapObjectsInteractionRangeSettings struct {
@@ -1142,10 +1195,6 @@ type MpSettings struct {
 	NumMetersGoal                  uint64  `json:"numMetersGoal"`
 	NumMpFromLootStation           uint64  `json:"numMpFromLootStation"`
 	NumMpFromWalkQuest             uint64  `json:"numMpFromWalkQuest"`
-}
-
-type MusicSettings struct {
-	MapMusicNightOverride string `json:"mapMusicNightOverride"`
 }
 
 type NaturalArtDayNightFeatureSettings struct {
@@ -2081,13 +2130,11 @@ type VerboseLogRaidSettings struct {
 }
 
 type VistaGeneralSettings struct {
-	EnvironmentSeason       string `json:"environmentSeason"`
-	IsFeatureEnabled        bool   `json:"isFeatureEnabled"`
-	IsVistaBattleEnabled    bool   `json:"isVistaBattleEnabled"`
-	IsVistaEncounterEnabled bool   `json:"isVistaEncounterEnabled"`
-	IsVistaMapEnabled       bool   `json:"isVistaMapEnabled"`
-	IsVistaSpawnsEnabled    bool   `json:"isVistaSpawnsEnabled"`
-	ThemeOverride           string `json:"themeOverride"`
+	IsFeatureEnabled        bool `json:"isFeatureEnabled"`
+	IsVistaBattleEnabled    bool `json:"isVistaBattleEnabled"`
+	IsVistaEncounterEnabled bool `json:"isVistaEncounterEnabled"`
+	IsVistaMapEnabled       bool `json:"isVistaMapEnabled"`
+	IsVistaSpawnsEnabled    bool `json:"isVistaSpawnsEnabled"`
 }
 
 type VnextBattleConfigMaxBattleConfig struct {
@@ -2113,7 +2160,7 @@ type VnextBattleConfig struct {
 }
 
 type VsSeekerClientSettings struct {
-	AllowedVsSeekerLeagueTemplateId [2]string `json:"allowedVsSeekerLeagueTemplateId"`
+	AllowedVsSeekerLeagueTemplateId [3]string `json:"allowedVsSeekerLeagueTemplateId"`
 }
 
 type VsSeekerScheduleSettingsVsSeekerSchedules struct {
@@ -2793,6 +2840,18 @@ type EventMapRefreshSettingsEntryData struct {
 	EventMapRefreshSettings EventMapRefreshSettings `json:"eventMapRefreshSettings"`
 }
 
+type EventPassSettingsEntry struct {
+	TemplateID string                     `json:"templateId"`
+	Data       EventPassSettingsEntryData `json:"data"`
+}
+
+func (EventPassSettingsEntry) MasterfileEntry() {}
+
+type EventPassSettingsEntryData struct {
+	TemplateID        string            `json:"templateId"`
+	EventPassSettings EventPassSettings `json:"eventPassSettings"`
+}
+
 type EventPlannerPopularNotificationSettingsEntry struct {
 	TemplateID string                                           `json:"templateId"`
 	Data       EventPlannerPopularNotificationSettingsEntryData `json:"data"`
@@ -3160,18 +3219,6 @@ func (MpSettingsEntry) MasterfileEntry() {}
 type MpSettingsEntryData struct {
 	TemplateID string     `json:"templateId"`
 	MpSettings MpSettings `json:"mpSettings"`
-}
-
-type MusicSettingsEntry struct {
-	TemplateID string                 `json:"templateId"`
-	Data       MusicSettingsEntryData `json:"data"`
-}
-
-func (MusicSettingsEntry) MasterfileEntry() {}
-
-type MusicSettingsEntryData struct {
-	TemplateID    string        `json:"templateId"`
-	MusicSettings MusicSettings `json:"musicSettings"`
 }
 
 type NaturalArtDayNightFeatureSettingsEntry struct {

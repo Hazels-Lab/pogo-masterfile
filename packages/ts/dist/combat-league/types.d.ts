@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", 113 entries (structural types).
+// Generated from Pokémon GO masterfile — group "combatLeague", 115 entries (structural types).
 
 import type { W } from "../_utils";
 import type { TypeEffectiveTemplateID } from "../type-effective/entries";
@@ -76,7 +76,7 @@ export interface CombatLeagueData {
 	leagueType: "PREMIER" | "STANDARD";
 	pokemonCondition: Array<{
 		pokemonBanList?: {
-			lgdbihdlhod?: "s24_laic_prohibited_pokemon_and_classes";
+			lgdbihdlhod?: "s24_laic_prohibited_pokemon_and_classes" | "s25_euic_prohibited_pokemon";
 			pokemon: Array<{
 				forms?: Array<string>;
 				id: string;
@@ -120,7 +120,8 @@ export interface CombatLeagueData {
 				| "1748980800000"
 				| "1756843200000"
 				| "1772571600000"
-				| "1788897600000";
+				| "1788897600000"
+				| "1796158800000";
 			beforeTimestamp:
 				| "1652457600000"
 				| "1652544000000"
@@ -158,7 +159,8 @@ export interface CombatLeagueData {
 				| "1756843200000"
 				| "1764709200000"
 				| "1780430400000"
-				| "1796158800000";
+				| "1796158800000"
+				| "1804021200000";
 		};
 		pokemonLevelRange?: {
 			maxLevel: number;

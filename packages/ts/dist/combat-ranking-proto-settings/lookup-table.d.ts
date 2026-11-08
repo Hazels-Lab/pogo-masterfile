@@ -23,6 +23,7 @@ import type {
 	CombatRankingProtoSettingsSettingsS28,
 	CombatRankingProtoSettingsSettingsS29,
 	CombatRankingProtoSettingsSettingsS30,
+	CombatRankingProtoSettingsSettingsS31,
 } from "./entries";
 
 export interface CombatRankingProtoSettingsLookup {
@@ -48,4 +49,5 @@ export interface CombatRankingProtoSettingsLookup {
 	COMBAT_RANKING_SETTINGS_S28: CombatRankingProtoSettingsSettingsS28;
 	COMBAT_RANKING_SETTINGS_S29: CombatRankingProtoSettingsSettingsS29;
 	COMBAT_RANKING_SETTINGS_S30: CombatRankingProtoSettingsSettingsS30;
+	COMBAT_RANKING_SETTINGS_S31: CombatRankingProtoSettingsSettingsS31;
 }

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatRankingProtoSettings", 22 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "combatRankingProtoSettings", 23 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { CombatRankingProtoSettings } from "../types";
@@ -2262,6 +2262,112 @@ export type CombatRankingProtoSettingsSettingsS30 = S<
 		}
 	>
 >;
+export type CombatRankingProtoSettingsSettingsS31 = S<
+	CombatRankingProtoSettings<
+		"COMBAT_RANKING_SETTINGS_S31",
+		{
+			minRankToDisplayRating: 20;
+			minRatingRequired: 31;
+			rankLevel: [
+				{
+					rankLevel: 1;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 2;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 3;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 4;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 5;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 6;
+				},
+				{
+					additionalWinsRequired: 1;
+					rankLevel: 7;
+				},
+				{
+					additionalWinsRequired: 1;
+					rankLevel: 8;
+				},
+				{
+					additionalWinsRequired: 1;
+					rankLevel: 9;
+				},
+				{
+					additionalWinsRequired: 1;
+					rankLevel: 10;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 11;
+				},
+				{
+					additionalWinsRequired: 5;
+					rankLevel: 12;
+				},
+				{
+					additionalWinsRequired: 6;
+					rankLevel: 13;
+				},
+				{
+					additionalWinsRequired: 7;
+					rankLevel: 14;
+				},
+				{
+					additionalWinsRequired: 8;
+					rankLevel: 15;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 16;
+				},
+				{
+					additionalWinsRequired: 10;
+					rankLevel: 17;
+				},
+				{
+					additionalWinsRequired: 15;
+					rankLevel: 18;
+				},
+				{
+					additionalWinsRequired: 20;
+					rankLevel: 19;
+				},
+				{
+					additionalTotalBattlesRequired: 5;
+					rankLevel: 20;
+				},
+				{
+					minRatingRequired: 2000;
+					rankLevel: 21;
+				},
+				{
+					minRatingRequired: 2500;
+					rankLevel: 22;
+				},
+				{
+					minRatingRequired: 2750;
+					rankLevel: 23;
+				},
+				{
+					minRatingRequired: 3000;
+					rankLevel: 24;
+				},
+			];
+		}
+	>
+>;
 
 export type CombatRankingProtoSettingsMasterfileEntry =
 	| CombatRankingProtoSettingsSettings
@@ -2285,6 +2391,7 @@ export type CombatRankingProtoSettingsMasterfileEntry =
 	| CombatRankingProtoSettingsSettingsS27
 	| CombatRankingProtoSettingsSettingsS28
 	| CombatRankingProtoSettingsSettingsS29
-	| CombatRankingProtoSettingsSettingsS30;
+	| CombatRankingProtoSettingsSettingsS30
+	| CombatRankingProtoSettingsSettingsS31;
 
 export type CombatRankingProtoSettingsTemplateID = CombatRankingProtoSettingsMasterfileEntry["templateId"];

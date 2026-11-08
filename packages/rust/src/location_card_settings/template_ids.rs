@@ -343,6 +343,8 @@ pub enum LocationCardSettingsTemplateId {
     LcPokelidFukushima,
     #[serde(rename = "LC_POKELID_GIFU")]
     LcPokelidGifu,
+    #[serde(rename = "LC_POKELID_GUNMA")]
+    LcPokelidGunma,
     #[serde(rename = "LC_POKELID_HOKKAIDO")]
     LcPokelidHokkaido,
     #[serde(rename = "LC_POKELID_HYOGO")]

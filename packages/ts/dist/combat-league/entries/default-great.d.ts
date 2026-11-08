@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 87 entries.
+// Generated from Pokémon GO masterfile — group "combatLeague", split "default-great", 89 entries.
 
 import type { S } from "../../_utils";
 import type { CombatLeague } from "../types";
@@ -9842,6 +9842,79 @@ export type CombatLeagueVsSeekerGreatCatchS24Megas = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatCatchS25Megas = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S25_MEGAS",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_GREAT_LEAGUE";
+			bannedPokemon: [
+				"DITTO",
+				"SHEDINJA",
+				"MEW",
+				"CELEBI",
+				"JIRACHI",
+				"DEOXYS",
+				"DARKRAI",
+				"VICTINI",
+				"MELOETTA",
+				"GENESECT",
+				"HOOPA",
+				"MELTAN",
+				"MELMETAL",
+				"ZARUDE",
+				"DIANCIE",
+				"SHAYMIN",
+				"KELDEO",
+				"VOLCANION",
+				"MARSHADOW",
+				"XERNEAS",
+				"YVELTAL",
+				"COBALION",
+				"TERRAKION",
+				"VIRIZION",
+				"KYUREM",
+				"TAPU_KOKO",
+				"TAPU_LELE",
+				"TAPU_BULU",
+				"SOLGALEO",
+				"LUNALA",
+				"ZACIAN",
+				"ZAMAZENTA",
+				"ENAMORUS",
+				"ZERAORA",
+			];
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb5bc1551_MegaCatchCup_icon.png";
+			leagueType: "PREMIER";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					pokemonCaughtTimestamp: {
+						afterTimestamp: "1796158800000";
+						beforeTimestamp: "1804021200000";
+					};
+					type: "POKEMON_CAUGHT_TIMESTAMP";
+				},
+			];
+			title: "mega_catch_cup_great_title";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatCatchSeason11 = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11",
@@ -11704,6 +11777,212 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 		}
 	>
 >;
+export type CombatLeagueVsSeekerGreatChampionshipSeriesEuic = S<
+	CombatLeague<
+		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES_EUIC",
+		{
+			allowTempEvos: true;
+			badgeType: "BADGE_GREAT_LEAGUE";
+			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
+			iconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2FGBL_Pokemon_GO_Championship_Series_Logo.png";
+			leagueType: "STANDARD";
+			pokemonCondition: [
+				{
+					type: "WITH_POKEMON_CP_LIMIT";
+					withPokemonCpLimit: {
+						maxCp: 1500;
+					};
+				},
+				{
+					type: "WITH_UNIQUE_POKEMON";
+				},
+				{
+					pokemonWhiteList: {
+						pokemon: [
+							{
+								id: "WEEDLE";
+							},
+							{
+								id: "KAKUNA";
+							},
+							{
+								id: "BEEDRILL";
+							},
+							{
+								id: "VENONAT";
+							},
+							{
+								id: "VENOMOTH";
+							},
+							{
+								id: "SPINARAK";
+							},
+							{
+								id: "ARIADOS";
+							},
+							{
+								id: "SHUCKLE";
+							},
+							{
+								id: "DUSTOX";
+							},
+							{
+								id: "ANORITH";
+							},
+							{
+								id: "ARMALDO";
+							},
+							{
+								id: "SKORUPI";
+							},
+							{
+								id: "FROSLASS";
+							},
+							{
+								id: "VENIPEDE";
+							},
+							{
+								id: "WHIRLIPEDE";
+							},
+							{
+								id: "SCOLIPEDE";
+							},
+							{
+								id: "DWEBBLE";
+							},
+							{
+								id: "JOLTIK";
+							},
+							{
+								id: "GALVANTULA";
+							},
+							{
+								id: "DRAGALGE";
+							},
+							{
+								id: "HELIOPTILE";
+							},
+							{
+								id: "HELIOLISK";
+							},
+							{
+								id: "TYRUNT";
+							},
+							{
+								id: "TYRANTRUM";
+							},
+							{
+								id: "CHARJABUG";
+							},
+							{
+								id: "VIKAVOLT";
+							},
+							{
+								id: "SNOM";
+							},
+							{
+								id: "FROSMOTH";
+							},
+							{
+								id: "DRACOZOLT";
+							},
+							{
+								id: "KLEAVOR";
+							},
+							{
+								id: "SHROODLE";
+							},
+							{
+								id: "GRAFAIAI";
+							},
+							{
+								id: "FRIGIBAX";
+							},
+							{
+								id: "ARCTIBAX";
+							},
+							{
+								id: "BAXCALIBUR";
+							},
+						];
+					};
+					type: "POKEMON_WHITELIST";
+				},
+				{
+					pokemonBanList: {
+						lgdbihdlhod: "s25_euic_prohibited_pokemon";
+						pokemon: [
+							{
+								forms: ["CARKOL_NORMAL"];
+								id: "CARKOL";
+							},
+							{
+								forms: ["COALOSSAL_NORMAL"];
+								id: "COALOSSAL";
+							},
+							{
+								forms: ["CHARJABUG_NORMAL"];
+								id: "CHARJABUG";
+							},
+							{
+								forms: ["CRUSTLE_NORMAL"];
+								id: "CRUSTLE";
+							},
+							{
+								forms: ["DRAGALGE_NORMAL"];
+								id: "DRAGALGE";
+							},
+							{
+								forms: ["DRAPION_NORMAL"];
+								id: "DRAPION";
+							},
+							{
+								forms: ["GRIMER_NORMAL"];
+								id: "GRIMER";
+							},
+							{
+								forms: ["LANTURN_NORMAL"];
+								id: "LANTURN";
+							},
+							{
+								forms: ["MAGCARGO_NORMAL"];
+								id: "MAGCARGO";
+							},
+							{
+								forms: ["MALAMAR_NORMAL"];
+								id: "MALAMAR";
+							},
+							{
+								forms: ["MINIOR_RED"];
+								id: "MINIOR";
+							},
+							{
+								forms: ["NIDORINA_NORMAL"];
+								id: "NIDORINA";
+							},
+							{
+								forms: ["PACHIRISU_NORMAL"];
+								id: "PACHIRISU";
+							},
+							{
+								forms: ["SABLEYE_NORMAL"];
+								id: "SABLEYE";
+							},
+						];
+					};
+					type: "POKEMON_BANLIST";
+				},
+			];
+			title: "great_league_championship_series_2027";
+			unlockCondition: [
+				{
+					minPokemonCount: 3;
+					type: "WITH_UNIQUE_POKEMON";
+				},
+			];
+		}
+	>
+>;
 export type CombatLeagueVsSeekerGreatChampionshipsLegacy = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
@@ -12374,6 +12653,8 @@ export type CombatLeagueVsSeekerGreatFighting = S<
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
+				"LANDORUS",
+				"RESHIRAM",
 				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
@@ -12386,6 +12667,12 @@ export type CombatLeagueVsSeekerGreatFighting = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
+				"MIMIKYU",
+				"ZAPDOS",
+				"HAWLUCHA",
+				"FLAMIGO",
+				"MARSHADOW",
+				"ANNIHILAPE",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/fight2022_icon.png";
@@ -13880,10 +14167,12 @@ export type CombatLeagueVsSeekerGreatHoliday = S<
 			bannedPokemon: [
 				"DITTO",
 				"SHEDINJA",
-				"SMEARGLE",
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
+				"LANDORUS",
+				"RESHIRAM",
+				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -13895,6 +14184,7 @@ export type CombatLeagueVsSeekerGreatHoliday = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
+				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/holiday_league_icon.png";
@@ -22147,10 +22437,12 @@ export type CombatLeagueVsSeekerMountainGreat = S<
 			bannedPokemon: [
 				"DITTO",
 				"SHEDINJA",
-				"SWAMPERT",
 				"COBALION",
 				"TERRAKION",
 				"VIRIZION",
+				"LANDORUS",
+				"RESHIRAM",
+				"ZEKROM",
 				"KYUREM",
 				"TAPU_KOKO",
 				"TAPU_LELE",
@@ -22162,6 +22454,7 @@ export type CombatLeagueVsSeekerMountainGreat = S<
 				"ENAMORUS",
 				"XERNEAS",
 				"YVELTAL",
+				"MIMIKYU",
 			];
 			battlePartyCombatLeagueTemplateId: "COMBAT_LEAGUE_DEFAULT_GREAT";
 			iconUrl: "https://storage.googleapis.com/prod-public-images/LeagueIcons/mountainCup_icon.png";
@@ -22459,9 +22752,11 @@ export type CombatLeagueDefaultGreatMasterfileEntry =
 	| CombatLeagueVsSeekerGreatCatchS20
 	| CombatLeagueVsSeekerGreatCatchS22
 	| CombatLeagueVsSeekerGreatCatchS24Megas
+	| CombatLeagueVsSeekerGreatCatchS25Megas
 	| CombatLeagueVsSeekerGreatCatchSeason11
 	| CombatLeagueVsSeekerGreatChampionshipNaic
 	| CombatLeagueVsSeekerGreatChampionshipSeries
+	| CombatLeagueVsSeekerGreatChampionshipSeriesEuic
 	| CombatLeagueVsSeekerGreatChampionshipsLegacy
 	| CombatLeagueVsSeekerGreatElectric
 	| CombatLeagueVsSeekerGreatElement

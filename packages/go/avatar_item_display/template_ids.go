@@ -789,6 +789,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNPoseS23gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s23gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseS24gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s24gbl"
 	AvatarItemDisplayTemplateIDNDisplayNPoseS25gbl                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_s25gbl"
+	AvatarItemDisplayTemplateIDNDisplayNPoseStarballoon                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_starballoon"
 	AvatarItemDisplayTemplateIDNDisplayNPoseSustainability                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_sustainability"
 	AvatarItemDisplayTemplateIDNDisplayNPoseTeapot                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_teapot"
 	AvatarItemDisplayTemplateIDNDisplayNPoseTinkatonhammer                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_pose_tinkatonhammer"
@@ -1283,6 +1284,9 @@ const (
 	AvatarItemDisplayTemplateIDNDisplayNShoesClay0                          AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_clay_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesClemont0                       AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_clemont_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesCoolboots0                     AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_coolboots_0"
+	AvatarItemDisplayTemplateIDNDisplayNShoesCrocsgengar                    AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_crocsgengar"
+	AvatarItemDisplayTemplateIDNDisplayNShoesCrocsjigglypuff                AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_crocsjigglypuff"
+	AvatarItemDisplayTemplateIDNDisplayNShoesCrocspikachu                   AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_crocspikachu"
 	AvatarItemDisplayTemplateIDNDisplayNShoesCynthia                        AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_cynthia"
 	AvatarItemDisplayTemplateIDNDisplayNShoesDedenneitems0                  AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_dedenneitems_0"
 	AvatarItemDisplayTemplateIDNDisplayNShoesDefaultA0                      AvatarItemDisplayTemplateID = "N_DISPLAY_n_shoes_default_a_0"
@@ -1714,6 +1718,7 @@ const (
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2025winnersitems0              AvatarItemDisplayTemplateID = "N_DISPLAY_set_wcs2025winnersitems_0"
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2026winnersitems               AvatarItemDisplayTemplateID = "N_DISPLAY_set_wcs2026winnersitems"
 	AvatarItemDisplayTemplateIDNDisplaySetWillow                            AvatarItemDisplayTemplateID = "N_DISPLAY_set_willow"
+	AvatarItemDisplayTemplateIDNDisplaySetWinona                            AvatarItemDisplayTemplateID = "N_DISPLAY_set_winona"
 	AvatarItemDisplayTemplateIDNDisplaySetWinter2023                        AvatarItemDisplayTemplateID = "N_DISPLAY_set_winter2023"
 	AvatarItemDisplayTemplateIDNDisplaySetZacostumeA                        AvatarItemDisplayTemplateID = "N_DISPLAY_set_zacostume_a"
 	AvatarItemDisplayTemplateIDNDisplaySetZacostumeB                        AvatarItemDisplayTemplateID = "N_DISPLAY_set_zacostume_b"
@@ -2504,6 +2509,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNPoseS23gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseS24gbl,
 	AvatarItemDisplayTemplateIDNDisplayNPoseS25gbl,
+	AvatarItemDisplayTemplateIDNDisplayNPoseStarballoon,
 	AvatarItemDisplayTemplateIDNDisplayNPoseSustainability,
 	AvatarItemDisplayTemplateIDNDisplayNPoseTeapot,
 	AvatarItemDisplayTemplateIDNDisplayNPoseTinkatonhammer,
@@ -2998,6 +3004,9 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplayNShoesClay0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesClemont0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesCoolboots0,
+	AvatarItemDisplayTemplateIDNDisplayNShoesCrocsgengar,
+	AvatarItemDisplayTemplateIDNDisplayNShoesCrocsjigglypuff,
+	AvatarItemDisplayTemplateIDNDisplayNShoesCrocspikachu,
 	AvatarItemDisplayTemplateIDNDisplayNShoesCynthia,
 	AvatarItemDisplayTemplateIDNDisplayNShoesDedenneitems0,
 	AvatarItemDisplayTemplateIDNDisplayNShoesDefaultA0,
@@ -3429,6 +3438,7 @@ var AvatarItemDisplayTemplateIDValues = [...]AvatarItemDisplayTemplateID{
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2025winnersitems0,
 	AvatarItemDisplayTemplateIDNDisplaySetWcs2026winnersitems,
 	AvatarItemDisplayTemplateIDNDisplaySetWillow,
+	AvatarItemDisplayTemplateIDNDisplaySetWinona,
 	AvatarItemDisplayTemplateIDNDisplaySetWinter2023,
 	AvatarItemDisplayTemplateIDNDisplaySetZacostumeA,
 	AvatarItemDisplayTemplateIDNDisplaySetZacostumeB,

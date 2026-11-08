@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "pokelid", 42 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "pokelid", 43 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -81,6 +81,15 @@ export type LocationCardSettingsPokelidGifu = S<
 		{
 			imageUrl: "lc_pokelid_gifu";
 			locationCard: "LC_POKELID_GIFU";
+		}
+	>
+>;
+export type LocationCardSettingsPokelidGunma = S<
+	LocationCardSettings<
+		"LC_POKELID_GUNMA",
+		{
+			imageUrl: "lc_pokelid_gunma";
+			locationCard: "LC_POKELID_GUNMA";
 		}
 	>
 >;
@@ -392,6 +401,7 @@ export type LocationCardSettingsPokelidMasterfileEntry =
 	| LocationCardSettingsPokelidFukuoka
 	| LocationCardSettingsPokelidFukushima
 	| LocationCardSettingsPokelidGifu
+	| LocationCardSettingsPokelidGunma
 	| LocationCardSettingsPokelidHokkaido
 	| LocationCardSettingsPokelidHyogo
 	| LocationCardSettingsPokelidIbaraki

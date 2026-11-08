@@ -569,12 +569,6 @@ pub enum IapItemDisplayTemplateId {
     Month1DeluxeEventPassTrackUnlock,
     #[serde(rename = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
     Month1DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "month2_deluxe_event_pass_track_redirect")]
-    Month2DeluxeEventPassTrackRedirect,
-    #[serde(rename = "month2_deluxe_event_pass_track_unlock")]
-    Month2DeluxeEventPassTrackUnlock,
-    #[serde(rename = "month2_deluxe_event_pass_track_unlock_plus_points")]
-    Month2DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "month3_deluxe_event_pass_track_redirect")]
     Month3DeluxeEventPassTrackRedirect,
     #[serde(rename = "month3_deluxe_event_pass_track_unlock")]
@@ -595,12 +589,6 @@ pub enum IapItemDisplayTemplateId {
     October12026DeluxeEventPassTrackUnlockPlusPoints,
     #[serde(rename = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT")]
     October12026DeluxeEventPassTrackUnlockRedirect,
-    #[serde(rename = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
-    October22026DeluxeEventPassTrackUnlock,
-    #[serde(rename = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
-    October22026DeluxeEventPassTrackUnlockPlusPoints,
-    #[serde(rename = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT")]
-    October22026DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "paidraidticket.1")]
     Paidraidticket1,
     #[serde(rename = "paidraidticket.3")]

@@ -9,11 +9,11 @@ export type ItemSettingsItemBattlePassTicket = S<
 		{
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
 			globalEventTicket: {
-				clientEventEndTimeUtcMs: "1790071200000";
-				clientEventStartTimeUtcMs: "1788872400000";
-				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg";
-				eventEndTime: "2026-09-22T10:00:00";
-				eventStartTime: "2026-09-08T13:00:00";
+				clientEventEndTimeUtcMs: "1797422400000";
+				clientEventStartTimeUtcMs: "1796112000000";
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58392656_PGO_MCS_S25_GBL_v1-1024x576.jpg";
+				eventEndTime: "2026-12-16T12:00:00";
+				eventStartTime: "2026-12-01T08:00:00";
 				itemBagDescriptionKey: "item_battle_pass_ticket_desc";
 			};
 			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";

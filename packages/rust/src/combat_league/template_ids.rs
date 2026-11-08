@@ -115,12 +115,16 @@ pub enum CombatLeagueTemplateId {
     CombatLeagueVsSeekerGreatCatchS22,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S24_MEGAS")]
     CombatLeagueVsSeekerGreatCatchS24Megas,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S25_MEGAS")]
+    CombatLeagueVsSeekerGreatCatchS25Megas,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_SEASON11")]
     CombatLeagueVsSeekerGreatCatchSeason11,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_NAIC")]
     CombatLeagueVsSeekerGreatChampionshipNaic,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES")]
     CombatLeagueVsSeekerGreatChampionshipSeries,
+    #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES_EUIC")]
+    CombatLeagueVsSeekerGreatChampionshipSeriesEuic,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY")]
     CombatLeagueVsSeekerGreatChampionshipsLegacy,
     #[serde(rename = "COMBAT_LEAGUE_VS_SEEKER_GREAT_ELECTRIC")]

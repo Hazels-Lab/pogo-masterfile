@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 4 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -62,24 +62,6 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 		}
 	>
 >;
-export type IapItemDisplayMonth2DeluxeEventPassTrackRedirect = S<
-	IapItemDisplay<
-		"month2_deluxe_event_pass_track_redirect",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.month2_deluxe_event_pass_track_redirect";
-			skuDisableTime: "2026-11-05T10:00:00";
-			skuDisableTimeUtcMs: "1793872800000";
-			skuEnableTime: "2025-10-06T10:00:00";
-			skuEnableTimeUtcMs: "1759744800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_oct";
-			useEnvironmentPrefix: true;
-		}
-	>
->;
 export type IapItemDisplayMonth3DeluxeEventPassTrackRedirect = S<
 	IapItemDisplay<
 		"month3_deluxe_event_pass_track_redirect",
@@ -98,29 +80,9 @@ export type IapItemDisplayMonth3DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayOctober22026DeluxeEventPassTrackUnlockRedirect = S<
-	IapItemDisplay<
-		"OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb20824cf_PGO-MCS_GO_Pass_Halloween_2026-v2-1024x576.jpg";
-			sku: "pgorelease.october2_2026_deluxe_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-11-07T20:00:00";
-			skuDisableTimeUtcMs: "1794081600000";
-			skuEnableTime: "2025-10-27T10:00:00";
-			skuEnableTimeUtcMs: "1761559200000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_halloween2026";
-			useEnvironmentPrefix: true;
-		}
-	>
->;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket11
-	| IapItemDisplayMonth2DeluxeEventPassTrackRedirect
-	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect
-	| IapItemDisplayOctober22026DeluxeEventPassTrackUnlockRedirect;
+	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect;

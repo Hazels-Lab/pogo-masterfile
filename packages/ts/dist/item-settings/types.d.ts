@@ -100,6 +100,7 @@ export interface ItemSettingsData {
 	eventPassPoint?: {
 		eventPassId:
 			| "EVENT_PASS_AFTERPARTY2026_EVENT"
+			| "EVENT_PASS_DECEMBER2026_SEASON"
 			| "EVENT_PASS_FALLMARATHON2026_EVENT"
 			| "EVENT_PASS_FLYINGTAXI2026_EVENT"
 			| "EVENT_PASS_GOFEST2025_GLOBAL"
@@ -114,7 +115,6 @@ export interface ItemSettingsData {
 			| "EVENT_PASS_MEGASQUADS2026_EVENT"
 			| "EVENT_PASS_NOVEMBER2026_SEASON"
 			| "EVENT_PASS_OCTOBER2026_SEASON"
-			| "EVENT_PASS_SEPTEMBER2026_SEASON"
 			| "EVENT_PASS_SUMMER_MARATHON_2026_EVENT"
 			| "EVENT_PASS_UU_WATER_FESTIVAL_2026_EVENT"
 			| "EVENT_PASS_WCS2026_EVENT";
@@ -199,7 +199,6 @@ export interface ItemSettingsData {
 			| "1787418000000"
 			| "1789232400000"
 			| "1789837200000"
-			| "1790071200000"
 			| "1790452800000"
 			| "1791046800000"
 			| "1791651600000"
@@ -207,7 +206,8 @@ export interface ItemSettingsData {
 			| "1792861200000"
 			| "1793466000000"
 			| "1794765600000"
-			| "1795280400000";
+			| "1795280400000"
+			| "1797422400000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -236,7 +236,6 @@ export interface ItemSettingsData {
 			| "1785592800000"
 			| "1786888800000"
 			| "1787396400000"
-			| "1788872400000"
 			| "1789221600000"
 			| "1789826400000"
 			| "1790416800000"
@@ -246,7 +245,8 @@ export interface ItemSettingsData {
 			| "1792850400000"
 			| "1793455200000"
 			| "1794650400000"
-			| "1795269600000";
+			| "1795269600000"
+			| "1796112000000";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
@@ -273,7 +273,6 @@ export interface ItemSettingsData {
 		eventBadge?: "BADGE_GO_TOUR_2026_GLOBAL";
 		eventBannerUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
-			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F035aa0ae_PGO-MCS_S24_GBL_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F452fd1a0_PGO-MCS_Chandelure_Super_Mega_Raid_Day_v3_1024x576.jpg"
@@ -281,6 +280,7 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58392656_PGO_MCS_S25_GBL_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
@@ -363,7 +363,6 @@ export interface ItemSettingsData {
 			| "2026-08-22T17:00:00"
 			| "2026-09-12T17:00:00"
 			| "2026-09-19T17:00:00"
-			| "2026-09-22T10:00:00"
 			| "2026-09-26T20:00:00"
 			| "2026-10-03T17:00:00"
 			| "2026-10-10T17:00:00"
@@ -371,7 +370,8 @@ export interface ItemSettingsData {
 			| "2026-10-24T17:00:00"
 			| "2026-10-31T17:00:00"
 			| "2026-11-15T18:00:00"
-			| "2026-11-21T17:00:00";
+			| "2026-11-21T17:00:00"
+			| "2026-12-16T12:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -400,7 +400,6 @@ export interface ItemSettingsData {
 			| "2026-08-01T14:00:00"
 			| "2026-08-16T14:00:00"
 			| "2026-08-22T11:00:00"
-			| "2026-09-08T13:00:00"
 			| "2026-09-12T14:00:00"
 			| "2026-09-19T14:00:00"
 			| "2026-09-26T10:00:00"
@@ -410,7 +409,8 @@ export interface ItemSettingsData {
 			| "2026-10-24T14:00:00"
 			| "2026-10-31T14:00:00"
 			| "2026-11-14T10:00:00"
-			| "2026-11-21T14:00:00";
+			| "2026-11-21T14:00:00"
+			| "2026-12-01T08:00:00";
 		giftable?: boolean;
 		giftItem?:
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
@@ -741,7 +741,7 @@ export interface ItemSettingsData {
 	};
 	timePeriodCounters?: {
 		playerActivity: {
-			limit?: number;
+			limit: number;
 		};
 	};
 	xpBoost?: {

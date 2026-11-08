@@ -1575,6 +1575,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNPoseS24gbl,
     #[serde(rename = "N_DISPLAY_n_pose_s25gbl")]
     NDisplayNPoseS25gbl,
+    #[serde(rename = "N_DISPLAY_n_pose_starballoon")]
+    NDisplayNPoseStarballoon,
     #[serde(rename = "N_DISPLAY_n_pose_sustainability")]
     NDisplayNPoseSustainability,
     #[serde(rename = "N_DISPLAY_n_pose_teapot")]
@@ -2563,6 +2565,12 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplayNShoesClemont0,
     #[serde(rename = "N_DISPLAY_n_shoes_coolboots_0")]
     NDisplayNShoesCoolboots0,
+    #[serde(rename = "N_DISPLAY_n_shoes_crocsgengar")]
+    NDisplayNShoesCrocsgengar,
+    #[serde(rename = "N_DISPLAY_n_shoes_crocsjigglypuff")]
+    NDisplayNShoesCrocsjigglypuff,
+    #[serde(rename = "N_DISPLAY_n_shoes_crocspikachu")]
+    NDisplayNShoesCrocspikachu,
     #[serde(rename = "N_DISPLAY_n_shoes_cynthia")]
     NDisplayNShoesCynthia,
     #[serde(rename = "N_DISPLAY_n_shoes_dedenneitems_0")]
@@ -3425,6 +3433,8 @@ pub enum AvatarItemDisplayTemplateId {
     NDisplaySetWcs2026winnersitems,
     #[serde(rename = "N_DISPLAY_set_willow")]
     NDisplaySetWillow,
+    #[serde(rename = "N_DISPLAY_set_winona")]
+    NDisplaySetWinona,
     #[serde(rename = "N_DISPLAY_set_winter2023")]
     NDisplaySetWinter2023,
     #[serde(rename = "N_DISPLAY_set_zacostume_a")]

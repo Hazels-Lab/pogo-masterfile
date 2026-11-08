@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 163 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 166 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -1249,6 +1249,20 @@ export type BadgeSettingsEvent0238 = S<
 		}
 	>
 >;
+export type BadgeSettingsEvent0239 = S<
+	BadgeSettings<
+		"BADGE_EVENT_0239",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0239";
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsEvent0240 = S<
 	BadgeSettings<
 		"BADGE_EVENT_0240",
@@ -1333,6 +1347,20 @@ export type BadgeSettingsEvent0245 = S<
 		}
 	>
 >;
+export type BadgeSettingsEvent0246 = S<
+	BadgeSettings<
+		"BADGE_EVENT_0246",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0246";
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsEvent0252 = S<
 	BadgeSettings<
 		"BADGE_EVENT_0252",
@@ -1353,6 +1381,20 @@ export type BadgeSettingsEvent0253 = S<
 		{
 			badgeRank: 2;
 			badgeType: "BADGE_EVENT_0253";
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
+export type BadgeSettingsEvent0255 = S<
+	BadgeSettings<
+		"BADGE_EVENT_0255",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0255";
 			eventBadge: true;
 			eventBadgeSettings: {
 				obEventBadgeSettingsNumber6: 1;
@@ -2376,14 +2418,17 @@ export type BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry =
 	| BadgeSettingsEvent0236
 	| BadgeSettingsEvent0237
 	| BadgeSettingsEvent0238
+	| BadgeSettingsEvent0239
 	| BadgeSettingsEvent0240
 	| BadgeSettingsEvent0241
 	| BadgeSettingsEvent0242
 	| BadgeSettingsEvent0243
 	| BadgeSettingsEvent0244
 	| BadgeSettingsEvent0245
+	| BadgeSettingsEvent0246
 	| BadgeSettingsEvent0252
 	| BadgeSettingsEvent0253
+	| BadgeSettingsEvent0255
 	| BadgeSettingsEvent0259
 	| BadgeSettingsEvent0260
 	| BadgeSettingsEvent0271
