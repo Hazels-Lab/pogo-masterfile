@@ -173,6 +173,7 @@ const (
 	LocationCardSettingsTemplateIDLcPokelidFukuoka                                        LocationCardSettingsTemplateID = "LC_POKELID_FUKUOKA"
 	LocationCardSettingsTemplateIDLcPokelidFukushima                                      LocationCardSettingsTemplateID = "LC_POKELID_FUKUSHIMA"
 	LocationCardSettingsTemplateIDLcPokelidGifu                                           LocationCardSettingsTemplateID = "LC_POKELID_GIFU"
+	LocationCardSettingsTemplateIDLcPokelidGunma                                          LocationCardSettingsTemplateID = "LC_POKELID_GUNMA"
 	LocationCardSettingsTemplateIDLcPokelidHokkaido                                       LocationCardSettingsTemplateID = "LC_POKELID_HOKKAIDO"
 	LocationCardSettingsTemplateIDLcPokelidHyogo                                          LocationCardSettingsTemplateID = "LC_POKELID_HYOGO"
 	LocationCardSettingsTemplateIDLcPokelidIbaraki                                        LocationCardSettingsTemplateID = "LC_POKELID_IBARAKI"
@@ -453,6 +454,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcPokelidFukuoka,
 	LocationCardSettingsTemplateIDLcPokelidFukushima,
 	LocationCardSettingsTemplateIDLcPokelidGifu,
+	LocationCardSettingsTemplateIDLcPokelidGunma,
 	LocationCardSettingsTemplateIDLcPokelidHokkaido,
 	LocationCardSettingsTemplateIDLcPokelidHyogo,
 	LocationCardSettingsTemplateIDLcPokelidIbaraki,

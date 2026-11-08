@@ -9,6 +9,8 @@ use serde::{Deserialize, Serialize};
 pub enum CodeGateProtoTemplateId {
     #[serde(rename = "IS_SKU_AVAILABLE_NO_APP_ID_CODE_GATE")]
     IsSkuAvailableNoAppIdCodeGate,
+    #[serde(rename = "POKEMON_LEVEL_CEILING_CODE_GATE")]
+    PokemonLevelCeilingCodeGate,
     #[serde(rename = "SOFT_SFIDA_FOREGROUND_DESCRIPTION_TEXT_CODE_GATE")]
     SoftSfidaForegroundDescriptionTextCodeGate,
     #[serde(rename = "USE_GMT_SKU_DATA_CODE_GATE")]

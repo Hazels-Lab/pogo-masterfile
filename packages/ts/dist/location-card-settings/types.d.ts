@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", 277 entries (structural types).
+// Generated from Pokémon GO masterfile — group "locationCardSettings", 278 entries (structural types).
 
 import type { W } from "../_utils";
 

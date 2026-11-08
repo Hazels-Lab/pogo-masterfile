@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shoes", 164 entries.
+// Generated from Pokémon GO masterfile — group "avatarItemDisplay", split "display-string-id/shoes", 167 entries.
 
 import type { S } from "../../../_utils";
 import type { AvatarItemDisplay } from "../../types";
@@ -171,6 +171,33 @@ export type AvatarItemDisplayNShoesCoolboots0 = S<
 		{
 			displayStringId: "n_shoes_coolboots_0_display_name";
 			iconAddress: "n_shoes_coolboots_0_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShoesCrocsgengar = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shoes_crocsgengar",
+		{
+			displayStringId: "avatar_shoes_crocs-gengar";
+			iconAddress: "n_shoes_crocsgengar_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShoesCrocsjigglypuff = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shoes_crocsjigglypuff",
+		{
+			displayStringId: "avatar_shoes_crocs-jigglypuff";
+			iconAddress: "n_shoes_crocsjigglypuff_icon";
+		}
+	>
+>;
+export type AvatarItemDisplayNShoesCrocspikachu = S<
+	AvatarItemDisplay<
+		"N_DISPLAY_n_shoes_crocspikachu",
+		{
+			displayStringId: "avatar_shoes_crocs-pikachu";
+			iconAddress: "n_shoes_crocspikachu_icon";
 		}
 	>
 >;
@@ -1500,6 +1527,9 @@ export type AvatarItemDisplayDisplayStringIdShoesMasterfileEntry =
 	| AvatarItemDisplayNShoesClay0
 	| AvatarItemDisplayNShoesClemont0
 	| AvatarItemDisplayNShoesCoolboots0
+	| AvatarItemDisplayNShoesCrocsgengar
+	| AvatarItemDisplayNShoesCrocsjigglypuff
+	| AvatarItemDisplayNShoesCrocspikachu
 	| AvatarItemDisplayNShoesCynthia
 	| AvatarItemDisplayNShoesDedenneitems0
 	| AvatarItemDisplayNShoesDefaultA0

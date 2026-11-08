@@ -145,8 +145,8 @@ export type ItemExpirationSettingsEventPassPointMonthly01 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_MONTHLY_01",
 		{
-			emergencyExpirationTime: "2026-10-10T10:00:00";
-			expirationTime: "2026-10-08T10:00:00";
+			emergencyExpirationTime: "2027-01-09T10:00:00";
+			expirationTime: "2027-01-07T10:00:00";
 		}
 	>
 >;
@@ -172,7 +172,7 @@ export type ItemExpirationSettingsIncubatorTimed = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_INCUBATOR_TIMED",
 		{
-			expirationTime: "2026-01-13T10:00:00";
+			expirationTime: "2027-01-12T10:00:00";
 		}
 	>
 >;

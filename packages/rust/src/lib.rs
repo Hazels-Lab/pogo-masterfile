@@ -117,7 +117,6 @@ pub mod combat_npc_personality;
 pub mod combat_npc_trainer;
 pub mod combat_ranking_proto_settings;
 pub mod combat_type;
-pub mod event_pass_settings;
 pub mod event_pass_tier_settings;
 pub mod evolution_chain_display_settings;
 pub mod evolution_quest_template;
@@ -186,10 +185,10 @@ pub enum MasterfileEntry {
     BadgeSettings(badge_settings::BadgeSettingsEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
@@ -197,12 +196,12 @@ pub enum MasterfileEntry {
     ItemSettings(item_settings::ItemSettingsEntry),
     MegaEvoLevelSettings(mega_evo_level_settings::MegaEvoLevelSettingsEntry),
     CombatLeague(combat_league::CombatLeagueEntry),
+    FeatureGate(feature_gate::FeatureGateEntry),
     InvasionNpcDisplaySettings(invasion_npc_display_settings::InvasionNpcDisplaySettingsEntry),
     LevelUpRewards(level_up_rewards::LevelUpRewardsEntry),
     EvolutionChainDisplaySettings(
         evolution_chain_display_settings::EvolutionChainDisplaySettingsEntry,
     ),
-    FeatureGate(feature_gate::FeatureGateEntry),
     TemporaryEvolutionSettings(temporary_evolution_settings::TemporaryEvolutionSettingsEntry),
     ClientQuestTemplate(client_quest_template::ClientQuestTemplateEntry),
     VsSeekerLoot(vs_seeker_loot::VsSeekerLootEntry),
@@ -233,11 +232,10 @@ pub enum MasterfileEntry {
     TappableSettings(tappable_settings::TappableSettingsEntry),
     BuddyLevelSettings(buddy_level_settings::BuddyLevelSettingsEntry),
     RollBack(roll_back::RollBackEntry),
+    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
-    CodeGateProto(code_gate_proto::CodeGateProtoEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
@@ -295,6 +293,7 @@ pub enum MasterfileEntry {
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
     EventMapRefreshSettings(singletons::EventMapRefreshSettingsEntry),
+    EventPassSettings(singletons::EventPassSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -328,7 +327,6 @@ pub enum MasterfileEntry {
     MegaEvoSettings(singletons::MegaEvoSettingsEntry),
     MonodepthSettings(singletons::MonodepthSettingsEntry),
     MpSettings(singletons::MpSettingsEntry),
-    MusicSettings(singletons::MusicSettingsEntry),
     NaturalArtDayNightFeatureSettings(singletons::NaturalArtDayNightFeatureSettingsEntry),
     NearbyPokemonSettings(singletons::NearbyPokemonSettingsEntry),
     NeutralAvatarSettings(singletons::NeutralAvatarSettingsEntry),
@@ -434,12 +432,12 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
-                "eventPassTierSettings" => {
-                    serde_json::from_value(value).map(Self::EventPassTierSettings)
-                }
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
+                "eventPassTierSettings" => {
+                    serde_json::from_value(value).map(Self::EventPassTierSettings)
+                }
                 "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
@@ -455,6 +453,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::MegaEvoLevelSettings)
                 }
                 "combatLeague" => serde_json::from_value(value).map(Self::CombatLeague),
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "invasionNpcDisplaySettings" => {
                     serde_json::from_value(value).map(Self::InvasionNpcDisplaySettings)
                 }
@@ -462,7 +461,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "evolutionChainDisplaySettings" => {
                     serde_json::from_value(value).map(Self::EvolutionChainDisplaySettings)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "temporaryEvolutionSettings" => {
                     serde_json::from_value(value).map(Self::TemporaryEvolutionSettings)
                 }
@@ -523,17 +521,16 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "tappableSettings" => serde_json::from_value(value).map(Self::TappableSettings),
                 "buddyLevelSettings" => serde_json::from_value(value).map(Self::BuddyLevelSettings),
                 "rollBack" => serde_json::from_value(value).map(Self::RollBack),
+                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "fortPowerUpLevelSettings" => {
                     serde_json::from_value(value).map(Self::FortPowerUpLevelSettings)
                 }
                 "pokemonHomeEnergyCosts" => {
                     serde_json::from_value(value).map(Self::PokemonHomeEnergyCosts)
                 }
-                "codeGateProto" => serde_json::from_value(value).map(Self::CodeGateProto),
                 "combatNpcPersonality" => {
                     serde_json::from_value(value).map(Self::CombatNpcPersonality)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "languageSettings" => serde_json::from_value(value).map(Self::LanguageSettings),
                 "questSettings" => serde_json::from_value(value).map(Self::QuestSettings),
                 "avatarGroupOrderSettings" => {
@@ -671,6 +668,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "eventMapRefreshSettings" => {
                     serde_json::from_value(value).map(Self::EventMapRefreshSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }
@@ -729,7 +727,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "megaEvoSettings" => serde_json::from_value(value).map(Self::MegaEvoSettings),
                 "monodepthSettings" => serde_json::from_value(value).map(Self::MonodepthSettings),
                 "mpSettings" => serde_json::from_value(value).map(Self::MpSettings),
-                "musicSettings" => serde_json::from_value(value).map(Self::MusicSettings),
                 "naturalArtDayNightFeatureSettings" => {
                     serde_json::from_value(value).map(Self::NaturalArtDayNightFeatureSettings)
                 }

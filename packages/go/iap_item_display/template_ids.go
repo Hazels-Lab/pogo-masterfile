@@ -286,9 +286,6 @@ const (
 	IapItemDisplayTemplateIDMaxrevive6                                                 IapItemDisplayTemplateID = "maxrevive.6"
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlock                           IapItemDisplayTemplateID = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlockPlusPoints                 IapItemDisplayTemplateID = "MONTH1_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackRedirect                         IapItemDisplayTemplateID = "month2_deluxe_event_pass_track_redirect"
-	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock                           IapItemDisplayTemplateID = "month2_deluxe_event_pass_track_unlock"
-	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlockPlusPoints                 IapItemDisplayTemplateID = "month2_deluxe_event_pass_track_unlock_plus_points"
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackRedirect                         IapItemDisplayTemplateID = "month3_deluxe_event_pass_track_redirect"
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlock                           IapItemDisplayTemplateID = "month3_deluxe_event_pass_track_unlock"
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlockPlusPoints                 IapItemDisplayTemplateID = "month3_deluxe_event_pass_track_unlock_plus_points"
@@ -299,9 +296,6 @@ const (
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockRedirect             IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT"
-	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
-	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockRedirect             IapItemDisplayTemplateID = "OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT"
 	IapItemDisplayTemplateIDPaidraidticket1                                            IapItemDisplayTemplateID = "paidraidticket.1"
 	IapItemDisplayTemplateIDPaidraidticket3                                            IapItemDisplayTemplateID = "paidraidticket.3"
 	IapItemDisplayTemplateIDPgoreleaseBundle1                                          IapItemDisplayTemplateID = "pgorelease.bundle.1"
@@ -1383,9 +1377,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDMaxrevive6,
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMonth1DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackRedirect,
-	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDMonth2DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackRedirect,
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDMonth3DeluxeEventPassTrackUnlockPlusPoints,
@@ -1396,9 +1387,6 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockRedirect,
-	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDOctober22026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDPaidraidticket1,
 	IapItemDisplayTemplateIDPaidraidticket3,
 	IapItemDisplayTemplateIDPgoreleaseBundle1,

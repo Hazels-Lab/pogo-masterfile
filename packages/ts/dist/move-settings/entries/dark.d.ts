@@ -277,7 +277,7 @@ export type MoveSettingsV0615MoveKowtowCleave = S<
 			damageWindowStartMs: 1300;
 			durationMs: 2000;
 			energyDelta: -50;
-			movementId: 615;
+			movementId: "KOWTOW_CLEAVE";
 			pokemonType: "POKEMON_TYPE_DARK";
 			power: 85;
 			staminaLossScalar: 0.01;

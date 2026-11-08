@@ -193,14 +193,17 @@ const (
 	BadgeSettingsTemplateIDBadgeEvent0236                                   BadgeSettingsTemplateID = "BADGE_EVENT_0236"
 	BadgeSettingsTemplateIDBadgeEvent0237                                   BadgeSettingsTemplateID = "BADGE_EVENT_0237"
 	BadgeSettingsTemplateIDBadgeEvent0238                                   BadgeSettingsTemplateID = "BADGE_EVENT_0238"
+	BadgeSettingsTemplateIDBadgeEvent0239                                   BadgeSettingsTemplateID = "BADGE_EVENT_0239"
 	BadgeSettingsTemplateIDBadgeEvent0240                                   BadgeSettingsTemplateID = "BADGE_EVENT_0240"
 	BadgeSettingsTemplateIDBadgeEvent0241                                   BadgeSettingsTemplateID = "BADGE_EVENT_0241"
 	BadgeSettingsTemplateIDBadgeEvent0242                                   BadgeSettingsTemplateID = "BADGE_EVENT_0242"
 	BadgeSettingsTemplateIDBadgeEvent0243                                   BadgeSettingsTemplateID = "BADGE_EVENT_0243"
 	BadgeSettingsTemplateIDBadgeEvent0244                                   BadgeSettingsTemplateID = "BADGE_EVENT_0244"
 	BadgeSettingsTemplateIDBadgeEvent0245                                   BadgeSettingsTemplateID = "BADGE_EVENT_0245"
+	BadgeSettingsTemplateIDBadgeEvent0246                                   BadgeSettingsTemplateID = "BADGE_EVENT_0246"
 	BadgeSettingsTemplateIDBadgeEvent0252                                   BadgeSettingsTemplateID = "BADGE_EVENT_0252"
 	BadgeSettingsTemplateIDBadgeEvent0253                                   BadgeSettingsTemplateID = "BADGE_EVENT_0253"
+	BadgeSettingsTemplateIDBadgeEvent0255                                   BadgeSettingsTemplateID = "BADGE_EVENT_0255"
 	BadgeSettingsTemplateIDBadgeEvent0259                                   BadgeSettingsTemplateID = "BADGE_EVENT_0259"
 	BadgeSettingsTemplateIDBadgeEvent0260                                   BadgeSettingsTemplateID = "BADGE_EVENT_0260"
 	BadgeSettingsTemplateIDBadgeEvent0271                                   BadgeSettingsTemplateID = "BADGE_EVENT_0271"
@@ -1308,14 +1311,17 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeEvent0236,
 	BadgeSettingsTemplateIDBadgeEvent0237,
 	BadgeSettingsTemplateIDBadgeEvent0238,
+	BadgeSettingsTemplateIDBadgeEvent0239,
 	BadgeSettingsTemplateIDBadgeEvent0240,
 	BadgeSettingsTemplateIDBadgeEvent0241,
 	BadgeSettingsTemplateIDBadgeEvent0242,
 	BadgeSettingsTemplateIDBadgeEvent0243,
 	BadgeSettingsTemplateIDBadgeEvent0244,
 	BadgeSettingsTemplateIDBadgeEvent0245,
+	BadgeSettingsTemplateIDBadgeEvent0246,
 	BadgeSettingsTemplateIDBadgeEvent0252,
 	BadgeSettingsTemplateIDBadgeEvent0253,
+	BadgeSettingsTemplateIDBadgeEvent0255,
 	BadgeSettingsTemplateIDBadgeEvent0259,
 	BadgeSettingsTemplateIDBadgeEvent0260,
 	BadgeSettingsTemplateIDBadgeEvent0271,

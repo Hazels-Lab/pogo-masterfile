@@ -27,6 +27,7 @@ const (
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS28 CombatRankingProtoSettingsTemplateID = "COMBAT_RANKING_SETTINGS_S28"
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS29 CombatRankingProtoSettingsTemplateID = "COMBAT_RANKING_SETTINGS_S29"
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS30 CombatRankingProtoSettingsTemplateID = "COMBAT_RANKING_SETTINGS_S30"
+	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS31 CombatRankingProtoSettingsTemplateID = "COMBAT_RANKING_SETTINGS_S31"
 )
 
 var CombatRankingProtoSettingsTemplateIDValues = [...]CombatRankingProtoSettingsTemplateID{
@@ -52,4 +53,5 @@ var CombatRankingProtoSettingsTemplateIDValues = [...]CombatRankingProtoSettings
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS28,
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS29,
 	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS30,
+	CombatRankingProtoSettingsTemplateIDCombatRankingSettingsS31,
 }

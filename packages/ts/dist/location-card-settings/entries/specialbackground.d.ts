@@ -511,7 +511,7 @@ export type LocationCardSettingsSpecialbackgroundDiaDeLosMuertos2026 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_DiaDeMuertos_2026";
-			locationCard: 340;
+			locationCard: "LC_SPECIALBACKGROUND_DIA_DE_LOS_MUERTOS_2026";
 			vfxAddress: "bgfx_diaDeMuertos_2026";
 		}
 	>

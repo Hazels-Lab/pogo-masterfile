@@ -186,7 +186,7 @@ export type CombatMoveV0615MoveKowtowCleave = S<
 			energyDelta: -40;
 			power: 75;
 			type: "POKEMON_TYPE_DARK";
-			uniqueId: 615;
+			uniqueId: "KOWTOW_CLEAVE";
 			vfxName: "kowtow_cleave";
 		}
 	>

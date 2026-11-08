@@ -53,6 +53,7 @@ import type {
 	EncounterSettings,
 	ErrorReportingSettings,
 	EventMapRefreshSettings,
+	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -84,7 +85,6 @@ import type {
 	MegaEvoSettings,
 	MonodepthSettings,
 	MpSettings,
-	MusicSettings,
 	NaturalArtDayNightFeatureSettings,
 	NearbyPokemonSettings,
 	NeutralAvatarSettings,
@@ -203,6 +203,7 @@ export type EggHatchImprovementsSettingsType = W<EggHatchImprovementsSettings>;
 export type EncounterSettingsType = W<EncounterSettings>;
 export type ErrorReportingSettingsType = W<ErrorReportingSettings>;
 export type EventMapRefreshSettingsType = W<EventMapRefreshSettings>;
+export type EventPassSettingsType = W<EventPassSettings>;
 export type EventPlannerPopularNotificationSettingsType = W<EventPlannerPopularNotificationSettings>;
 export type ExternalAddressableAssetsSettingsType = W<ExternalAddressableAssetsSettings>;
 export type FeatureUnlockLevelSettingsType = W<FeatureUnlockLevelSettings>;
@@ -234,7 +235,6 @@ export type MapObjectsInteractionRangeSettingsType = W<MapObjectsInteractionRang
 export type MegaEvoSettingsType = W<MegaEvoSettings>;
 export type MonodepthSettingsType = W<MonodepthSettings>;
 export type MpSettingsType = W<MpSettings>;
-export type MusicSettingsType = W<MusicSettings>;
 export type NaturalArtDayNightFeatureSettingsType = W<NaturalArtDayNightFeatureSettings>;
 export type NearbyPokemonSettingsType = W<NearbyPokemonSettings>;
 export type NeutralAvatarSettingsType = W<NeutralAvatarSettings>;
@@ -353,6 +353,7 @@ export type Singletons =
 	| EncounterSettingsType
 	| ErrorReportingSettingsType
 	| EventMapRefreshSettingsType
+	| EventPassSettingsType
 	| EventPlannerPopularNotificationSettingsType
 	| ExternalAddressableAssetsSettingsType
 	| FeatureUnlockLevelSettingsType
@@ -384,7 +385,6 @@ export type Singletons =
 	| MegaEvoSettingsType
 	| MonodepthSettingsType
 	| MpSettingsType
-	| MusicSettingsType
 	| NaturalArtDayNightFeatureSettingsType
 	| NearbyPokemonSettingsType
 	| NeutralAvatarSettingsType

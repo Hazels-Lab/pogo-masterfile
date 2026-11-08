@@ -22,7 +22,7 @@ export interface MoveSettingsData {
 	energyDelta?: number;
 	healScalar?: number;
 	isLocked?: boolean;
-	movementId: number | string;
+	movementId: string;
 	pokemonType: TypeEffectiveTemplateID;
 	power?: number;
 	staminaLossScalar?: number;

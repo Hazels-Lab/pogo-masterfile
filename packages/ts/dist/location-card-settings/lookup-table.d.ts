@@ -169,6 +169,7 @@ import type {
 	LocationCardSettingsPokelidFukuoka,
 	LocationCardSettingsPokelidFukushima,
 	LocationCardSettingsPokelidGifu,
+	LocationCardSettingsPokelidGunma,
 	LocationCardSettingsPokelidHokkaido,
 	LocationCardSettingsPokelidHyogo,
 	LocationCardSettingsPokelidIbaraki,
@@ -449,6 +450,7 @@ export interface LocationCardSettingsLookup {
 	LC_POKELID_FUKUOKA: LocationCardSettingsPokelidFukuoka;
 	LC_POKELID_FUKUSHIMA: LocationCardSettingsPokelidFukushima;
 	LC_POKELID_GIFU: LocationCardSettingsPokelidGifu;
+	LC_POKELID_GUNMA: LocationCardSettingsPokelidGunma;
 	LC_POKELID_HOKKAIDO: LocationCardSettingsPokelidHokkaido;
 	LC_POKELID_HYOGO: LocationCardSettingsPokelidHyogo;
 	LC_POKELID_IBARAKI: LocationCardSettingsPokelidIbaraki;

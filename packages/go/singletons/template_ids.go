@@ -55,6 +55,7 @@ const (
 	SingletonsTemplateIDEggHatchImprovementsSettings            SingletonsTemplateID = "EGG_HATCH_IMPROVEMENTS_SETTINGS"
 	SingletonsTemplateIDEncounterSettings                       SingletonsTemplateID = "ENCOUNTER_SETTINGS"
 	SingletonsTemplateIDErrorReportingSettingsPreLogin          SingletonsTemplateID = "ERROR_REPORTING_SETTINGS_PRE_LOGIN"
+	SingletonsTemplateIDEventPassNovember2026Season             SingletonsTemplateID = "EVENT_PASS_NOVEMBER2026_SEASON"
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings     SingletonsTemplateID = "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS"
 	SingletonsTemplateIDEventPlannerSettings                    SingletonsTemplateID = "EVENT_PLANNER_SETTINGS"
 	SingletonsTemplateIDEventServerSettings                     SingletonsTemplateID = "EVENT_SERVER_SETTINGS"
@@ -87,7 +88,6 @@ const (
 	SingletonsTemplateIDMegaEvoSettings                         SingletonsTemplateID = "MEGA_EVO_SETTINGS"
 	SingletonsTemplateIDMonodepthSettings                       SingletonsTemplateID = "MONODEPTH_SETTINGS"
 	SingletonsTemplateIDMpSharedSettings                        SingletonsTemplateID = "MP_SHARED_SETTINGS"
-	SingletonsTemplateIDMusicSettings                           SingletonsTemplateID = "MUSIC_SETTINGS"
 	SingletonsTemplateIDNaturalArtDayNightFeatureSettings       SingletonsTemplateID = "NATURAL_ART_DAY_NIGHT_FEATURE_SETTINGS"
 	SingletonsTemplateIDNearbyPokemonSettings                   SingletonsTemplateID = "NEARBY_POKEMON_SETTINGS"
 	SingletonsTemplateIDNeutralAvatarSettings                   SingletonsTemplateID = "NEUTRAL_AVATAR_SETTINGS"
@@ -206,6 +206,7 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDEggHatchImprovementsSettings,
 	SingletonsTemplateIDEncounterSettings,
 	SingletonsTemplateIDErrorReportingSettingsPreLogin,
+	SingletonsTemplateIDEventPassNovember2026Season,
 	SingletonsTemplateIDEventPlannerPopularRaidRsvpSettings,
 	SingletonsTemplateIDEventPlannerSettings,
 	SingletonsTemplateIDEventServerSettings,
@@ -238,7 +239,6 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDMegaEvoSettings,
 	SingletonsTemplateIDMonodepthSettings,
 	SingletonsTemplateIDMpSharedSettings,
-	SingletonsTemplateIDMusicSettings,
 	SingletonsTemplateIDNaturalArtDayNightFeatureSettings,
 	SingletonsTemplateIDNearbyPokemonSettings,
 	SingletonsTemplateIDNeutralAvatarSettings,

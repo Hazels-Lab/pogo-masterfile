@@ -785,6 +785,7 @@ import type {
 	AvatarItemDisplayNPoseS23gbl,
 	AvatarItemDisplayNPoseS24gbl,
 	AvatarItemDisplayNPoseS25gbl,
+	AvatarItemDisplayNPoseStarballoon,
 	AvatarItemDisplayNPoseSustainability,
 	AvatarItemDisplayNPoseTeapot,
 	AvatarItemDisplayNPoseTinkatonhammer,
@@ -1279,6 +1280,9 @@ import type {
 	AvatarItemDisplayNShoesClay0,
 	AvatarItemDisplayNShoesClemont0,
 	AvatarItemDisplayNShoesCoolboots0,
+	AvatarItemDisplayNShoesCrocsgengar,
+	AvatarItemDisplayNShoesCrocsjigglypuff,
+	AvatarItemDisplayNShoesCrocspikachu,
 	AvatarItemDisplayNShoesCynthia,
 	AvatarItemDisplayNShoesDedenneitems0,
 	AvatarItemDisplayNShoesDefaultA0,
@@ -1710,6 +1714,7 @@ import type {
 	AvatarItemDisplaySetWcs2025winnersitems0,
 	AvatarItemDisplaySetWcs2026winnersitems,
 	AvatarItemDisplaySetWillow,
+	AvatarItemDisplaySetWinona,
 	AvatarItemDisplaySetWinter2023,
 	AvatarItemDisplaySetZacostumeA,
 	AvatarItemDisplaySetZacostumeB,
@@ -2500,6 +2505,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_pose_s23gbl: AvatarItemDisplayNPoseS23gbl;
 	N_DISPLAY_n_pose_s24gbl: AvatarItemDisplayNPoseS24gbl;
 	N_DISPLAY_n_pose_s25gbl: AvatarItemDisplayNPoseS25gbl;
+	N_DISPLAY_n_pose_starballoon: AvatarItemDisplayNPoseStarballoon;
 	N_DISPLAY_n_pose_sustainability: AvatarItemDisplayNPoseSustainability;
 	N_DISPLAY_n_pose_teapot: AvatarItemDisplayNPoseTeapot;
 	N_DISPLAY_n_pose_tinkatonhammer: AvatarItemDisplayNPoseTinkatonhammer;
@@ -2994,6 +3000,9 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_n_shoes_clay_0: AvatarItemDisplayNShoesClay0;
 	N_DISPLAY_n_shoes_clemont_0: AvatarItemDisplayNShoesClemont0;
 	N_DISPLAY_n_shoes_coolboots_0: AvatarItemDisplayNShoesCoolboots0;
+	N_DISPLAY_n_shoes_crocsgengar: AvatarItemDisplayNShoesCrocsgengar;
+	N_DISPLAY_n_shoes_crocsjigglypuff: AvatarItemDisplayNShoesCrocsjigglypuff;
+	N_DISPLAY_n_shoes_crocspikachu: AvatarItemDisplayNShoesCrocspikachu;
 	N_DISPLAY_n_shoes_cynthia: AvatarItemDisplayNShoesCynthia;
 	N_DISPLAY_n_shoes_dedenneitems_0: AvatarItemDisplayNShoesDedenneitems0;
 	N_DISPLAY_n_shoes_default_a_0: AvatarItemDisplayNShoesDefaultA0;
@@ -3425,6 +3434,7 @@ export interface AvatarItemDisplayLookup {
 	N_DISPLAY_set_wcs2025winnersitems_0: AvatarItemDisplaySetWcs2025winnersitems0;
 	N_DISPLAY_set_wcs2026winnersitems: AvatarItemDisplaySetWcs2026winnersitems;
 	N_DISPLAY_set_willow: AvatarItemDisplaySetWillow;
+	N_DISPLAY_set_winona: AvatarItemDisplaySetWinona;
 	N_DISPLAY_set_winter2023: AvatarItemDisplaySetWinter2023;
 	N_DISPLAY_set_zacostume_a: AvatarItemDisplaySetZacostumeA;
 	N_DISPLAY_set_zacostume_b: AvatarItemDisplaySetZacostumeB;

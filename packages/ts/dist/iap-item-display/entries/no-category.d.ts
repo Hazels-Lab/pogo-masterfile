@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 25 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 21 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -109,40 +109,6 @@ export type IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints = S<
 		}
 	>
 >;
-export type IapItemDisplayMonth2DeluxeEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"month2_deluxe_event_pass_track_unlock",
-		{
-			description: "deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.month2_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-11-05T10:00:00";
-			skuDisableTimeUtcMs: "1793872800000";
-			skuEnableTime: "2025-10-06T10:00:00";
-			skuEnableTimeUtcMs: "1759744800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_oct";
-			useEnvironmentPrefix: true;
-		}
-	>
->;
-export type IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"month2_deluxe_event_pass_track_unlock_plus_points",
-		{
-			description: "deluxe_event_pass_track_unlock_plus_points_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F918345fc_PGO-MCS_S24_GO_Pass_TICKET_v1-1024x576.jpg";
-			sku: "pgorelease.month2_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-11-05T10:00:00";
-			skuDisableTimeUtcMs: "1793872800000";
-			skuEnableTime: "2025-10-06T10:00:00";
-			skuEnableTimeUtcMs: "1759744800000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_plus_ten_ranks_title_oct";
-			useEnvironmentPrefix: true;
-		}
-	>
->;
 export type IapItemDisplayMonth3DeluxeEventPassTrackUnlock = S<
 	IapItemDisplay<
 		"month3_deluxe_event_pass_track_unlock",
@@ -241,40 +207,6 @@ export type IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect = S<
 			skuEnableTimeUtcMs: "1760349600000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_fall_marathon_2026";
-		}
-	>
->;
-export type IapItemDisplayOctober22026DeluxeEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK",
-		{
-			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb20824cf_PGO-MCS_GO_Pass_Halloween_2026-v2-1024x576.jpg";
-			sku: "pgorelease.october2_2026_deluxe_event_pass_track_unlock";
-			skuDisableTime: "2026-11-07T20:00:00";
-			skuDisableTimeUtcMs: "1794081600000";
-			skuEnableTime: "2025-10-27T10:00:00";
-			skuEnableTimeUtcMs: "1761559200000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_title_halloween2026";
-			useEnvironmentPrefix: true;
-		}
-	>
->;
-export type IapItemDisplayOctober22026DeluxeEventPassTrackUnlockPlusPoints = S<
-	IapItemDisplay<
-		"OCTOBER2_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
-		{
-			description: "deluxe_event_pass_track_unlock_plus_points_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb20824cf_PGO-MCS_GO_Pass_Halloween_2026-v2-1024x576.jpg";
-			sku: "pgorelease.october2_2026_deluxe_event_pass_track_unlock_plus_points";
-			skuDisableTime: "2026-11-07T20:00:00";
-			skuDisableTimeUtcMs: "1794081600000";
-			skuEnableTime: "2025-10-27T10:00:00";
-			skuEnableTimeUtcMs: "1761559200000";
-			sortOrder: 1;
-			title: "season_pass_premium_track_plus_ten_ranks_title_halloween2026";
-			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -406,8 +338,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassSeptember3EventStoreRedirect
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlock
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints
-	| IapItemDisplayMonth2DeluxeEventPassTrackUnlock
-	| IapItemDisplayMonth2DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlock
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMpReplenishRrp1
@@ -415,8 +345,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlock
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect
-	| IapItemDisplayOctober22026DeluxeEventPassTrackUnlock
-	| IapItemDisplayOctober22026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints
