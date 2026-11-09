@@ -5121,6 +5121,7 @@ export type CombatLeagueVsSeekerColorGreatMegas = S<
 					};
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "mega_color_cup_great_title";
 			unlockCondition: [
 				{
@@ -9832,6 +9833,7 @@ export type CombatLeagueVsSeekerGreatCatchS24Megas = S<
 					type: "POKEMON_CAUGHT_TIMESTAMP";
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "mega_catch_cup_great_title";
 			unlockCondition: [
 				{
@@ -11708,7 +11710,10 @@ export type CombatLeagueVsSeekerGreatChampionshipSeries = S<
 				},
 				{
 					pokemonBanList: {
-						lgdbihdlhod: "s24_laic_prohibited_pokemon_and_classes";
+						groupCondition: {
+							pokemonClass: ["POKEMON_CLASS_LEGENDARY", "POKEMON_CLASS_MYTHIC", "POKEMON_CLASS_ULTRA_BEAST"];
+						};
+						name: "s24_laic_prohibited_pokemon_and_classes";
 						pokemon: [
 							{
 								id: "DITTO";
@@ -11910,7 +11915,7 @@ export type CombatLeagueVsSeekerGreatChampionshipSeriesEuic = S<
 				},
 				{
 					pokemonBanList: {
-						lgdbihdlhod: "s25_euic_prohibited_pokemon";
+						name: "s25_euic_prohibited_pokemon";
 						pokemon: [
 							{
 								forms: ["CARKOL_NORMAL"];
@@ -11987,6 +11992,7 @@ export type CombatLeagueVsSeekerGreatChampionshipsLegacy = S<
 	CombatLeague<
 		"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIPS_LEGACY",
 		{
+			allowTempEvoCpDownscaling: true;
 			badgeType: "BADGE_GREAT_LEAGUE";
 			bannedPokemon: [
 				"DITTO",
@@ -13119,6 +13125,7 @@ export type CombatLeagueVsSeekerGreatHalloweenMegas = S<
 					};
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "mega_halloween_cup_great_title";
 			unlockCondition: [
 				{
@@ -18284,6 +18291,7 @@ export type CombatLeagueVsSeekerGreatMegas = S<
 					type: "WITH_UNIQUE_POKEMON";
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "great_league_mega_title";
 			unlockCondition: [
 				{

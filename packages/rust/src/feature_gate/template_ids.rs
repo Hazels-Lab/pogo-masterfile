@@ -17,6 +17,8 @@ pub enum FeatureGateTemplateId {
     AdminGmNiaOpsOnlyFilterAmsFeatureGate,
     #[serde(rename = "ADV_SYNC_TWO_FEATURE_GATE")]
     AdvSyncTwoFeatureGate,
+    #[serde(rename = "ADVENTURE_EFFECTS_IN_LOBBY_FEATURE_GATE")]
+    AdventureEffectsInLobbyFeatureGate,
     #[serde(rename = "AMS_FEATURE_GATE")]
     AmsFeatureGate,
     #[serde(rename = "AMS_FRONTEND_FEATURE_GATE")]

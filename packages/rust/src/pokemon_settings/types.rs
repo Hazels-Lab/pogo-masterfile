@@ -53,13 +53,6 @@ pub struct Encounter {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum FormValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct QuestDisplay {
     pub quest_requirement_template_id: String,
@@ -75,7 +68,7 @@ pub struct EvolutionBranch {
     pub evolution_item_requirement_cost: Option<u64>,
     pub evolution_likelihood_weight: Option<u64>,
     pub evolution_move_requirement: Option<String>,
-    pub form: Option<FormValue>,
+    pub form: Option<String>,
     pub gender_requirement: Option<String>,
     pub km_buddy_distance_requirement: Option<f64>,
     pub lure_item_requirement: Option<String>,
@@ -202,6 +195,7 @@ pub struct Ibfc {
     pub alternate_to_default_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,
     pub combat_enable: Option<bool>,
     pub default_form: Option<String>,
+    pub default_forms: Option<[String; 7]>,
     pub default_to_alternate_ibfc_settings: Option<AlternateToDefaultIbfcSettings>,
 }
 
@@ -306,7 +300,7 @@ pub struct PokemonSettings {
     pub evolution_pips: Option<u64>,
     pub exclusive_key_item: Option<ExclusiveKeyItem>,
     pub family_id: String,
-    pub form: Option<FormValue>,
+    pub form: Option<String>,
     pub form_change: Option<Vec<FormChange>>,
     pub height_std_dev: f64,
     pub ibfc: Ibfc,

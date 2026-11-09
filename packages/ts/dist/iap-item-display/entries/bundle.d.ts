@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 280 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 281 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -131,6 +131,18 @@ export type IapItemDisplayBundleBlackfridaystickers242 = S<
 			hidden: true;
 			sale: true;
 			sku: "bundle.blackfridaystickers24.2";
+			sortOrder: 1;
+			spriteId: "bundle.general.adventure.1";
+			title: "sticker_box";
+		}
+	>
+>;
+export type IapItemDisplayBundleBlackfridaystickers261 = S<
+	IapItemDisplay<
+		"bundle.blackfridaystickers26.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			sku: "bundle.blackfridaystickers26.1";
 			sortOrder: 1;
 			spriteId: "bundle.general.adventure.1";
 			title: "sticker_box";
@@ -3881,6 +3893,7 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayBundleAtlanticav2box2
 	| IapItemDisplayBundleBlackfridaystickers241
 	| IapItemDisplayBundleBlackfridaystickers242
+	| IapItemDisplayBundleBlackfridaystickers261
 	| IapItemDisplayBundleBoost20231
 	| IapItemDisplayBundleBrazil20231
 	| IapItemDisplayBundleBrazilrediscover11

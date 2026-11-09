@@ -52,7 +52,6 @@ import type {
 	EncounterSettings,
 	ErrorReportingSettings,
 	EventMapRefreshSettings,
-	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -137,7 +136,7 @@ import type {
 	StickerCategorySettings,
 	StyleShopSettings,
 	TicketGiftingSettings,
-	TimeBoxedSpawnEventSettings,
+	TimeBoxedSpawnEventsSettings,
 	TodayViewSettings,
 	TutorialSettings,
 	UsernameSuggestionSettings,
@@ -202,7 +201,6 @@ export interface SingletonsLookup {
 	EGG_HATCH_IMPROVEMENTS_SETTINGS: EggHatchImprovementsSettings;
 	ENCOUNTER_SETTINGS: EncounterSettings;
 	ERROR_REPORTING_SETTINGS_PRE_LOGIN: ErrorReportingSettings;
-	EVENT_PASS_NOVEMBER2026_SEASON: EventPassSettings;
 	EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS: EventPlannerPopularNotificationSettings;
 	EVENT_PLANNER_SETTINGS: PlannerSettings;
 	EVENT_SERVER_SETTINGS: EventMapRefreshSettings;
@@ -288,7 +286,7 @@ export interface SingletonsLookup {
 	STYLE_SHOP_SETTINGS: StyleShopSettings;
 	SURVEY_SETTINGS: InAppSurveySettings;
 	TICKET_GIFTING_SETTINGS: TicketGiftingSettings;
-	TIME_BOXED_SPAWN_EVENT_SETTINGS: TimeBoxedSpawnEventSettings;
+	TIME_BOXED_SPAWN_EVENT_SETTINGS: TimeBoxedSpawnEventsSettings;
 	TODAY_VIEW_SETTINGS_V2: TodayViewSettings;
 	TUTORIALS_SETTINGS: TutorialSettings;
 	username_suggestion_settings: UsernameSuggestionSettings;

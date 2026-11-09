@@ -18,6 +18,7 @@ const (
 	IapItemDisplayTemplateIDBundleAtlanticav2box2                                      IapItemDisplayTemplateID = "bundle.atlanticav2box.2"
 	IapItemDisplayTemplateIDBundleBlackfridaystickers241                               IapItemDisplayTemplateID = "bundle.blackfridaystickers24.1"
 	IapItemDisplayTemplateIDBundleBlackfridaystickers242                               IapItemDisplayTemplateID = "bundle.blackfridaystickers24.2"
+	IapItemDisplayTemplateIDBundleBlackfridaystickers261                               IapItemDisplayTemplateID = "bundle.blackfridaystickers26.1"
 	IapItemDisplayTemplateIDBundleBoost20231                                           IapItemDisplayTemplateID = "bundle.boost2023.1"
 	IapItemDisplayTemplateIDBundleBrazil20231                                          IapItemDisplayTemplateID = "bundle.brazil2023.1"
 	IapItemDisplayTemplateIDBundleBrazilrediscover11                                   IapItemDisplayTemplateID = "bundle.brazilrediscover1.1"
@@ -268,6 +269,9 @@ const (
 	IapItemDisplayTemplateIDGoSafariBallIap10                                          IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_10"
 	IapItemDisplayTemplateIDGoSafariBallIap25                                          IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_25"
 	IapItemDisplayTemplateIDGoSafariBallIap50                                          IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_50"
+	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlock                         IapItemDisplayTemplateID = "GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
+	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlockPlusPoints               IapItemDisplayTemplateID = "GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
+	IapItemDisplayTemplateIDGowa2026EventPassStoreRedirect                             IapItemDisplayTemplateID = "GOWA2026_EVENT_PASS_STORE_REDIRECT"
 	IapItemDisplayTemplateIDHometransport1                                             IapItemDisplayTemplateID = "hometransport.1"
 	IapItemDisplayTemplateIDIncenseordinary1                                           IapItemDisplayTemplateID = "incenseordinary.1"
 	IapItemDisplayTemplateIDIncenseordinary8                                           IapItemDisplayTemplateID = "incenseordinary.8"
@@ -1109,6 +1113,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDBundleAtlanticav2box2,
 	IapItemDisplayTemplateIDBundleBlackfridaystickers241,
 	IapItemDisplayTemplateIDBundleBlackfridaystickers242,
+	IapItemDisplayTemplateIDBundleBlackfridaystickers261,
 	IapItemDisplayTemplateIDBundleBoost20231,
 	IapItemDisplayTemplateIDBundleBrazil20231,
 	IapItemDisplayTemplateIDBundleBrazilrediscover11,
@@ -1359,6 +1364,9 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGoSafariBallIap10,
 	IapItemDisplayTemplateIDGoSafariBallIap25,
 	IapItemDisplayTemplateIDGoSafariBallIap50,
+	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDGowa2026EventPassStoreRedirect,
 	IapItemDisplayTemplateIDHometransport1,
 	IapItemDisplayTemplateIDIncenseordinary1,
 	IapItemDisplayTemplateIDIncenseordinary8,

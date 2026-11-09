@@ -169,6 +169,7 @@ export type CombatLeagueVsSeekerUltraMegas = S<
 					type: "WITH_UNIQUE_POKEMON";
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "ultra_league_mega_title";
 			unlockCondition: [
 				{

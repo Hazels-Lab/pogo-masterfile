@@ -897,7 +897,7 @@ export type FormSettingsV0041PokemonZubat = S<
 					form: "ZUBAT_NORMAL";
 				},
 				{
-					form: 3362;
+					form: "ZUBAT_HALLOWEEN_2026_01";
 					isCostume: true;
 				},
 			];
@@ -914,7 +914,7 @@ export type FormSettingsV0042PokemonGolbat = S<
 					form: "GOLBAT_NORMAL";
 				},
 				{
-					form: 3363;
+					form: "GOLBAT_HALLOWEEN_2026_01";
 					isCostume: true;
 				},
 			];
@@ -2736,7 +2736,7 @@ export type FormSettingsV0169PokemonCrobat = S<
 					form: "CROBAT_NORMAL";
 				},
 				{
-					form: 3364;
+					form: "CROBAT_HALLOWEEN_2026_01";
 					isCostume: true;
 				},
 			];
@@ -11633,6 +11633,7 @@ export type FormSettingsV0774PokemonMinior = S<
 				},
 				{
 					form: "MINIOR_METEOR";
+					unsilhouetteOnSpeciesCapture: true;
 				},
 			];
 			pokemon: "MINIOR";
@@ -12710,11 +12711,11 @@ export type FormSettingsV0854PokemonSinistea = S<
 					};
 				},
 				{
-					form: 3365;
+					form: "SINISTEA_P_HALLOWEEN_2026_01";
 					isCostume: true;
 				},
 				{
-					form: 3366;
+					form: "SINISTEA_A_HALLOWEEN_2026_01";
 					isCostume: true;
 				},
 			];
@@ -12734,11 +12735,11 @@ export type FormSettingsV0855PokemonPolteageist = S<
 					form: "POLTEAGEIST_ANTIQUE";
 				},
 				{
-					form: 3367;
+					form: "POLTEAGEIST_P_HALLOWEEN_2026_01";
 					isCostume: true;
 				},
 				{
-					form: 3368;
+					form: "POLTEAGEIST_A_HALLOWEEN_2026_01";
 					isCostume: true;
 				},
 			];

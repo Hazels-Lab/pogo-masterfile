@@ -471,6 +471,7 @@ export interface ArPhotoFeatureFlags {
 			reorderSummary: true;
 			shareFunctionalityEnabled: 295065062;
 			shareMessageEnabled: true;
+			showShareCard: true;
 			showSticker: "SOMETIMES_SHOW";
 			signInButtonEnabled: true;
 		};

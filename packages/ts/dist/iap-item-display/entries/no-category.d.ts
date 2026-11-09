@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 21 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 23 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -72,6 +72,40 @@ export type IapItemDisplayEventPassSeptember3EventStoreRedirect = S<
 			skuEnableTimeUtcMs: "1759140000000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_harvest_festival_2026";
+		}
+	>
+>;
+export type IapItemDisplayGowa2026DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
+			sku: "pgorelease.gowa2026_event_pass_track_unlock";
+			skuDisableTime: "2026-11-17T23:59:59";
+			skuDisableTimeUtcMs: "1794959999000";
+			skuEnableTime: "2025-10-14T00:00:00";
+			skuEnableTimeUtcMs: "1760400000000";
+			sortOrder: 2;
+			title: "event_pass_gowa_2025_premium_title";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
+export type IapItemDisplayGowa2026DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS",
+		{
+			description: "gotour_2025_deluxe_event_pass_track_unlock_plus_points_description";
+			imageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus_points.png";
+			sku: "pgorelease.gowa2026_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-11-17T23:59:59";
+			skuDisableTimeUtcMs: "1794959999000";
+			skuEnableTime: "2025-10-14T00:00:00";
+			skuEnableTimeUtcMs: "1760400000000";
+			sortOrder: 3;
+			title: "gowa_2025_deluxe_event_pass_track_unlock_plus_points_title";
+			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -336,6 +370,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayEventPassMonth1SeasonStoreRedirect
 	| IapItemDisplayEventPassSeptember1EventStoreRedirect
 	| IapItemDisplayEventPassSeptember3EventStoreRedirect
+	| IapItemDisplayGowa2026DeluxeEventPassTrackUnlock
+	| IapItemDisplayGowa2026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlock
 	| IapItemDisplayMonth1DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlock

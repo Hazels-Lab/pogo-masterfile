@@ -88,13 +88,6 @@ pub struct BreadOverrides {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(untagged)]
-pub enum FormValue {
-    Uint(u64),
-    String(String),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct SizeSettingsV2 {
     pub disable_pokedex_record_display_for_forms: Option<bool>,
@@ -132,7 +125,7 @@ pub struct TempEvoOverrides {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonExtendedSettings {
     pub bread_overrides: Option<Vec<BreadOverrides>>,
-    pub form: Option<FormValue>,
+    pub form: Option<String>,
     pub size_settings: SizeSettingsV2,
     pub temp_evo_overrides: Option<Vec<TempEvoOverrides>>,
     pub unique_id: String,

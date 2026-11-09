@@ -53,7 +53,6 @@ import type {
 	EncounterSettings,
 	ErrorReportingSettings,
 	EventMapRefreshSettings,
-	EventPassSettings,
 	EventPlannerPopularNotificationSettings,
 	ExternalAddressableAssetsSettings,
 	FeatureUnlockLevelSettings,
@@ -138,7 +137,7 @@ import type {
 	StickerCategorySettings,
 	StyleShopSettings,
 	TicketGiftingSettings,
-	TimeBoxedSpawnEventSettings,
+	TimeBoxedSpawnEventsSettings,
 	TodayViewSettings,
 	TutorialSettings,
 	UsernameSuggestionSettings,
@@ -203,7 +202,6 @@ export type EggHatchImprovementsSettingsType = W<EggHatchImprovementsSettings>;
 export type EncounterSettingsType = W<EncounterSettings>;
 export type ErrorReportingSettingsType = W<ErrorReportingSettings>;
 export type EventMapRefreshSettingsType = W<EventMapRefreshSettings>;
-export type EventPassSettingsType = W<EventPassSettings>;
 export type EventPlannerPopularNotificationSettingsType = W<EventPlannerPopularNotificationSettings>;
 export type ExternalAddressableAssetsSettingsType = W<ExternalAddressableAssetsSettings>;
 export type FeatureUnlockLevelSettingsType = W<FeatureUnlockLevelSettings>;
@@ -288,7 +286,7 @@ export type StationedPokemonTableSettingsType = W<StationedPokemonTableSettings>
 export type StickerCategorySettingsType = W<StickerCategorySettings>;
 export type StyleShopSettingsType = W<StyleShopSettings>;
 export type TicketGiftingSettingsType = W<TicketGiftingSettings>;
-export type TimeBoxedSpawnEventSettingsType = W<TimeBoxedSpawnEventSettings>;
+export type TimeBoxedSpawnEventsSettingsType = W<TimeBoxedSpawnEventsSettings>;
 export type TodayViewSettingsType = W<TodayViewSettings>;
 export type TutorialSettingsType = W<TutorialSettings>;
 export type UsernameSuggestionSettingsType = W<UsernameSuggestionSettings>;
@@ -353,7 +351,6 @@ export type Singletons =
 	| EncounterSettingsType
 	| ErrorReportingSettingsType
 	| EventMapRefreshSettingsType
-	| EventPassSettingsType
 	| EventPlannerPopularNotificationSettingsType
 	| ExternalAddressableAssetsSettingsType
 	| FeatureUnlockLevelSettingsType
@@ -438,7 +435,7 @@ export type Singletons =
 	| StickerCategorySettingsType
 	| StyleShopSettingsType
 	| TicketGiftingSettingsType
-	| TimeBoxedSpawnEventSettingsType
+	| TimeBoxedSpawnEventsSettingsType
 	| TodayViewSettingsType
 	| TutorialSettingsType
 	| UsernameSuggestionSettingsType

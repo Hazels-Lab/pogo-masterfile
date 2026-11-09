@@ -2,14 +2,19 @@
 
 package combat_league
 
+type CombatLeagueGroupCondition struct {
+	PokemonClass [3]string `json:"pokemonClass"`
+}
+
 type CombatLeaguePokemon struct {
 	Forms []string `json:"forms,omitempty"`
 	Id    string   `json:"id"`
 }
 
 type CombatLeaguePokemonBanList struct {
-	Lgdbihdlhod *string               `json:"lgdbihdlhod,omitempty"`
-	Pokemon     []CombatLeaguePokemon `json:"pokemon"`
+	GroupCondition *CombatLeagueGroupCondition `json:"groupCondition,omitempty"`
+	Name           *string                     `json:"name,omitempty"`
+	Pokemon        []CombatLeaguePokemon       `json:"pokemon"`
 }
 
 type CombatLeaguePokemonCaughtTimestamp struct {
@@ -61,17 +66,19 @@ type CombatLeagueUnlockCondition struct {
 }
 
 type CombatLeague struct {
-	AllowTempEvos                     *bool                           `json:"allowTempEvos,omitempty"`
-	BadgeType                         string                          `json:"badgeType"`
-	BannedPokemon                     []string                        `json:"bannedPokemon,omitempty"`
-	BattlePartyCombatLeagueTemplateId *string                         `json:"battlePartyCombatLeagueTemplateId,omitempty"`
-	Enabled                           bool                            `json:"enabled"`
-	IconUrl                           string                          `json:"iconUrl"`
-	LeagueType                        string                          `json:"leagueType"`
-	PokemonCondition                  []CombatLeaguePokemonCondition  `json:"pokemonCondition"`
-	PokemonCount                      uint64                          `json:"pokemonCount"`
-	Title                             string                          `json:"title"`
-	UnlockCondition                   *[1]CombatLeagueUnlockCondition `json:"unlockCondition,omitempty"`
+	AllowTempEvoCpDownscaling                *bool                           `json:"allowTempEvoCpDownscaling,omitempty"`
+	AllowTempEvos                            *bool                           `json:"allowTempEvos,omitempty"`
+	BadgeType                                string                          `json:"badgeType"`
+	BannedPokemon                            []string                        `json:"bannedPokemon,omitempty"`
+	BattlePartyCombatLeagueTemplateId        *string                         `json:"battlePartyCombatLeagueTemplateId,omitempty"`
+	Enabled                                  bool                            `json:"enabled"`
+	IconUrl                                  string                          `json:"iconUrl"`
+	LeagueType                               string                          `json:"leagueType"`
+	PokemonCondition                         []CombatLeaguePokemonCondition  `json:"pokemonCondition"`
+	PokemonCount                             uint64                          `json:"pokemonCount"`
+	RemoveTempEvoSelfCpBoostAdditionalLevels *bool                           `json:"removeTempEvoSelfCpBoostAdditionalLevels,omitempty"`
+	Title                                    string                          `json:"title"`
+	UnlockCondition                          *[1]CombatLeagueUnlockCondition `json:"unlockCondition,omitempty"`
 }
 
 type CombatLeagueEntry struct {

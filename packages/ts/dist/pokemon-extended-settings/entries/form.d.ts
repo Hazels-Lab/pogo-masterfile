@@ -687,7 +687,7 @@ export type PokemonExtendedSettingsV0041PokemonZubatHalloween202601 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0041_POKEMON_ZUBAT_HALLOWEEN_2026_01",
 		{
-			form: 3362;
+			form: "ZUBAT_HALLOWEEN_2026_01";
 			sizeSettings: {
 				mLowerBound: 0.6;
 				mUpperBound: 1;
@@ -721,7 +721,7 @@ export type PokemonExtendedSettingsV0042PokemonGolbatHalloween202601 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0042_POKEMON_GOLBAT_HALLOWEEN_2026_01",
 		{
-			form: 3363;
+			form: "GOLBAT_HALLOWEEN_2026_01";
 			sizeSettings: {
 				mLowerBound: 1.2;
 				mUpperBound: 2;
@@ -2744,7 +2744,7 @@ export type PokemonExtendedSettingsV0169PokemonCrobatHalloween202601 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0169_POKEMON_CROBAT_HALLOWEEN_2026_01",
 		{
-			form: 3364;
+			form: "CROBAT_HALLOWEEN_2026_01";
 			sizeSettings: {
 				mLowerBound: 1.35;
 				mUpperBound: 2.25;
@@ -16834,7 +16834,7 @@ export type PokemonExtendedSettingsV0854PokemonSinisteaAHalloween202601 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0854_POKEMON_SINISTEA_A_HALLOWEEN_2026_01",
 		{
-			form: 3366;
+			form: "SINISTEA_A_HALLOWEEN_2026_01";
 			sizeSettings: {
 				mLowerBound: 0.075;
 				mUpperBound: 0.125;
@@ -16868,7 +16868,7 @@ export type PokemonExtendedSettingsV0854PokemonSinisteaPHalloween202601 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0854_POKEMON_SINISTEA_P_HALLOWEEN_2026_01",
 		{
-			form: 3365;
+			form: "SINISTEA_P_HALLOWEEN_2026_01";
 			sizeSettings: {
 				mLowerBound: 0.075;
 				mUpperBound: 0.125;
@@ -16902,7 +16902,7 @@ export type PokemonExtendedSettingsV0855PokemonPolteageistAHalloween202601 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0855_POKEMON_POLTEAGEIST_A_HALLOWEEN_2026_01",
 		{
-			form: 3368;
+			form: "POLTEAGEIST_A_HALLOWEEN_2026_01";
 			sizeSettings: {
 				mLowerBound: 0.15;
 				mUpperBound: 0.25;
@@ -16936,7 +16936,7 @@ export type PokemonExtendedSettingsV0855PokemonPolteageistPHalloween202601 = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0855_POKEMON_POLTEAGEIST_P_HALLOWEEN_2026_01",
 		{
-			form: 3367;
+			form: "POLTEAGEIST_P_HALLOWEEN_2026_01";
 			sizeSettings: {
 				mLowerBound: 0.15;
 				mUpperBound: 0.25;

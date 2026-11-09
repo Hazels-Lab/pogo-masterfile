@@ -7497,6 +7497,7 @@ export type PokemonSettingsV0774PokemonMinior = S<
 					ibfcVfxKey: "ALTERNATE_TO_DEFAULT";
 				};
 				combatEnable: true;
+				defaultForms: ["MINIOR_BLUE", "MINIOR_GREEN", "MINIOR_INDIGO", "MINIOR_ORANGE", "MINIOR_RED", "MINIOR_VIOLET", "MINIOR_YELLOW"];
 				defaultToAlternateIbfcSettings: {
 					animationDurationTurns: 5;
 					animationPlayPoint: "BEFORE_CM_ATTACKER";

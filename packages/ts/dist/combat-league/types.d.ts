@@ -16,6 +16,7 @@ export interface CombatLeague<TemplateID extends string = string, TData extends 
 export type CombatLeagueType = W<CombatLeague>;
 
 export interface CombatLeagueData {
+	allowTempEvoCpDownscaling?: boolean;
 	allowTempEvos?: boolean;
 	badgeType: "BADGE_GREAT_LEAGUE" | "BADGE_MASTER_LEAGUE" | "BADGE_ULTRA_LEAGUE";
 	bannedPokemon?: Array<string>;
@@ -76,7 +77,10 @@ export interface CombatLeagueData {
 	leagueType: "PREMIER" | "STANDARD";
 	pokemonCondition: Array<{
 		pokemonBanList?: {
-			lgdbihdlhod?: "s24_laic_prohibited_pokemon_and_classes" | "s25_euic_prohibited_pokemon";
+			groupCondition?: {
+				pokemonClass: ["POKEMON_CLASS_LEGENDARY", "POKEMON_CLASS_MYTHIC", "POKEMON_CLASS_ULTRA_BEAST"];
+			};
+			name?: "s24_laic_prohibited_pokemon_and_classes" | "s25_euic_prohibited_pokemon";
 			pokemon: Array<{
 				forms?: Array<string>;
 				id: string;
@@ -187,6 +191,7 @@ export interface CombatLeagueData {
 			pokemonType: Array<TypeEffectiveTemplateID>;
 		};
 	}>;
+	removeTempEvoSelfCpBoostAdditionalLevels?: boolean;
 	title: string;
 	unlockCondition?: [
 		{

@@ -90,6 +90,7 @@ export type CombatLeagueVsSeekerMasterMegas = S<
 					type: "WITH_UNIQUE_POKEMON";
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "master_league_mega_title";
 			unlockCondition: [
 				{

@@ -1373,12 +1373,14 @@ export type ItemSettingsItemEventTicketS24Nov9Gowaol = S<
 				clientEventEndTimeUtcMs: "1794765600000";
 				clientEventStartTimeUtcMs: "1794650400000";
 				displayV2Enabled: true;
+				eventBadge: "BADGE_GOWA_2026_GLOBAL";
 				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
 				eventDatetimeRangeKey: "event_datetime_range_key_GOWA26";
 				eventEndTime: "2026-11-15T18:00:00";
 				eventStartTime: "2026-11-14T10:00:00";
 				giftable: true;
 				giftItem: "ITEM_EVENT_TICKET_S24_NOV9_GOWAOL_TO_GIFT";
+				grantBadgeBeforeEventStartMs: "640800000";
 				iconRewards: [
 					{
 						item: {

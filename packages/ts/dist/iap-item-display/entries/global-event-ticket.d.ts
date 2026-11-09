@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 4 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 5 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -62,6 +62,24 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 		}
 	>
 >;
+export type IapItemDisplayGowa2026EventPassStoreRedirect = S<
+	IapItemDisplay<
+		"GOWA2026_EVENT_PASS_STORE_REDIRECT",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "event_pass_gowa_2025_premium_title";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fcfa12bb9_PGO-GOWA_2026_GO_Pass_Deluxe.jpg";
+			sku: "pgorelease.gowa2026_event_pass_track_redirect";
+			skuDisableTime: "2026-11-17T23:59:59";
+			skuDisableTimeUtcMs: "1794959999000";
+			skuEnableTime: "2025-10-14T00:00:00";
+			skuEnableTimeUtcMs: "1760400000000";
+			sortOrder: 1;
+			title: "event_pass_gowa_2025_premium_title";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
 export type IapItemDisplayMonth3DeluxeEventPassTrackRedirect = S<
 	IapItemDisplay<
 		"month3_deluxe_event_pass_track_redirect",
@@ -85,4 +103,5 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket11
+	| IapItemDisplayGowa2026EventPassStoreRedirect
 	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect;

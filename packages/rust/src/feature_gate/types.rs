@@ -26,10 +26,19 @@ pub struct SubFeatureGateList {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct MinClientVersion {
+    pub min_client_version: String,
+    pub rollout_percentage: u64,
+    pub status: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(untagged)]
 pub enum FeatureGate {
     Misc(Misc),
     SubFeatureGateList(SubFeatureGateList),
+    MinClientVersion(MinClientVersion),
 }
 
 crate::masterfile_entry!(FeatureGateEntry, FeatureGateEntryData, feature_gate: FeatureGate);

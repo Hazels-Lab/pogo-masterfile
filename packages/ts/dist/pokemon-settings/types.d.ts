@@ -143,7 +143,7 @@ export interface PokemonSettingsData {
 		evolutionItemRequirementCost?: number;
 		evolutionLikelihoodWeight?: number;
 		evolutionMoveRequirement?: "DRAGON_ASCENT";
-		form?: number | string;
+		form?: string;
 		genderRequirement?: "FEMALE" | "MALE";
 		kmBuddyDistanceRequirement?: number;
 		lureItemRequirement?: "ITEM_TROY_DISK_GLACIAL" | "ITEM_TROY_DISK_MAGNETIC" | "ITEM_TROY_DISK_MOSSY" | "ITEM_TROY_DISK_RAINY";
@@ -200,7 +200,7 @@ export interface PokemonSettingsData {
 		item: "ITEM_BEANS" | "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A";
 	};
 	familyId: string;
-	form?: number | string;
+	form?: string;
 	formChange?: Array<{
 		availableForm: Array<
 			| "FURFROU_DANDY"
@@ -326,7 +326,7 @@ export interface PokemonSettingsData {
 	heightStdDev: number;
 	ibfc: {
 		alternateForm?: "AEGISLASH_BLADE" | "MIMIKYU_BUSTED" | "MINIOR_METEOR" | "MORPEKO_HANGRY";
-		AlternateForms?: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
+		alternateForms?: ["CRAMORANT_GULPING", "CRAMORANT_GORGING"];
 		alternateToDefaultIbfcSettings?: {
 			animationDurationTurns: number;
 			animationPlayPoint: "AFTER_CM_ATTACKER" | "BEFORE_CM_ATTACKER";
@@ -336,6 +336,7 @@ export interface PokemonSettingsData {
 		};
 		combatEnable?: boolean;
 		defaultForm?: "AEGISLASH_SHIELD" | "CRAMORANT_NORMAL" | "MIMIKYU_DISGUISED" | "MORPEKO_FULL_BELLY";
+		defaultForms?: ["MINIOR_BLUE", "MINIOR_GREEN", "MINIOR_INDIGO", "MINIOR_ORANGE", "MINIOR_RED", "MINIOR_VIOLET", "MINIOR_YELLOW"];
 		defaultToAlternateIbfcSettings?: {
 			animationDurationTurns: number;
 			animationPlayPoint: "AFTER_CM_ATTACKER" | "BEFORE_CM_ATTACKER";

@@ -1434,13 +1434,13 @@ export type PokemonSettingsV0041PokemonZubatHalloween202601 = S<
 					candyCost: 25;
 					candyCostPurified: 22;
 					evolution: "GOLBAT";
-					form: 3363;
+					form: "GOLBAT_HALLOWEEN_2026_01";
 				},
 			];
 			evolutionIds: ["GOLBAT"];
 			evolutionPips: 1;
 			familyId: "FAMILY_ZUBAT";
-			form: 3362;
+			form: "ZUBAT_HALLOWEEN_2026_01";
 			heightStdDev: 0.1;
 			ibfc: object;
 			isDeployable: true;
@@ -1699,12 +1699,12 @@ export type PokemonSettingsV0042PokemonGolbatHalloween202601 = S<
 					candyCost: 100;
 					candyCostPurified: 90;
 					evolution: "CROBAT";
-					form: 3364;
+					form: "CROBAT_HALLOWEEN_2026_01";
 				},
 			];
 			evolutionPips: 1;
 			familyId: "FAMILY_ZUBAT";
-			form: 3363;
+			form: "GOLBAT_HALLOWEEN_2026_01";
 			heightStdDev: 0.2;
 			ibfc: object;
 			irisPhotoEmote1: "PhysicalAttack";
@@ -2924,7 +2924,7 @@ export type PokemonSettingsV0169PokemonCrobatHalloween202601 = S<
 			};
 			evolutionPips: 1;
 			familyId: "FAMILY_ZUBAT";
-			form: 3364;
+			form: "CROBAT_HALLOWEEN_2026_01";
 			heightStdDev: 0.225;
 			ibfc: object;
 			isDeployable: true;

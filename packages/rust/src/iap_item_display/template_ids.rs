@@ -33,6 +33,8 @@ pub enum IapItemDisplayTemplateId {
     BundleBlackfridaystickers241,
     #[serde(rename = "bundle.blackfridaystickers24.2")]
     BundleBlackfridaystickers242,
+    #[serde(rename = "bundle.blackfridaystickers26.1")]
+    BundleBlackfridaystickers261,
     #[serde(rename = "bundle.boost2023.1")]
     BundleBoost20231,
     #[serde(rename = "bundle.brazil2023.1")]
@@ -533,6 +535,12 @@ pub enum IapItemDisplayTemplateId {
     GoSafariBallIap25,
     #[serde(rename = "GO_SAFARI_BALL_IAP_50")]
     GoSafariBallIap50,
+    #[serde(rename = "GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
+    Gowa2026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
+    Gowa2026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "GOWA2026_EVENT_PASS_STORE_REDIRECT")]
+    Gowa2026EventPassStoreRedirect,
     #[serde(rename = "hometransport.1")]
     Hometransport1,
     #[serde(rename = "incenseordinary.1")]

@@ -12,6 +12,7 @@ import type {
 	IapItemDisplayBundleAtlanticav2box2,
 	IapItemDisplayBundleBlackfridaystickers241,
 	IapItemDisplayBundleBlackfridaystickers242,
+	IapItemDisplayBundleBlackfridaystickers261,
 	IapItemDisplayBundleBoost20231,
 	IapItemDisplayBundleBrazil20231,
 	IapItemDisplayBundleBrazilrediscover11,
@@ -264,6 +265,9 @@ import type {
 	IapItemDisplayGoSafariBallIap10,
 	IapItemDisplayGoSafariBallIap25,
 	IapItemDisplayGoSafariBallIap50,
+	IapItemDisplayGowa2026DeluxeEventPassTrackUnlock,
+	IapItemDisplayGowa2026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayGowa2026EventPassStoreRedirect,
 	IapItemDisplayHometransport1,
 	IapItemDisplayIncenseordinary1,
 	IapItemDisplayIncenseordinary8,
@@ -1105,6 +1109,7 @@ export interface IapItemDisplayLookup {
 	"bundle.atlanticav2box.2": IapItemDisplayBundleAtlanticav2box2;
 	"bundle.blackfridaystickers24.1": IapItemDisplayBundleBlackfridaystickers241;
 	"bundle.blackfridaystickers24.2": IapItemDisplayBundleBlackfridaystickers242;
+	"bundle.blackfridaystickers26.1": IapItemDisplayBundleBlackfridaystickers261;
 	"bundle.boost2023.1": IapItemDisplayBundleBoost20231;
 	"bundle.brazil2023.1": IapItemDisplayBundleBrazil20231;
 	"bundle.brazilrediscover1.1": IapItemDisplayBundleBrazilrediscover11;
@@ -1355,6 +1360,9 @@ export interface IapItemDisplayLookup {
 	GO_SAFARI_BALL_IAP_10: IapItemDisplayGoSafariBallIap10;
 	GO_SAFARI_BALL_IAP_25: IapItemDisplayGoSafariBallIap25;
 	GO_SAFARI_BALL_IAP_50: IapItemDisplayGoSafariBallIap50;
+	GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayGowa2026DeluxeEventPassTrackUnlock;
+	GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayGowa2026DeluxeEventPassTrackUnlockPlusPoints;
+	GOWA2026_EVENT_PASS_STORE_REDIRECT: IapItemDisplayGowa2026EventPassStoreRedirect;
 	"hometransport.1": IapItemDisplayHometransport1;
 	"incenseordinary.1": IapItemDisplayIncenseordinary1;
 	"incenseordinary.8": IapItemDisplayIncenseordinary8;

@@ -180,8 +180,8 @@ export type ItemExpirationSettingsLuckyFriendApplicator = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_LUCKY_FRIEND_APPLICATOR",
 		{
-			emergencyExpirationTime: "2026-11-09T10:00:00";
-			expirationTime: "2026-11-08T23:59:00";
+			emergencyExpirationTime: "2026-09-21T10:00:00";
+			expirationTime: "2026-09-20T23:59:59";
 		}
 	>
 >;
@@ -221,8 +221,8 @@ export type ItemExpirationSettingsWildBall = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_WILD_BALL",
 		{
-			emergencyExpirationTime: "2026-11-08T18:00:00";
-			expirationTime: "2026-11-08T18:00:00";
+			emergencyExpirationTime: "2026-11-15T18:00:00";
+			expirationTime: "2026-11-15T18:00:00";
 			itemEnablementSettings: {
 				enabledTimePeriods: [
 					{

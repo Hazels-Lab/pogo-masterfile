@@ -156,6 +156,7 @@ pub struct ArPhotoFeatureFlags {
     pub reorder_summary: bool,
     pub share_functionality_enabled: u64,
     pub share_message_enabled: bool,
+    pub show_share_card: bool,
     pub show_sticker: String,
     pub sign_in_button_enabled: bool,
 }
@@ -207,7 +208,9 @@ pub struct BackgroundModeSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct FastAttackSettings {}
+pub struct FastAttackSettings {
+    pub allow_fast_move_anim_priority: bool,
+}
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -1085,30 +1088,8 @@ pub struct PokemonFormAppraisalOverrides {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct PokemonFormAppraisalOverridesV2 {
-    pub add_to_start: bool,
-    pub appraisal_key: String,
-    pub form: u64,
-    pub id: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct ConversationSettings {
-    pub pokemon_form_appraisal_overrides: (
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverrides,
-        PokemonFormAppraisalOverridesV2,
-        PokemonFormAppraisalOverridesV2,
-        PokemonFormAppraisalOverridesV2,
-        PokemonFormAppraisalOverridesV2,
-    ),
+    pub pokemon_form_appraisal_overrides: [PokemonFormAppraisalOverrides; 12],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1194,73 +1175,6 @@ pub struct EventMapRefreshSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct BonusBoxes {
-    pub icon_type: String,
-    pub quantity: u64,
-    pub text: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct EventPassTrackUpgradeDescriptions {
-    pub details_link_key: String,
-    pub event_duration_key: String,
-    pub event_pass_track_to_upgrade_to: String,
-    pub pass_track_upgrade_header_description: String,
-    pub ranks_to_highlight_rewards: [u64; 3],
-    pub track_unlock_image_url: String,
-    pub track_unlock_plus_points_image_url: String,
-    pub track_unlock_plus_points_sku_id: String,
-    pub track_unlock_sku_id: String,
-    pub upgrade_description_key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct EventPassDisplaySettings {
-    pub bonus_boxes: [BonusBoxes; 3],
-    pub event_pass_title_key: String,
-    pub event_pass_track_upgrade_descriptions: [EventPassTrackUpgradeDescriptions; 1],
-    pub header_icon_url: String,
-    pub premium_reward_banner_bottom: String,
-    pub premium_reward_banner_image_url: String,
-    pub premium_reward_banner_middle: String,
-    pub premium_reward_banner_top: String,
-    pub premium_rewards_description: String,
-    pub section_display_priority: u64,
-    pub today_view_section: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct TrackConditions {
-    pub track: String,
-    pub track_title_key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct TrackConditionsV2 {
-    pub badge: String,
-    pub track: String,
-    pub track_title_key: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
-pub struct EventPassSettings {
-    pub additional_bonus_tiers_level: u64,
-    pub event_pass_display_settings: EventPassDisplaySettings,
-    pub expiration_time: String,
-    pub grace_period_end_time: String,
-    pub max_tier_level: u64,
-    pub points_item_id: String,
-    pub prefix: String,
-    pub track_conditions: (TrackConditions, TrackConditionsV2),
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct EventPlannerPopularNotificationSettings {
     pub battle_levels: [u64; 9],
     pub first_scan_offset_seconds: String,
@@ -1316,6 +1230,7 @@ pub struct GuiSearchSettings {
     pub max_number_recent_searches: u64,
     pub max_query_length: u64,
     pub search_help_url: String,
+    pub transfer_warning100_enabled: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1328,6 +1243,12 @@ pub struct GymBadgeSettings {
     pub pokemon_deploy_score: u64,
     pub raid_battle_winning_score: u64,
     pub target: [u64; 3],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct GymTopperDistanceSettings {
+    pub guard_pokemon_max_visual_distance_meters: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1649,6 +1570,14 @@ pub struct MapDisplaySettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct MapObjectCollisionAvoidanceSettings {
+    pub map_place_collision_buffer_distance: f64,
+    pub pokemon_collision_buffer_distance: f64,
+    pub pokemon_collision_radius_scale_factor: f64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct MapObjectsInteractionRangeSettings {
     pub far_interaction_range_meters: f64,
     pub interaction_range_meters: f64,
@@ -1661,6 +1590,13 @@ pub struct MapObjectsInteractionRangeSettings {
 pub struct SeparatedTempEvoBranches {
     pub pokedex_id: String,
     pub temp_evo_id: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TempEvoSpecialAttackBoosts {
+    pub gyms_and_raids_multiplier: f64,
+    pub trainer_battles_multiplier: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -1680,6 +1616,7 @@ pub struct MegaEvoSettings {
     pub min_level_for_special_move: u64,
     pub num_mega_levels: u64,
     pub separated_temp_evo_branches: [SeparatedTempEvoBranches; 6],
+    pub temp_evo_special_attack_boosts: [TempEvoSpecialAttackBoosts; 5],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2507,6 +2444,7 @@ pub struct RaidSettings {
     pub remote_raid_enabled: bool,
     pub remote_raids_min_player_level: u64,
     pub unsupported_raid_levels_for_friend_invites: [String; 4],
+    pub unsupported_raid_levels_for_rsvp: [String; 2],
     pub unsupported_remote_raid_levels: [String; 4],
 }
 
@@ -2875,6 +2813,46 @@ pub struct TicketGiftingSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct EndDayLocal {
+    pub day: u64,
+    pub month: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct EndPeakTimeLocal {
+    pub hour: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct EndTimeLocal {
+    pub hour: u64,
+    pub minute: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TimeBoxedSpawnEvents {
+    pub description_string_key: String,
+    pub end_day_local: EndDayLocal,
+    pub end_peak_time_local: EndPeakTimeLocal,
+    pub end_time_local: EndTimeLocal,
+    pub start_day_local: EndDayLocal,
+    pub start_peak_time_local: EndPeakTimeLocal,
+    pub start_time_local: EndPeakTimeLocal,
+    pub time_boxed_spawn_event_type: String,
+    pub title_string_key: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TimeBoxedSpawnEventsSettings {
+    pub time_boxed_spawn_events: [TimeBoxedSpawnEvents; 6],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct TodayViewSettings {
     pub favorite_quest_enabled: bool,
     pub notification_server_authoritative: bool,
@@ -2981,13 +2959,36 @@ pub struct MaxBattleConfig {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct LatencyTrackingSettings {
+    pub is_downstream_enabled: bool,
+    pub is_upstream_enabled: bool,
+    pub max_number_events: u64,
+    pub max_number_get_state: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct PvpBattleConfig {
+    pub bad_network_warning_threshold_turns: String,
+    pub battle_end_timeout_threshold_ms: String,
+    pub dead_network_disconnect_threshold_turns: String,
+    pub latency_tracking_settings: LatencyTrackingSettings,
+    pub no_opponent_connection_disconnect_threshold_turns: String,
+    pub pre_response_input_block_duration_ms: String,
+    pub submit_turn_number_with_player_action: bool,
+    pub swap_button_end_of_cooldown_input_block_duration_ms: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct TeamLeaderBattleConfig {
     pub bad_network_warning_threshold_turns: String,
     pub battle_end_timeout_threshold_ms: String,
     pub dead_network_disconnect_threshold_turns: String,
     pub no_opponent_connection_disconnect_threshold_turns: String,
     pub pre_response_input_block_duration_ms: String,
     pub submit_turn_number_with_player_action: bool,
+    pub swap_button_end_of_cooldown_input_block_duration_ms: u64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2996,6 +2997,8 @@ pub struct VnextBattleConfig {
     pub max_battle_config: MaxBattleConfig,
     pub pvp_battle_config: PvpBattleConfig,
     pub raids_battle_config: MaxBattleConfig,
+    pub team_leader_battle_config: TeamLeaderBattleConfig,
+    pub tgr_battle_config: TeamLeaderBattleConfig,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3214,8 +3217,6 @@ crate::masterfile_entry!(ErrorReportingSettingsEntry, ErrorReportingSettingsEntr
 
 crate::masterfile_entry!(EventMapRefreshSettingsEntry, EventMapRefreshSettingsEntryData, event_map_refresh_settings: EventMapRefreshSettings);
 
-crate::masterfile_entry!(EventPassSettingsEntry, EventPassSettingsEntryData, event_pass_settings: EventPassSettings);
-
 crate::masterfile_entry!(EventPlannerPopularNotificationSettingsEntry, EventPlannerPopularNotificationSettingsEntryData, event_planner_popular_notification_settings: EventPlannerPopularNotificationSettings);
 
 crate::masterfile_entry!(ExternalAddressableAssetsSettingsEntry, ExternalAddressableAssetsSettingsEntryData, external_addressable_assets_settings: ExternalAddressableAssetsSettings);
@@ -3230,10 +3231,7 @@ crate::masterfile_entry!(GuiSearchSettingsEntry, GuiSearchSettingsEntryData, gui
 
 crate::masterfile_entry!(GymBadgeSettingsEntry, GymBadgeSettingsEntryData, gym_badge_settings: GymBadgeSettings);
 
-crate::masterfile_stub_entry!(
-    GymTopperDistanceSettingsEntry,
-    GymTopperDistanceSettingsEntryData
-);
+crate::masterfile_entry!(GymTopperDistanceSettingsEntry, GymTopperDistanceSettingsEntryData, gym_topper_distance_settings: GymTopperDistanceSettings);
 
 crate::masterfile_entry!(HapticsSettingsEntry, HapticsSettingsEntryData, haptics_settings: HapticsSettings);
 
@@ -3274,10 +3272,7 @@ crate::masterfile_entry!(MainMenuChangesEntry, MainMenuChangesEntryData, main_me
 
 crate::masterfile_entry!(MapDisplaySettingsEntry, MapDisplaySettingsEntryData, map_display_settings: MapDisplaySettings);
 
-crate::masterfile_stub_entry!(
-    MapObjectCollisionAvoidanceSettingsEntry,
-    MapObjectCollisionAvoidanceSettingsEntryData
-);
+crate::masterfile_entry!(MapObjectCollisionAvoidanceSettingsEntry, MapObjectCollisionAvoidanceSettingsEntryData, map_object_collision_avoidance_settings: MapObjectCollisionAvoidanceSettings);
 
 crate::masterfile_entry!(MapObjectsInteractionRangeSettingsEntry, MapObjectsInteractionRangeSettingsEntryData, map_objects_interaction_range_settings: MapObjectsInteractionRangeSettings);
 
@@ -3393,10 +3388,7 @@ crate::masterfile_entry!(StyleShopSettingsEntry, StyleShopSettingsEntryData, sty
 
 crate::masterfile_entry!(TicketGiftingSettingsEntry, TicketGiftingSettingsEntryData, ticket_gifting_settings: TicketGiftingSettings);
 
-crate::masterfile_stub_entry!(
-    TimeBoxedSpawnEventSettingsEntry,
-    TimeBoxedSpawnEventSettingsEntryData
-);
+crate::masterfile_entry!(TimeBoxedSpawnEventsSettingsEntry, TimeBoxedSpawnEventsSettingsEntryData, time_boxed_spawn_events_settings: TimeBoxedSpawnEventsSettings);
 
 crate::masterfile_entry!(TodayViewSettingsEntry, TodayViewSettingsEntryData, today_view_settings: TodayViewSettings);
 
