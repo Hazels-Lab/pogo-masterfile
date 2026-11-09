@@ -7,8 +7,8 @@ export type LocationCardSettingsIdCarFreeDay = S<
 	LocationCardSettings<
 		"LC_ID_CAR_FREE_DAY",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_ID_CarFreeDay";
-			locationCard: "LC_ID_CAR_FREE_DAY";
 		}
 	>
 >;

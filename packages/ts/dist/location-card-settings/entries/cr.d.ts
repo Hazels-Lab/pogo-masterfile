@@ -7,9 +7,9 @@ export type LocationCardSettingsCr2026001 = S<
 	LocationCardSettings<
 		"LC_CR_2026_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_CR_2026_001";
-			locationCard: "LC_CR_2026_001";
 		}
 	>
 >;

@@ -270,7 +270,7 @@ export interface ItemSettingsData {
 			| "nickit_website_link"
 			| "zorua_website_link";
 		displayV2Enabled?: boolean;
-		eventBadge?: "BADGE_GO_TOUR_2026_GLOBAL";
+		eventBadge?: "BADGE_GO_TOUR_2026_GLOBAL" | "BADGE_GOWA_2026_GLOBAL";
 		eventBannerUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
@@ -446,7 +446,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S24_SEP_26_CATCH_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
 			| "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
-		grantBadgeBeforeEventStartMs?: "1769904000000";
+		grantBadgeBeforeEventStartMs?: "640800000" | "1769904000000";
 		iconRewards?: Array<{
 			candy?: {
 				amount: number;

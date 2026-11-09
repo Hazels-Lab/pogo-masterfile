@@ -5562,11 +5562,11 @@ export type PokemonSettingsV0854PokemonSinisteaAHalloween202601 = S<
 				{
 					candyCost: 400;
 					evolution: "POLTEAGEIST";
-					form: 3368;
+					form: "POLTEAGEIST_A_HALLOWEEN_2026_01";
 				},
 			];
 			familyId: "FAMILY_SINISTEA";
-			form: 3366;
+			form: "SINISTEA_A_HALLOWEEN_2026_01";
 			heightStdDev: 0.0125;
 			ibfc: object;
 			isDeployable: true;
@@ -5689,11 +5689,11 @@ export type PokemonSettingsV0854PokemonSinisteaPHalloween202601 = S<
 				{
 					candyCost: 50;
 					evolution: "POLTEAGEIST";
-					form: 3367;
+					form: "POLTEAGEIST_P_HALLOWEEN_2026_01";
 				},
 			];
 			familyId: "FAMILY_SINISTEA";
-			form: 3365;
+			form: "SINISTEA_P_HALLOWEEN_2026_01";
 			heightStdDev: 0.0125;
 			ibfc: object;
 			isDeployable: true;
@@ -5874,7 +5874,7 @@ export type PokemonSettingsV0855PokemonPolteageistAHalloween202601 = S<
 				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_SINISTEA";
-			form: 3368;
+			form: "POLTEAGEIST_A_HALLOWEEN_2026_01";
 			heightStdDev: 0.025;
 			ibfc: object;
 			isDeployable: true;
@@ -5994,7 +5994,7 @@ export type PokemonSettingsV0855PokemonPolteageistPHalloween202601 = S<
 				movementType: "MOVEMENT_HOVERING";
 			};
 			familyId: "FAMILY_SINISTEA";
-			form: 3367;
+			form: "POLTEAGEIST_P_HALLOWEEN_2026_01";
 			heightStdDev: 0.025;
 			ibfc: object;
 			isDeployable: true;

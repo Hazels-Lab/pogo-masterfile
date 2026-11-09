@@ -7,8 +7,8 @@ export type LocationCardSettingsPokelidAichi = S<
 	LocationCardSettings<
 		"LC_POKELID_AICHI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_aichi";
-			locationCard: "LC_POKELID_AICHI";
 		}
 	>
 >;
@@ -16,8 +16,8 @@ export type LocationCardSettingsPokelidAkita = S<
 	LocationCardSettings<
 		"LC_POKELID_AKITA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_akita";
-			locationCard: "LC_POKELID_AKITA";
 		}
 	>
 >;
@@ -25,8 +25,8 @@ export type LocationCardSettingsPokelidAomori = S<
 	LocationCardSettings<
 		"LC_POKELID_AOMORI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_aomori";
-			locationCard: "LC_POKELID_AOMORI";
 		}
 	>
 >;
@@ -34,8 +34,8 @@ export type LocationCardSettingsPokelidChiba = S<
 	LocationCardSettings<
 		"LC_POKELID_CHIBA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_chiba";
-			locationCard: "LC_POKELID_CHIBA";
 		}
 	>
 >;
@@ -43,8 +43,8 @@ export type LocationCardSettingsPokelidEhime = S<
 	LocationCardSettings<
 		"LC_POKELID_EHIME",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_ehime";
-			locationCard: "LC_POKELID_EHIME";
 		}
 	>
 >;
@@ -52,8 +52,8 @@ export type LocationCardSettingsPokelidFukui = S<
 	LocationCardSettings<
 		"LC_POKELID_FUKUI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_fukui";
-			locationCard: "LC_POKELID_FUKUI";
 		}
 	>
 >;
@@ -61,8 +61,8 @@ export type LocationCardSettingsPokelidFukuoka = S<
 	LocationCardSettings<
 		"LC_POKELID_FUKUOKA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_fukuoka";
-			locationCard: "LC_POKELID_FUKUOKA";
 		}
 	>
 >;
@@ -70,8 +70,8 @@ export type LocationCardSettingsPokelidFukushima = S<
 	LocationCardSettings<
 		"LC_POKELID_FUKUSHIMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_fukushima";
-			locationCard: "LC_POKELID_FUKUSHIMA";
 		}
 	>
 >;
@@ -79,8 +79,8 @@ export type LocationCardSettingsPokelidGifu = S<
 	LocationCardSettings<
 		"LC_POKELID_GIFU",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_gifu";
-			locationCard: "LC_POKELID_GIFU";
 		}
 	>
 >;
@@ -88,8 +88,8 @@ export type LocationCardSettingsPokelidGunma = S<
 	LocationCardSettings<
 		"LC_POKELID_GUNMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_gunma";
-			locationCard: "LC_POKELID_GUNMA";
 		}
 	>
 >;
@@ -97,8 +97,8 @@ export type LocationCardSettingsPokelidHokkaido = S<
 	LocationCardSettings<
 		"LC_POKELID_HOKKAIDO",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_hokkaido";
-			locationCard: "LC_POKELID_HOKKAIDO";
 		}
 	>
 >;
@@ -106,8 +106,8 @@ export type LocationCardSettingsPokelidHyogo = S<
 	LocationCardSettings<
 		"LC_POKELID_HYOGO",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_hyogo";
-			locationCard: "LC_POKELID_HYOGO";
 		}
 	>
 >;
@@ -115,8 +115,8 @@ export type LocationCardSettingsPokelidIbaraki = S<
 	LocationCardSettings<
 		"LC_POKELID_IBARAKI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_ibaraki";
-			locationCard: "LC_POKELID_IBARAKI";
 		}
 	>
 >;
@@ -124,8 +124,8 @@ export type LocationCardSettingsPokelidIshikawa = S<
 	LocationCardSettings<
 		"LC_POKELID_ISHIKAWA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_ishikawa";
-			locationCard: "LC_POKELID_ISHIKAWA";
 		}
 	>
 >;
@@ -133,8 +133,8 @@ export type LocationCardSettingsPokelidIwate = S<
 	LocationCardSettings<
 		"LC_POKELID_IWATE",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_iwate";
-			locationCard: "LC_POKELID_IWATE";
 		}
 	>
 >;
@@ -142,8 +142,8 @@ export type LocationCardSettingsPokelidKagawa = S<
 	LocationCardSettings<
 		"LC_POKELID_KAGAWA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_kagawa";
-			locationCard: "LC_POKELID_KAGAWA";
 		}
 	>
 >;
@@ -151,8 +151,8 @@ export type LocationCardSettingsPokelidKagoshima = S<
 	LocationCardSettings<
 		"LC_POKELID_KAGOSHIMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_kagoshima";
-			locationCard: "LC_POKELID_KAGOSHIMA";
 		}
 	>
 >;
@@ -160,8 +160,8 @@ export type LocationCardSettingsPokelidKanagawa = S<
 	LocationCardSettings<
 		"LC_POKELID_KANAGAWA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_kanagawa";
-			locationCard: "LC_POKELID_KANAGAWA";
 		}
 	>
 >;
@@ -169,8 +169,8 @@ export type LocationCardSettingsPokelidKochi = S<
 	LocationCardSettings<
 		"LC_POKELID_KOCHI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_kochi";
-			locationCard: "LC_POKELID_KOCHI";
 		}
 	>
 >;
@@ -178,8 +178,8 @@ export type LocationCardSettingsPokelidKyoto = S<
 	LocationCardSettings<
 		"LC_POKELID_KYOTO",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_kyoto";
-			locationCard: "LC_POKELID_KYOTO";
 		}
 	>
 >;
@@ -187,8 +187,8 @@ export type LocationCardSettingsPokelidMie = S<
 	LocationCardSettings<
 		"LC_POKELID_MIE",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_mie";
-			locationCard: "LC_POKELID_MIE";
 		}
 	>
 >;
@@ -196,8 +196,8 @@ export type LocationCardSettingsPokelidMiyagi = S<
 	LocationCardSettings<
 		"LC_POKELID_MIYAGI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_miyagi";
-			locationCard: "LC_POKELID_MIYAGI";
 		}
 	>
 >;
@@ -205,8 +205,8 @@ export type LocationCardSettingsPokelidMiyazaki = S<
 	LocationCardSettings<
 		"LC_POKELID_MIYAZAKI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_miyazaki";
-			locationCard: "LC_POKELID_MIYAZAKI";
 		}
 	>
 >;
@@ -215,7 +215,6 @@ export type LocationCardSettingsPokelidNagano = S<
 		"LC_POKELID_NAGANO",
 		{
 			imageUrl: "lc_pokelid_nagano";
-			locationCard: "LC_POKELID_NAGANO";
 		}
 	>
 >;
@@ -223,8 +222,8 @@ export type LocationCardSettingsPokelidNagasaki = S<
 	LocationCardSettings<
 		"LC_POKELID_NAGASAKI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_nagasaki";
-			locationCard: "LC_POKELID_NAGASAKI";
 		}
 	>
 >;
@@ -232,8 +231,8 @@ export type LocationCardSettingsPokelidNara = S<
 	LocationCardSettings<
 		"LC_POKELID_NARA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_nara";
-			locationCard: "LC_POKELID_NARA";
 		}
 	>
 >;
@@ -241,8 +240,8 @@ export type LocationCardSettingsPokelidNiigata = S<
 	LocationCardSettings<
 		"LC_POKELID_NIIGATA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_niigata";
-			locationCard: "LC_POKELID_NIIGATA";
 		}
 	>
 >;
@@ -250,8 +249,8 @@ export type LocationCardSettingsPokelidOkayama = S<
 	LocationCardSettings<
 		"LC_POKELID_OKAYAMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_okayama";
-			locationCard: "LC_POKELID_OKAYAMA";
 		}
 	>
 >;
@@ -259,8 +258,8 @@ export type LocationCardSettingsPokelidOkinawa = S<
 	LocationCardSettings<
 		"LC_POKELID_OKINAWA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_okinawa";
-			locationCard: "LC_POKELID_OKINAWA";
 		}
 	>
 >;
@@ -268,8 +267,8 @@ export type LocationCardSettingsPokelidOsaka = S<
 	LocationCardSettings<
 		"LC_POKELID_OSAKA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_osaka";
-			locationCard: "LC_POKELID_OSAKA";
 		}
 	>
 >;
@@ -277,8 +276,8 @@ export type LocationCardSettingsPokelidSaga = S<
 	LocationCardSettings<
 		"LC_POKELID_SAGA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_saga";
-			locationCard: "LC_POKELID_SAGA";
 		}
 	>
 >;
@@ -286,8 +285,8 @@ export type LocationCardSettingsPokelidSaitama = S<
 	LocationCardSettings<
 		"LC_POKELID_SAITAMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_saitama";
-			locationCard: "LC_POKELID_SAITAMA";
 		}
 	>
 >;
@@ -295,8 +294,8 @@ export type LocationCardSettingsPokelidShiga = S<
 	LocationCardSettings<
 		"LC_POKELID_SHIGA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_shiga";
-			locationCard: "LC_POKELID_SHIGA";
 		}
 	>
 >;
@@ -304,8 +303,8 @@ export type LocationCardSettingsPokelidShimane = S<
 	LocationCardSettings<
 		"LC_POKELID_SHIMANE",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_shimane";
-			locationCard: "LC_POKELID_SHIMANE";
 		}
 	>
 >;
@@ -313,8 +312,8 @@ export type LocationCardSettingsPokelidShizuoka = S<
 	LocationCardSettings<
 		"LC_POKELID_SHIZUOKA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_shizuoka";
-			locationCard: "LC_POKELID_SHIZUOKA";
 		}
 	>
 >;
@@ -322,8 +321,8 @@ export type LocationCardSettingsPokelidTochigi = S<
 	LocationCardSettings<
 		"LC_POKELID_TOCHIGI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_tochigi";
-			locationCard: "LC_POKELID_TOCHIGI";
 		}
 	>
 >;
@@ -331,8 +330,8 @@ export type LocationCardSettingsPokelidTokushima = S<
 	LocationCardSettings<
 		"LC_POKELID_TOKUSHIMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_tokushima";
-			locationCard: "LC_POKELID_TOKUSHIMA";
 		}
 	>
 >;
@@ -340,8 +339,8 @@ export type LocationCardSettingsPokelidTokyo = S<
 	LocationCardSettings<
 		"LC_POKELID_TOKYO",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_tokyo";
-			locationCard: "LC_POKELID_TOKYO";
 		}
 	>
 >;
@@ -349,8 +348,8 @@ export type LocationCardSettingsPokelidTottori = S<
 	LocationCardSettings<
 		"LC_POKELID_TOTTORI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_tottori";
-			locationCard: "LC_POKELID_TOTTORI";
 		}
 	>
 >;
@@ -358,8 +357,8 @@ export type LocationCardSettingsPokelidToyama = S<
 	LocationCardSettings<
 		"LC_POKELID_TOYAMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_toyama";
-			locationCard: "LC_POKELID_TOYAMA";
 		}
 	>
 >;
@@ -367,8 +366,8 @@ export type LocationCardSettingsPokelidWakayama = S<
 	LocationCardSettings<
 		"LC_POKELID_WAKAYAMA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_wakayama";
-			locationCard: "LC_POKELID_WAKAYAMA";
 		}
 	>
 >;
@@ -376,8 +375,8 @@ export type LocationCardSettingsPokelidYamagata = S<
 	LocationCardSettings<
 		"LC_POKELID_YAMAGATA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_yamagata";
-			locationCard: "LC_POKELID_YAMAGATA";
 		}
 	>
 >;
@@ -385,8 +384,8 @@ export type LocationCardSettingsPokelidYamaguchi = S<
 	LocationCardSettings<
 		"LC_POKELID_YAMAGUCHI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_yamaguchi";
-			locationCard: "LC_POKELID_YAMAGUCHI";
 		}
 	>
 >;

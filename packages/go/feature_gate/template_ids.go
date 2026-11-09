@@ -10,6 +10,7 @@ const (
 	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate                           FeatureGateTemplateID = "AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE"
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate                          FeatureGateTemplateID = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate                                          FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
+	FeatureGateTemplateIDAdventureEffectsInLobbyFeatureGate                             FeatureGateTemplateID = "ADVENTURE_EFFECTS_IN_LOBBY_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFeatureGate                                                 FeatureGateTemplateID = "AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFrontendFeatureGate                                         FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
 	FeatureGateTemplateIDAppraisalFeatureGate                                           FeatureGateTemplateID = "APPRAISAL_FEATURE_GATE"
@@ -127,6 +128,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate,
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate,
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate,
+	FeatureGateTemplateIDAdventureEffectsInLobbyFeatureGate,
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
 	FeatureGateTemplateIDAppraisalFeatureGate,

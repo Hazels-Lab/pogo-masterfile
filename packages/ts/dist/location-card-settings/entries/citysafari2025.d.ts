@@ -7,8 +7,8 @@ export type LocationCardSettingsCitysafari2025Buenosaires = S<
 	LocationCardSettings<
 		"LC_CITYSAFARI2025_BUENOSAIRES",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_CitySafari2025_buenosAires";
-			locationCard: "LC_CITYSAFARI2025_BUENOSAIRES";
 		}
 	>
 >;
@@ -16,8 +16,8 @@ export type LocationCardSettingsCitysafari2025Miami = S<
 	LocationCardSettings<
 		"LC_CITYSAFARI2025_MIAMI",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_CitySafari2025_miami";
-			locationCard: "LC_CITYSAFARI2025_MIAMI";
 		}
 	>
 >;
@@ -25,8 +25,9 @@ export type LocationCardSettingsCitysafari2025Sydney = S<
 	LocationCardSettings<
 		"LC_CITYSAFARI2025_SYDNEY",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_CitySafari2025_sydney";
-			locationCard: "LC_CITYSAFARI2025_SYDNEY";
 		}
 	>
 >;

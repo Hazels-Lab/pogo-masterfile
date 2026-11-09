@@ -3,15 +3,11 @@
 package non_combat_move_settings
 
 type NonCombatMoveSettingsAttributes struct {
-	AttackMultiplier  *float64  `json:"attackMultiplier,omitempty"`
-	CombatTypes       [1]string `json:"combatTypes"`
-	DefenseMultiplier *float64  `json:"defenseMultiplier,omitempty"`
+	CombatTypes [1]string `json:"combatTypes"`
 }
 
 type NonCombatMoveSettingsAttributesV2 struct {
-	AttackMultiplier  *float64  `json:"attackMultiplier,omitempty"`
-	CombatTypes       [2]string `json:"combatTypes"`
-	DefenseMultiplier *float64  `json:"defenseMultiplier,omitempty"`
+	CombatTypes [2]string `json:"combatTypes"`
 }
 
 type NonCombatMoveSettingsAttackDefenseBonus struct {

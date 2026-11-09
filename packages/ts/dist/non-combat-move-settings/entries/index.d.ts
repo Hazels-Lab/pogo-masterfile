@@ -141,11 +141,9 @@ export type NonCombatMoveSettingsV0469MoveBehemothBlade = S<
 				attackDefenseBonus: {
 					attributes: [
 						{
-							attackMultiplier: 1.1;
 							combatTypes: ["COMBAT_TYPE_RAID"];
 						},
 						{
-							attackMultiplier: 1.05;
 							combatTypes: ["COMBAT_TYPE_DMAX", "COMBAT_TYPE_GMAX"];
 						},
 					];
@@ -174,11 +172,9 @@ export type NonCombatMoveSettingsV0470MoveBehemothBash = S<
 					attributes: [
 						{
 							combatTypes: ["COMBAT_TYPE_RAID"];
-							defenseMultiplier: 1.1;
 						},
 						{
 							combatTypes: ["COMBAT_TYPE_DMAX", "COMBAT_TYPE_GMAX"];
-							defenseMultiplier: 1.05;
 						},
 					];
 				};

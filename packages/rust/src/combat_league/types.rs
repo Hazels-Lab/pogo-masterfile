@@ -2,6 +2,12 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct GroupCondition {
+    pub pokemon_class: [String; 3],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct Pokemon {
     pub forms: Option<Vec<String>>,
     pub id: String,
@@ -10,7 +16,8 @@ pub struct Pokemon {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonBanList {
-    pub lgdbihdlhod: Option<String>,
+    pub group_condition: Option<GroupCondition>,
+    pub name: Option<String>,
     pub pokemon: Vec<Pokemon>,
 }
 
@@ -83,6 +90,7 @@ pub struct UnlockCondition {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CombatLeague {
+    pub allow_temp_evo_cp_downscaling: Option<bool>,
     pub allow_temp_evos: Option<bool>,
     pub badge_type: String,
     pub banned_pokemon: Option<Vec<String>>,
@@ -92,6 +100,7 @@ pub struct CombatLeague {
     pub league_type: String,
     pub pokemon_condition: Vec<PokemonCondition>,
     pub pokemon_count: u64,
+    pub remove_temp_evo_self_cp_boost_additional_levels: Option<bool>,
     pub title: String,
     pub unlock_condition: Option<[UnlockCondition; 1]>,
 }

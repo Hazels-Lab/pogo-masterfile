@@ -7,8 +7,9 @@ export type LocationCardSettings2026Br001 = S<
 	LocationCardSettings<
 		"LC_2026_BR_001",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_br_001";
-			locationCard: "LC_2026_BR_001";
 		}
 	>
 >;
@@ -16,9 +17,9 @@ export type LocationCardSettings2026ChicagoGofest001 = S<
 	LocationCardSettings<
 		"LC_2026_CHICAGO_GOFEST_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoFest2026_chicago";
-			locationCard: "LC_2026_CHICAGO_GOFEST_001";
 		}
 	>
 >;
@@ -26,8 +27,9 @@ export type LocationCardSettings2026CologneCarnival001 = S<
 	LocationCardSettings<
 		"LC_2026_COLOGNE_CARNIVAL_001",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_carnivalFlamigo_cologne_2026";
-			locationCard: "LC_2026_COLOGNE_CARNIVAL_001";
 		}
 	>
 >;
@@ -36,7 +38,6 @@ export type LocationCardSettings2026ComicconMalaga = S<
 		"LC_2026_COMICCON_MALAGA",
 		{
 			imageUrl: "lc_2026_ComicCon_Malaga";
-			locationCard: "LC_2026_COMICCON_MALAGA";
 		}
 	>
 >;
@@ -44,9 +45,10 @@ export type LocationCardSettings2026CopenhagenGofest001 = S<
 	LocationCardSettings<
 		"LC_2026_COPENHAGEN_GOFEST_001",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoFest2026_copenhagen";
-			locationCard: "LC_2026_COPENHAGEN_GOFEST_001";
 		}
 	>
 >;
@@ -55,7 +57,6 @@ export type LocationCardSettings2026FcSeoul = S<
 		"LC_2026_FC_SEOUL",
 		{
 			imageUrl: "lc_fc2026_seoul";
-			locationCard: 417;
 		}
 	>
 >;
@@ -63,9 +64,9 @@ export type LocationCardSettings2026GowaMexicocity = S<
 	LocationCardSettings<
 		"LC_2026_GOWA_MEXICOCITY",
 		{
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_2026_gowa_mexicocity";
-			locationCard: 419;
 		}
 	>
 >;
@@ -73,9 +74,10 @@ export type LocationCardSettings2026GowaSendai = S<
 	LocationCardSettings<
 		"LC_2026_GOWA_SENDAI",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_2026_gowa_sendai";
-			locationCard: 418;
 		}
 	>
 >;
@@ -83,8 +85,8 @@ export type LocationCardSettings2026JpGreen = S<
 	LocationCardSettings<
 		"LC_2026_JP_GREEN",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_jp_green";
-			locationCard: "LC_2026_JP_GREEN";
 		}
 	>
 >;
@@ -92,8 +94,8 @@ export type LocationCardSettings2026JpRed = S<
 	LocationCardSettings<
 		"LC_2026_JP_RED",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_jp_red";
-			locationCard: "LC_2026_JP_RED";
 		}
 	>
 >;
@@ -102,7 +104,6 @@ export type LocationCardSettings2026LondonNo001 = S<
 		"LC_2026_LONDON_NO_001",
 		{
 			imageUrl: "lc_nightOut2026_London";
-			locationCard: 422;
 		}
 	>
 >;
@@ -110,9 +111,10 @@ export type LocationCardSettings2026LosangelesGotour001 = S<
 	LocationCardSettings<
 		"LC_2026_LOSANGELES_GOTOUR_001",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoTour2026_losAngeles";
-			locationCard: "LC_2026_LOSANGELES_GOTOUR_001";
 		}
 	>
 >;
@@ -121,7 +123,6 @@ export type LocationCardSettings2026LosangelesNo001 = S<
 		"LC_2026_LOSANGELES_NO_001",
 		{
 			imageUrl: "lc_nightOut2026_LA";
-			locationCard: 421;
 		}
 	>
 >;
@@ -129,8 +130,9 @@ export type LocationCardSettings2026MlbTbrays = S<
 	LocationCardSettings<
 		"LC_2026_MLB_TBRAYS",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_MLB_tampaBayRays2";
-			locationCard: "LC_2026_MLB_TBRAYS";
 		}
 	>
 >;
@@ -138,8 +140,9 @@ export type LocationCardSettings2026Npb001 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_001",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_yokohamaStadium";
-			locationCard: "LC_2026_NPB_001";
 		}
 	>
 >;
@@ -147,8 +150,8 @@ export type LocationCardSettings2026Npb002 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_002",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_yomiuriGiants";
-			locationCard: "LC_2026_NPB_002";
 		}
 	>
 >;
@@ -156,8 +159,8 @@ export type LocationCardSettings2026Npb003 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_003",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_tokyoSwallows";
-			locationCard: "LC_2026_NPB_003";
 		}
 	>
 >;
@@ -165,8 +168,8 @@ export type LocationCardSettings2026Npb004 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_004",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_koshienHanshinTigers";
-			locationCard: "LC_2026_NPB_004";
 		}
 	>
 >;
@@ -174,8 +177,9 @@ export type LocationCardSettings2026Npb005 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_005",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_rakutenEagles";
-			locationCard: "LC_2026_NPB_005";
 		}
 	>
 >;
@@ -183,8 +187,9 @@ export type LocationCardSettings2026Npb006 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_006",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_hiroshimaCarp";
-			locationCard: "LC_2026_NPB_006";
 		}
 	>
 >;
@@ -192,8 +197,8 @@ export type LocationCardSettings2026Npb007 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_007",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_toyamaAllstars";
-			locationCard: "LC_2026_NPB_007";
 		}
 	>
 >;
@@ -201,8 +206,8 @@ export type LocationCardSettings2026Npb008 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_008",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_softbankHawks";
-			locationCard: "LC_2026_NPB_008";
 		}
 	>
 >;
@@ -210,8 +215,8 @@ export type LocationCardSettings2026Npb009 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_009",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_kyocera";
-			locationCard: "LC_2026_NPB_009";
 		}
 	>
 >;
@@ -219,8 +224,9 @@ export type LocationCardSettings2026Npb010 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_010",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_belluna";
-			locationCard: "LC_2026_NPB_010";
 		}
 	>
 >;
@@ -228,8 +234,9 @@ export type LocationCardSettings2026Npb011 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_011",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_zozoMarine";
-			locationCard: "LC_2026_NPB_011";
 		}
 	>
 >;
@@ -237,8 +244,8 @@ export type LocationCardSettings2026Npb012 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_012",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_chunichiDragons";
-			locationCard: "LC_2026_NPB_012";
 		}
 	>
 >;
@@ -246,8 +253,9 @@ export type LocationCardSettings2026Npb013 = S<
 	LocationCardSettings<
 		"LC_2026_NPB_013",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_NPB_hokkaidoFighters";
-			locationCard: "LC_2026_NPB_013";
 		}
 	>
 >;
@@ -255,8 +263,8 @@ export type LocationCardSettings2026Ppk001 = S<
 	LocationCardSettings<
 		"LC_2026_PPK_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_ppk_001";
-			locationCard: "LC_2026_PPK_001";
 		}
 	>
 >;
@@ -264,8 +272,8 @@ export type LocationCardSettings2026RiodejaneiroCarnival001 = S<
 	LocationCardSettings<
 		"LC_2026_RIODEJANEIRO_CARNIVAL_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_carnivalFlamigo_rio_2026";
-			locationCard: "LC_2026_RIODEJANEIRO_CARNIVAL_001";
 		}
 	>
 >;
@@ -273,8 +281,8 @@ export type LocationCardSettings2026SanfranciscoWcs001 = S<
 	LocationCardSettings<
 		"LC_2026_SANFRANCISCO_WCS_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_Wcs2026_sanFrancisco";
-			locationCard: "LC_2026_SANFRANCISCO_WCS_001";
 		}
 	>
 >;
@@ -282,9 +290,10 @@ export type LocationCardSettings2026TainanGotour001 = S<
 	LocationCardSettings<
 		"LC_2026_TAINAN_GOTOUR_001",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoTour2026_tainan";
-			locationCard: "LC_2026_TAINAN_GOTOUR_001";
 		}
 	>
 >;
@@ -292,9 +301,9 @@ export type LocationCardSettings2026TokyoGofest001 = S<
 	LocationCardSettings<
 		"LC_2026_TOKYO_GOFEST_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			cardType: "LOCATION_CARD";
 			imageUrl: "lc_GoFest2026_tokyo";
-			locationCard: "LC_2026_TOKYO_GOFEST_001";
 		}
 	>
 >;

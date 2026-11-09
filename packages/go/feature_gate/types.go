@@ -9,6 +9,7 @@ type FeatureGateSubFeatureGateList struct {
 }
 
 type FeatureGate struct {
+	MinClientVersion   *string                         `json:"minClientVersion,omitempty"`
 	RolloutPercentage  uint64                          `json:"rolloutPercentage"`
 	Status             uint64                          `json:"status"`
 	SubFeatureGateList []FeatureGateSubFeatureGateList `json:"subFeatureGateList,omitempty"`

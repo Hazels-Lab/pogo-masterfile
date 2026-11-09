@@ -17,6 +17,7 @@ export const GROUP_NAMES = [
 	"combatNpcTrainer",
 	"combatRankingProtoSettings",
 	"combatType",
+	"eventPassSettings",
 	"eventPassTierSettings",
 	"evolutionChainDisplaySettings",
 	"evolutionQuestTemplate",

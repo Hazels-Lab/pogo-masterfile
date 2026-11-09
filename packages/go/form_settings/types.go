@@ -2,19 +2,18 @@
 
 package form_settings
 
-import "encoding/json"
-
 type FormSettingsSillouetteObfuscationGroup struct {
 	GroupNumber         uint64 `json:"groupNumber"`
 	OverrideDisplayForm string `json:"overrideDisplayForm"`
 }
 
 type FormSettingsForms struct {
-	AssetBundleSuffix          *string                                 `json:"assetBundleSuffix,omitempty"`
-	AssetBundleValue           *uint64                                 `json:"assetBundleValue,omitempty"`
-	Form                       json.RawMessage                         `json:"form"`
-	IsCostume                  *bool                                   `json:"isCostume,omitempty"`
-	SillouetteObfuscationGroup *FormSettingsSillouetteObfuscationGroup `json:"sillouetteObfuscationGroup,omitempty"`
+	AssetBundleSuffix            *string                                 `json:"assetBundleSuffix,omitempty"`
+	AssetBundleValue             *uint64                                 `json:"assetBundleValue,omitempty"`
+	Form                         string                                  `json:"form"`
+	IsCostume                    *bool                                   `json:"isCostume,omitempty"`
+	SillouetteObfuscationGroup   *FormSettingsSillouetteObfuscationGroup `json:"sillouetteObfuscationGroup,omitempty"`
+	UnsilhouetteOnSpeciesCapture *bool                                   `json:"unsilhouetteOnSpeciesCapture,omitempty"`
 }
 
 type FormSettings struct {

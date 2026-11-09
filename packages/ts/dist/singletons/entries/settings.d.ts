@@ -114,7 +114,9 @@ export interface BattleAnimationSettings {
 		templateId: "VNEXT_ANIMATION_CONFIGURATION";
 		battleAnimationSettings: {
 			combatAnimationConfiguration: {
-				fastAttackSettings: object;
+				fastAttackSettings: {
+					allowFastMoveAnimPriority: true;
+				};
 				missedFastAttackRecoverySettings: {
 					enabled: true;
 					maxCatchUpAttacks: 3;
@@ -299,7 +301,7 @@ export interface BreadBattleClientSettings {
 			maxPlayersPerBreadDoughLobby: 100;
 			maxPlayersPerBreadLobby: 4;
 			maxPlayersToPrepareBreadDoughLobby: 98;
-			maxRemoteBreadBattlePassesAllowed: 10;
+			maxRemoteBreadBattlePassesAllowed: 30;
 			maxRemotePlayersPerBreadDoughLobby: 100;
 			maxRemotePlayersPerBreadLobby: 4;
 			minPlayersToPrepareBreadLobby: 1;
@@ -2712,25 +2714,25 @@ export interface ConversationSettings {
 				{
 					addToStart: true;
 					appraisalKey: "appraise_sinistea_phony";
-					form: 3365;
+					form: "SINISTEA_P_HALLOWEEN_2026_01";
 					id: "SINISTEA";
 				},
 				{
 					addToStart: true;
 					appraisalKey: "appraise_sinistea_antique";
-					form: 3366;
+					form: "SINISTEA_A_HALLOWEEN_2026_01";
 					id: "SINISTEA";
 				},
 				{
 					addToStart: true;
 					appraisalKey: "appraise_polteageist_phony";
-					form: 3367;
+					form: "POLTEAGEIST_P_HALLOWEEN_2026_01";
 					id: "POLTEAGEIST";
 				},
 				{
 					addToStart: true;
 					appraisalKey: "appraise_polteageist_antique";
-					form: 3368;
+					form: "POLTEAGEIST_A_HALLOWEEN_2026_01";
 					id: "POLTEAGEIST";
 				},
 			];
@@ -2841,74 +2843,6 @@ export interface EventMapRefreshSettings {
 	};
 }
 
-export interface EventPassSettings {
-	templateId: "EVENT_PASS_NOVEMBER2026_SEASON";
-	data: {
-		templateId: "EVENT_PASS_NOVEMBER2026_SEASON";
-		eventPassSettings: {
-			additionalBonusTiersLevel: 101;
-			eventPassDisplaySettings: {
-				bonusBoxes: [
-					{
-						iconType: "SPAWN_UNKNOWN";
-						quantity: 5;
-						text: "quest_catch_pokemon_singular";
-					},
-					{
-						iconType: "EGG";
-						quantity: 40;
-						text: "quest_hatch_egg_singular";
-					},
-					{
-						iconType: "RAID";
-						quantity: 100;
-						text: "quest_win_raid_singular";
-					},
-				];
-				eventPassTitleKey: "season_pass_base_track_title_nov";
-				eventPassTrackUpgradeDescriptions: [
-					{
-						detailsLinkKey: "season_pass_details_link_nov2026";
-						eventDurationKey: "season_pass_nov2026_event_duration";
-						eventPassTrackToUpgradeTo: "PREMIUM";
-						passTrackUpgradeHeaderDescription: "season_pass_nov2026_track_upgrade_header_description";
-						ranksToHighlightRewards: [94, 99, 100];
-						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
-						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
-						trackUnlockPlusPointsSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock_plus_points";
-						trackUnlockSkuId: "pgorelease.month3_deluxe_event_pass_track_unlock";
-						upgradeDescriptionKey: "season_pass_nov2026_upgrade_description";
-					},
-				];
-				headerIconUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7150419b_s24-logo-512x512.png";
-				premiumRewardBannerBottom: "event_pass_premium_reward_banner_bottom_text";
-				premiumRewardBannerImageUrl: "https://pgorelease-assets.nianticstatic.com/GameDesignAssets%2F0_poke%CC%81coin.png";
-				premiumRewardBannerMiddle: "today_view_pokecoins_section_title";
-				premiumRewardBannerTop: "event_pass_premium_reward_banner_top_text";
-				premiumRewardsDescription: "season_pass_premium_rewards_desc_monthly_no_disclaimer";
-				sectionDisplayPriority: 14;
-				todayViewSection: "SEASONAL_EVENT_PASS_SECTION";
-			};
-			expirationTime: "2026-12-01T10:00:00";
-			gracePeriodEndTime: "2026-12-03T10:00:00";
-			maxTierLevel: 200;
-			pointsItemId: "ITEM_EVENT_PASS_POINT_MONTHLY_03";
-			prefix: "EVENT_PASS_NOVEMBER2026_SEASON";
-			trackConditions: [
-				{
-					track: "FREE";
-					trackTitleKey: "season_pass_base_track_title_nov";
-				},
-				{
-					badge: "BADGE_EVENT_0238";
-					track: "PREMIUM";
-					trackTitleKey: "season_pass_premium_track_title_nov";
-				},
-			];
-		};
-	};
-}
-
 export interface EventPlannerPopularNotificationSettings {
 	templateId: "EVENT_PLANNER_POPULAR_RAID_RSVP_SETTINGS";
 	data: {
@@ -3010,6 +2944,7 @@ export interface GuiSearchSettings {
 			maxNumberRecentSearches: 4;
 			maxQueryLength: 1024;
 			searchHelpUrl: "niantic.helpshift.com/hc/faq/1486-searching-filtering-your-pokemon-inventory/";
+			transferWarning100Enabled: true;
 		};
 	};
 }
@@ -3034,6 +2969,9 @@ export interface GymTopperDistanceSettings {
 	templateId: "GYM_TOPPER_DISTANCE_SETTINGS";
 	data: {
 		templateId: "GYM_TOPPER_DISTANCE_SETTINGS";
+		gymTopperDistanceSettings: {
+			guardPokemonMaxVisualDistanceMeters: 5000;
+		};
 	};
 }
 
@@ -3742,6 +3680,11 @@ export interface MapObjectCollisionAvoidanceSettings {
 	templateId: "MAP_OBJECT_COLLISION_AVOIDANCE_SETTINGS";
 	data: {
 		templateId: "MAP_OBJECT_COLLISION_AVOIDANCE_SETTINGS";
+		mapObjectCollisionAvoidanceSettings: {
+			mapPlaceCollisionBufferDistance: 1;
+			pokemonCollisionBufferDistance: 0.25;
+			pokemonCollisionRadiusScaleFactor: 6;
+		};
 	};
 }
 
@@ -3800,6 +3743,28 @@ export interface MegaEvoSettings {
 				{
 					pokedexId: "RAICHU";
 					tempEvoId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+			tempEvoSpecialAttackBoosts: [
+				{
+					gymsAndRaidsMultiplier: 1;
+					trainerBattlesMultiplier: 1;
+				},
+				{
+					gymsAndRaidsMultiplier: 1;
+					trainerBattlesMultiplier: 1;
+				},
+				{
+					gymsAndRaidsMultiplier: 1.1;
+					trainerBattlesMultiplier: 1.1;
+				},
+				{
+					gymsAndRaidsMultiplier: 1.2;
+					trainerBattlesMultiplier: 1.2;
+				},
+				{
+					gymsAndRaidsMultiplier: 1.3;
+					trainerBattlesMultiplier: 1.3;
 				},
 			];
 		};
@@ -5245,6 +5210,7 @@ export interface RaidSettings {
 			remoteRaidEnabled: true;
 			remoteRaidsMinPlayerLevel: 5;
 			unsupportedRaidLevelsForFriendInvites: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", "RAID_LEVEL_COORDINATED_1", "RAID_LEVEL_COORDINATED_2"];
+			unsupportedRaidLevelsForRsvp: ["RAID_LEVEL_COORDINATED_1", "RAID_LEVEL_COORDINATED_2"];
 			unsupportedRemoteRaidLevels: ["RAID_LEVEL_EXTENDED_EGG", "RAID_LEVEL_4", "RAID_LEVEL_COORDINATED_1", "RAID_LEVEL_COORDINATED_2"];
 		};
 	};
@@ -5859,7 +5825,7 @@ export interface SquashSettings {
 	data: {
 		templateId: "REMOTE_RAID_LIMIT_SETTINGS";
 		squashSettings: {
-			dailySquashLimit: 10;
+			dailySquashLimit: 30;
 			enabled: true;
 		};
 	};
@@ -6054,10 +6020,170 @@ export interface TicketGiftingSettings {
 	};
 }
 
-export interface TimeBoxedSpawnEventSettings {
+export interface TimeBoxedSpawnEventsSettings {
 	templateId: "TIME_BOXED_SPAWN_EVENT_SETTINGS";
 	data: {
 		templateId: "TIME_BOXED_SPAWN_EVENT_SETTINGS";
+		timeBoxedSpawnEventsSettings: {
+			timeBoxedSpawnEvents: [
+				{
+					descriptionStringKey: "meteor_desc_1";
+					endDayLocal: {
+						day: 24;
+						month: 10;
+					};
+					endPeakTimeLocal: {
+						hour: 21;
+					};
+					endTimeLocal: {
+						hour: 23;
+						minute: 59;
+					};
+					startDayLocal: {
+						day: 19;
+						month: 10;
+					};
+					startPeakTimeLocal: {
+						hour: 17;
+					};
+					startTimeLocal: {
+						hour: 17;
+					};
+					timeBoxedSpawnEventType: "METEOR_SHOWER";
+					titleStringKey: "meteor_title_1";
+				},
+				{
+					descriptionStringKey: "meteor_desc_1";
+					endDayLocal: {
+						day: 19;
+						month: 11;
+					};
+					endPeakTimeLocal: {
+						hour: 21;
+					};
+					endTimeLocal: {
+						hour: 23;
+						minute: 59;
+					};
+					startDayLocal: {
+						day: 14;
+						month: 11;
+					};
+					startPeakTimeLocal: {
+						hour: 17;
+					};
+					startTimeLocal: {
+						hour: 17;
+					};
+					timeBoxedSpawnEventType: "METEOR_SHOWER";
+					titleStringKey: "meteor_title_1";
+				},
+				{
+					descriptionStringKey: "meteor_desc_1";
+					endDayLocal: {
+						day: 16;
+						month: 12;
+					};
+					endPeakTimeLocal: {
+						hour: 21;
+					};
+					endTimeLocal: {
+						hour: 23;
+						minute: 59;
+					};
+					startDayLocal: {
+						day: 11;
+						month: 12;
+					};
+					startPeakTimeLocal: {
+						hour: 17;
+					};
+					startTimeLocal: {
+						hour: 17;
+					};
+					timeBoxedSpawnEventType: "METEOR_SHOWER";
+					titleStringKey: "meteor_title_1";
+				},
+				{
+					descriptionStringKey: "meteor_desc_1";
+					endDayLocal: {
+						day: 8;
+						month: 5;
+					};
+					endPeakTimeLocal: {
+						hour: 21;
+					};
+					endTimeLocal: {
+						hour: 23;
+						minute: 59;
+					};
+					startDayLocal: {
+						day: 3;
+						month: 5;
+					};
+					startPeakTimeLocal: {
+						hour: 17;
+					};
+					startTimeLocal: {
+						hour: 17;
+					};
+					timeBoxedSpawnEventType: "METEOR_SHOWER";
+					titleStringKey: "meteor_title_1";
+				},
+				{
+					descriptionStringKey: "meteor_desc_1";
+					endDayLocal: {
+						day: 2;
+						month: 8;
+					};
+					endPeakTimeLocal: {
+						hour: 21;
+					};
+					endTimeLocal: {
+						hour: 23;
+						minute: 59;
+					};
+					startDayLocal: {
+						day: 28;
+						month: 7;
+					};
+					startPeakTimeLocal: {
+						hour: 17;
+					};
+					startTimeLocal: {
+						hour: 17;
+					};
+					timeBoxedSpawnEventType: "METEOR_SHOWER";
+					titleStringKey: "meteor_title_1";
+				},
+				{
+					descriptionStringKey: "meteor_desc_1";
+					endDayLocal: {
+						day: 15;
+						month: 8;
+					};
+					endPeakTimeLocal: {
+						hour: 21;
+					};
+					endTimeLocal: {
+						hour: 23;
+						minute: 59;
+					};
+					startDayLocal: {
+						day: 10;
+						month: 8;
+					};
+					startPeakTimeLocal: {
+						hour: 17;
+					};
+					startTimeLocal: {
+						hour: 17;
+					};
+					timeBoxedSpawnEventType: "METEOR_SHOWER";
+					titleStringKey: "meteor_title_1";
+				},
+			];
+		};
 	};
 }
 
@@ -6450,7 +6576,6 @@ export type SingletonsSettingsMasterfileEntry =
 	| EncounterSettings
 	| ErrorReportingSettings
 	| EventMapRefreshSettings
-	| EventPassSettings
 	| EventPlannerPopularNotificationSettings
 	| ExternalAddressableAssetsSettings
 	| FeatureUnlockLevelSettings
@@ -6529,7 +6654,7 @@ export type SingletonsSettingsMasterfileEntry =
 	| StickerCategorySettings
 	| StyleShopSettings
 	| TicketGiftingSettings
-	| TimeBoxedSpawnEventSettings
+	| TimeBoxedSpawnEventsSettings
 	| TodayViewSettings
 	| TutorialSettings
 	| UsernameSuggestionSettings

@@ -2,8 +2,6 @@
 
 package pokemon_settings
 
-import "encoding/json"
-
 type PokemonSettingsBuddyWalkedMegaEnergyAwards struct {
 	MegaEnergyAwardAmount uint64  `json:"megaEnergyAwardAmount"`
 	MegaPokemonId         string  `json:"megaPokemonId"`
@@ -60,7 +58,7 @@ type PokemonSettingsEvolutionBranch struct {
 	EvolutionItemRequirementCost           *uint64                         `json:"evolutionItemRequirementCost,omitempty"`
 	EvolutionLikelihoodWeight              *uint64                         `json:"evolutionLikelihoodWeight,omitempty"`
 	EvolutionMoveRequirement               *string                         `json:"evolutionMoveRequirement,omitempty"`
-	Form                                   json.RawMessage                 `json:"form,omitempty"`
+	Form                                   *string                         `json:"form,omitempty"`
 	GenderRequirement                      *string                         `json:"genderRequirement,omitempty"`
 	KmBuddyDistanceRequirement             *float64                        `json:"kmBuddyDistanceRequirement,omitempty"`
 	LureItemRequirement                    *string                         `json:"lureItemRequirement,omitempty"`
@@ -157,10 +155,11 @@ type PokemonSettingsAlternateToDefaultIbfcSettings struct {
 
 type PokemonSettingsIbfc struct {
 	AlternateForm                  *string                                        `json:"alternateForm,omitempty"`
-	AlternateForms                 *[2]string                                     `json:"AlternateForms,omitempty"`
+	AlternateForms                 *[2]string                                     `json:"alternateForms,omitempty"`
 	AlternateToDefaultIbfcSettings *PokemonSettingsAlternateToDefaultIbfcSettings `json:"alternateToDefaultIbfcSettings,omitempty"`
 	CombatEnable                   *bool                                          `json:"combatEnable,omitempty"`
 	DefaultForm                    *string                                        `json:"defaultForm,omitempty"`
+	DefaultForms                   *[7]string                                     `json:"defaultForms,omitempty"`
 	DefaultToAlternateIbfcSettings *PokemonSettingsAlternateToDefaultIbfcSettings `json:"defaultToAlternateIbfcSettings,omitempty"`
 }
 
@@ -250,7 +249,7 @@ type PokemonSettings struct {
 	EvolutionPips                     *uint64                           `json:"evolutionPips,omitempty"`
 	ExclusiveKeyItem                  *PokemonSettingsExclusiveKeyItem  `json:"exclusiveKeyItem,omitempty"`
 	FamilyId                          string                            `json:"familyId"`
-	Form                              json.RawMessage                   `json:"form,omitempty"`
+	Form                              *string                           `json:"form,omitempty"`
 	FormChange                        []PokemonSettingsFormChange       `json:"formChange,omitempty"`
 	HeightStdDev                      float64                           `json:"heightStdDev"`
 	Ibfc                              PokemonSettingsIbfc               `json:"ibfc"`

@@ -7,8 +7,8 @@ export type LocationCardSettingsTpc30My = S<
 	LocationCardSettings<
 		"LC_TPC30_MY",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_tpc30th_malaysia";
-			locationCard: "LC_TPC30_MY";
 		}
 	>
 >;
@@ -16,8 +16,8 @@ export type LocationCardSettingsTpc30Ph = S<
 	LocationCardSettings<
 		"LC_TPC30_PH",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_tpc30th_philippines";
-			locationCard: "LC_TPC30_PH";
 		}
 	>
 >;
@@ -25,8 +25,8 @@ export type LocationCardSettingsTpc30Sg = S<
 	LocationCardSettings<
 		"LC_TPC30_SG",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_tpc30th_singapore";
-			locationCard: "LC_TPC30_SG";
 		}
 	>
 >;
@@ -34,8 +34,8 @@ export type LocationCardSettingsTpc30Tw = S<
 	LocationCardSettings<
 		"LC_TPC30_TW",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_tpc30th_taiwan";
-			locationCard: "LC_TPC30_TW";
 		}
 	>
 >;

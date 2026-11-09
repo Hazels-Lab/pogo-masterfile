@@ -118,6 +118,7 @@ type ArPhotoFeatureFlags struct {
 	ReorderSummary            bool                                      `json:"reorderSummary"`
 	ShareFunctionalityEnabled uint64                                    `json:"shareFunctionalityEnabled"`
 	ShareMessageEnabled       bool                                      `json:"shareMessageEnabled"`
+	ShowShareCard             bool                                      `json:"showShareCard"`
 	ShowSticker               string                                    `json:"showSticker"`
 	SignInButtonEnabled       bool                                      `json:"signInButtonEnabled"`
 }
@@ -155,7 +156,9 @@ type BackgroundModeSettings struct {
 	WeeklyFitnessGoalReminderKm       float64 `json:"weeklyFitnessGoalReminderKm"`
 }
 
-type BattleAnimationSettingsFastAttackSettings struct{}
+type BattleAnimationSettingsFastAttackSettings struct {
+	AllowFastMoveAnimPriority bool `json:"allowFastMoveAnimPriority"`
+}
 
 type BattleAnimationSettingsMissedFastAttackRecoverySettings struct {
 	Enabled           bool   `json:"enabled"`
@@ -758,15 +761,8 @@ type ConversationSettingsPokemonFormAppraisalOverrides struct {
 	Id           string `json:"id"`
 }
 
-type ConversationSettingsPokemonFormAppraisalOverridesV2 struct {
-	AddToStart   bool   `json:"addToStart"`
-	AppraisalKey string `json:"appraisalKey"`
-	Form         uint64 `json:"form"`
-	Id           string `json:"id"`
-}
-
 type ConversationSettings struct {
-	PokemonFormAppraisalOverrides []any `json:"pokemonFormAppraisalOverrides"`
+	PokemonFormAppraisalOverrides [12]ConversationSettingsPokemonFormAppraisalOverrides `json:"pokemonFormAppraisalOverrides"`
 }
 
 type CrossGameSocialSettings struct {
@@ -832,61 +828,6 @@ type EventMapRefreshSettings struct {
 	EventServerSettingsHash string `json:"eventServerSettingsHash"`
 }
 
-type EventPassSettingsBonusBoxes struct {
-	IconType string `json:"iconType"`
-	Quantity uint64 `json:"quantity"`
-	Text     string `json:"text"`
-}
-
-type EventPassSettingsEventPassTrackUpgradeDescriptions struct {
-	DetailsLinkKey                    string    `json:"detailsLinkKey"`
-	EventDurationKey                  string    `json:"eventDurationKey"`
-	EventPassTrackToUpgradeTo         string    `json:"eventPassTrackToUpgradeTo"`
-	PassTrackUpgradeHeaderDescription string    `json:"passTrackUpgradeHeaderDescription"`
-	RanksToHighlightRewards           [3]uint64 `json:"ranksToHighlightRewards"`
-	TrackUnlockImageUrl               string    `json:"trackUnlockImageUrl"`
-	TrackUnlockPlusPointsImageUrl     string    `json:"trackUnlockPlusPointsImageUrl"`
-	TrackUnlockPlusPointsSkuId        string    `json:"trackUnlockPlusPointsSkuId"`
-	TrackUnlockSkuId                  string    `json:"trackUnlockSkuId"`
-	UpgradeDescriptionKey             string    `json:"upgradeDescriptionKey"`
-}
-
-type EventPassSettingsEventPassDisplaySettings struct {
-	BonusBoxes                        [3]EventPassSettingsBonusBoxes                        `json:"bonusBoxes"`
-	EventPassTitleKey                 string                                                `json:"eventPassTitleKey"`
-	EventPassTrackUpgradeDescriptions [1]EventPassSettingsEventPassTrackUpgradeDescriptions `json:"eventPassTrackUpgradeDescriptions"`
-	HeaderIconUrl                     string                                                `json:"headerIconUrl"`
-	PremiumRewardBannerBottom         string                                                `json:"premiumRewardBannerBottom"`
-	PremiumRewardBannerImageUrl       string                                                `json:"premiumRewardBannerImageUrl"`
-	PremiumRewardBannerMiddle         string                                                `json:"premiumRewardBannerMiddle"`
-	PremiumRewardBannerTop            string                                                `json:"premiumRewardBannerTop"`
-	PremiumRewardsDescription         string                                                `json:"premiumRewardsDescription"`
-	SectionDisplayPriority            uint64                                                `json:"sectionDisplayPriority"`
-	TodayViewSection                  string                                                `json:"todayViewSection"`
-}
-
-type EventPassSettingsTrackConditions struct {
-	Track         string `json:"track"`
-	TrackTitleKey string `json:"trackTitleKey"`
-}
-
-type EventPassSettingsTrackConditionsV2 struct {
-	Badge         string `json:"badge"`
-	Track         string `json:"track"`
-	TrackTitleKey string `json:"trackTitleKey"`
-}
-
-type EventPassSettings struct {
-	AdditionalBonusTiersLevel uint64                                    `json:"additionalBonusTiersLevel"`
-	EventPassDisplaySettings  EventPassSettingsEventPassDisplaySettings `json:"eventPassDisplaySettings"`
-	ExpirationTime            string                                    `json:"expirationTime"`
-	GracePeriodEndTime        string                                    `json:"gracePeriodEndTime"`
-	MaxTierLevel              uint64                                    `json:"maxTierLevel"`
-	PointsItemId              string                                    `json:"pointsItemId"`
-	Prefix                    string                                    `json:"prefix"`
-	TrackConditions           []any                                     `json:"trackConditions"`
-}
-
 type EventPlannerPopularNotificationSettings struct {
 	BattleLevels                [9]uint64 `json:"battleLevels"`
 	FirstScanOffsetSeconds      string    `json:"firstScanOffsetSeconds"`
@@ -930,6 +871,7 @@ type GuiSearchSettings struct {
 	MaxNumberRecentSearches             uint64     `json:"maxNumberRecentSearches"`
 	MaxQueryLength                      uint64     `json:"maxQueryLength"`
 	SearchHelpUrl                       string     `json:"searchHelpUrl"`
+	TransferWarning100enabled           bool       `json:"transferWarning100Enabled"`
 }
 
 type GymBadgeSettings struct {
@@ -940,6 +882,10 @@ type GymBadgeSettings struct {
 	PokemonDeployScore              uint64    `json:"pokemonDeployScore"`
 	RaidBattleWinningScore          uint64    `json:"raidBattleWinningScore"`
 	Target                          [3]uint64 `json:"target"`
+}
+
+type GymTopperDistanceSettings struct {
+	GuardPokemonMaxVisualDistanceMeters float64 `json:"guardPokemonMaxVisualDistanceMeters"`
 }
 
 type HapticsSettings struct {
@@ -1135,6 +1081,12 @@ type MapDisplaySettings struct {
 	ShowEnhancedSky bool `json:"showEnhancedSky"`
 }
 
+type MapObjectCollisionAvoidanceSettings struct {
+	MapPlaceCollisionBufferDistance   float64 `json:"mapPlaceCollisionBufferDistance"`
+	PokemonCollisionBufferDistance    float64 `json:"pokemonCollisionBufferDistance"`
+	PokemonCollisionRadiusScaleFactor float64 `json:"pokemonCollisionRadiusScaleFactor"`
+}
+
 type MapObjectsInteractionRangeSettings struct {
 	FarInteractionRangeMeters    float64 `json:"farInteractionRangeMeters"`
 	InteractionRangeMeters       float64 `json:"interactionRangeMeters"`
@@ -1147,21 +1099,27 @@ type MegaEvoSettingsSeparatedTempEvoBranches struct {
 	TempEvoId string `json:"tempEvoId"`
 }
 
+type MegaEvoSettingsTempEvoSpecialAttackBoosts struct {
+	GymsAndRaidsMultiplier   float64 `json:"gymsAndRaidsMultiplier"`
+	TrainerBattlesMultiplier float64 `json:"trainerBattlesMultiplier"`
+}
+
 type MegaEvoSettings struct {
-	ActiveMegaBonusCatchCandy         uint64                                     `json:"activeMegaBonusCatchCandy"`
-	AttackBoostFromMegaDifferentType  float64                                    `json:"attackBoostFromMegaDifferentType"`
-	AttackBoostFromMegaSameType       float64                                    `json:"attackBoostFromMegaSameType"`
-	ClientMegaCooldownBufferMs        uint64                                     `json:"clientMegaCooldownBufferMs"`
-	EnableBuddyWalkingMegaEnergyAward bool                                       `json:"enableBuddyWalkingMegaEnergyAward"`
-	EnableMegaEvolveInLobby           bool                                       `json:"enableMegaEvolveInLobby"`
-	EnableMegaLevel                   bool                                       `json:"enableMegaLevel"`
-	EnableMegaLevelLegacyAward        bool                                       `json:"enableMegaLevelLegacyAward"`
-	EnableSpecialMove                 bool                                       `json:"enableSpecialMove"`
-	EvolutionLengthMs                 string                                     `json:"evolutionLengthMs"`
-	MaxCandyHoardSize                 uint64                                     `json:"maxCandyHoardSize"`
-	MinLevelForSpecialMove            uint64                                     `json:"minLevelForSpecialMove"`
-	NumMegaLevels                     uint64                                     `json:"numMegaLevels"`
-	SeparatedTempEvoBranches          [6]MegaEvoSettingsSeparatedTempEvoBranches `json:"separatedTempEvoBranches"`
+	ActiveMegaBonusCatchCandy         uint64                                       `json:"activeMegaBonusCatchCandy"`
+	AttackBoostFromMegaDifferentType  float64                                      `json:"attackBoostFromMegaDifferentType"`
+	AttackBoostFromMegaSameType       float64                                      `json:"attackBoostFromMegaSameType"`
+	ClientMegaCooldownBufferMs        uint64                                       `json:"clientMegaCooldownBufferMs"`
+	EnableBuddyWalkingMegaEnergyAward bool                                         `json:"enableBuddyWalkingMegaEnergyAward"`
+	EnableMegaEvolveInLobby           bool                                         `json:"enableMegaEvolveInLobby"`
+	EnableMegaLevel                   bool                                         `json:"enableMegaLevel"`
+	EnableMegaLevelLegacyAward        bool                                         `json:"enableMegaLevelLegacyAward"`
+	EnableSpecialMove                 bool                                         `json:"enableSpecialMove"`
+	EvolutionLengthMs                 string                                       `json:"evolutionLengthMs"`
+	MaxCandyHoardSize                 uint64                                       `json:"maxCandyHoardSize"`
+	MinLevelForSpecialMove            uint64                                       `json:"minLevelForSpecialMove"`
+	NumMegaLevels                     uint64                                       `json:"numMegaLevels"`
+	SeparatedTempEvoBranches          [6]MegaEvoSettingsSeparatedTempEvoBranches   `json:"separatedTempEvoBranches"`
+	TempEvoSpecialAttackBoosts        [5]MegaEvoSettingsTempEvoSpecialAttackBoosts `json:"tempEvoSpecialAttackBoosts"`
 }
 
 type MonodepthSettings struct {
@@ -1784,6 +1742,7 @@ type RaidSettings struct {
 	RemoteRaidEnabled                     bool                                     `json:"remoteRaidEnabled"`
 	RemoteRaidsMinPlayerLevel             uint64                                   `json:"remoteRaidsMinPlayerLevel"`
 	UnsupportedRaidLevelsForFriendInvites [4]string                                `json:"unsupportedRaidLevelsForFriendInvites"`
+	UnsupportedRaidLevelsForRsvp          [2]string                                `json:"unsupportedRaidLevelsForRsvp"`
 	UnsupportedRemoteRaidLevels           [4]string                                `json:"unsupportedRemoteRaidLevels"`
 }
 
@@ -2058,6 +2017,36 @@ type TicketGiftingSettings struct {
 	MinRequiredFriendshipLevel string `json:"minRequiredFriendshipLevel"`
 }
 
+type TimeBoxedSpawnEventsSettingsEndDayLocal struct {
+	Day   uint64 `json:"day"`
+	Month uint64 `json:"month"`
+}
+
+type TimeBoxedSpawnEventsSettingsEndPeakTimeLocal struct {
+	Hour uint64 `json:"hour"`
+}
+
+type TimeBoxedSpawnEventsSettingsEndTimeLocal struct {
+	Hour   uint64 `json:"hour"`
+	Minute uint64 `json:"minute"`
+}
+
+type TimeBoxedSpawnEventsSettingsTimeBoxedSpawnEvents struct {
+	DescriptionStringKey    string                                       `json:"descriptionStringKey"`
+	EndDayLocal             TimeBoxedSpawnEventsSettingsEndDayLocal      `json:"endDayLocal"`
+	EndPeakTimeLocal        TimeBoxedSpawnEventsSettingsEndPeakTimeLocal `json:"endPeakTimeLocal"`
+	EndTimeLocal            TimeBoxedSpawnEventsSettingsEndTimeLocal     `json:"endTimeLocal"`
+	StartDayLocal           TimeBoxedSpawnEventsSettingsEndDayLocal      `json:"startDayLocal"`
+	StartPeakTimeLocal      TimeBoxedSpawnEventsSettingsEndPeakTimeLocal `json:"startPeakTimeLocal"`
+	StartTimeLocal          TimeBoxedSpawnEventsSettingsEndPeakTimeLocal `json:"startTimeLocal"`
+	TimeBoxedSpawnEventType string                                       `json:"timeBoxedSpawnEventType"`
+	TitleStringKey          string                                       `json:"titleStringKey"`
+}
+
+type TimeBoxedSpawnEventsSettings struct {
+	TimeBoxedSpawnEvents [6]TimeBoxedSpawnEventsSettingsTimeBoxedSpawnEvents `json:"timeBoxedSpawnEvents"`
+}
+
 type TodayViewSettings struct {
 	FavoriteQuestEnabled            bool `json:"favoriteQuestEnabled"`
 	NotificationServerAuthoritative bool `json:"notificationServerAuthoritative"`
@@ -2144,19 +2133,40 @@ type VnextBattleConfigMaxBattleConfig struct {
 	NoOpponentConnectionDisconnectThresholdTurns string `json:"noOpponentConnectionDisconnectThresholdTurns"`
 }
 
+type VnextBattleConfigLatencyTrackingSettings struct {
+	IsDownstreamEnabled bool   `json:"isDownstreamEnabled"`
+	IsUpstreamEnabled   bool   `json:"isUpstreamEnabled"`
+	MaxNumberEvents     uint64 `json:"maxNumberEvents"`
+	MaxNumberGetState   uint64 `json:"maxNumberGetState"`
+}
+
 type VnextBattleConfigPvpBattleConfig struct {
+	BadNetworkWarningThresholdTurns              string                                   `json:"badNetworkWarningThresholdTurns"`
+	BattleEndTimeoutThresholdMs                  string                                   `json:"battleEndTimeoutThresholdMs"`
+	DeadNetworkDisconnectThresholdTurns          string                                   `json:"deadNetworkDisconnectThresholdTurns"`
+	LatencyTrackingSettings                      VnextBattleConfigLatencyTrackingSettings `json:"latencyTrackingSettings"`
+	NoOpponentConnectionDisconnectThresholdTurns string                                   `json:"noOpponentConnectionDisconnectThresholdTurns"`
+	PreResponseInputBlockDurationMs              string                                   `json:"preResponseInputBlockDurationMs"`
+	SubmitTurnNumberWithPlayerAction             bool                                     `json:"submitTurnNumberWithPlayerAction"`
+	SwapButtonEndOfCooldownInputBlockDurationMs  uint64                                   `json:"swapButtonEndOfCooldownInputBlockDurationMs"`
+}
+
+type VnextBattleConfigTeamLeaderBattleConfig struct {
 	BadNetworkWarningThresholdTurns              string `json:"badNetworkWarningThresholdTurns"`
 	BattleEndTimeoutThresholdMs                  string `json:"battleEndTimeoutThresholdMs"`
 	DeadNetworkDisconnectThresholdTurns          string `json:"deadNetworkDisconnectThresholdTurns"`
 	NoOpponentConnectionDisconnectThresholdTurns string `json:"noOpponentConnectionDisconnectThresholdTurns"`
 	PreResponseInputBlockDurationMs              string `json:"preResponseInputBlockDurationMs"`
 	SubmitTurnNumberWithPlayerAction             bool   `json:"submitTurnNumberWithPlayerAction"`
+	SwapButtonEndOfCooldownInputBlockDurationMs  uint64 `json:"swapButtonEndOfCooldownInputBlockDurationMs"`
 }
 
 type VnextBattleConfig struct {
-	MaxBattleConfig   VnextBattleConfigMaxBattleConfig `json:"maxBattleConfig"`
-	PvpBattleConfig   VnextBattleConfigPvpBattleConfig `json:"pvpBattleConfig"`
-	RaidsBattleConfig VnextBattleConfigMaxBattleConfig `json:"raidsBattleConfig"`
+	MaxBattleConfig        VnextBattleConfigMaxBattleConfig        `json:"maxBattleConfig"`
+	PvpBattleConfig        VnextBattleConfigPvpBattleConfig        `json:"pvpBattleConfig"`
+	RaidsBattleConfig      VnextBattleConfigMaxBattleConfig        `json:"raidsBattleConfig"`
+	TeamLeaderBattleConfig VnextBattleConfigTeamLeaderBattleConfig `json:"teamLeaderBattleConfig"`
+	TgrBattleConfig        VnextBattleConfigTeamLeaderBattleConfig `json:"tgrBattleConfig"`
 }
 
 type VsSeekerClientSettings struct {
@@ -2840,18 +2850,6 @@ type EventMapRefreshSettingsEntryData struct {
 	EventMapRefreshSettings EventMapRefreshSettings `json:"eventMapRefreshSettings"`
 }
 
-type EventPassSettingsEntry struct {
-	TemplateID string                     `json:"templateId"`
-	Data       EventPassSettingsEntryData `json:"data"`
-}
-
-func (EventPassSettingsEntry) MasterfileEntry() {}
-
-type EventPassSettingsEntryData struct {
-	TemplateID        string            `json:"templateId"`
-	EventPassSettings EventPassSettings `json:"eventPassSettings"`
-}
-
 type EventPlannerPopularNotificationSettingsEntry struct {
 	TemplateID string                                           `json:"templateId"`
 	Data       EventPlannerPopularNotificationSettingsEntryData `json:"data"`
@@ -2944,7 +2942,8 @@ type GymTopperDistanceSettingsEntry struct {
 func (GymTopperDistanceSettingsEntry) MasterfileEntry() {}
 
 type GymTopperDistanceSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID                string                    `json:"templateId"`
+	GymTopperDistanceSettings GymTopperDistanceSettings `json:"gymTopperDistanceSettings"`
 }
 
 type HapticsSettingsEntry struct {
@@ -3170,7 +3169,8 @@ type MapObjectCollisionAvoidanceSettingsEntry struct {
 func (MapObjectCollisionAvoidanceSettingsEntry) MasterfileEntry() {}
 
 type MapObjectCollisionAvoidanceSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+	TemplateID                          string                              `json:"templateId"`
+	MapObjectCollisionAvoidanceSettings MapObjectCollisionAvoidanceSettings `json:"mapObjectCollisionAvoidanceSettings"`
 }
 
 type MapObjectsInteractionRangeSettingsEntry struct {
@@ -3857,15 +3857,16 @@ type TicketGiftingSettingsEntryData struct {
 	TicketGiftingSettings TicketGiftingSettings `json:"ticketGiftingSettings"`
 }
 
-type TimeBoxedSpawnEventSettingsEntry struct {
-	TemplateID string                               `json:"templateId"`
-	Data       TimeBoxedSpawnEventSettingsEntryData `json:"data"`
+type TimeBoxedSpawnEventsSettingsEntry struct {
+	TemplateID string                                `json:"templateId"`
+	Data       TimeBoxedSpawnEventsSettingsEntryData `json:"data"`
 }
 
-func (TimeBoxedSpawnEventSettingsEntry) MasterfileEntry() {}
+func (TimeBoxedSpawnEventsSettingsEntry) MasterfileEntry() {}
 
-type TimeBoxedSpawnEventSettingsEntryData struct {
-	TemplateID string `json:"templateId"`
+type TimeBoxedSpawnEventsSettingsEntryData struct {
+	TemplateID                   string                       `json:"templateId"`
+	TimeBoxedSpawnEventsSettings TimeBoxedSpawnEventsSettings `json:"timeBoxedSpawnEventsSettings"`
 }
 
 type TodayViewSettingsEntry struct {

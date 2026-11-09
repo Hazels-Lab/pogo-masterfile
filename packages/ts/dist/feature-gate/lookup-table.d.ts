@@ -5,6 +5,7 @@ import type {
 	FeatureGateAcForegroundCatchMapFocus,
 	FeatureGateAcForegroundCatchPoiFocus,
 	FeatureGateAdminGmNiaOpsOnlyFilterAms,
+	FeatureGateAdventureEffectsInLobby,
 	FeatureGateAdvSyncTwo,
 	FeatureGateAms,
 	FeatureGateAmsFrontend,
@@ -123,6 +124,7 @@ export interface FeatureGateLookup {
 	AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE: FeatureGateAcForegroundCatchPoiFocus;
 	ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE: FeatureGateAdminGmNiaOpsOnlyFilterAms;
 	ADV_SYNC_TWO_FEATURE_GATE: FeatureGateAdvSyncTwo;
+	ADVENTURE_EFFECTS_IN_LOBBY_FEATURE_GATE: FeatureGateAdventureEffectsInLobby;
 	AMS_FEATURE_GATE: FeatureGateAms;
 	AMS_FRONTEND_FEATURE_GATE: FeatureGateAmsFrontend;
 	APPRAISAL_FEATURE_GATE: FeatureGateAppraisal;

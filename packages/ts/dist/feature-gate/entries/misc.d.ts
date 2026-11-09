@@ -35,11 +35,11 @@ export type FeatureGateAdminGmNiaOpsOnlyFilterAms = S<
 		}
 	>
 >;
-export type FeatureGateAdvSyncTwo = S<
+export type FeatureGateAdventureEffectsInLobby = S<
 	FeatureGate<
-		"ADV_SYNC_TWO_FEATURE_GATE",
+		"ADVENTURE_EFFECTS_IN_LOBBY_FEATURE_GATE",
 		{
-			status: 952347117;
+			status: 482931;
 		}
 	>
 >;
@@ -801,7 +801,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateAcForegroundCatchMapFocus
 	| FeatureGateAcForegroundCatchPoiFocus
 	| FeatureGateAdminGmNiaOpsOnlyFilterAms
-	| FeatureGateAdvSyncTwo
+	| FeatureGateAdventureEffectsInLobby
 	| FeatureGateAms
 	| FeatureGateAmsFrontend
 	| FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization

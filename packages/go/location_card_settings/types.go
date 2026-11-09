@@ -2,13 +2,13 @@
 
 package location_card_settings
 
-import "encoding/json"
-
 type LocationCardSettings struct {
-	CardType     *string         `json:"cardType,omitempty"`
-	ImageUrl     string          `json:"imageUrl"`
-	LocationCard json.RawMessage `json:"locationCard"`
-	VfxAddress   *string         `json:"vfxAddress,omitempty"`
+	BackgroundEligibilityStatus *string `json:"backgroundEligibilityStatus,omitempty"`
+	CardTreatment               *string `json:"cardTreatment,omitempty"`
+	CardType                    *string `json:"cardType,omitempty"`
+	ImageUrl                    string  `json:"imageUrl"`
+	LocationCard                string  `json:"locationCard"`
+	VfxAddress                  *string `json:"vfxAddress,omitempty"`
 }
 
 type LocationCardSettingsEntry struct {

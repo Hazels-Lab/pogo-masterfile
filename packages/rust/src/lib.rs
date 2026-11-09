@@ -117,6 +117,7 @@ pub mod combat_npc_personality;
 pub mod combat_npc_trainer;
 pub mod combat_ranking_proto_settings;
 pub mod combat_type;
+pub mod event_pass_settings;
 pub mod event_pass_tier_settings;
 pub mod evolution_chain_display_settings;
 pub mod evolution_quest_template;
@@ -182,13 +183,13 @@ pub enum MasterfileEntry {
     PokemonExtendedSettings(pokemon_extended_settings::PokemonExtendedSettingsEntry),
     AvatarCustomization(avatar_customization::AvatarCustomizationEntry),
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     CombatMove(combat_move::CombatMoveEntry),
     MoveSequenceSettings(move_sequence_settings::MoveSequenceSettingsEntry),
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
@@ -239,6 +240,7 @@ pub enum MasterfileEntry {
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
+    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
@@ -293,7 +295,6 @@ pub enum MasterfileEntry {
     EncounterSettings(singletons::EncounterSettingsEntry),
     ErrorReportingSettings(singletons::ErrorReportingSettingsEntry),
     EventMapRefreshSettings(singletons::EventMapRefreshSettingsEntry),
-    EventPassSettings(singletons::EventPassSettingsEntry),
     EventPlannerPopularNotificationSettings(
         singletons::EventPlannerPopularNotificationSettingsEntry,
     ),
@@ -380,7 +381,7 @@ pub enum MasterfileEntry {
     StickerCategorySettings(singletons::StickerCategorySettingsEntry),
     StyleShopSettings(singletons::StyleShopSettingsEntry),
     TicketGiftingSettings(singletons::TicketGiftingSettingsEntry),
-    TimeBoxedSpawnEventSettings(singletons::TimeBoxedSpawnEventSettingsEntry),
+    TimeBoxedSpawnEventsSettings(singletons::TimeBoxedSpawnEventsSettingsEntry),
     TodayViewSettings(singletons::TodayViewSettingsEntry),
     TutorialSettings(singletons::TutorialSettingsEntry),
     UsernameSuggestionSettings(singletons::UsernameSuggestionSettingsEntry),
@@ -429,15 +430,15 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::AvatarCustomization)
                 }
                 "avatarItemDisplay" => serde_json::from_value(value).map(Self::AvatarItemDisplay),
+                "eventPassTierSettings" => {
+                    serde_json::from_value(value).map(Self::EventPassTierSettings)
+                }
                 "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
                 "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
                 "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
-                "eventPassTierSettings" => {
-                    serde_json::from_value(value).map(Self::EventPassTierSettings)
-                }
                 "combatMove" => serde_json::from_value(value).map(Self::CombatMove),
                 "moveSequenceSettings" => {
                     serde_json::from_value(value).map(Self::MoveSequenceSettings)
@@ -536,6 +537,7 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }
@@ -668,7 +670,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "eventMapRefreshSettings" => {
                     serde_json::from_value(value).map(Self::EventMapRefreshSettings)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "eventPlannerPopularNotificationSettings" => {
                     serde_json::from_value(value).map(Self::EventPlannerPopularNotificationSettings)
                 }
@@ -684,6 +685,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "giftingSettings" => serde_json::from_value(value).map(Self::GiftingSettings),
                 "guiSearchSettings" => serde_json::from_value(value).map(Self::GuiSearchSettings),
                 "gymBadgeSettings" => serde_json::from_value(value).map(Self::GymBadgeSettings),
+                "gymTopperDistanceSettings" => {
+                    serde_json::from_value(value).map(Self::GymTopperDistanceSettings)
+                }
                 "hapticsSettings" => serde_json::from_value(value).map(Self::HapticsSettings),
                 "iapSettings" => serde_json::from_value(value).map(Self::IapSettings),
                 "ibfcLightweightSettings" => {
@@ -721,6 +725,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 }
                 "mainMenuChanges" => serde_json::from_value(value).map(Self::MainMenuChanges),
                 "mapDisplaySettings" => serde_json::from_value(value).map(Self::MapDisplaySettings),
+                "mapObjectCollisionAvoidanceSettings" => {
+                    serde_json::from_value(value).map(Self::MapObjectCollisionAvoidanceSettings)
+                }
                 "mapObjectsInteractionRangeSettings" => {
                     serde_json::from_value(value).map(Self::MapObjectsInteractionRangeSettings)
                 }
@@ -846,6 +853,9 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "ticketGiftingSettings" => {
                     serde_json::from_value(value).map(Self::TicketGiftingSettings)
                 }
+                "timeBoxedSpawnEventsSettings" => {
+                    serde_json::from_value(value).map(Self::TimeBoxedSpawnEventsSettings)
+                }
                 "todayViewSettings" => serde_json::from_value(value).map(Self::TodayViewSettings),
                 "tutorialSettings" => serde_json::from_value(value).map(Self::TutorialSettings),
                 "usernameSuggestionSettings" => {
@@ -884,17 +894,8 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 .and_then(|t| t.as_str())
                 .map(String::from);
             match template_id.as_deref() {
-                Some("GYM_TOPPER_DISTANCE_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::GymTopperDistanceSettings)
-                }
                 Some("LOCATION_CARD_FEATURE_SETTINGS") => {
                     serde_json::from_value(value).map(Self::LocationCardFeatureSettings)
-                }
-                Some("MAP_OBJECT_COLLISION_AVOIDANCE_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::MapObjectCollisionAvoidanceSettings)
-                }
-                Some("TIME_BOXED_SPAWN_EVENT_SETTINGS") => {
-                    serde_json::from_value(value).map(Self::TimeBoxedSpawnEventSettings)
                 }
                 Some(other) => Err(serde_json::Error::custom(format!(
                     "unknown stub templateId: {}",

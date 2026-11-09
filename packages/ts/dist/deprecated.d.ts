@@ -485,7 +485,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-11-08 — 45 entries */
+/** @deprecated lastSeen 2026-11-08 — 44 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_AFTERPARTY2026_EVENT"
@@ -518,7 +518,6 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_MAY2026_SEASON"
 	| "EVENT_PASS_MEGASQUADS2026_EVENT"
 	| "EVENT_PASS_NOVEMBER2025_SEASON"
-	| "EVENT_PASS_NOVEMBER2026_SEASON"
 	| "EVENT_PASS_OCTOBER2025_SEASON"
 	| "EVENT_PASS_OCTOBER2026_SEASON"
 	| "EVENT_PASS_PIKACHU_CELEBRATION_2026_EVENT"

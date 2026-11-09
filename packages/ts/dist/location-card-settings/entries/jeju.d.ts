@@ -7,8 +7,9 @@ export type LocationCardSettingsJejuStampRally = S<
 	LocationCardSettings<
 		"LC_JEJU_STAMP_RALLY",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_stampRally2025_Jeju";
-			locationCard: "LC_JEJU_STAMP_RALLY";
 		}
 	>
 >;

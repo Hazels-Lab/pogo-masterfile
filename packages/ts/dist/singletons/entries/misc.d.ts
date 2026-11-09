@@ -541,15 +541,40 @@ export interface VnextBattleConfig {
 				badNetworkWarningThresholdTurns: "12";
 				battleEndTimeoutThresholdMs: "2000";
 				deadNetworkDisconnectThresholdTurns: "120";
+				latencyTrackingSettings: {
+					isDownstreamEnabled: true;
+					isUpstreamEnabled: true;
+					maxNumberEvents: 200;
+					maxNumberGetState: 200;
+				};
 				noOpponentConnectionDisconnectThresholdTurns: "21";
 				preResponseInputBlockDurationMs: "500";
 				submitTurnNumberWithPlayerAction: true;
+				swapButtonEndOfCooldownInputBlockDurationMs: 250;
 			};
 			raidsBattleConfig: {
 				badNetworkWarningThresholdTurns: "12";
 				battleEndTimeoutThresholdMs: "2000";
 				deadNetworkDisconnectThresholdTurns: "60";
 				noOpponentConnectionDisconnectThresholdTurns: "12";
+			};
+			teamLeaderBattleConfig: {
+				badNetworkWarningThresholdTurns: "12";
+				battleEndTimeoutThresholdMs: "2000";
+				deadNetworkDisconnectThresholdTurns: "120";
+				noOpponentConnectionDisconnectThresholdTurns: "21";
+				preResponseInputBlockDurationMs: "500";
+				submitTurnNumberWithPlayerAction: true;
+				swapButtonEndOfCooldownInputBlockDurationMs: 250;
+			};
+			tgrBattleConfig: {
+				badNetworkWarningThresholdTurns: "12";
+				battleEndTimeoutThresholdMs: "2000";
+				deadNetworkDisconnectThresholdTurns: "120";
+				noOpponentConnectionDisconnectThresholdTurns: "21";
+				preResponseInputBlockDurationMs: "500";
+				submitTurnNumberWithPlayerAction: true;
+				swapButtonEndOfCooldownInputBlockDurationMs: 250;
 			};
 		};
 	};

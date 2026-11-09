@@ -39,12 +39,13 @@ export interface FormSettingsData {
 			| "pm0613_00_pgo_winter2020"
 			| "pm0614_00_pgo_winter2020";
 		assetBundleValue?: number;
-		form: number | string;
+		form: string;
 		isCostume?: boolean;
 		sillouetteObfuscationGroup?: {
 			groupNumber: number;
 			overrideDisplayForm: "DUDUNSPARCE_TWO" | "POLTCHAGEIST_COUNTERFEIT" | "SINISTEA_PHONY";
 		};
+		unsilhouetteOnSpeciesCapture?: boolean;
 	}>;
 	pokemon: string;
 }

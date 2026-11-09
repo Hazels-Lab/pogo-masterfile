@@ -20,14 +20,10 @@ export interface NonCombatMoveSettingsData {
 		attackDefenseBonus?: {
 			attributes: [
 				{
-					attackMultiplier?: number;
 					combatTypes: ["COMBAT_TYPE_RAID"];
-					defenseMultiplier?: number;
 				},
 				{
-					attackMultiplier?: number;
 					combatTypes: ["COMBAT_TYPE_DMAX", "COMBAT_TYPE_GMAX"];
-					defenseMultiplier?: number;
 				},
 			];
 		};

@@ -37,6 +37,7 @@ export type CombatLeagueDefaultGreat = S<
 					};
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "combat_great_league";
 		}
 	>
@@ -58,6 +59,7 @@ export type CombatLeagueDefaultMaster = S<
 					};
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "combat_master_league";
 			unlockCondition: [
 				{
@@ -88,6 +90,7 @@ export type CombatLeagueDefaultMasterNpc = S<
 					};
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "combat_master_league";
 			unlockCondition: [
 				{
@@ -119,6 +122,7 @@ export type CombatLeagueDefaultUltra = S<
 					};
 				},
 			];
+			removeTempEvoSelfCpBoostAdditionalLevels: true;
 			title: "combat_ultra_league";
 			unlockCondition: [
 				{
