@@ -85,6 +85,8 @@ pub enum FeatureGateTemplateId {
     EventPassBushFeatureGateCr,
     #[serde(rename = "EVENT_PASS_ENCOUNTER_LOAD_TRANSITION_FEATURE_GATE_CR")]
     EventPassEncounterLoadTransitionFeatureGateCr,
+    #[serde(rename = "EVENT_PASS_MISSING_TIER_PROTECTION_FEATURE_GATE_SR")]
+    EventPassMissingTierProtectionFeatureGateSr,
     #[serde(rename = "EVENT_PASS_WIDGET_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE")]
     EventPassWidgetForceRebuildOptimizationFeatureGate,
     #[serde(rename = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE")]
@@ -115,6 +117,8 @@ pub enum FeatureGateTemplateId {
     HideUiInMiniorIbfcFeatureGate,
     #[serde(rename = "IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE")]
     ImmersiveCatchSummaryFeatureGate,
+    #[serde(rename = "IMPERSONATION_STAT_SYNC_FEATURE_GATE_SR")]
+    ImpersonationStatSyncFeatureGateSr,
     #[serde(rename = "ITEM_USE_SORT_CONTEXT_FEATURE_GATE")]
     ItemUseSortContextFeatureGate,
     #[serde(rename = "LOCATION_CARD_BACKGROUNDS_FEATURE_GATE")]
@@ -151,6 +155,8 @@ pub enum FeatureGateTemplateId {
     NpcGiftAutoClaimFeatureGate,
     #[serde(rename = "PAIRED_DEVICE_HELP_FEATURE_GATE")]
     PairedDeviceHelpFeatureGate,
+    #[serde(rename = "PHOTOBOMB_TIME_PORTAL_FUTURE_FEATURE_GATE_SR")]
+    PhotobombTimePortalFutureFeatureGateSr,
     #[serde(rename = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE")]
     PlayerEncounterRandomizationSaltFeatureGate,
     #[serde(rename = "POKEDEX_DEFENDER_GYM_FIX_FEATURE_GATE")]
@@ -165,8 +171,12 @@ pub enum FeatureGateTemplateId {
     PrivateMaxLobbiesFeatureGate,
     #[serde(rename = "PROFILE_FTUE_REWARDS_BANNER_RECHECK_FEATURE_GATE")]
     ProfileFtueRewardsBannerRecheckFeatureGate,
+    #[serde(rename = "QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
+    QuestProgressAggregationFeatureGateSr,
     #[serde(rename = "QUEST_TOTAL_DAYS_CATCH_RESULT_FIX_FEATURE_GATE")]
     QuestTotalDaysCatchResultFixFeatureGate,
+    #[serde(rename = "RAID_RSVP_REMOTE_JOIN_FIX_FEATURE_GATE_CR")]
+    RaidRsvpRemoteJoinFixFeatureGateCr,
     #[serde(rename = "REGISTER_DEVICE_FEATURE_GATE")]
     RegisterDeviceFeatureGate,
     #[serde(rename = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE")]
@@ -189,6 +199,8 @@ pub enum FeatureGateTemplateId {
     StampRallyTimeTravelClientFeatureGate,
     #[serde(rename = "STAMP_RALLY_TIME_TRAVEL_SERVER_FEATURE_GATE")]
     StampRallyTimeTravelServerFeatureGate,
+    #[serde(rename = "TIME_TRAVEL_POWERSPOT_SCHEDULING_FEATURE_GATE_SR")]
+    TimeTravelPowerspotSchedulingFeatureGateSr,
     #[serde(rename = "TODAY_VIEW_INNER_TAB_EQUAL_WIDTH_FEATURE_GATE_CR")]
     TodayViewInnerTabEqualWidthFeatureGateCr,
     #[serde(rename = "TODAY_VIEW_INNER_TABS_HEADER_FEATURE_GATE")]

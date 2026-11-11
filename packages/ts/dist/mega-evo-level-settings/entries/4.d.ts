@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "4", 17 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "4", 18 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -45,6 +45,30 @@ export type MegaEvoLevelSettings4V0026PokemonRaichu = S<
 			level: 4;
 			megaEnergyCostToUnlock: 5000;
 			pokemonId: "RAICHU";
+			progression: {
+				pointsRequired: 30;
+			};
+		}
+	>
+>;
+export type MegaEvoLevelSettings4V0036PokemonClefable = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_4_V0036_POKEMON_CLEFABLE",
+		{
+			cooldown: {
+				bypassCostInitial: 5;
+				durationMs: "86400000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 3;
+				sameTypeExtraCatchCandyXlChance: 0.3;
+				sameTypeExtraCatchXp: 200;
+				selfCpBoostAdditionalLevel: 2;
+			};
+			ftueExpirationTimestamp: "1775001600000";
+			level: 4;
+			megaEnergyCostToUnlock: 5000;
+			pokemonId: "CLEFABLE";
 			progression: {
 				pointsRequired: 30;
 			};
@@ -415,6 +439,7 @@ export type MegaEvoLevelSettings4V0870PokemonFalinks = S<
 export type MegaEvoLevelSettings4MasterfileEntry =
 	| MegaEvoLevelSettings4V0015PokemonBeedrill
 	| MegaEvoLevelSettings4V0026PokemonRaichu
+	| MegaEvoLevelSettings4V0036PokemonClefable
 	| MegaEvoLevelSettings4V0071PokemonVictreebel
 	| MegaEvoLevelSettings4V0121PokemonStarmie
 	| MegaEvoLevelSettings4V0149PokemonDragonite

@@ -228,14 +228,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "combatLeague":
-		var e combat_league.CombatLeagueEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "combatLeague":
+		var e combat_league.CombatLeagueEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

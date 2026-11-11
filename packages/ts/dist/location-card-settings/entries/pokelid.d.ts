@@ -214,6 +214,7 @@ export type LocationCardSettingsPokelidNagano = S<
 	LocationCardSettings<
 		"LC_POKELID_NAGANO",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_nagano";
 		}
 	>
@@ -276,6 +277,7 @@ export type LocationCardSettingsPokelidSaga = S<
 	LocationCardSettings<
 		"LC_POKELID_SAGA",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
 			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_pokelid_saga";
 		}

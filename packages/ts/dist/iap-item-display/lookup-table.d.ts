@@ -117,6 +117,10 @@ import type {
 	IapItemDisplayBundleGowa20242,
 	IapItemDisplayBundleGowa20243,
 	IapItemDisplayBundleGowa20244,
+	IapItemDisplayBundleGowa20261,
+	IapItemDisplayBundleGowa20262,
+	IapItemDisplayBundleGowa20263,
+	IapItemDisplayBundleGowa20264,
 	IapItemDisplayBundleGpdindialaunch1,
 	IapItemDisplayBundleGpmay20231,
 	IapItemDisplayBundleGwlatam20251,
@@ -1212,6 +1216,10 @@ export interface IapItemDisplayLookup {
 	"bundle.gowa2024.2": IapItemDisplayBundleGowa20242;
 	"bundle.gowa2024.3": IapItemDisplayBundleGowa20243;
 	"bundle.gowa2024.4": IapItemDisplayBundleGowa20244;
+	"bundle.gowa2026.1": IapItemDisplayBundleGowa20261;
+	"bundle.gowa2026.2": IapItemDisplayBundleGowa20262;
+	"bundle.gowa2026.3": IapItemDisplayBundleGowa20263;
+	"bundle.gowa2026.4": IapItemDisplayBundleGowa20264;
 	"bundle.gpdindialaunch.1": IapItemDisplayBundleGpdindialaunch1;
 	"bundle.gpmay2023.1": IapItemDisplayBundleGpmay20231;
 	"bundle.gwlatam2025.1": IapItemDisplayBundleGwlatam20251;

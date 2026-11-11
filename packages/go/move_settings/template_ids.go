@@ -334,7 +334,9 @@ const (
 	MoveSettingsTemplateIDV0594MoveGulpMissileGulping                   MoveSettingsTemplateID = "V0594_MOVE_GULP_MISSILE_GULPING"
 	MoveSettingsTemplateIDV0595MoveGulpMissileGorging                   MoveSettingsTemplateID = "V0595_MOVE_GULP_MISSILE_GORGING"
 	MoveSettingsTemplateIDV0615MoveKowtowCleave                         MoveSettingsTemplateID = "V0615_MOVE_KOWTOW_CLEAVE"
+	MoveSettingsTemplateIDV0616MoveSoakFast                             MoveSettingsTemplateID = "V0616_MOVE_SOAK_FAST"
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0015PokemonBeedrill   MoveSettingsTemplateID = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL"
+	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0036PokemonClefable   MoveSettingsTemplateID = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE"
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0071PokemonVictreebel MoveSettingsTemplateID = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL"
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0121PokemonStarmie    MoveSettingsTemplateID = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE"
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0149PokemonDragonite  MoveSettingsTemplateID = "VM_MOVE_TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE"
@@ -747,7 +749,9 @@ var MoveSettingsTemplateIDValues = [...]MoveSettingsTemplateID{
 	MoveSettingsTemplateIDV0594MoveGulpMissileGulping,
 	MoveSettingsTemplateIDV0595MoveGulpMissileGorging,
 	MoveSettingsTemplateIDV0615MoveKowtowCleave,
+	MoveSettingsTemplateIDV0616MoveSoakFast,
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0015PokemonBeedrill,
+	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0036PokemonClefable,
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0071PokemonVictreebel,
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0121PokemonStarmie,
 	MoveSettingsTemplateIDVmMoveTempEvolutionMegaV0149PokemonDragonite,

@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 99 entries.
+// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 105 entries.
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -291,6 +291,14 @@ export type FeatureGateEventPassEncounterLoadTransitionFeatureGateCr = S<
 		}
 	>
 >;
+export type FeatureGateEventPassMissingTierProtectionFeatureGateSr = S<
+	FeatureGate<
+		"EVENT_PASS_MISSING_TIER_PROTECTION_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateEventPassWidgetForceRebuildOptimization = S<
 	FeatureGate<
 		"EVENT_PASS_WIDGET_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE",
@@ -400,6 +408,14 @@ export type FeatureGateImmersiveCatchSummary = S<
 		"IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE",
 		{
 			status: 73026;
+		}
+	>
+>;
+export type FeatureGateImpersonationStatSyncFeatureGateSr = S<
+	FeatureGate<
+		"IMPERSONATION_STAT_SYNC_FEATURE_GATE_SR",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -531,6 +547,14 @@ export type FeatureGatePairedDeviceHelp = S<
 		}
 	>
 >;
+export type FeatureGatePhotobombTimePortalFutureFeatureGateSr = S<
+	FeatureGate<
+		"PHOTOBOMB_TIME_PORTAL_FUTURE_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGatePlayerEncounterRandomizationSalt = S<
 	FeatureGate<
 		"PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE",
@@ -571,9 +595,25 @@ export type FeatureGateProfileFtueRewardsBannerRecheck = S<
 		}
 	>
 >;
+export type FeatureGateQuestProgressAggregationFeatureGateSr = S<
+	FeatureGate<
+		"QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateQuestTotalDaysCatchResultFix = S<
 	FeatureGate<
 		"QUEST_TOTAL_DAYS_CATCH_RESULT_FIX_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateRaidRsvpRemoteJoinFixFeatureGateCr = S<
+	FeatureGate<
+		"RAID_RSVP_REMOTE_JOIN_FIX_FEATURE_GATE_CR",
 		{
 			status: 1;
 		}
@@ -664,6 +704,14 @@ export type FeatureGateStampRallyTimeTravelServer = S<
 		"STAMP_RALLY_TIME_TRAVEL_SERVER_FEATURE_GATE",
 		{
 			status: 293813;
+		}
+	>
+>;
+export type FeatureGateTimeTravelPowerspotSchedulingFeatureGateSr = S<
+	FeatureGate<
+		"TIME_TRAVEL_POWERSPOT_SCHEDULING_FEATURE_GATE_SR",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -833,6 +881,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateEventPassBonusQuestNoCollapseFeatureGateCr
 	| FeatureGateEventPassBushFeatureGateCr
 	| FeatureGateEventPassEncounterLoadTransitionFeatureGateCr
+	| FeatureGateEventPassMissingTierProtectionFeatureGateSr
 	| FeatureGateEventPassWidgetForceRebuildOptimization
 	| FeatureGateExpireMinuteStringFeatureGateCr
 	| FeatureGateFortSearchTimeTravelFeatureGateSr
@@ -847,6 +896,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateGymSpriteFix
 	| FeatureGateHideUiInMiniorIbfc
 	| FeatureGateImmersiveCatchSummary
+	| FeatureGateImpersonationStatSyncFeatureGateSr
 	| FeatureGateItemUseSortContext
 	| FeatureGateLocationCardRoll
 	| FeatureGateLuckyTradeNewStrings
@@ -863,12 +913,15 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateNeutralAvatarShopItemForceRebuildOptimization
 	| FeatureGateNpcGiftAutoClaim
 	| FeatureGatePairedDeviceHelp
+	| FeatureGatePhotobombTimePortalFutureFeatureGateSr
 	| FeatureGatePlayerEncounterRandomizationSalt
 	| FeatureGatePokedexDefenderGymFix
 	| FeatureGatePokedexScrollingFix
 	| FeatureGatePokemonSpawnAvoidanceRework
 	| FeatureGateProfileFtueRewardsBannerRecheck
+	| FeatureGateQuestProgressAggregationFeatureGateSr
 	| FeatureGateQuestTotalDaysCatchResultFix
+	| FeatureGateRaidRsvpRemoteJoinFixFeatureGateCr
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateRemoteTradeSpeedGiftFix
@@ -880,6 +933,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateStampRallyMiniGameAnimationLockFix
 	| FeatureGateStampRallyTimeTravelClient
 	| FeatureGateStampRallyTimeTravelServer
+	| FeatureGateTimeTravelPowerspotSchedulingFeatureGateSr
 	| FeatureGateTodayViewInnerTabEqualWidthFeatureGateCr
 	| FeatureGateTodayViewInnerTabsHeader
 	| FeatureGateTodayViewV3ClaimRerender

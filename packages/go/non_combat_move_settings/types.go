@@ -24,7 +24,6 @@ type NonCombatMoveSettingsMaxMoveBonus struct {
 }
 
 type NonCombatMoveSettingsMegaMoveBonus struct {
-	AttackMultiplier          *float64   `json:"attackMultiplier,omitempty"`
 	ExtraMegaRaidShieldBreak  *uint64    `json:"extraMegaRaidShieldBreak,omitempty"`
 	SpecialMove               string     `json:"specialMove"`
 	VisibleAppraisalStarTiers *[2]uint64 `json:"visibleAppraisalStarTiers,omitempty"`
@@ -34,7 +33,6 @@ type NonCombatMoveSettingsSlowFreezeBonus struct {
 	CatchCircleOuterTimeScaleOverride float64 `json:"catchCircleOuterTimeScaleOverride"`
 	CatchCircleSpeedChangeThreshold   float64 `json:"catchCircleSpeedChangeThreshold"`
 	CatchCircleTimeScaleOverride      float64 `json:"catchCircleTimeScaleOverride"`
-	CatchRateIncreaseMultiplier       float64 `json:"catchRateIncreaseMultiplier"`
 }
 
 type NonCombatMoveSettingsSpaceBonus struct {

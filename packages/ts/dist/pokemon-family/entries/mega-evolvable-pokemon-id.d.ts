@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 55 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "mega-evolvable-pokemon-id", 56 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -36,6 +36,15 @@ export type PokemonFamilyV0016FamilyPidgey = S<
 		{
 			familyId: "FAMILY_PIDGEY";
 			megaEvolvablePokemonId: "PIDGEOT";
+		}
+	>
+>;
+export type PokemonFamilyV0035FamilyClefairy = S<
+	PokemonFamily<
+		"V0035_FAMILY_CLEFAIRY",
+		{
+			familyId: "FAMILY_CLEFAIRY";
+			megaEvolvablePokemonId: "CLEFABLE";
 		}
 	>
 >;
@@ -504,6 +513,7 @@ export type PokemonFamilyMegaEvolvablePokemonIdMasterfileEntry =
 	| PokemonFamilyV0007FamilySquirtle
 	| PokemonFamilyV0013FamilyWeedle
 	| PokemonFamilyV0016FamilyPidgey
+	| PokemonFamilyV0035FamilyClefairy
 	| PokemonFamilyV0063FamilyAbra
 	| PokemonFamilyV0069FamilyBellsprout
 	| PokemonFamilyV0079FamilySlowpoke

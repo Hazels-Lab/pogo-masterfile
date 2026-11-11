@@ -172,6 +172,8 @@ export type LocationCardSettings2025Nfl002 = S<
 	LocationCardSettings<
 		"LC_2025_NFL_002",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_NFL_cardinals_2026";
 		}
 	>

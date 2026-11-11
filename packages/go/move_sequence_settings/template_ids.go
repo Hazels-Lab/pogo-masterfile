@@ -281,6 +281,7 @@ const (
 	MoveSequenceSettingsTemplateIDSequenceSmackDownFast         MoveSequenceSettingsTemplateID = "sequence_smack_down_fast"
 	MoveSequenceSettingsTemplateIDSequenceSnarlFast             MoveSequenceSettingsTemplateID = "sequence_snarl_fast"
 	MoveSequenceSettingsTemplateIDSequenceSnipeShot             MoveSequenceSettingsTemplateID = "sequence_snipe_shot"
+	MoveSequenceSettingsTemplateIDSequenceSoakFast              MoveSequenceSettingsTemplateID = "sequence_soak_fast"
 	MoveSequenceSettingsTemplateIDSequenceSolarBeam             MoveSequenceSettingsTemplateID = "sequence_solar_beam"
 	MoveSequenceSettingsTemplateIDSequenceSpacialRend           MoveSequenceSettingsTemplateID = "sequence_spacial_rend"
 	MoveSequenceSettingsTemplateIDSequenceSparkFast             MoveSequenceSettingsTemplateID = "sequence_spark_fast"
@@ -622,6 +623,7 @@ var MoveSequenceSettingsTemplateIDValues = [...]MoveSequenceSettingsTemplateID{
 	MoveSequenceSettingsTemplateIDSequenceSmackDownFast,
 	MoveSequenceSettingsTemplateIDSequenceSnarlFast,
 	MoveSequenceSettingsTemplateIDSequenceSnipeShot,
+	MoveSequenceSettingsTemplateIDSequenceSoakFast,
 	MoveSequenceSettingsTemplateIDSequenceSolarBeam,
 	MoveSequenceSettingsTemplateIDSequenceSpacialRend,
 	MoveSequenceSettingsTemplateIDSequenceSparkFast,

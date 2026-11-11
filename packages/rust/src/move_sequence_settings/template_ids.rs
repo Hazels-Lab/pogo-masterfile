@@ -559,6 +559,8 @@ pub enum MoveSequenceSettingsTemplateId {
     SequenceSnarlFast,
     #[serde(rename = "sequence_snipe_shot")]
     SequenceSnipeShot,
+    #[serde(rename = "sequence_soak_fast")]
+    SequenceSoakFast,
     #[serde(rename = "sequence_solar_beam")]
     SequenceSolarBeam,
     #[serde(rename = "sequence_spacial_rend")]

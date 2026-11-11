@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "fairy", 9 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "fairy", 10 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -126,6 +126,22 @@ export type CombatMoveV0390MoveNaturesMadness = S<
 		}
 	>
 >;
+export type CombatMoveVmMoveTempEvolutionMegaV0036PokemonClefable = S<
+	CombatMove<
+		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE",
+		{
+			buffs: {
+				buffActivationChance: 0.1;
+				targetAttackStatStageChange: -1;
+			};
+			energyDelta: -50;
+			power: 80;
+			type: "POKEMON_TYPE_FAIRY";
+			uniqueId: "TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE";
+			vfxName: "moonblast";
+		}
+	>
+>;
 
 export type CombatMoveFairyMasterfileEntry =
 	| CombatMoveV0084MoveDisarmingVoice
@@ -136,4 +152,5 @@ export type CombatMoveFairyMasterfileEntry =
 	| CombatMoveV0320MoveCharmFast
 	| CombatMoveV0350MoveFairyWindFast
 	| CombatMoveV0387MoveGeomancyFast
-	| CombatMoveV0390MoveNaturesMadness;
+	| CombatMoveV0390MoveNaturesMadness
+	| CombatMoveVmMoveTempEvolutionMegaV0036PokemonClefable;

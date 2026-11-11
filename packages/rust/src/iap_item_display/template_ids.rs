@@ -239,6 +239,14 @@ pub enum IapItemDisplayTemplateId {
     BundleGowa20243,
     #[serde(rename = "bundle.gowa2024.4")]
     BundleGowa20244,
+    #[serde(rename = "bundle.gowa2026.1")]
+    BundleGowa20261,
+    #[serde(rename = "bundle.gowa2026.2")]
+    BundleGowa20262,
+    #[serde(rename = "bundle.gowa2026.3")]
+    BundleGowa20263,
+    #[serde(rename = "bundle.gowa2026.4")]
+    BundleGowa20264,
     #[serde(rename = "bundle.gpdindialaunch.1")]
     BundleGpdindialaunch1,
     #[serde(rename = "bundle.gpmay2023.1")]

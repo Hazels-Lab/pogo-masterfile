@@ -14,6 +14,7 @@ export type PokemonSettingsV0035PokemonClefairy = S<
 			buddyOffsetMale: [-0.2, 0, 11.9];
 			buddyPortraitOffset: [-60, -150, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 0.7;
 				cylinderRadiusM: 0.45;
@@ -86,6 +87,7 @@ export type PokemonSettingsV0035PokemonClefairyNormal = S<
 			buddyOffsetMale: [-0.2, 0, 11.9];
 			buddyPortraitOffset: [-60, -150, 0];
 			buddyScale: 19;
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 0.7;
 				cylinderRadiusM: 0.45;
@@ -153,13 +155,14 @@ export type PokemonSettingsV0036PokemonClefable = S<
 	PokemonSettings<
 		"V0036_POKEMON_CLEFABLE",
 		{
-			animationTime: [2.3333, 0.6667, 1.6667, 1.8333, 0, 2.6667, 1.3333, 0];
+			animationTime: [2.3333, 0.6667, 1.6667, 1, 0, 2.6667, 1.3333, 0];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 3;
 			buddyOffsetFemale: [7.1, 0, 45.7];
 			buddyOffsetMale: [7.1, 0, 45.7];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 1.44625;
 				cylinderRadiusM: 0.712;
@@ -187,6 +190,13 @@ export type PokemonSettingsV0036PokemonClefable = S<
 				movementTimerS: 4;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_CLEFAIRY";
 			heightStdDev: 0.1625;
@@ -208,6 +218,29 @@ export type PokemonSettingsV0036PokemonClefable = S<
 				baseDefense: 162;
 				baseStamina: 216;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.7;
+					averageWeightKg: 42.3;
+					buddyPortraitOffset: [0, -80, -2000];
+					camera: {
+						cylinderGroundM: 0.5;
+						cylinderHeightM: 3.6;
+						cylinderRadiusM: 1.3;
+					};
+					modelHeight: 2;
+					modelScaleV2: 0.65;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE";
+					stats: {
+						baseAttack: 253;
+						baseDefense: 205;
+						baseStamina: 216;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FAIRY";
+					typeOverride2: "POKEMON_TYPE_FLYING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -221,13 +254,14 @@ export type PokemonSettingsV0036PokemonClefableNormal = S<
 	PokemonSettings<
 		"V0036_POKEMON_CLEFABLE_NORMAL",
 		{
-			animationTime: [2.3333, 0.6667, 1.6667, 1.8333, 0, 2.6667, 1.3333, 0];
+			animationTime: [2.3333, 0.6667, 1.6667, 1, 0, 2.6667, 1.3333, 0];
 			breadTierGroup: "GROUP_1";
 			buddyGroupNumber: 3;
 			buddyOffsetFemale: [7.1, 0, 45.7];
 			buddyOffsetMale: [7.1, 0, 45.7];
 			buddyScale: 19;
 			buddySize: "BUDDY_BIG";
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 1.44625;
 				cylinderRadiusM: 0.712;
@@ -255,6 +289,13 @@ export type PokemonSettingsV0036PokemonClefableNormal = S<
 				movementTimerS: 4;
 				movementType: "MOVEMENT_JUMP";
 			};
+			evolutionBranch: [
+				{
+					temporaryEvolution: "TEMP_EVOLUTION_MEGA";
+					temporaryEvolutionEnergyCost: 300;
+					temporaryEvolutionEnergyCostSubsequent: 60;
+				},
+			];
 			evolutionPips: 1;
 			familyId: "FAMILY_CLEFAIRY";
 			form: "CLEFABLE_NORMAL";
@@ -277,6 +318,29 @@ export type PokemonSettingsV0036PokemonClefableNormal = S<
 				baseDefense: 162;
 				baseStamina: 216;
 			};
+			tempEvoOverrides: [
+				{
+					averageHeightM: 1.7;
+					averageWeightKg: 42.3;
+					buddyPortraitOffset: [0, -80, -2000];
+					camera: {
+						cylinderGroundM: 0.5;
+						cylinderHeightM: 3.6;
+						cylinderRadiusM: 1.3;
+					};
+					modelHeight: 2;
+					modelScaleV2: 0.65;
+					specialMove: "TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE";
+					stats: {
+						baseAttack: 253;
+						baseDefense: 205;
+						baseStamina: 216;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+					typeOverride1: "POKEMON_TYPE_FAIRY";
+					typeOverride2: "POKEMON_TYPE_FLYING";
+				},
+			];
 			thirdMove: {
 				candyToUnlock: 25;
 				stardustToUnlock: 10000;
@@ -297,6 +361,7 @@ export type PokemonSettingsV0173PokemonCleffa = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 13;
 			buddySize: "BUDDY_BABY";
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 0.3;
 				cylinderRadiusM: 0.2;
@@ -369,6 +434,7 @@ export type PokemonSettingsV0173PokemonCleffaNormal = S<
 			buddyOffsetMale: [0, 0, 0];
 			buddyScale: 13;
 			buddySize: "BUDDY_BABY";
+			buddyWalkedMegaEnergyAward: 5;
 			camera: {
 				cylinderHeightM: 0.3;
 				cylinderRadiusM: 0.2;
