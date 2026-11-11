@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 338 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "moveSequenceSettings", 339 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { MoveSequenceSettings } from "../types";
@@ -2789,6 +2789,14 @@ export type MoveSequenceSettingsSnipeShot = S<
 		}
 	>
 >;
+export type MoveSequenceSettingsSoakFast = S<
+	MoveSequenceSettings<
+		"sequence_soak_fast",
+		{
+			sequence: ["anim attacker atk-move", "wait 0.5", "vfx soak_fast", "sfx attacker 487-0_soak", "wait 1.0", "sys ui-sync", "sys complete"];
+		}
+	>
+>;
 export type MoveSequenceSettingsSolarBeam = S<
 	MoveSequenceSettings<
 		"sequence_solar_beam",
@@ -3696,6 +3704,7 @@ export type MoveSequenceSettingsMasterfileEntry =
 	| MoveSequenceSettingsSmackDownFast
 	| MoveSequenceSettingsSnarlFast
 	| MoveSequenceSettingsSnipeShot
+	| MoveSequenceSettingsSoakFast
 	| MoveSequenceSettingsSolarBeam
 	| MoveSequenceSettingsSpacialRend
 	| MoveSequenceSettingsSparkFast

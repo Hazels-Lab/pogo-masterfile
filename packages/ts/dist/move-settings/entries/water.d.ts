@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 38 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "water", 39 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -606,6 +606,26 @@ export type MoveSettingsV0593MoveDive = S<
 		}
 	>
 >;
+export type MoveSettingsV0616MoveSoakFast = S<
+	MoveSettings<
+		"V0616_MOVE_SOAK_FAST",
+		{
+			accuracyChance: 1;
+			animationId: 4;
+			damageWindowEndMs: 1000;
+			damageWindowStartMs: 400;
+			durationMs: 1000;
+			energyDelta: 18;
+			movementId: "SOAK_FAST";
+			pokemonType: "POKEMON_TYPE_WATER";
+			power: 6;
+			staminaLossScalar: 0.01;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "soak_fast";
+		}
+	>
+>;
 export type MoveSettingsVmMoveTempEvolutionMegaV0121PokemonStarmie = S<
 	MoveSettings<
 		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE",
@@ -788,6 +808,7 @@ export type MoveSettingsWaterMasterfileEntry =
 	| MoveSettingsV0488MoveChillingWater
 	| MoveSettingsV0592MoveSnipeShot
 	| MoveSettingsV0593MoveDive
+	| MoveSettingsV0616MoveSoakFast
 	| MoveSettingsVmMoveTempEvolutionMegaV0121PokemonStarmie
 	| MoveSettingsVmMoveTempEvolutionMegaV0658PokemonGreninja
 	| MoveSettingsVnBm009

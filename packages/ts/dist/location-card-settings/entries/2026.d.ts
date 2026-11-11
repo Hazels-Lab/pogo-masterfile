@@ -37,6 +37,7 @@ export type LocationCardSettings2026ComicconMalaga = S<
 	LocationCardSettings<
 		"LC_2026_COMICCON_MALAGA",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_2026_ComicCon_Malaga";
 		}
 	>
@@ -56,6 +57,7 @@ export type LocationCardSettings2026FcSeoul = S<
 	LocationCardSettings<
 		"LC_2026_FC_SEOUL",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_fc2026_seoul";
 		}
 	>
@@ -103,6 +105,7 @@ export type LocationCardSettings2026LondonNo001 = S<
 	LocationCardSettings<
 		"LC_2026_LONDON_NO_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_nightOut2026_London";
 		}
 	>
@@ -122,6 +125,7 @@ export type LocationCardSettings2026LosangelesNo001 = S<
 	LocationCardSettings<
 		"LC_2026_LOSANGELES_NO_001",
 		{
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_nightOut2026_LA";
 		}
 	>

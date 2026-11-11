@@ -30,7 +30,6 @@ pub struct MaxMoveBonus {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct MegaMoveBonus {
-    pub attack_multiplier: Option<f64>,
     pub extra_mega_raid_shield_break: Option<u64>,
     pub special_move: String,
     pub visible_appraisal_star_tiers: Option<[u64; 2]>,
@@ -42,7 +41,6 @@ pub struct SlowFreezeBonus {
     pub catch_circle_outer_time_scale_override: f64,
     pub catch_circle_speed_change_threshold: f64,
     pub catch_circle_time_scale_override: f64,
-    pub catch_rate_increase_multiplier: f64,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

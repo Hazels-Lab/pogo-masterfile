@@ -121,6 +121,10 @@ const (
 	IapItemDisplayTemplateIDBundleGowa20242                                            IapItemDisplayTemplateID = "bundle.gowa2024.2"
 	IapItemDisplayTemplateIDBundleGowa20243                                            IapItemDisplayTemplateID = "bundle.gowa2024.3"
 	IapItemDisplayTemplateIDBundleGowa20244                                            IapItemDisplayTemplateID = "bundle.gowa2024.4"
+	IapItemDisplayTemplateIDBundleGowa20261                                            IapItemDisplayTemplateID = "bundle.gowa2026.1"
+	IapItemDisplayTemplateIDBundleGowa20262                                            IapItemDisplayTemplateID = "bundle.gowa2026.2"
+	IapItemDisplayTemplateIDBundleGowa20263                                            IapItemDisplayTemplateID = "bundle.gowa2026.3"
+	IapItemDisplayTemplateIDBundleGowa20264                                            IapItemDisplayTemplateID = "bundle.gowa2026.4"
 	IapItemDisplayTemplateIDBundleGpdindialaunch1                                      IapItemDisplayTemplateID = "bundle.gpdindialaunch.1"
 	IapItemDisplayTemplateIDBundleGpmay20231                                           IapItemDisplayTemplateID = "bundle.gpmay2023.1"
 	IapItemDisplayTemplateIDBundleGwlatam20251                                         IapItemDisplayTemplateID = "bundle.gwlatam2025.1"
@@ -1216,6 +1220,10 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDBundleGowa20242,
 	IapItemDisplayTemplateIDBundleGowa20243,
 	IapItemDisplayTemplateIDBundleGowa20244,
+	IapItemDisplayTemplateIDBundleGowa20261,
+	IapItemDisplayTemplateIDBundleGowa20262,
+	IapItemDisplayTemplateIDBundleGowa20263,
+	IapItemDisplayTemplateIDBundleGowa20264,
 	IapItemDisplayTemplateIDBundleGpdindialaunch1,
 	IapItemDisplayTemplateIDBundleGpmay20231,
 	IapItemDisplayTemplateIDBundleGwlatam20251,

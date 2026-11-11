@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1171 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1170 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -561,23 +561,6 @@ export type PokemonExtendedSettingsV0035PokemonClefairyNormal = S<
 				xxsLowerBound: 0.294;
 			};
 			uniqueId: "CLEFAIRY";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0036PokemonClefableNormal = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0036_POKEMON_CLEFABLE_NORMAL",
-		{
-			form: "CLEFABLE_NORMAL";
-			sizeSettings: {
-				mLowerBound: 0.975;
-				mUpperBound: 1.625;
-				xlUpperBound: 1.95;
-				xsLowerBound: 0.65;
-				xxlUpperBound: 2.275;
-				xxsLowerBound: 0.637;
-			};
-			uniqueId: "CLEFABLE";
 		}
 	>
 >;
@@ -20095,7 +20078,6 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0033PokemonNidorinoNormal
 	| PokemonExtendedSettingsV0034PokemonNidokingNormal
 	| PokemonExtendedSettingsV0035PokemonClefairyNormal
-	| PokemonExtendedSettingsV0036PokemonClefableNormal
 	| PokemonExtendedSettingsV0037PokemonVulpixAlola
 	| PokemonExtendedSettingsV0037PokemonVulpixNormal
 	| PokemonExtendedSettingsV0038PokemonNinetalesAlola

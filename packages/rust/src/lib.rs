@@ -196,8 +196,8 @@ pub enum MasterfileEntry {
     SettingsOverrideRule(settings_override_rule::SettingsOverrideRuleEntry),
     ItemSettings(item_settings::ItemSettingsEntry),
     MegaEvoLevelSettings(mega_evo_level_settings::MegaEvoLevelSettingsEntry),
-    CombatLeague(combat_league::CombatLeagueEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    CombatLeague(combat_league::CombatLeagueEntry),
     InvasionNpcDisplaySettings(invasion_npc_display_settings::InvasionNpcDisplaySettingsEntry),
     LevelUpRewards(level_up_rewards::LevelUpRewardsEntry),
     EvolutionChainDisplaySettings(
@@ -453,8 +453,8 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "megaEvoLevelSettings" => {
                     serde_json::from_value(value).map(Self::MegaEvoLevelSettings)
                 }
-                "combatLeague" => serde_json::from_value(value).map(Self::CombatLeague),
                 "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
+                "combatLeague" => serde_json::from_value(value).map(Self::CombatLeague),
                 "invasionNpcDisplaySettings" => {
                     serde_json::from_value(value).map(Self::InvasionNpcDisplaySettings)
                 }

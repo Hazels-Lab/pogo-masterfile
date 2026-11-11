@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "moveSettings", split "fairy", 12 entries.
+// Generated from Pokémon GO masterfile — group "moveSettings", split "fairy", 13 entries.
 
 import type { S } from "../../_utils";
 import type { MoveSettings } from "../types";
@@ -189,6 +189,28 @@ export type MoveSettingsV0390MoveNaturesMadness = S<
 		}
 	>
 >;
+export type MoveSettingsVmMoveTempEvolutionMegaV0036PokemonClefable = S<
+	MoveSettings<
+		"VM_MOVE_TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE",
+		{
+			accuracyChance: 1;
+			animationId: 5;
+			criticalChance: 0.05;
+			damageWindowEndMs: 3800;
+			damageWindowStartMs: 2300;
+			durationMs: 4000;
+			energyDelta: -100;
+			isLocked: true;
+			movementId: "TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE";
+			pokemonType: "POKEMON_TYPE_FAIRY";
+			power: 160;
+			staminaLossScalar: 0.095;
+			trainerLevelMax: 100;
+			trainerLevelMin: 1;
+			vfxName: "moonblast";
+		}
+	>
+>;
 export type MoveSettingsVnBm011 = S<
 	MoveSettings<
 		"VN_BM_011",
@@ -254,6 +276,7 @@ export type MoveSettingsFairyMasterfileEntry =
 	| MoveSettingsV0350MoveFairyWindFast
 	| MoveSettingsV0387MoveGeomancyFast
 	| MoveSettingsV0390MoveNaturesMadness
+	| MoveSettingsVmMoveTempEvolutionMegaV0036PokemonClefable
 	| MoveSettingsVnBm011
 	| MoveSettingsVnBm040
 	| MoveSettingsVnBm042;

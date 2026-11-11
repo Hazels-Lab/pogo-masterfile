@@ -31,6 +31,7 @@ export interface PokemonFamilyData {
 		| "CAMERUPT"
 		| "CHANDELURE"
 		| "CHESNAUGHT"
+		| "CLEFABLE"
 		| "DELPHOX"
 		| "DIANCIE"
 		| "DRAGONITE"

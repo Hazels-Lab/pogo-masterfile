@@ -44,6 +44,7 @@ const (
 	FeatureGateTemplateIDEventPassBonusQuestNoCollapseFeatureGateCr                     FeatureGateTemplateID = "EVENT_PASS_BONUS_QUEST_NO_COLLAPSE_FEATURE_GATE_CR"
 	FeatureGateTemplateIDEventPassBushFeatureGateCr                                     FeatureGateTemplateID = "EVENT_PASS_BUSH_FEATURE_GATE_CR"
 	FeatureGateTemplateIDEventPassEncounterLoadTransitionFeatureGateCr                  FeatureGateTemplateID = "EVENT_PASS_ENCOUNTER_LOAD_TRANSITION_FEATURE_GATE_CR"
+	FeatureGateTemplateIDEventPassMissingTierProtectionFeatureGateSr                    FeatureGateTemplateID = "EVENT_PASS_MISSING_TIER_PROTECTION_FEATURE_GATE_SR"
 	FeatureGateTemplateIDEventPassWidgetForceRebuildOptimizationFeatureGate             FeatureGateTemplateID = "EVENT_PASS_WIDGET_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE"
 	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate                            FeatureGateTemplateID = "EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE"
 	FeatureGateTemplateIDExpireMinuteStringFeatureGateCr                                FeatureGateTemplateID = "EXPIRE_MINUTE_STRING_FEATURE_GATE_CR"
@@ -59,6 +60,7 @@ const (
 	FeatureGateTemplateIDGymSpriteFixFeatureGate                                        FeatureGateTemplateID = "GYM_SPRITE_FIX_FEATURE_GATE"
 	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate                                  FeatureGateTemplateID = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE"
 	FeatureGateTemplateIDImmersiveCatchSummaryFeatureGate                               FeatureGateTemplateID = "IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE"
+	FeatureGateTemplateIDImpersonationStatSyncFeatureGateSr                             FeatureGateTemplateID = "IMPERSONATION_STAT_SYNC_FEATURE_GATE_SR"
 	FeatureGateTemplateIDItemUseSortContextFeatureGate                                  FeatureGateTemplateID = "ITEM_USE_SORT_CONTEXT_FEATURE_GATE"
 	FeatureGateTemplateIDLocationCardBackgroundsFeatureGate                             FeatureGateTemplateID = "LOCATION_CARD_BACKGROUNDS_FEATURE_GATE"
 	FeatureGateTemplateIDLocationCardBackgroundsRendererFeatureGate                     FeatureGateTemplateID = "LOCATION_CARD_BACKGROUNDS_RENDERER_FEATURE_GATE"
@@ -77,6 +79,7 @@ const (
 	FeatureGateTemplateIDNeutralAvatarShopItemForceRebuildOptimizationFeatureGate       FeatureGateTemplateID = "NEUTRAL_AVATAR_SHOP_ITEM_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE"
 	FeatureGateTemplateIDNpcGiftAutoClaimFeatureGate                                    FeatureGateTemplateID = "NPC_GIFT_AUTO_CLAIM_FEATURE_GATE"
 	FeatureGateTemplateIDPairedDeviceHelpFeatureGate                                    FeatureGateTemplateID = "PAIRED_DEVICE_HELP_FEATURE_GATE"
+	FeatureGateTemplateIDPhotobombTimePortalFutureFeatureGateSr                         FeatureGateTemplateID = "PHOTOBOMB_TIME_PORTAL_FUTURE_FEATURE_GATE_SR"
 	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate                    FeatureGateTemplateID = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE"
 	FeatureGateTemplateIDPokedexDefenderGymFixFeatureGate                               FeatureGateTemplateID = "POKEDEX_DEFENDER_GYM_FIX_FEATURE_GATE"
 	FeatureGateTemplateIDPokedexScrollingFixFeatureGate                                 FeatureGateTemplateID = "POKEDEX_SCROLLING_FIX_FEATURE_GATE"
@@ -84,7 +87,9 @@ const (
 	FeatureGateTemplateIDPoolTrimmerFeatureGate                                         FeatureGateTemplateID = "POOL_TRIMMER_FEATURE_GATE"
 	FeatureGateTemplateIDPrivateMaxLobbiesFeatureGate                                   FeatureGateTemplateID = "PRIVATE_MAX_LOBBIES_FEATURE_GATE"
 	FeatureGateTemplateIDProfileFtueRewardsBannerRecheckFeatureGate                     FeatureGateTemplateID = "PROFILE_FTUE_REWARDS_BANNER_RECHECK_FEATURE_GATE"
+	FeatureGateTemplateIDQuestProgressAggregationFeatureGateSr                          FeatureGateTemplateID = "QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR"
 	FeatureGateTemplateIDQuestTotalDaysCatchResultFixFeatureGate                        FeatureGateTemplateID = "QUEST_TOTAL_DAYS_CATCH_RESULT_FIX_FEATURE_GATE"
+	FeatureGateTemplateIDRaidRsvpRemoteJoinFixFeatureGateCr                             FeatureGateTemplateID = "RAID_RSVP_REMOTE_JOIN_FIX_FEATURE_GATE_CR"
 	FeatureGateTemplateIDRegisterDeviceFeatureGate                                      FeatureGateTemplateID = "REGISTER_DEVICE_FEATURE_GATE"
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                             FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
 	FeatureGateTemplateIDRemoteTradeSpeedGiftFixFeatureGate                             FeatureGateTemplateID = "REMOTE_TRADE_SPEED_GIFT_FIX_FEATURE_GATE"
@@ -96,6 +101,7 @@ const (
 	FeatureGateTemplateIDStampRallyMiniGameAnimationLockFixFeatureGate                  FeatureGateTemplateID = "STAMP_RALLY_MINI_GAME_ANIMATION_LOCK_FIX_FEATURE_GATE"
 	FeatureGateTemplateIDStampRallyTimeTravelClientFeatureGate                          FeatureGateTemplateID = "STAMP_RALLY_TIME_TRAVEL_CLIENT_FEATURE_GATE"
 	FeatureGateTemplateIDStampRallyTimeTravelServerFeatureGate                          FeatureGateTemplateID = "STAMP_RALLY_TIME_TRAVEL_SERVER_FEATURE_GATE"
+	FeatureGateTemplateIDTimeTravelPowerspotSchedulingFeatureGateSr                     FeatureGateTemplateID = "TIME_TRAVEL_POWERSPOT_SCHEDULING_FEATURE_GATE_SR"
 	FeatureGateTemplateIDTodayViewInnerTabEqualWidthFeatureGateCr                       FeatureGateTemplateID = "TODAY_VIEW_INNER_TAB_EQUAL_WIDTH_FEATURE_GATE_CR"
 	FeatureGateTemplateIDTodayViewInnerTabsHeaderFeatureGate                            FeatureGateTemplateID = "TODAY_VIEW_INNER_TABS_HEADER_FEATURE_GATE"
 	FeatureGateTemplateIDTodayViewV3ClaimRerenderFeatureGate                            FeatureGateTemplateID = "TODAY_VIEW_V3_CLAIM_RERENDER_FEATURE_GATE"
@@ -162,6 +168,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDEventPassBonusQuestNoCollapseFeatureGateCr,
 	FeatureGateTemplateIDEventPassBushFeatureGateCr,
 	FeatureGateTemplateIDEventPassEncounterLoadTransitionFeatureGateCr,
+	FeatureGateTemplateIDEventPassMissingTierProtectionFeatureGateSr,
 	FeatureGateTemplateIDEventPassWidgetForceRebuildOptimizationFeatureGate,
 	FeatureGateTemplateIDEventTicketDatetimeRangeFeatureGate,
 	FeatureGateTemplateIDExpireMinuteStringFeatureGateCr,
@@ -177,6 +184,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDGymSpriteFixFeatureGate,
 	FeatureGateTemplateIDHideUiInMiniorIbfcFeatureGate,
 	FeatureGateTemplateIDImmersiveCatchSummaryFeatureGate,
+	FeatureGateTemplateIDImpersonationStatSyncFeatureGateSr,
 	FeatureGateTemplateIDItemUseSortContextFeatureGate,
 	FeatureGateTemplateIDLocationCardBackgroundsFeatureGate,
 	FeatureGateTemplateIDLocationCardBackgroundsRendererFeatureGate,
@@ -195,6 +203,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDNeutralAvatarShopItemForceRebuildOptimizationFeatureGate,
 	FeatureGateTemplateIDNpcGiftAutoClaimFeatureGate,
 	FeatureGateTemplateIDPairedDeviceHelpFeatureGate,
+	FeatureGateTemplateIDPhotobombTimePortalFutureFeatureGateSr,
 	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate,
 	FeatureGateTemplateIDPokedexDefenderGymFixFeatureGate,
 	FeatureGateTemplateIDPokedexScrollingFixFeatureGate,
@@ -202,7 +211,9 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDPoolTrimmerFeatureGate,
 	FeatureGateTemplateIDPrivateMaxLobbiesFeatureGate,
 	FeatureGateTemplateIDProfileFtueRewardsBannerRecheckFeatureGate,
+	FeatureGateTemplateIDQuestProgressAggregationFeatureGateSr,
 	FeatureGateTemplateIDQuestTotalDaysCatchResultFixFeatureGate,
+	FeatureGateTemplateIDRaidRsvpRemoteJoinFixFeatureGateCr,
 	FeatureGateTemplateIDRegisterDeviceFeatureGate,
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,
 	FeatureGateTemplateIDRemoteTradeSpeedGiftFixFeatureGate,
@@ -214,6 +225,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDStampRallyMiniGameAnimationLockFixFeatureGate,
 	FeatureGateTemplateIDStampRallyTimeTravelClientFeatureGate,
 	FeatureGateTemplateIDStampRallyTimeTravelServerFeatureGate,
+	FeatureGateTemplateIDTimeTravelPowerspotSchedulingFeatureGateSr,
 	FeatureGateTemplateIDTodayViewInnerTabEqualWidthFeatureGateCr,
 	FeatureGateTemplateIDTodayViewInnerTabsHeaderFeatureGate,
 	FeatureGateTemplateIDTodayViewV3ClaimRerenderFeatureGate,

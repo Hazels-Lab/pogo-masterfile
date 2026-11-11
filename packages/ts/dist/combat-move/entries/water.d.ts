@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "combatMove", split "water", 32 entries.
+// Generated from Pokémon GO masterfile — group "combatMove", split "water", 33 entries.
 
 import type { S } from "../../_utils";
 import type { CombatMove } from "../types";
@@ -407,6 +407,19 @@ export type CombatMoveV0593MoveDive = S<
 		}
 	>
 >;
+export type CombatMoveV0616MoveSoakFast = S<
+	CombatMove<
+		"COMBAT_V0616_MOVE_SOAK_FAST",
+		{
+			durationTurns: 1;
+			energyDelta: 8;
+			power: 6;
+			type: "POKEMON_TYPE_WATER";
+			uniqueId: "SOAK_FAST";
+			vfxName: "soak_fast";
+		}
+	>
+>;
 export type CombatMoveVmMoveTempEvolutionMegaV0121PokemonStarmie = S<
 	CombatMove<
 		"COMBAT_VM_MOVE_TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE",
@@ -467,5 +480,6 @@ export type CombatMoveWaterMasterfileEntry =
 	| CombatMoveV0488MoveChillingWater
 	| CombatMoveV0592MoveSnipeShot
 	| CombatMoveV0593MoveDive
+	| CombatMoveV0616MoveSoakFast
 	| CombatMoveVmMoveTempEvolutionMegaV0121PokemonStarmie
 	| CombatMoveVmMoveTempEvolutionMegaV0658PokemonGreninja;

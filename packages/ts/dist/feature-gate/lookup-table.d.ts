@@ -40,6 +40,7 @@ import type {
 	FeatureGateEventPassBonusQuestNoCollapseFeatureGateCr,
 	FeatureGateEventPassBushFeatureGateCr,
 	FeatureGateEventPassEncounterLoadTransitionFeatureGateCr,
+	FeatureGateEventPassMissingTierProtectionFeatureGateSr,
 	FeatureGateEventPassWidgetForceRebuildOptimization,
 	FeatureGateEventTicketDatetimeRange,
 	FeatureGateExpireMinuteStringFeatureGateCr,
@@ -55,6 +56,7 @@ import type {
 	FeatureGateGymSpriteFix,
 	FeatureGateHideUiInMiniorIbfc,
 	FeatureGateImmersiveCatchSummary,
+	FeatureGateImpersonationStatSyncFeatureGateSr,
 	FeatureGateItemUseSortContext,
 	FeatureGateLocationCardBackgrounds,
 	FeatureGateLocationCardBackgroundsRenderer,
@@ -73,6 +75,7 @@ import type {
 	FeatureGateNeutralAvatarShopItemForceRebuildOptimization,
 	FeatureGateNpcGiftAutoClaim,
 	FeatureGatePairedDeviceHelp,
+	FeatureGatePhotobombTimePortalFutureFeatureGateSr,
 	FeatureGatePlayerEncounterRandomizationSalt,
 	FeatureGatePokedexDefenderGymFix,
 	FeatureGatePokedexScrollingFix,
@@ -80,7 +83,9 @@ import type {
 	FeatureGatePoolTrimmer,
 	FeatureGatePrivateMaxLobbies,
 	FeatureGateProfileFtueRewardsBannerRecheck,
+	FeatureGateQuestProgressAggregationFeatureGateSr,
 	FeatureGateQuestTotalDaysCatchResultFix,
+	FeatureGateRaidRsvpRemoteJoinFixFeatureGateCr,
 	FeatureGateRegisterDevice,
 	FeatureGateRemoteTradeImprovements,
 	FeatureGateRemoteTradeSpeedGiftFix,
@@ -92,6 +97,7 @@ import type {
 	FeatureGateStampRallyMiniGameAnimationLockFix,
 	FeatureGateStampRallyTimeTravelClient,
 	FeatureGateStampRallyTimeTravelServer,
+	FeatureGateTimeTravelPowerspotSchedulingFeatureGateSr,
 	FeatureGateTodayViewInnerTabEqualWidthFeatureGateCr,
 	FeatureGateTodayViewInnerTabsHeader,
 	FeatureGateTodayViewV3ClaimRerender,
@@ -158,6 +164,7 @@ export interface FeatureGateLookup {
 	EVENT_PASS_BONUS_QUEST_NO_COLLAPSE_FEATURE_GATE_CR: FeatureGateEventPassBonusQuestNoCollapseFeatureGateCr;
 	EVENT_PASS_BUSH_FEATURE_GATE_CR: FeatureGateEventPassBushFeatureGateCr;
 	EVENT_PASS_ENCOUNTER_LOAD_TRANSITION_FEATURE_GATE_CR: FeatureGateEventPassEncounterLoadTransitionFeatureGateCr;
+	EVENT_PASS_MISSING_TIER_PROTECTION_FEATURE_GATE_SR: FeatureGateEventPassMissingTierProtectionFeatureGateSr;
 	EVENT_PASS_WIDGET_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE: FeatureGateEventPassWidgetForceRebuildOptimization;
 	EVENT_TICKET_DATETIME_RANGE_FEATURE_GATE: FeatureGateEventTicketDatetimeRange;
 	EXPIRE_MINUTE_STRING_FEATURE_GATE_CR: FeatureGateExpireMinuteStringFeatureGateCr;
@@ -173,6 +180,7 @@ export interface FeatureGateLookup {
 	GYM_SPRITE_FIX_FEATURE_GATE: FeatureGateGymSpriteFix;
 	HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE: FeatureGateHideUiInMiniorIbfc;
 	IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE: FeatureGateImmersiveCatchSummary;
+	IMPERSONATION_STAT_SYNC_FEATURE_GATE_SR: FeatureGateImpersonationStatSyncFeatureGateSr;
 	ITEM_USE_SORT_CONTEXT_FEATURE_GATE: FeatureGateItemUseSortContext;
 	LOCATION_CARD_BACKGROUNDS_FEATURE_GATE: FeatureGateLocationCardBackgrounds;
 	LOCATION_CARD_BACKGROUNDS_RENDERER_FEATURE_GATE: FeatureGateLocationCardBackgroundsRenderer;
@@ -191,6 +199,7 @@ export interface FeatureGateLookup {
 	NEUTRAL_AVATAR_SHOP_ITEM_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE: FeatureGateNeutralAvatarShopItemForceRebuildOptimization;
 	NPC_GIFT_AUTO_CLAIM_FEATURE_GATE: FeatureGateNpcGiftAutoClaim;
 	PAIRED_DEVICE_HELP_FEATURE_GATE: FeatureGatePairedDeviceHelp;
+	PHOTOBOMB_TIME_PORTAL_FUTURE_FEATURE_GATE_SR: FeatureGatePhotobombTimePortalFutureFeatureGateSr;
 	PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE: FeatureGatePlayerEncounterRandomizationSalt;
 	POKEDEX_DEFENDER_GYM_FIX_FEATURE_GATE: FeatureGatePokedexDefenderGymFix;
 	POKEDEX_SCROLLING_FIX_FEATURE_GATE: FeatureGatePokedexScrollingFix;
@@ -198,7 +207,9 @@ export interface FeatureGateLookup {
 	POOL_TRIMMER_FEATURE_GATE: FeatureGatePoolTrimmer;
 	PRIVATE_MAX_LOBBIES_FEATURE_GATE: FeatureGatePrivateMaxLobbies;
 	PROFILE_FTUE_REWARDS_BANNER_RECHECK_FEATURE_GATE: FeatureGateProfileFtueRewardsBannerRecheck;
+	QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR: FeatureGateQuestProgressAggregationFeatureGateSr;
 	QUEST_TOTAL_DAYS_CATCH_RESULT_FIX_FEATURE_GATE: FeatureGateQuestTotalDaysCatchResultFix;
+	RAID_RSVP_REMOTE_JOIN_FIX_FEATURE_GATE_CR: FeatureGateRaidRsvpRemoteJoinFixFeatureGateCr;
 	REGISTER_DEVICE_FEATURE_GATE: FeatureGateRegisterDevice;
 	REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE: FeatureGateRemoteTradeImprovements;
 	REMOTE_TRADE_SPEED_GIFT_FIX_FEATURE_GATE: FeatureGateRemoteTradeSpeedGiftFix;
@@ -210,6 +221,7 @@ export interface FeatureGateLookup {
 	STAMP_RALLY_MINI_GAME_ANIMATION_LOCK_FIX_FEATURE_GATE: FeatureGateStampRallyMiniGameAnimationLockFix;
 	STAMP_RALLY_TIME_TRAVEL_CLIENT_FEATURE_GATE: FeatureGateStampRallyTimeTravelClient;
 	STAMP_RALLY_TIME_TRAVEL_SERVER_FEATURE_GATE: FeatureGateStampRallyTimeTravelServer;
+	TIME_TRAVEL_POWERSPOT_SCHEDULING_FEATURE_GATE_SR: FeatureGateTimeTravelPowerspotSchedulingFeatureGateSr;
 	TODAY_VIEW_INNER_TAB_EQUAL_WIDTH_FEATURE_GATE_CR: FeatureGateTodayViewInnerTabEqualWidthFeatureGateCr;
 	TODAY_VIEW_INNER_TABS_HEADER_FEATURE_GATE: FeatureGateTodayViewInnerTabsHeader;
 	TODAY_VIEW_V3_CLAIM_RERENDER_FEATURE_GATE: FeatureGateTodayViewV3ClaimRerender;

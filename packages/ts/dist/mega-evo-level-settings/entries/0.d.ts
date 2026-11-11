@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "0", 34 entries.
+// Generated from Pokémon GO masterfile — group "megaEvoLevelSettings", split "0", 35 entries.
 
 import type { S } from "../../_utils";
 import type { MegaEvoLevelSettings } from "../types";
@@ -62,6 +62,22 @@ export type MegaEvoLevelSettings0V0026PokemonRaichu = S<
 				sameTypeExtraCatchCandy: 1;
 			};
 			pokemonId: "RAICHU";
+			progression: object;
+		}
+	>
+>;
+export type MegaEvoLevelSettings0V0036PokemonClefable = S<
+	MegaEvoLevelSettings<
+		"MEGA_EVOLUTION_LEVEL_0_V0036_POKEMON_CLEFABLE",
+		{
+			cooldown: {
+				bypassCostInitial: 300;
+				durationMs: "1209600000";
+			};
+			effects: {
+				sameTypeExtraCatchCandy: 1;
+			};
+			pokemonId: "CLEFABLE";
 			progression: object;
 		}
 	>
@@ -552,6 +568,7 @@ export type MegaEvoLevelSettings0MasterfileEntry =
 	| MegaEvoLevelSettings0V0015PokemonBeedrill
 	| MegaEvoLevelSettings0V0018PokemonPidgeot
 	| MegaEvoLevelSettings0V0026PokemonRaichu
+	| MegaEvoLevelSettings0V0036PokemonClefable
 	| MegaEvoLevelSettings0V0071PokemonVictreebel
 	| MegaEvoLevelSettings0V0080PokemonSlowbro
 	| MegaEvoLevelSettings0V0121PokemonStarmie

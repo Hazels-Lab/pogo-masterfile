@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 482 entries.
+// Generated from Pokémon GO masterfile — group "pokemonFamily", split "misc", 481 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonFamily } from "../types";
@@ -56,14 +56,6 @@ export type PokemonFamilyV0032FamilyNidoran = S<
 		"V0032_FAMILY_NIDORAN",
 		{
 			familyId: "FAMILY_NIDORAN_MALE";
-		}
-	>
->;
-export type PokemonFamilyV0035FamilyClefairy = S<
-	PokemonFamily<
-		"V0035_FAMILY_CLEFAIRY",
-		{
-			familyId: "FAMILY_CLEFAIRY";
 		}
 	>
 >;
@@ -3868,7 +3860,6 @@ export type PokemonFamilyMiscMasterfileEntry =
 	| PokemonFamilyV0027FamilySandshrew
 	| PokemonFamilyV0029FamilyNidoran
 	| PokemonFamilyV0032FamilyNidoran
-	| PokemonFamilyV0035FamilyClefairy
 	| PokemonFamilyV0037FamilyVulpix
 	| PokemonFamilyV0039FamilyJigglypuff
 	| PokemonFamilyV0041FamilyZubat

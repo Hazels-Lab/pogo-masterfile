@@ -484,6 +484,8 @@ export type LocationCardSettingsSpecialbackgroundExtra202502 = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_EXTRA_2025_02",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_taipeiFlowerFestival_2026";
 		}
 	>
@@ -512,6 +514,8 @@ export type LocationCardSettingsSpecialbackgroundKr2025Lotte01 = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_KR2025_LOTTE_01",
 		{
+			backgroundEligibilityStatus: "ELIGIBLE";
+			cardTreatment: "CROP_BLEED";
 			imageUrl: "lc_LotteGiants";
 		}
 	>

@@ -406,6 +406,7 @@ export interface PokemonSettingsData {
 		raidBossDistanceOffset?: number;
 		specialMove?:
 			| "TEMP_EVOLUTION_MEGA_V0015_POKEMON_BEEDRILL"
+			| "TEMP_EVOLUTION_MEGA_V0036_POKEMON_CLEFABLE"
 			| "TEMP_EVOLUTION_MEGA_V0071_POKEMON_VICTREEBEL"
 			| "TEMP_EVOLUTION_MEGA_V0121_POKEMON_STARMIE"
 			| "TEMP_EVOLUTION_MEGA_V0149_POKEMON_DRAGONITE"
@@ -430,7 +431,7 @@ export interface PokemonSettingsData {
 			baseStamina: number;
 		};
 		tempEvoId?: "TEMP_EVOLUTION_MEGA" | "TEMP_EVOLUTION_MEGA_X" | "TEMP_EVOLUTION_MEGA_Y" | "TEMP_EVOLUTION_PRIMAL";
-		typeOverride1?: Exclude<TypeEffectiveTemplateID, "POKEMON_TYPE_FAIRY" | "POKEMON_TYPE_FLYING" | "POKEMON_TYPE_POISON">;
+		typeOverride1?: Exclude<TypeEffectiveTemplateID, "POKEMON_TYPE_FLYING" | "POKEMON_TYPE_POISON">;
 		typeOverride2?:
 			| "POKEMON_TYPE_DARK"
 			| "POKEMON_TYPE_DRAGON"

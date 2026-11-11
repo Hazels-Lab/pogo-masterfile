@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 42 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "temp-evo-overrides", 43 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -58,6 +58,35 @@ export type PokemonExtendedSettingsV0018PokemonPidgeot = S<
 				},
 			];
 			uniqueId: "PIDGEOT";
+		}
+	>
+>;
+export type PokemonExtendedSettingsV0036PokemonClefable = S<
+	PokemonExtendedSettings<
+		"EXTENDED_V0036_POKEMON_CLEFABLE",
+		{
+			sizeSettings: {
+				mLowerBound: 0.975;
+				mUpperBound: 1.625;
+				xlUpperBound: 1.95;
+				xsLowerBound: 0.65;
+				xxlUpperBound: 2.275;
+				xxsLowerBound: 0.637;
+			};
+			tempEvoOverrides: [
+				{
+					sizeSettings: {
+						mLowerBound: 1.275;
+						mUpperBound: 2.125;
+						xlUpperBound: 2.55;
+						xsLowerBound: 0.85;
+						xxlUpperBound: 2.975;
+						xxsLowerBound: 0.476;
+					};
+					tempEvoId: "TEMP_EVOLUTION_MEGA";
+				},
+			];
+			uniqueId: "CLEFABLE";
 		}
 	>
 >;
@@ -1236,6 +1265,7 @@ export type PokemonExtendedSettingsV0719PokemonDiancie = S<
 export type PokemonExtendedSettingsTempEvoOverridesMasterfileEntry =
 	| PokemonExtendedSettingsV0015PokemonBeedrill
 	| PokemonExtendedSettingsV0018PokemonPidgeot
+	| PokemonExtendedSettingsV0036PokemonClefable
 	| PokemonExtendedSettingsV0071PokemonVictreebel
 	| PokemonExtendedSettingsV0080PokemonSlowbro
 	| PokemonExtendedSettingsV0115PokemonKangaskhan

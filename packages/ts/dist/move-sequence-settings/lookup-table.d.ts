@@ -277,6 +277,7 @@ import type {
 	MoveSequenceSettingsSmackDownFast,
 	MoveSequenceSettingsSnarlFast,
 	MoveSequenceSettingsSnipeShot,
+	MoveSequenceSettingsSoakFast,
 	MoveSequenceSettingsSolarBeam,
 	MoveSequenceSettingsSpacialRend,
 	MoveSequenceSettingsSparkFast,
@@ -618,6 +619,7 @@ export interface MoveSequenceSettingsLookup {
 	sequence_smack_down_fast: MoveSequenceSettingsSmackDownFast;
 	sequence_snarl_fast: MoveSequenceSettingsSnarlFast;
 	sequence_snipe_shot: MoveSequenceSettingsSnipeShot;
+	sequence_soak_fast: MoveSequenceSettingsSoakFast;
 	sequence_solar_beam: MoveSequenceSettingsSolarBeam;
 	sequence_spacial_rend: MoveSequenceSettingsSpacialRend;
 	sequence_spark_fast: MoveSequenceSettingsSparkFast;

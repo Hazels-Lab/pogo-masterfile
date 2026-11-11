@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 61 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "temporaryEvolutionSettings", 62 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { TemporaryEvolutionSettings } from "../types";
@@ -90,6 +90,20 @@ export type TemporaryEvolutionSettingsV0026PokemonRaichu = S<
 				{
 					assetBundleValue: 52;
 					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA_Y";
+				},
+			];
+		}
+	>
+>;
+export type TemporaryEvolutionSettingsV0036PokemonClefable = S<
+	TemporaryEvolutionSettings<
+		"TEMPORARY_EVOLUTION_V0036_POKEMON_CLEFABLE",
+		{
+			pokemonId: "CLEFABLE";
+			temporaryEvolutions: [
+				{
+					assetBundleValue: 51;
+					temporaryEvolutionId: "TEMP_EVOLUTION_MEGA";
 				},
 			];
 		}
@@ -877,6 +891,7 @@ export type TemporaryEvolutionSettingsMasterfileEntry =
 	| TemporaryEvolutionSettingsV0015PokemonBeedrill
 	| TemporaryEvolutionSettingsV0018PokemonPidgeot
 	| TemporaryEvolutionSettingsV0026PokemonRaichu
+	| TemporaryEvolutionSettingsV0036PokemonClefable
 	| TemporaryEvolutionSettingsV0065PokemonAlakazam
 	| TemporaryEvolutionSettingsV0071PokemonVictreebel
 	| TemporaryEvolutionSettingsV0080PokemonSlowbro

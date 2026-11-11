@@ -35,7 +35,6 @@ export interface NonCombatMoveSettingsData {
 			numAllMaxMoveLevelIncrease: number;
 		};
 		megaMoveBonus?: {
-			attackMultiplier?: number;
 			extraMegaRaidShieldBreak?: number;
 			specialMove: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO" | "TEMP_EVOLUTION_MEGA_Y_V0150_POKEMON_MEWTWO";
 			visibleAppraisalStarTiers?: [number, number];
@@ -44,7 +43,6 @@ export interface NonCombatMoveSettingsData {
 			catchCircleOuterTimeScaleOverride: number;
 			catchCircleSpeedChangeThreshold: number;
 			catchCircleTimeScaleOverride: number;
-			catchRateIncreaseMultiplier: number;
 		};
 		spaceBonus?: {
 			encounterRangeMeters: number;

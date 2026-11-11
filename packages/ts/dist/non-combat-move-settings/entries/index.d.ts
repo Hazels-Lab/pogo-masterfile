@@ -90,7 +90,6 @@ export type NonCombatMoveSettingsV0466MoveFreezeShock = S<
 					catchCircleOuterTimeScaleOverride: 0.5;
 					catchCircleSpeedChangeThreshold: 1;
 					catchCircleTimeScaleOverride: 0.5;
-					catchRateIncreaseMultiplier: 1.25;
 				};
 			};
 			bonusType: "FREEZE_BONUS";
@@ -116,7 +115,6 @@ export type NonCombatMoveSettingsV0467MoveIceBurn = S<
 					catchCircleOuterTimeScaleOverride: 4;
 					catchCircleSpeedChangeThreshold: 1.6;
 					catchCircleTimeScaleOverride: 0.2;
-					catchRateIncreaseMultiplier: 1.5;
 				};
 			};
 			bonusType: "SLOW_BONUS";
@@ -222,7 +220,6 @@ export type NonCombatMoveSettingsVmMoveTempEvolutionMegaXV0150PokemonMewtwo = S<
 		{
 			bonusEffect: {
 				megaMoveBonus: {
-					attackMultiplier: 1.15;
 					extraMegaRaidShieldBreak: 1;
 					specialMove: "TEMP_EVOLUTION_MEGA_X_V0150_POKEMON_MEWTWO";
 				};

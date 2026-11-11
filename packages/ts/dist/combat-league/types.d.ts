@@ -80,7 +80,7 @@ export interface CombatLeagueData {
 			groupCondition?: {
 				pokemonClass: ["POKEMON_CLASS_LEGENDARY", "POKEMON_CLASS_MYTHIC", "POKEMON_CLASS_ULTRA_BEAST"];
 			};
-			name?: "s24_laic_prohibited_pokemon_and_classes" | "s25_euic_prohibited_pokemon";
+			name?: "s24_laic_prohibited_pokemon_and_classes" | "s24_laic_prohibited_types" | "s25_euic_prohibited_pokemon";
 			pokemon: Array<{
 				forms?: Array<string>;
 				id: string;

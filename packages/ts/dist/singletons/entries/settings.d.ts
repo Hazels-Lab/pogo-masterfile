@@ -3127,9 +3127,9 @@ export interface InventorySettings {
 			easyIncubatorBuyEnabled: true;
 			enableEggsNotInventory: true;
 			luckyFriendApplicatorSettingsToggleEnabled: true;
-			maxBagItems: 12000;
+			maxBagItems: 12500;
 			maxItemBoostDurationMs: "86400000";
-			maxPokemon: 12650;
+			maxPokemon: 13150;
 			maxPostcards: 3000;
 			maxStoneACount: 9999;
 			maxTeamChanges: 1;
@@ -6310,7 +6310,11 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_GREAT_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS", "COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS"];
+			allowedVsSeekerLeagueTemplateId: [
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT",
+				"COMBAT_LEAGUE_VS_SEEKER_ULTRA_MEGAS",
+				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES",
+			];
 		};
 	};
 }

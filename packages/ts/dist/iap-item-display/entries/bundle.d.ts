@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 281 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 285 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -1345,6 +1345,66 @@ export type IapItemDisplayBundleGowa20244 = S<
 			spriteId: "bundle.general.adventure.1";
 			title: "sticker_box";
 			totalValue: 72;
+		}
+	>
+>;
+export type IapItemDisplayBundleGowa20261 = S<
+	IapItemDisplay<
+		"bundle.gowa2026.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.gowa2026.1";
+			sortOrder: 1;
+			spriteId: "bundle.general.premiumbox.medium.1";
+			title: "sku.name.web-gowa-2024-box-1";
+		}
+	>
+>;
+export type IapItemDisplayBundleGowa20262 = S<
+	IapItemDisplay<
+		"bundle.gowa2026.2",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.gowa2026.2";
+			sortOrder: 1;
+			spriteId: "bundle2.sprite.b";
+			title: "sku.name.web-gowa-2024-box-2";
+		}
+	>
+>;
+export type IapItemDisplayBundleGowa20263 = S<
+	IapItemDisplay<
+		"bundle.gowa2026.3",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.gowa2026.3";
+			sortOrder: 1;
+			spriteId: "bundle1.sprite.d";
+			title: "sku.name.web-gowa-2024-box-3";
+		}
+	>
+>;
+export type IapItemDisplayBundleGowa20264 = S<
+	IapItemDisplay<
+		"bundle.gowa2026.4",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
+			sku: "bundle.gowa2026.4";
+			sortOrder: 1;
+			spriteId: "bundle.general5.small.1";
+			title: "sku.name.web-gowa-2024-box-4";
 		}
 	>
 >;
@@ -3982,6 +4042,10 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayBundleGowa20242
 	| IapItemDisplayBundleGowa20243
 	| IapItemDisplayBundleGowa20244
+	| IapItemDisplayBundleGowa20261
+	| IapItemDisplayBundleGowa20262
+	| IapItemDisplayBundleGowa20263
+	| IapItemDisplayBundleGowa20264
 	| IapItemDisplayBundleGpdindialaunch1
 	| IapItemDisplayBundleGpmay20231
 	| IapItemDisplayBundleGwlatam20251
