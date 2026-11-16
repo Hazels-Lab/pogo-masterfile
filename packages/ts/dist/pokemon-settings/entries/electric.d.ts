@@ -9776,6 +9776,7 @@ export type PokemonSettingsV0462PokemonMagnezone = S<
 			};
 			candyToEvolve: 25;
 			cinematicMoves: ["ZAP_CANNON", "WILD_CHARGE", "FLASH_CANNON", "MIRROR_SHOT"];
+			eliteCinematicMove: ["MAGNET_BOMB"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 29;
@@ -9855,6 +9856,7 @@ export type PokemonSettingsV0462PokemonMagnezoneNormal = S<
 			};
 			candyToEvolve: 25;
 			cinematicMoves: ["ZAP_CANNON", "WILD_CHARGE", "FLASH_CANNON", "MIRROR_SHOT"];
+			eliteCinematicMove: ["MAGNET_BOMB"];
 			encounter: {
 				attackProbability: 0.2;
 				attackTimerS: 29;

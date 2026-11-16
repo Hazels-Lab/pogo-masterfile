@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 105 entries.
+// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 108 entries.
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -24,6 +24,22 @@ export type FeatureGateAcForegroundCatchPoiFocus = S<
 		"AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE",
 		{
 			status: 812739461;
+		}
+	>
+>;
+export type FeatureGateAcLoBreadChecks = S<
+	FeatureGate<
+		"AC_LO_BREAD_CHECKS_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateAcLoSocChecks = S<
+	FeatureGate<
+		"AC_LO_SOC_CHECKS_FEATURE_GATE",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -579,6 +595,14 @@ export type FeatureGatePokedexScrollingFix = S<
 		}
 	>
 >;
+export type FeatureGatePokemonNameChip = S<
+	FeatureGate<
+		"POKEMON_NAME_CHIP_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGatePokemonSpawnAvoidanceRework = S<
 	FeatureGate<
 		"POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE",
@@ -848,6 +872,8 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateAcForegroundCatchEncounter
 	| FeatureGateAcForegroundCatchMapFocus
 	| FeatureGateAcForegroundCatchPoiFocus
+	| FeatureGateAcLoBreadChecks
+	| FeatureGateAcLoSocChecks
 	| FeatureGateAdminGmNiaOpsOnlyFilterAms
 	| FeatureGateAdventureEffectsInLobby
 	| FeatureGateAms
@@ -917,6 +943,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGatePlayerEncounterRandomizationSalt
 	| FeatureGatePokedexDefenderGymFix
 	| FeatureGatePokedexScrollingFix
+	| FeatureGatePokemonNameChip
 	| FeatureGatePokemonSpawnAvoidanceRework
 	| FeatureGateProfileFtueRewardsBannerRecheck
 	| FeatureGateQuestProgressAggregationFeatureGateSr

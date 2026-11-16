@@ -56,8 +56,8 @@ export type ItemExpirationSettingsEventPassPointLiveOps01 = S<
 	ItemExpirationSettings<
 		"ITEM_EXPIRATION_ITEM_EVENT_PASS_POINT_LIVE_OPS_01",
 		{
-			emergencyExpirationTime: "2026-09-19T10:00:00";
-			expirationTime: "2026-09-18T20:00:00";
+			emergencyExpirationTime: "2026-12-10T10:00:00";
+			expirationTime: "2026-12-09T20:00:00";
 		}
 	>
 >;

@@ -13,6 +13,10 @@ pub enum FeatureGateTemplateId {
     AcForegroundCatchMapFocusFeatureGate,
     #[serde(rename = "AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE")]
     AcForegroundCatchPoiFocusFeatureGate,
+    #[serde(rename = "AC_LO_BREAD_CHECKS_FEATURE_GATE")]
+    AcLoBreadChecksFeatureGate,
+    #[serde(rename = "AC_LO_SOC_CHECKS_FEATURE_GATE")]
+    AcLoSocChecksFeatureGate,
     #[serde(rename = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE")]
     AdminGmNiaOpsOnlyFilterAmsFeatureGate,
     #[serde(rename = "ADV_SYNC_TWO_FEATURE_GATE")]
@@ -163,6 +167,8 @@ pub enum FeatureGateTemplateId {
     PokedexDefenderGymFixFeatureGate,
     #[serde(rename = "POKEDEX_SCROLLING_FIX_FEATURE_GATE")]
     PokedexScrollingFixFeatureGate,
+    #[serde(rename = "POKEMON_NAME_CHIP_FEATURE_GATE")]
+    PokemonNameChipFeatureGate,
     #[serde(rename = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE")]
     PokemonSpawnAvoidanceReworkFeatureGate,
     #[serde(rename = "POOL_TRIMMER_FEATURE_GATE")]

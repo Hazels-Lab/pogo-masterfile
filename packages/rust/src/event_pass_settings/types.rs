@@ -17,8 +17,8 @@ pub struct EventPassTrackUpgradeDescriptions {
     pub pass_track_upgrade_header_description: String,
     pub ranks_to_highlight_rewards: [u64; 3],
     pub track_unlock_image_url: String,
-    pub track_unlock_plus_points_image_url: String,
-    pub track_unlock_plus_points_sku_id: String,
+    pub track_unlock_plus_points_image_url: Option<String>,
+    pub track_unlock_plus_points_sku_id: Option<String>,
     pub track_unlock_sku_id: String,
     pub upgrade_description_key: String,
 }
@@ -26,6 +26,7 @@ pub struct EventPassTrackUpgradeDescriptions {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EventPassDisplaySettings {
+    pub background_configuration: Option<String>,
     pub bonus_boxes: Vec<BonusBoxes>,
     pub event_pass_title_key: String,
     pub event_pass_track_upgrade_descriptions: [EventPassTrackUpgradeDescriptions; 1],

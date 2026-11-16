@@ -15,13 +15,14 @@ type EventPassSettingsEventPassTrackUpgradeDescriptions struct {
 	PassTrackUpgradeHeaderDescription string    `json:"passTrackUpgradeHeaderDescription"`
 	RanksToHighlightRewards           [3]uint64 `json:"ranksToHighlightRewards"`
 	TrackUnlockImageUrl               string    `json:"trackUnlockImageUrl"`
-	TrackUnlockPlusPointsImageUrl     string    `json:"trackUnlockPlusPointsImageUrl"`
-	TrackUnlockPlusPointsSkuId        string    `json:"trackUnlockPlusPointsSkuId"`
+	TrackUnlockPlusPointsImageUrl     *string   `json:"trackUnlockPlusPointsImageUrl,omitempty"`
+	TrackUnlockPlusPointsSkuId        *string   `json:"trackUnlockPlusPointsSkuId,omitempty"`
 	TrackUnlockSkuId                  string    `json:"trackUnlockSkuId"`
 	UpgradeDescriptionKey             string    `json:"upgradeDescriptionKey"`
 }
 
 type EventPassSettingsEventPassDisplaySettings struct {
+	BackgroundConfiguration           *string                                               `json:"backgroundConfiguration,omitempty"`
 	BonusBoxes                        []EventPassSettingsBonusBoxes                         `json:"bonusBoxes"`
 	EventPassTitleKey                 string                                                `json:"eventPassTitleKey"`
 	EventPassTrackUpgradeDescriptions [1]EventPassSettingsEventPassTrackUpgradeDescriptions `json:"eventPassTrackUpgradeDescriptions"`

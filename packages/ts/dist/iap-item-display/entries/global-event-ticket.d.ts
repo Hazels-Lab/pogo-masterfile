@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 5 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -48,6 +48,7 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 		"general2.ticket.11",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png";
 			sku: "general2.ticket.11";
 			skuDisableTime: "2026-11-15T20:00:00";
@@ -98,10 +99,28 @@ export type IapItemDisplayMonth3DeluxeEventPassTrackRedirect = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect = S<
+	IapItemDisplay<
+		"pgorelease.gowa2026_leadout_event_pass_track_unlock_redirect",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F920494a5_PGO-GOWA_Eternatus.jpg";
+			sku: "pgorelease.gowa2026_leadout_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-11-25T20:00:00";
+			skuDisableTimeUtcMs: "1795636800000";
+			skuEnableTime: "2025-11-16T10:00:00";
+			skuEnableTimeUtcMs: "1763287200000";
+			sortOrder: 1;
+			title: "event_pass_premium_track_title_gowa_leadout_2026";
+		}
+	>
+>;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket11
 	| IapItemDisplayGowa2026EventPassStoreRedirect
-	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect;
+	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect
+	| IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect;

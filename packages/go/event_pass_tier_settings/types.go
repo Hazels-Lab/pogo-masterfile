@@ -28,13 +28,22 @@ type EventPassTierSettingsNeutralAvatarItemTemplate struct {
 }
 
 type EventPassTierSettingsPlayerAttribute struct {
-	DurationMins uint64 `json:"durationMins"`
-	Key          string `json:"key"`
+	DurationMins *uint64 `json:"durationMins,omitempty"`
+	Key          string  `json:"key"`
+}
+
+type EventPassTierSettingsLocationCard struct {
+	LocationCard string `json:"locationCard"`
 }
 
 type EventPassTierSettingsPokemonDisplay struct {
-	BreadModeEnum *string `json:"breadModeEnum,omitempty"`
-	Form          string  `json:"form"`
+	BreadModeEnum *string                            `json:"breadModeEnum,omitempty"`
+	Form          *string                            `json:"form,omitempty"`
+	LocationCard  *EventPassTierSettingsLocationCard `json:"locationCard,omitempty"`
+}
+
+type EventPassTierSettingsPokemonEncounterDistribution struct {
+	QuestDistributionTemplateId string `json:"questDistributionTemplateId"`
 }
 
 type EventPassTierSettingsStatsLimitsOverride struct {
@@ -43,10 +52,16 @@ type EventPassTierSettingsStatsLimitsOverride struct {
 }
 
 type EventPassTierSettingsPokemonEncounter struct {
-	IsFeaturedPokemon   bool                                      `json:"isFeaturedPokemon"`
-	PokemonDisplay      *EventPassTierSettingsPokemonDisplay      `json:"pokemonDisplay,omitempty"`
-	PokemonId           string                                    `json:"pokemonId"`
-	StatsLimitsOverride *EventPassTierSettingsStatsLimitsOverride `json:"statsLimitsOverride,omitempty"`
+	IsFeaturedPokemon            *bool                                              `json:"isFeaturedPokemon,omitempty"`
+	PokemonDisplay               *EventPassTierSettingsPokemonDisplay               `json:"pokemonDisplay,omitempty"`
+	PokemonEncounterDistribution *EventPassTierSettingsPokemonEncounterDistribution `json:"pokemonEncounterDistribution,omitempty"`
+	PokemonId                    *string                                            `json:"pokemonId,omitempty"`
+	StatsLimitsOverride          *EventPassTierSettingsStatsLimitsOverride          `json:"statsLimitsOverride,omitempty"`
+}
+
+type EventPassTierSettingsSticker struct {
+	Amount    uint64 `json:"amount"`
+	StickerId string `json:"stickerId"`
 }
 
 type EventPassTierSettingsRewards struct {
@@ -59,6 +74,7 @@ type EventPassTierSettingsRewards struct {
 	Pokecoin                  *uint64                                         `json:"pokecoin,omitempty"`
 	PokemonEncounter          *EventPassTierSettingsPokemonEncounter          `json:"pokemonEncounter,omitempty"`
 	Stardust                  *uint64                                         `json:"stardust,omitempty"`
+	Sticker                   *EventPassTierSettingsSticker                   `json:"sticker,omitempty"`
 	Type                      string                                          `json:"type"`
 	XlCandy                   *EventPassTierSettingsCandy                     `json:"xlCandy,omitempty"`
 }

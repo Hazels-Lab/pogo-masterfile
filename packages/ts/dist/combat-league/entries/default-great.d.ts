@@ -12411,176 +12411,425 @@ export type CombatLeagueVsSeekerGreatChampionshipSeriesEuic = S<
 					type: "WITH_UNIQUE_POKEMON";
 				},
 				{
-					pokemonWhiteList: {
-						pokemon: [
-							{
-								id: "WEEDLE";
-							},
-							{
-								id: "KAKUNA";
-							},
-							{
-								id: "BEEDRILL";
-							},
-							{
-								id: "VENONAT";
-							},
-							{
-								id: "VENOMOTH";
-							},
-							{
-								id: "SPINARAK";
-							},
-							{
-								id: "ARIADOS";
-							},
-							{
-								id: "SHUCKLE";
-							},
-							{
-								id: "DUSTOX";
-							},
-							{
-								id: "ANORITH";
-							},
-							{
-								id: "ARMALDO";
-							},
-							{
-								id: "SKORUPI";
-							},
-							{
-								id: "FROSLASS";
-							},
-							{
-								id: "VENIPEDE";
-							},
-							{
-								id: "WHIRLIPEDE";
-							},
-							{
-								id: "SCOLIPEDE";
-							},
-							{
-								id: "DWEBBLE";
-							},
-							{
-								id: "JOLTIK";
-							},
-							{
-								id: "GALVANTULA";
-							},
-							{
-								id: "DRAGALGE";
-							},
-							{
-								id: "HELIOPTILE";
-							},
-							{
-								id: "HELIOLISK";
-							},
-							{
-								id: "TYRUNT";
-							},
-							{
-								id: "TYRANTRUM";
-							},
-							{
-								id: "CHARJABUG";
-							},
-							{
-								id: "VIKAVOLT";
-							},
-							{
-								id: "SNOM";
-							},
-							{
-								id: "FROSMOTH";
-							},
-							{
-								id: "DRACOZOLT";
-							},
-							{
-								id: "KLEAVOR";
-							},
-							{
-								id: "SHROODLE";
-							},
-							{
-								id: "GRAFAIAI";
-							},
-							{
-								id: "FRIGIBAX";
-							},
-							{
-								id: "ARCTIBAX";
-							},
-							{
-								id: "BAXCALIBUR";
-							},
-						];
+					type: "WITH_POKEMON_TYPE";
+					withPokemonType: {
+						pokemonType: ["POKEMON_TYPE_DARK", "POKEMON_TYPE_ELECTRIC", "POKEMON_TYPE_ICE", "POKEMON_TYPE_POISON", "POKEMON_TYPE_ROCK"];
 					};
-					type: "POKEMON_WHITELIST";
 				},
 				{
 					pokemonBanList: {
 						name: "s25_euic_prohibited_pokemon";
 						pokemon: [
 							{
-								forms: ["CARKOL_NORMAL"];
-								id: "CARKOL";
-							},
-							{
-								forms: ["COALOSSAL_NORMAL"];
-								id: "COALOSSAL";
-							},
-							{
-								forms: ["CHARJABUG_NORMAL"];
-								id: "CHARJABUG";
-							},
-							{
-								forms: ["CRUSTLE_NORMAL"];
-								id: "CRUSTLE";
-							},
-							{
-								forms: ["DRAGALGE_NORMAL"];
-								id: "DRAGALGE";
-							},
-							{
-								forms: ["DRAPION_NORMAL"];
-								id: "DRAPION";
-							},
-							{
-								forms: ["GRIMER_NORMAL"];
-								id: "GRIMER";
-							},
-							{
-								forms: ["LANTURN_NORMAL"];
-								id: "LANTURN";
-							},
-							{
-								forms: ["MAGCARGO_NORMAL"];
-								id: "MAGCARGO";
-							},
-							{
-								forms: ["MALAMAR_NORMAL"];
-								id: "MALAMAR";
-							},
-							{
-								forms: ["MINIOR_RED"];
-								id: "MINIOR";
-							},
-							{
-								forms: ["NIDORINA_NORMAL"];
 								id: "NIDORINA";
 							},
 							{
-								forms: ["PACHIRISU_NORMAL"];
+								id: "LANTURN";
+							},
+							{
+								id: "MAGCARGO";
+							},
+							{
+								id: "SABLEYE";
+							},
+							{
 								id: "PACHIRISU";
 							},
 							{
-								forms: ["SABLEYE_NORMAL"];
-								id: "SABLEYE";
+								id: "DRAPION";
+							},
+							{
+								id: "CRUSTLE";
+							},
+							{
+								id: "MALAMAR";
+							},
+							{
+								id: "DRAGALGE";
+							},
+							{
+								id: "CHARJABUG";
+							},
+							{
+								id: "MINIOR";
+							},
+							{
+								id: "CARKOL";
+							},
+							{
+								id: "COALOSSAL";
+							},
+							{
+								forms: ["FORM_UNSET", "GRIMER_NORMAL"];
+								id: "GRIMER";
+							},
+							{
+								forms: ["BULBASAUR_FALL_2019", "BULBASAUR_NORMAL", "FORM_UNSET"];
+								id: "BULBASAUR";
+							},
+							{
+								forms: ["FORM_UNSET", "IVYSAUR_NORMAL"];
+								id: "IVYSAUR";
+							},
+							{
+								forms: ["FORM_UNSET", "VENUSAUR_COPY_2019", "VENUSAUR_NORMAL"];
+								id: "VENUSAUR";
+							},
+							{
+								forms: ["SANDSHREW_ALOLA"];
+								id: "SANDSHREW";
+							},
+							{
+								forms: ["SANDSLASH_ALOLA"];
+								id: "SANDSLASH";
+							},
+							{
+								forms: ["FORM_UNSET", "NIDOQUEEN_NORMAL"];
+								id: "NIDOQUEEN";
+							},
+							{
+								forms: ["FORM_UNSET", "NIDOKING_NORMAL"];
+								id: "NIDOKING";
+							},
+							{
+								forms: ["NINETALES_ALOLA"];
+								id: "NINETALES";
+							},
+							{
+								forms: ["FORM_UNSET", "ODDISH_NORMAL"];
+								id: "ODDISH";
+							},
+							{
+								forms: ["FORM_UNSET", "GLOOM_NORMAL"];
+								id: "GLOOM";
+							},
+							{
+								forms: ["FORM_UNSET", "VILEPLUME_NORMAL"];
+								id: "VILEPLUME";
+							},
+							{
+								forms: ["BELLSPROUT_NORMAL", "FORM_UNSET"];
+								id: "BELLSPROUT";
+							},
+							{
+								forms: ["FORM_UNSET", "WEEPINBELL_NORMAL"];
+								id: "WEEPINBELL";
+							},
+							{
+								forms: ["FORM_UNSET", "VICTREEBEL_NORMAL"];
+								id: "VICTREEBEL";
+							},
+							{
+								forms: ["FORM_UNSET", "GEODUDE_NORMAL"];
+								id: "GEODUDE";
+							},
+							{
+								forms: ["FORM_UNSET", "GRAVELER_NORMAL"];
+								id: "GRAVELER";
+							},
+							{
+								forms: ["FORM_UNSET", "GOLEM_NORMAL"];
+								id: "GOLEM";
+							},
+							{
+								forms: ["FORM_UNSET", "MAGNEMITE_NORMAL"];
+								id: "MAGNEMITE";
+							},
+							{
+								forms: ["FORM_UNSET", "MAGNETON_NORMAL"];
+								id: "MAGNETON";
+							},
+							{
+								forms: ["FORM_UNSET", "ONIX_NORMAL"];
+								id: "ONIX";
+							},
+							{
+								forms: ["VOLTORB_HISUIAN"];
+								id: "VOLTORB";
+							},
+							{
+								forms: ["ELECTRODE_HISUIAN"];
+								id: "ELECTRODE";
+							},
+							{
+								forms: ["WEEZING_GALARIAN"];
+								id: "WEEZING";
+							},
+							{
+								forms: ["FORM_UNSET", "RHYHORN_NORMAL"];
+								id: "RHYHORN";
+							},
+							{
+								forms: ["FORM_UNSET", "RHYDON_NORMAL"];
+								id: "RHYDON";
+							},
+							{
+								forms: ["WOOPER_PALDEA"];
+								id: "WOOPER";
+							},
+							{
+								forms: ["SNEASEL_HISUIAN"];
+								id: "SNEASEL";
+							},
+							{
+								forms: ["FORM_UNSET", "SWINUB_NORMAL"];
+								id: "SWINUB";
+							},
+							{
+								forms: ["FORM_UNSET", "PILOSWINE_NORMAL"];
+								id: "PILOSWINE";
+							},
+							{
+								forms: ["FORM_UNSET", "LARVITAR_NORMAL"];
+								id: "LARVITAR";
+							},
+							{
+								forms: ["FORM_UNSET", "PUPITAR_NORMAL"];
+								id: "PUPITAR";
+							},
+							{
+								forms: ["FORM_UNSET", "NUZLEAF_NORMAL"];
+								id: "NUZLEAF";
+							},
+							{
+								forms: ["FORM_UNSET", "SHIFTRY_NORMAL"];
+								id: "SHIFTRY";
+							},
+							{
+								forms: ["ARON_NORMAL", "FORM_UNSET"];
+								id: "ARON";
+							},
+							{
+								forms: ["FORM_UNSET", "LAIRON_NORMAL"];
+								id: "LAIRON";
+							},
+							{
+								forms: ["AGGRON_NORMAL", "FORM_UNSET"];
+								id: "AGGRON";
+							},
+							{
+								forms: ["FORM_UNSET", "ROSELIA_NORMAL"];
+								id: "ROSELIA";
+							},
+							{
+								forms: ["CACTURNE_NORMAL", "FORM_UNSET"];
+								id: "CACTURNE";
+							},
+							{
+								forms: ["FORM_UNSET", "LILEEP_NORMAL"];
+								id: "LILEEP";
+							},
+							{
+								forms: ["CRADILY_NORMAL", "FORM_UNSET"];
+								id: "CRADILY";
+							},
+							{
+								forms: ["BUDEW_NORMAL", "FORM_UNSET"];
+								id: "BUDEW";
+							},
+							{
+								forms: ["FORM_UNSET", "ROSERADE_NORMAL"];
+								id: "ROSERADE";
+							},
+							{
+								forms: ["FORM_UNSET", "SHIELDON_NORMAL"];
+								id: "SHIELDON";
+							},
+							{
+								forms: ["BASTIODON_NORMAL", "FORM_UNSET"];
+								id: "BASTIODON";
+							},
+							{
+								forms: ["CROAGUNK_NORMAL", "FORM_UNSET"];
+								id: "CROAGUNK";
+							},
+							{
+								forms: ["FORM_UNSET", "TOXICROAK_NORMAL"];
+								id: "TOXICROAK";
+							},
+							{
+								forms: ["FORM_UNSET", "SNOVER_NORMAL"];
+								id: "SNOVER";
+							},
+							{
+								forms: ["ABOMASNOW_NORMAL", "FORM_UNSET"];
+								id: "ABOMASNOW";
+							},
+							{
+								forms: ["FORM_UNSET", "MAGNEZONE_NORMAL"];
+								id: "MAGNEZONE";
+							},
+							{
+								forms: ["FORM_UNSET", "RHYPERIOR_NORMAL"];
+								id: "RHYPERIOR";
+							},
+							{
+								forms: ["FORM_UNSET", "MAMOSWINE_NORMAL"];
+								id: "MAMOSWINE";
+							},
+							{
+								forms: ["FORM_UNSET", "PROBOPASS_NORMAL"];
+								id: "PROBOPASS";
+							},
+							{
+								forms: ["ROTOM_MOW"];
+								id: "ROTOM";
+							},
+							{
+								forms: ["FORM_UNSET", "SANDILE_NORMAL"];
+								id: "SANDILE";
+							},
+							{
+								forms: ["FORM_UNSET", "KROKOROK_NORMAL"];
+								id: "KROKOROK";
+							},
+							{
+								forms: ["FORM_UNSET", "KROOKODILE_NORMAL"];
+								id: "KROOKODILE";
+							},
+							{
+								forms: ["FORM_UNSET", "SCRAGGY_NORMAL"];
+								id: "SCRAGGY";
+							},
+							{
+								forms: ["FORM_UNSET", "SCRAFTY_NORMAL"];
+								id: "SCRAFTY";
+							},
+							{
+								forms: ["FOONGUS_NORMAL", "FORM_UNSET"];
+								id: "FOONGUS";
+							},
+							{
+								forms: ["AMOONGUSS_NORMAL", "FORM_UNSET"];
+								id: "AMOONGUSS";
+							},
+							{
+								forms: ["FORM_UNSET", "STUNFISK_NORMAL"];
+								id: "STUNFISK";
+							},
+							{
+								forms: ["FORM_UNSET", "PAWNIARD_NORMAL"];
+								id: "PAWNIARD";
+							},
+							{
+								forms: ["BISHARP_NORMAL", "FORM_UNSET"];
+								id: "BISHARP";
+							},
+							{
+								forms: ["FORM_UNSET", "TERRAKION_NORMAL"];
+								id: "TERRAKION";
+							},
+							{
+								forms: ["FORM_UNSET", "PANGORO_NORMAL"];
+								id: "PANGORO";
+							},
+							{
+								forms: ["DEDENNE_NORMAL", "FORM_UNSET"];
+								id: "DEDENNE";
+							},
+							{
+								forms: ["CARBINK_NORMAL", "FORM_UNSET"];
+								id: "CARBINK";
+							},
+							{
+								forms: ["DIANCIE_NORMAL", "FORM_UNSET"];
+								id: "DIANCIE";
+							},
+							{
+								forms: ["CRABOMINABLE_NORMAL", "FORM_UNSET"];
+								id: "CRABOMINABLE";
+							},
+							{
+								forms: ["FORM_UNSET", "TOGEDEMARU_NORMAL"];
+								id: "TOGEDEMARU";
+							},
+							{
+								forms: ["FORM_UNSET", "TAPU_KOKO_NORMAL"];
+								id: "TAPU_KOKO";
+							},
+							{
+								forms: ["FORM_UNSET", "STAKATAKA_NORMAL"];
+								id: "STAKATAKA";
+							},
+							{
+								forms: ["FORM_UNSET", "IMPIDIMP_NORMAL"];
+								id: "IMPIDIMP";
+							},
+							{
+								forms: ["FORM_UNSET", "MORGREM_NORMAL"];
+								id: "MORGREM";
+							},
+							{
+								forms: ["FORM_UNSET", "GRIMMSNARL_NORMAL"];
+								id: "GRIMMSNARL";
+							},
+							{
+								forms: ["URSHIFU_SINGLE_STRIKE"];
+								id: "URSHIFU";
+							},
+							{
+								forms: ["FORM_UNSET", "ZARUDE_NORMAL"];
+								id: "ZARUDE";
+							},
+							{
+								forms: ["FORM_UNSET", "SNEASLER_NORMAL"];
+								id: "SNEASLER";
+							},
+							{
+								forms: ["FORM_UNSET", "MEOWSCARADA_NORMAL"];
+								id: "MEOWSCARADA";
+							},
+							{
+								forms: ["FORM_UNSET", "PAWMO_NORMAL"];
+								id: "PAWMO";
+							},
+							{
+								forms: ["FORM_UNSET", "PAWMOT_NORMAL"];
+								id: "PAWMOT";
+							},
+							{
+								forms: ["FORM_UNSET", "VAROOM_NORMAL"];
+								id: "VAROOM";
+							},
+							{
+								forms: ["FORM_UNSET", "REVAVROOM_NORMAL"];
+								id: "REVAVROOM";
+							},
+							{
+								forms: ["CLODSIRE_NORMAL", "FORM_UNSET"];
+								id: "CLODSIRE";
+							},
+							{
+								forms: ["FORM_UNSET", "KINGAMBIT_NORMAL"];
+								id: "KINGAMBIT";
+							},
+							{
+								forms: ["BRUTEBONNET_NORMAL", "FORM_UNSET"];
+								id: "BRUTEBONNET";
+							},
+							{
+								forms: ["FORM_UNSET", "SANDYSHOCKS_NORMAL"];
+								id: "SANDYSHOCKS";
+							},
+							{
+								forms: ["FORM_UNSET", "IRONHANDS_NORMAL"];
+								id: "IRONHANDS";
+							},
+							{
+								forms: ["FORM_UNSET", "WOCHIEN_NORMAL"];
+								id: "WOCHIEN";
+							},
+							{
+								forms: ["FORM_UNSET", "TINGLU_NORMAL"];
+								id: "TINGLU";
+							},
+							{
+								forms: ["FORM_UNSET", "OKIDOGI_NORMAL"];
+								id: "OKIDOGI";
+							},
+							{
+								forms: ["FEZANDIPITI_NORMAL", "FORM_UNSET"];
+								id: "FEZANDIPITI";
 							},
 						];
 					};

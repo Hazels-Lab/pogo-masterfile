@@ -8,6 +8,8 @@ const (
 	FeatureGateTemplateIDAcForegroundCatchEncounterFeatureGate                          FeatureGateTemplateID = "AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE"
 	FeatureGateTemplateIDAcForegroundCatchMapFocusFeatureGate                           FeatureGateTemplateID = "AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE"
 	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate                           FeatureGateTemplateID = "AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE"
+	FeatureGateTemplateIDAcLoBreadChecksFeatureGate                                     FeatureGateTemplateID = "AC_LO_BREAD_CHECKS_FEATURE_GATE"
+	FeatureGateTemplateIDAcLoSocChecksFeatureGate                                       FeatureGateTemplateID = "AC_LO_SOC_CHECKS_FEATURE_GATE"
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate                          FeatureGateTemplateID = "ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate                                          FeatureGateTemplateID = "ADV_SYNC_TWO_FEATURE_GATE"
 	FeatureGateTemplateIDAdventureEffectsInLobbyFeatureGate                             FeatureGateTemplateID = "ADVENTURE_EFFECTS_IN_LOBBY_FEATURE_GATE"
@@ -83,6 +85,7 @@ const (
 	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate                    FeatureGateTemplateID = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE"
 	FeatureGateTemplateIDPokedexDefenderGymFixFeatureGate                               FeatureGateTemplateID = "POKEDEX_DEFENDER_GYM_FIX_FEATURE_GATE"
 	FeatureGateTemplateIDPokedexScrollingFixFeatureGate                                 FeatureGateTemplateID = "POKEDEX_SCROLLING_FIX_FEATURE_GATE"
+	FeatureGateTemplateIDPokemonNameChipFeatureGate                                     FeatureGateTemplateID = "POKEMON_NAME_CHIP_FEATURE_GATE"
 	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate                         FeatureGateTemplateID = "POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE"
 	FeatureGateTemplateIDPoolTrimmerFeatureGate                                         FeatureGateTemplateID = "POOL_TRIMMER_FEATURE_GATE"
 	FeatureGateTemplateIDPrivateMaxLobbiesFeatureGate                                   FeatureGateTemplateID = "PRIVATE_MAX_LOBBIES_FEATURE_GATE"
@@ -132,6 +135,8 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAcForegroundCatchEncounterFeatureGate,
 	FeatureGateTemplateIDAcForegroundCatchMapFocusFeatureGate,
 	FeatureGateTemplateIDAcForegroundCatchPoiFocusFeatureGate,
+	FeatureGateTemplateIDAcLoBreadChecksFeatureGate,
+	FeatureGateTemplateIDAcLoSocChecksFeatureGate,
 	FeatureGateTemplateIDAdminGmNiaOpsOnlyFilterAmsFeatureGate,
 	FeatureGateTemplateIDAdvSyncTwoFeatureGate,
 	FeatureGateTemplateIDAdventureEffectsInLobbyFeatureGate,
@@ -207,6 +212,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDPlayerEncounterRandomizationSaltFeatureGate,
 	FeatureGateTemplateIDPokedexDefenderGymFixFeatureGate,
 	FeatureGateTemplateIDPokedexScrollingFixFeatureGate,
+	FeatureGateTemplateIDPokemonNameChipFeatureGate,
 	FeatureGateTemplateIDPokemonSpawnAvoidanceReworkFeatureGate,
 	FeatureGateTemplateIDPoolTrimmerFeatureGate,
 	FeatureGateTemplateIDPrivateMaxLobbiesFeatureGate,
