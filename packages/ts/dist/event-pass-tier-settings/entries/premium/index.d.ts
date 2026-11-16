@@ -1,13 +1,16 @@
 // Generated from Pokémon GO masterfile — group "eventPassTierSettings premium" entries barrel.
 
-import type { EventPassTierSettingsPremiumGowa2026MasterfileEntry } from "./gowa2026";
-import type { EventPassTierSettingsPremiumNovember2026MasterfileEntry } from "./november2026";
+import type { EventPassTierSettingsPremiumGlobalMasterfileEntry } from "./global";
+import type { EventPassTierSettingsPremiumLeadoutMasterfileEntry } from "./leadout";
+import type { EventPassTierSettingsPremiumSeasonMasterfileEntry } from "./season";
 
-export type * from "./gowa2026";
-export type * from "./november2026";
+export type * from "./global";
+export type * from "./leadout";
+export type * from "./season";
 
 export type EventPassTierSettingsPremiumMasterfileEntry =
-	| EventPassTierSettingsPremiumGowa2026MasterfileEntry
-	| EventPassTierSettingsPremiumNovember2026MasterfileEntry;
+	| EventPassTierSettingsPremiumGlobalMasterfileEntry
+	| EventPassTierSettingsPremiumLeadoutMasterfileEntry
+	| EventPassTierSettingsPremiumSeasonMasterfileEntry;
 
 export type EventPassTierSettingsPremiumTemplateID = EventPassTierSettingsPremiumMasterfileEntry["templateId"];

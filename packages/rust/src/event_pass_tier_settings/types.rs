@@ -38,15 +38,28 @@ pub struct NeutralAvatarItemTemplate {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PlayerAttribute {
-    pub duration_mins: u64,
+    pub duration_mins: Option<u64>,
     pub key: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LocationCard {
+    pub location_card: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
-    pub form: String,
+    pub form: Option<String>,
+    pub location_card: Option<LocationCard>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PokemonEncounterDistribution {
+    pub quest_distribution_template_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -59,10 +72,18 @@ pub struct StatsLimitsOverride {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PokemonEncounter {
-    pub is_featured_pokemon: bool,
+    pub is_featured_pokemon: Option<bool>,
     pub pokemon_display: Option<PokemonDisplay>,
-    pub pokemon_id: String,
+    pub pokemon_encounter_distribution: Option<PokemonEncounterDistribution>,
+    pub pokemon_id: Option<String>,
     pub stats_limits_override: Option<StatsLimitsOverride>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Sticker {
+    pub amount: u64,
+    pub sticker_id: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -77,6 +98,7 @@ pub struct Rewards {
     pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounter>,
     pub stardust: Option<u64>,
+    pub sticker: Option<Sticker>,
     pub r#type: String,
     pub xl_candy: Option<Candy>,
 }

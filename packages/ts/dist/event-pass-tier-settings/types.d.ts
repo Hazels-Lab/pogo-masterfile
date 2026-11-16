@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1600 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 2200 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,18 +14,21 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "MAX_PARTICLE" | "TRADE" | "XP";
+			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "MAX_PARTICLE" | "STARDUST" | "TRADE" | "XP";
 			text:
 				| "additional_candy_max_battle_singular"
 				| "additional_xl_max_raid_singular"
 				| "bonus_5000_xp_raid"
 				| "bonus_candy_raids_all"
 				| "bonus_discount_mp_unlock_level"
+				| "catch_stardust_double"
 				| "dai_duration_double"
+				| "dynamax_cannon_ae_half_cost_bonus"
 				| "extra_guranteed_xl_candy_raids"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "gowa_2026_leadout_max_candy_bonus"
 				| "incubator_distance_half"
 				| "max_battle_win_plus5000_bonus"
 				| "season_pass_bonus_hatch_xp_stardust"
@@ -36,18 +39,21 @@ export interface EventPassTierSettingsData {
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "MAX_PARTICLE" | "TRADE" | "XP";
+			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "MAX_PARTICLE" | "STARDUST" | "TRADE" | "XP";
 			text:
 				| "additional_candy_max_battle_singular"
 				| "additional_xl_max_raid_singular"
 				| "bonus_5000_xp_raid"
 				| "bonus_candy_raids_all"
 				| "bonus_discount_mp_unlock_level"
+				| "catch_stardust_double"
 				| "dai_duration_double"
+				| "dynamax_cannon_ae_half_cost_bonus"
 				| "extra_guranteed_xl_candy_raids"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
+				| "gowa_2026_leadout_max_candy_bonus"
 				| "incubator_distance_half"
 				| "max_battle_win_plus5000_bonus"
 				| "season_pass_bonus_hatch_xp_stardust"
@@ -79,6 +85,7 @@ export interface EventPassTierSettingsData {
 				| "DRATINI"
 				| "DRILBUR"
 				| "DURALUDON"
+				| "ETERNATUS"
 				| "FALINKS"
 				| "FIDOUGH"
 				| "FLITTLE"
@@ -153,8 +160,11 @@ export interface EventPassTierSettingsData {
 			itemTemplateId: "N_AVATAR_n_pants_duraludon" | "N_AVATAR_n_shirt_gowa2026-maroon";
 		};
 		playerAttribute?: {
-			durationMins: number;
+			durationMins?: number;
 			key:
+				| "gowa_2026_leadout_rank_15"
+				| "gowa_2026_leadout_rank_35"
+				| "gowa_2026_leadout_rank_55"
 				| "gowa_2026_pass_milestone_01"
 				| "gowa_2026_pass_milestone_02"
 				| "gowa_2026_pass_milestone_03"
@@ -167,10 +177,10 @@ export interface EventPassTierSettingsData {
 		};
 		pokecoin?: number;
 		pokemonEncounter?: {
-			isFeaturedPokemon: boolean;
+			isFeaturedPokemon?: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
-				form:
+				form?:
 					| "ABSOL_NORMAL"
 					| "COMBEE_NORMAL"
 					| "DEINO_NORMAL"
@@ -210,8 +220,14 @@ export interface EventPassTierSettingsData {
 					| "TRAPINCH_NORMAL"
 					| "TURTONATOR_NORMAL"
 					| "VIGOROTH_NORMAL";
+				locationCard?: {
+					locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_DD_001";
+				};
 			};
-			pokemonId:
+			pokemonEncounterDistribution?: {
+				questDistributionTemplateId: "QUEST_POKEMON_ENCOUNTER_GOWA_2026_LEADOUT";
+			};
+			pokemonId?:
 				| "ABSOL"
 				| "COMBEE"
 				| "DEINO"
@@ -258,7 +274,22 @@ export interface EventPassTierSettingsData {
 			};
 		};
 		stardust?: number;
-		type: "AVATAR_CLOTHING" | "CANDY" | "EVENT_BADGE" | "EXPERIENCE" | "ITEM" | "PLAYER_ATTRIBUTE" | "POKECOIN" | "POKEMON_ENCOUNTER" | "STARDUST" | "XL_CANDY";
+		sticker?: {
+			amount: number;
+			stickerId: "STICKER_ETERNATUS";
+		};
+		type:
+			| "AVATAR_CLOTHING"
+			| "CANDY"
+			| "EVENT_BADGE"
+			| "EXPERIENCE"
+			| "ITEM"
+			| "PLAYER_ATTRIBUTE"
+			| "POKECOIN"
+			| "POKEMON_ENCOUNTER"
+			| "STARDUST"
+			| "STICKER"
+			| "XL_CANDY";
 		xlCandy?: {
 			amount: number;
 			pokemonId:
@@ -268,6 +299,7 @@ export interface EventPassTierSettingsData {
 				| "DRATINI"
 				| "DRILBUR"
 				| "DURALUDON"
+				| "ETERNATUS"
 				| "FALINKS"
 				| "FIDOUGH"
 				| "GIBLE"

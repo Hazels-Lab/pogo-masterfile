@@ -272,6 +272,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackgroundMidautumn2026                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_MIDAUTUMN_2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundObservatoryExhibitionTour            LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_OBSERVATORY_EXHIBITION_TOUR"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundPok2026                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_POK2026"
+	LocationCardSettingsTemplateIDLcSpecialbackgroundPtr001                               LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_PTR_001"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundS24Sep2026                           LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_S24_SEP_2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue                             LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_TEAM_BLUE"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamRed                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_TEAM_RED"
@@ -553,6 +554,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackgroundMidautumn2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundObservatoryExhibitionTour,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundPok2026,
+	LocationCardSettingsTemplateIDLcSpecialbackgroundPtr001,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundS24Sep2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamBlue,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundTeamRed,

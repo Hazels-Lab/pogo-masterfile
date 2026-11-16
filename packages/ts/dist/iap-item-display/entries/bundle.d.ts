@@ -1357,7 +1357,7 @@ export type IapItemDisplayBundleGowa20261 = S<
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.gowa2026.1";
-			sortOrder: 1;
+			sortOrder: -2000;
 			spriteId: "bundle.general.premiumbox.medium.1";
 			title: "sku.name.web-gowa-2024-box-1";
 		}
@@ -1372,7 +1372,7 @@ export type IapItemDisplayBundleGowa20262 = S<
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.gowa2026.2";
-			sortOrder: 1;
+			sortOrder: -2000;
 			spriteId: "bundle2.sprite.b";
 			title: "sku.name.web-gowa-2024-box-2";
 		}
@@ -1387,7 +1387,7 @@ export type IapItemDisplayBundleGowa20263 = S<
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.gowa2026.3";
-			sortOrder: 1;
+			sortOrder: -2000;
 			spriteId: "bundle1.sprite.d";
 			title: "sku.name.web-gowa-2024-box-3";
 		}
@@ -1402,7 +1402,7 @@ export type IapItemDisplayBundleGowa20264 = S<
 			showDiscountTag: true;
 			showStrikethroughPrice: true;
 			sku: "bundle.gowa2026.4";
-			sortOrder: 1;
+			sortOrder: -2000;
 			spriteId: "bundle.general5.small.1";
 			title: "sku.name.web-gowa-2024-box-4";
 		}

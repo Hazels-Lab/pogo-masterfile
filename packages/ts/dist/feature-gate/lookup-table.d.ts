@@ -4,6 +4,8 @@ import type {
 	FeatureGateAcForegroundCatchEncounter,
 	FeatureGateAcForegroundCatchMapFocus,
 	FeatureGateAcForegroundCatchPoiFocus,
+	FeatureGateAcLoBreadChecks,
+	FeatureGateAcLoSocChecks,
 	FeatureGateAdminGmNiaOpsOnlyFilterAms,
 	FeatureGateAdventureEffectsInLobby,
 	FeatureGateAdvSyncTwo,
@@ -79,6 +81,7 @@ import type {
 	FeatureGatePlayerEncounterRandomizationSalt,
 	FeatureGatePokedexDefenderGymFix,
 	FeatureGatePokedexScrollingFix,
+	FeatureGatePokemonNameChip,
 	FeatureGatePokemonSpawnAvoidanceRework,
 	FeatureGatePoolTrimmer,
 	FeatureGatePrivateMaxLobbies,
@@ -128,6 +131,8 @@ export interface FeatureGateLookup {
 	AC_FOREGROUND_CATCH_ENCOUNTER_FEATURE_GATE: FeatureGateAcForegroundCatchEncounter;
 	AC_FOREGROUND_CATCH_MAP_FOCUS_FEATURE_GATE: FeatureGateAcForegroundCatchMapFocus;
 	AC_FOREGROUND_CATCH_POI_FOCUS_FEATURE_GATE: FeatureGateAcForegroundCatchPoiFocus;
+	AC_LO_BREAD_CHECKS_FEATURE_GATE: FeatureGateAcLoBreadChecks;
+	AC_LO_SOC_CHECKS_FEATURE_GATE: FeatureGateAcLoSocChecks;
 	ADMIN_GM_NIA_OPS_ONLY_FILTER_AMS_FEATURE_GATE: FeatureGateAdminGmNiaOpsOnlyFilterAms;
 	ADV_SYNC_TWO_FEATURE_GATE: FeatureGateAdvSyncTwo;
 	ADVENTURE_EFFECTS_IN_LOBBY_FEATURE_GATE: FeatureGateAdventureEffectsInLobby;
@@ -203,6 +208,7 @@ export interface FeatureGateLookup {
 	PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE: FeatureGatePlayerEncounterRandomizationSalt;
 	POKEDEX_DEFENDER_GYM_FIX_FEATURE_GATE: FeatureGatePokedexDefenderGymFix;
 	POKEDEX_SCROLLING_FIX_FEATURE_GATE: FeatureGatePokedexScrollingFix;
+	POKEMON_NAME_CHIP_FEATURE_GATE: FeatureGatePokemonNameChip;
 	POKEMON_SPAWN_AVOIDANCE_REWORK_FEATURE_GATE: FeatureGatePokemonSpawnAvoidanceRework;
 	POOL_TRIMMER_FEATURE_GATE: FeatureGatePoolTrimmer;
 	PRIVATE_MAX_LOBBIES_FEATURE_GATE: FeatureGatePrivateMaxLobbies;

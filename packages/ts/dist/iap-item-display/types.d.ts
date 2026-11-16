@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1096 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1098 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -44,6 +44,7 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F25acca32_PGO-MCS_Ticket%20Art_Poke%CC%81Coin_1024x576.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F920494a5_PGO-GOWA_Eternatus.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fcfa12bb9_PGO-GOWA_2026_GO_Pass_Deluxe.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
@@ -70,6 +71,7 @@ export interface IapItemDisplayData {
 		| "2026-11-15T20:00:00"
 		| "2026-11-17T23:59:59"
 		| "2026-11-21T17:00:00"
+		| "2026-11-25T20:00:00"
 		| "2026-12-03T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1718456400000"
@@ -84,6 +86,7 @@ export interface IapItemDisplayData {
 		| "1794772800000"
 		| "1794959999000"
 		| "1795280400000"
+		| "1795636800000"
 		| "1796292000000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
@@ -97,7 +100,8 @@ export interface IapItemDisplayData {
 		| "2025-09-29T10:00:00"
 		| "2025-10-13T10:00:00"
 		| "2025-10-14T00:00:00"
-		| "2025-11-03T10:00:00";
+		| "2025-11-03T10:00:00"
+		| "2025-11-16T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
@@ -110,7 +114,8 @@ export interface IapItemDisplayData {
 		| "1759140000000"
 		| "1760349600000"
 		| "1760400000000"
-		| "1762164000000";
+		| "1762164000000"
+		| "1763287200000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;

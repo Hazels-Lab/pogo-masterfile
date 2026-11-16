@@ -9,6 +9,8 @@ use serde::{Deserialize, Serialize};
 pub enum EventPassSettingsTemplateId {
     #[serde(rename = "EVENT_PASS_GOWA2026_GLOBAL")]
     EventPassGowa2026Global,
+    #[serde(rename = "EVENT_PASS_GOWA2026_LEADOUT")]
+    EventPassGowa2026Leadout,
     #[serde(rename = "EVENT_PASS_NOVEMBER2026_SEASON")]
     EventPassNovember2026Season,
 }

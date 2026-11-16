@@ -119,7 +119,7 @@ export type ItemSettingsItemEventPassPointLiveOps01 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_MEGASQUADS2026_EVENT";
+				eventPassId: "EVENT_PASS_LIVE_OPS_2026_TROPICAL_PARADISE";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;
@@ -127,7 +127,7 @@ export type ItemSettingsItemEventPassPointLiveOps01 = S<
 			itemType: "ITEM_TYPE_EVENT_PASS_POINT";
 			timePeriodCounters: {
 				playerActivity: {
-					limit: 300;
+					limit: 500;
 				};
 			};
 		}

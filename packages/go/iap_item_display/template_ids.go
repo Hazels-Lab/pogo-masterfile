@@ -363,6 +363,8 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231                          IapItemDisplayTemplateID = "pgorelease.bundle.thailandspec2023.1"
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221                        IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.1"
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222                        IapItemDisplayTemplateID = "pgorelease.bundle.walkeratlantic2022.2"
+	IapItemDisplayTemplateIDPgoreleaseGowa2026LeadoutEventPassTrackUnlock              IapItemDisplayTemplateID = "pgorelease.gowa2026_leadout_event_pass_track_unlock"
+	IapItemDisplayTemplateIDPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect      IapItemDisplayTemplateID = "pgorelease.gowa2026_leadout_event_pass_track_unlock_redirect"
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750                                     IapItemDisplayTemplateID = "pgorelease.pokecoin.2750"
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720                                     IapItemDisplayTemplateID = "pgorelease.pokecoin.5720"
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950                                    IapItemDisplayTemplateID = "pgorelease.pokecoin.15950"
@@ -1462,6 +1464,8 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseBundleThailandspec20231,
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20221,
 	IapItemDisplayTemplateIDPgoreleaseBundleWalkeratlantic20222,
+	IapItemDisplayTemplateIDPgoreleaseGowa2026LeadoutEventPassTrackUnlock,
+	IapItemDisplayTemplateIDPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDPgoreleasePokecoin2750,
 	IapItemDisplayTemplateIDPgoreleasePokecoin5720,
 	IapItemDisplayTemplateIDPgoreleasePokecoin15950,

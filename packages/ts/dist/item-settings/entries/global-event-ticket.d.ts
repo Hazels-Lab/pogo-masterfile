@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 61 entries.
+// Generated from Pokémon GO masterfile — group "itemSettings", split "global-event-ticket", 62 entries.
 
 import type { S } from "../../_utils";
 import type { ItemSettings } from "../types";
@@ -1489,6 +1489,47 @@ export type ItemSettingsItemEventTicketS24Nov21CommunityToGift = S<
 		}
 	>
 >;
+export type ItemSettingsItemEventTicketS24Nov28Megaraid = S<
+	ItemSettings<
+		"ITEM_EVENT_TICKET_S24_NOV28_MEGARAID",
+		{
+			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
+			descriptionOverride: "item_event_ticket_gray_desc_MegaClefableRaidDay";
+			globalEventTicket: {
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg";
+				clientEventEndTimeUtcMs: "1795885200000";
+				clientEventStartTimeUtcMs: "1795874400000";
+				detailsLinkKey: "details_link_key_MegaClefableRaidDay";
+				displayV2Enabled: true;
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg";
+				eventDatetimeRangeKey: "event_datetime_range_key_MegaClefableRaidDay";
+				eventEndTime: "2026-11-28T17:00:00";
+				eventStartTime: "2026-11-28T14:00:00";
+				giftable: true;
+				giftItem: "ITEM_EVENT_TICKET_S24_NOV28_MEGARAID_TO_GIFT";
+				iconRewards: [
+					{
+						item: {
+							amount: 8;
+							item: "ITEM_FREE_RAID_TICKET";
+						};
+						type: "ITEM";
+					},
+					{
+						item: {
+							item: "ITEM_XL_RARE_CANDY";
+						};
+						type: "ITEM";
+					},
+				];
+				itemBagDescriptionKey: "item_event_ticket_gray_desc_MegaClefableRaidDay";
+				textRewardsKey: "text_rewards_key_MegaClefableRaidDay";
+			};
+			itemType: "ITEM_TYPE_GLOBAL_EVENT_TICKET";
+			nameOverride: "general2.ticket.5_MegaClefableRaidDay";
+		}
+	>
+>;
 export type ItemSettingsItemEventTicketS24Oct3Maxbattle = S<
 	ItemSettings<
 		"ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE",
@@ -2141,6 +2182,7 @@ export type ItemSettingsGlobalEventTicketMasterfileEntry =
 	| ItemSettingsItemEventTicketS24Nov9Gowaol
 	| ItemSettingsItemEventTicketS24Nov21Community
 	| ItemSettingsItemEventTicketS24Nov21CommunityToGift
+	| ItemSettingsItemEventTicketS24Nov28Megaraid
 	| ItemSettingsItemEventTicketS24Oct3Maxbattle
 	| ItemSettingsItemEventTicketS24Oct10Community
 	| ItemSettingsItemEventTicketS24Oct10CommunityToGift
