@@ -29,6 +29,7 @@ export interface LocationCardSettingsData {
 		| "bgfx_diaDeMuertos_2026"
 		| "bgfx_Diamond"
 		| "bgfx_Diwali_2026"
+		| "bgfx_Duolingo"
 		| "bgfx_Fusion"
 		| "bgfx_goFest_2025_eternatus"
 		| "bgfx_goFest_2025_rock_001"

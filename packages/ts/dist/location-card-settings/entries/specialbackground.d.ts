@@ -563,6 +563,7 @@ export type LocationCardSettingsSpecialbackgroundPtr001 = S<
 		{
 			cardType: "SPECIAL_BACKGROUND";
 			imageUrl: "sb_PTR_001";
+			vfxAddress: "bgfx_Duolingo";
 		}
 	>
 >;

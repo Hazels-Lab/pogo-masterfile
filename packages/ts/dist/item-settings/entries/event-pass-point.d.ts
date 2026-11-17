@@ -219,7 +219,7 @@ export type ItemSettingsItemEventPassPointLiveOps06 = S<
 		{
 			category: "ITEM_CATEGORY_EVENT_PASS_POINT";
 			eventPassPoint: {
-				eventPassId: "EVENT_PASS_FLYINGTAXI2026_EVENT";
+				eventPassId: "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026";
 			};
 			hideItemInInventory: true;
 			ignoreInventorySpace: true;

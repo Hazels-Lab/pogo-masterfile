@@ -18,7 +18,7 @@ export interface EventPassSettingsData {
 	eventPassDisplaySettings: {
 		backgroundConfiguration?: "EVENT_PASS_BACKGROUND_GO_WILD_AREA_02";
 		bonusBoxes: Array<{
-			iconType: "BATTLE" | "EGG" | "RAID" | "SPAWN_UNKNOWN";
+			iconType: "BATTLE" | "BREAD" | "EGG" | "RAID" | "SPAWN_UNKNOWN";
 			quantity: number;
 			text: "quest_catch_pokemon_singular" | "quest_hatch_egg_singular" | "quest_win_raid_singular" | "win_max_battle_singular";
 		}>;
