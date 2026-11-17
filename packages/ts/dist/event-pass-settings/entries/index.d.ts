@@ -89,7 +89,7 @@ export type EventPassSettingsGowa2026Leadout = S<
 						text: "quest_win_raid_singular";
 					},
 					{
-						iconType: "BATTLE";
+						iconType: "BREAD";
 						quantity: 200;
 						text: "win_max_battle_singular";
 					},
