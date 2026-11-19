@@ -30,13 +30,6 @@ pub struct Item {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct NeutralAvatarItemTemplate {
-    pub display_template_id: String,
-    pub item_template_id: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct PlayerAttribute {
     pub duration_mins: Option<u64>,
     pub key: String,
@@ -90,10 +83,8 @@ pub struct Sticker {
 #[serde(rename_all = "camelCase")]
 pub struct Rewards {
     pub candy: Option<Candy>,
-    pub event_badge_id: Option<String>,
     pub exp: Option<u64>,
     pub item: Option<Item>,
-    pub neutral_avatar_item_template: Option<NeutralAvatarItemTemplate>,
     pub player_attribute: Option<PlayerAttribute>,
     pub pokecoin: Option<u64>,
     pub pokemon_encounter: Option<PokemonEncounter>,

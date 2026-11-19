@@ -485,7 +485,7 @@ type DeprecatedCodeGateProtoIds =
 /** @deprecated lastSeen 2025-01-10 — 1 entries */
 type DeprecatedEggTransparencySettingsIds = "EGG_TRANSPARENCY_SETTINGS";
 
-/** @deprecated lastSeen 2026-11-08 — 44 entries */
+/** @deprecated lastSeen 2026-11-19 — 45 entries */
 type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_30ANNIV2026_EVENT"
 	| "EVENT_PASS_AFTERPARTY2026_EVENT"
@@ -504,6 +504,7 @@ type DeprecatedEventPassSettingsIds =
 	| "EVENT_PASS_GOTOUR2025_GLOBAL"
 	| "EVENT_PASS_GOTOUR2026_GLOBAL"
 	| "EVENT_PASS_GOWA_2025"
+	| "EVENT_PASS_GOWA2026_GLOBAL"
 	| "EVENT_PASS_HALLOWEEN_2026_EVENT"
 	| "EVENT_PASS_HALLOWEEN2025_EVENT"
 	| "EVENT_PASS_HARVESTFESTIVAL2026_EVENT"

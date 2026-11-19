@@ -16,10 +16,14 @@ const (
 	FeatureGateTemplateIDAmsFeatureGate                                                 FeatureGateTemplateID = "AMS_FEATURE_GATE"
 	FeatureGateTemplateIDAmsFrontendFeatureGate                                         FeatureGateTemplateID = "AMS_FRONTEND_FEATURE_GATE"
 	FeatureGateTemplateIDAppraisalFeatureGate                                           FeatureGateTemplateID = "APPRAISAL_FEATURE_GATE"
+	FeatureGateTemplateIDAvatarGlowingArticlesOptimizationFeatureGate                   FeatureGateTemplateID = "AVATAR_GLOWING_ARTICLES_OPTIMIZATION_FEATURE_GATE"
+	FeatureGateTemplateIDAvatarPropOptimizationFeatureGate                              FeatureGateTemplateID = "AVATAR_PROP_OPTIMIZATION_FEATURE_GATE"
 	FeatureGateTemplateIDAvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate     FeatureGateTemplateID = "AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE"
 	FeatureGateTemplateIDBadgeServiceFeatureGate                                        FeatureGateTemplateID = "BADGE_SERVICE_FEATURE_GATE"
 	FeatureGateTemplateIDBreadBattlePrepUiForceRebuildOptimizationFeatureGate           FeatureGateTemplateID = "BREAD_BATTLE_PREP_UI_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE"
+	FeatureGateTemplateIDBuddyCandyQuestProgressAggregationFeatureGateSr                FeatureGateTemplateID = "BUDDY_CANDY_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR"
 	FeatureGateTemplateIDBuddySwapPlayerSnapshotFeatureGate                             FeatureGateTemplateID = "BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE"
+	FeatureGateTemplateIDBulkHealQuestProgressAggregationFeatureGateSr                  FeatureGateTemplateID = "BULK_HEAL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR"
 	FeatureGateTemplateIDCombatAcceptedTurnSwapSuppressionFeatureGateCr                 FeatureGateTemplateID = "COMBAT_ACCEPTED_TURN_SWAP_SUPPRESSION_FEATURE_GATE_CR"
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate             FeatureGateTemplateID = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextAllowLateSimultaneousIbfcFeatureGateCr              FeatureGateTemplateID = "COMBAT_VNEXT_ALLOW_LATE_SIMULTANEOUS_IBFC_FEATURE_GATE_CR"
@@ -27,6 +31,7 @@ const (
 	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate                             FeatureGateTemplateID = "COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextPreserveAddressableDirtMaterialBugFixFeatureGate    FeatureGateTemplateID = "COMBAT_VNEXT_PRESERVE_ADDRESSABLE_DIRT_MATERIAL_BUG_FIX_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate                     FeatureGateTemplateID = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE"
+	FeatureGateTemplateIDCombatVnextStatChangeBatchingFeatureGate                       FeatureGateTemplateID = "COMBAT_VNEXT_STAT_CHANGE_BATCHING_FEATURE_GATE"
 	FeatureGateTemplateIDCombatVnextSuppressFmAtCmScreenPointFixFeatureGateCr           FeatureGateTemplateID = "COMBAT_VNEXT_SUPPRESS_FM_AT_CM_SCREEN_POINT_FIX_FEATURE_GATE_CR"
 	FeatureGateTemplateIDCombatVnextTriggerSimultaneousIbfcOnLateCinematicFeatureGateCr FeatureGateTemplateID = "COMBAT_VNEXT_TRIGGER_SIMULTANEOUS_IBFC_ON_LATE_CINEMATIC_FEATURE_GATE_CR"
 	FeatureGateTemplateIDCombatVnextUseSynchronizedFormForCameraScaleFeatureGate        FeatureGateTemplateID = "COMBAT_VNEXT_USE_SYNCHRONIZED_FORM_FOR_CAMERA_SCALE_FEATURE_GATE"
@@ -64,6 +69,7 @@ const (
 	FeatureGateTemplateIDImmersiveCatchSummaryFeatureGate                               FeatureGateTemplateID = "IMMERSIVE_CATCH_SUMMARY_FEATURE_GATE"
 	FeatureGateTemplateIDImpersonationStatSyncFeatureGateSr                             FeatureGateTemplateID = "IMPERSONATION_STAT_SYNC_FEATURE_GATE_SR"
 	FeatureGateTemplateIDItemUseSortContextFeatureGate                                  FeatureGateTemplateID = "ITEM_USE_SORT_CONTEXT_FEATURE_GATE"
+	FeatureGateTemplateIDLegacyTappableQuestProgressAggregationFeatureGateSr            FeatureGateTemplateID = "LEGACY_TAPPABLE_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR"
 	FeatureGateTemplateIDLocationCardBackgroundsFeatureGate                             FeatureGateTemplateID = "LOCATION_CARD_BACKGROUNDS_FEATURE_GATE"
 	FeatureGateTemplateIDLocationCardBackgroundsRendererFeatureGate                     FeatureGateTemplateID = "LOCATION_CARD_BACKGROUNDS_RENDERER_FEATURE_GATE"
 	FeatureGateTemplateIDLocationCardRollFeatureGate                                    FeatureGateTemplateID = "LOCATION_CARD_ROLL_FEATURE_GATE"
@@ -78,6 +84,7 @@ const (
 	FeatureGateTemplateIDMichelinMapPokestopSpunContrastUpFeatureGate                   FeatureGateTemplateID = "MICHELIN_MAP_POKESTOP_SPUN_CONTRAST_UP_FEATURE_GATE"
 	FeatureGateTemplateIDMichelinMapZygardeCellRewardFeatureGate                        FeatureGateTemplateID = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE"
 	FeatureGateTemplateIDNearbyMenuRsvpRouteFixFeatureGateCr                            FeatureGateTemplateID = "NEARBY_MENU_RSVP_ROUTE_FIX_FEATURE_GATE_CR"
+	FeatureGateTemplateIDNearbySilhoutteFormFeatureGateSr                               FeatureGateTemplateID = "NEARBY_SILHOUTTE_FORM_FEATURE_GATE_SR"
 	FeatureGateTemplateIDNeutralAvatarShopItemForceRebuildOptimizationFeatureGate       FeatureGateTemplateID = "NEUTRAL_AVATAR_SHOP_ITEM_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE"
 	FeatureGateTemplateIDNpcGiftAutoClaimFeatureGate                                    FeatureGateTemplateID = "NPC_GIFT_AUTO_CLAIM_FEATURE_GATE"
 	FeatureGateTemplateIDPairedDeviceHelpFeatureGate                                    FeatureGateTemplateID = "PAIRED_DEVICE_HELP_FEATURE_GATE"
@@ -96,10 +103,12 @@ const (
 	FeatureGateTemplateIDRegisterDeviceFeatureGate                                      FeatureGateTemplateID = "REGISTER_DEVICE_FEATURE_GATE"
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate                             FeatureGateTemplateID = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE"
 	FeatureGateTemplateIDRemoteTradeSpeedGiftFixFeatureGate                             FeatureGateTemplateID = "REMOTE_TRADE_SPEED_GIFT_FIX_FEATURE_GATE"
+	FeatureGateTemplateIDRouteTravelQuestProgressAggregationFeatureGateSr               FeatureGateTemplateID = "ROUTE_TRAVEL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR"
 	FeatureGateTemplateIDRunCellUpdatesBackgroundThreadProcessingFeatureGate            FeatureGateTemplateID = "RUN_CELL_UPDATES_BACKGROUND_THREAD_PROCESSING_FEATURE_GATE"
 	FeatureGateTemplateIDSanitizeAdventureEffectServerOnlyFieldsFeatureGate             FeatureGateTemplateID = "SANITIZE_ADVENTURE_EFFECT_SERVER_ONLY_FIELDS_FEATURE_GATE"
 	FeatureGateTemplateIDSavePlayerSnapshotImmediateReasonFeatureGate                   FeatureGateTemplateID = "SAVE_PLAYER_SNAPSHOT_IMMEDIATE_REASON_FEATURE_GATE"
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate                        FeatureGateTemplateID = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE"
+	FeatureGateTemplateIDSkipZeroLevelBadgesFeatureGateSr                               FeatureGateTemplateID = "SKIP_ZERO_LEVEL_BADGES_FEATURE_GATE_SR"
 	FeatureGateTemplateIDSoftSfidaWidgetBackgroundColorFeatureGate                      FeatureGateTemplateID = "SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE"
 	FeatureGateTemplateIDStampRallyMiniGameAnimationLockFixFeatureGate                  FeatureGateTemplateID = "STAMP_RALLY_MINI_GAME_ANIMATION_LOCK_FIX_FEATURE_GATE"
 	FeatureGateTemplateIDStampRallyTimeTravelClientFeatureGate                          FeatureGateTemplateID = "STAMP_RALLY_TIME_TRAVEL_CLIENT_FEATURE_GATE"
@@ -128,6 +137,7 @@ const (
 	FeatureGateTemplateIDVnextRapidFireFastAttackEffectsFeatureGateCr                   FeatureGateTemplateID = "VNEXT_RAPID_FIRE_FAST_ATTACK_EFFECTS_FEATURE_GATE_CR"
 	FeatureGateTemplateIDWaitForDownscaledStatsBeforeEnterStateFeatureGate              FeatureGateTemplateID = "WAIT_FOR_DOWNSCALED_STATS_BEFORE_ENTER_STATE_FEATURE_GATE"
 	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate                               FeatureGateTemplateID = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE"
+	FeatureGateTemplateIDZygardeCellRewardCellCapFeatureGateSr                          FeatureGateTemplateID = "ZYGARDE_CELL_REWARD_CELL_CAP_FEATURE_GATE_SR"
 	FeatureGateTemplateIDZygardeCellRewardQuestFixFeatureGateSr                         FeatureGateTemplateID = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR"
 )
 
@@ -143,10 +153,14 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDAmsFeatureGate,
 	FeatureGateTemplateIDAmsFrontendFeatureGate,
 	FeatureGateTemplateIDAppraisalFeatureGate,
+	FeatureGateTemplateIDAvatarGlowingArticlesOptimizationFeatureGate,
+	FeatureGateTemplateIDAvatarPropOptimizationFeatureGate,
 	FeatureGateTemplateIDAvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate,
 	FeatureGateTemplateIDBadgeServiceFeatureGate,
 	FeatureGateTemplateIDBreadBattlePrepUiForceRebuildOptimizationFeatureGate,
+	FeatureGateTemplateIDBuddyCandyQuestProgressAggregationFeatureGateSr,
 	FeatureGateTemplateIDBuddySwapPlayerSnapshotFeatureGate,
+	FeatureGateTemplateIDBulkHealQuestProgressAggregationFeatureGateSr,
 	FeatureGateTemplateIDCombatAcceptedTurnSwapSuppressionFeatureGateCr,
 	FeatureGateTemplateIDCombatSuppressFastMovePredictionsOnSwapFeatureGate,
 	FeatureGateTemplateIDCombatVnextAllowLateSimultaneousIbfcFeatureGateCr,
@@ -154,6 +168,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDCombatVnextPlayMissedFmFeatureGate,
 	FeatureGateTemplateIDCombatVnextPreserveAddressableDirtMaterialBugFixFeatureGate,
 	FeatureGateTemplateIDCombatVnextShowMiniorIbfcToastsFeatureGate,
+	FeatureGateTemplateIDCombatVnextStatChangeBatchingFeatureGate,
 	FeatureGateTemplateIDCombatVnextSuppressFmAtCmScreenPointFixFeatureGateCr,
 	FeatureGateTemplateIDCombatVnextTriggerSimultaneousIbfcOnLateCinematicFeatureGateCr,
 	FeatureGateTemplateIDCombatVnextUseSynchronizedFormForCameraScaleFeatureGate,
@@ -191,6 +206,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDImmersiveCatchSummaryFeatureGate,
 	FeatureGateTemplateIDImpersonationStatSyncFeatureGateSr,
 	FeatureGateTemplateIDItemUseSortContextFeatureGate,
+	FeatureGateTemplateIDLegacyTappableQuestProgressAggregationFeatureGateSr,
 	FeatureGateTemplateIDLocationCardBackgroundsFeatureGate,
 	FeatureGateTemplateIDLocationCardBackgroundsRendererFeatureGate,
 	FeatureGateTemplateIDLocationCardRollFeatureGate,
@@ -205,6 +221,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDMichelinMapPokestopSpunContrastUpFeatureGate,
 	FeatureGateTemplateIDMichelinMapZygardeCellRewardFeatureGate,
 	FeatureGateTemplateIDNearbyMenuRsvpRouteFixFeatureGateCr,
+	FeatureGateTemplateIDNearbySilhoutteFormFeatureGateSr,
 	FeatureGateTemplateIDNeutralAvatarShopItemForceRebuildOptimizationFeatureGate,
 	FeatureGateTemplateIDNpcGiftAutoClaimFeatureGate,
 	FeatureGateTemplateIDPairedDeviceHelpFeatureGate,
@@ -223,10 +240,12 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDRegisterDeviceFeatureGate,
 	FeatureGateTemplateIDRemoteTradeImprovementsFeatureGate,
 	FeatureGateTemplateIDRemoteTradeSpeedGiftFixFeatureGate,
+	FeatureGateTemplateIDRouteTravelQuestProgressAggregationFeatureGateSr,
 	FeatureGateTemplateIDRunCellUpdatesBackgroundThreadProcessingFeatureGate,
 	FeatureGateTemplateIDSanitizeAdventureEffectServerOnlyFieldsFeatureGate,
 	FeatureGateTemplateIDSavePlayerSnapshotImmediateReasonFeatureGate,
 	FeatureGateTemplateIDSeafGetMapObjectsRateLimiterFeatureGate,
+	FeatureGateTemplateIDSkipZeroLevelBadgesFeatureGateSr,
 	FeatureGateTemplateIDSoftSfidaWidgetBackgroundColorFeatureGate,
 	FeatureGateTemplateIDStampRallyMiniGameAnimationLockFixFeatureGate,
 	FeatureGateTemplateIDStampRallyTimeTravelClientFeatureGate,
@@ -255,5 +274,6 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDVnextRapidFireFastAttackEffectsFeatureGateCr,
 	FeatureGateTemplateIDWaitForDownscaledStatsBeforeEnterStateFeatureGate,
 	FeatureGateTemplateIDWayfarerSubmitLinkoutFeatureGate,
+	FeatureGateTemplateIDZygardeCellRewardCellCapFeatureGateSr,
 	FeatureGateTemplateIDZygardeCellRewardQuestFixFeatureGateSr,
 }

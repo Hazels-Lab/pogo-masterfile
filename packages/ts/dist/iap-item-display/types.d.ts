@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1098 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1096 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -26,14 +26,13 @@ export interface IapItemDisplayData {
 		| "battle_pass_ticket_IAP_description"
 		| "deluxe_event_pass_track_unlock_description"
 		| "deluxe_event_pass_track_unlock_plus_points_description"
-		| "event_pass_gowa_2025_premium_title"
 		| "event_pass_plus_points_6_ranks_description"
 		| "gosafariball.10_description"
 		| "gosafariball.25_description"
 		| "gosafariball.50_description"
 		| "gotour_2025_deluxe_event_pass_track_unlock_description"
-		| "gotour_2025_deluxe_event_pass_track_unlock_plus_points_description"
 		| "iris_flair_free_description"
+		| "item_global_event_ticket_desc_GOTour2027"
 		| "MAXPOTION.5_DESCRIPTION"
 		| "MAXREVIVE.3_DESCRIPTION"
 		| "POSTCARD_EXPANSION_1_description";
@@ -44,14 +43,13 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F25acca32_PGO-MCS_Ticket%20Art_Poke%CC%81Coin_1024x576.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F920494a5_PGO-GOWA_Eternatus.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fcfa12bb9_PGO-GOWA_2026_GO_Pass_Deluxe.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
 		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
-		| "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus_points.png"
 		| "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
 	maxLevel?: number;
 	sale?: boolean;
@@ -69,8 +67,8 @@ export interface IapItemDisplayData {
 		| "2026-09-24T20:00:00"
 		| "2026-10-08T10:00:00"
 		| "2026-11-15T20:00:00"
-		| "2026-11-17T23:59:59"
 		| "2026-11-21T17:00:00"
+		| "2026-11-22T23:59:59"
 		| "2026-11-25T20:00:00"
 		| "2026-12-03T10:00:00";
 	skuDisableTimeUtcMs?:
@@ -84,14 +82,15 @@ export interface IapItemDisplayData {
 		| "1790280000000"
 		| "1791453600000"
 		| "1794772800000"
-		| "1794959999000"
 		| "1795280400000"
+		| "1795391999000"
 		| "1795636800000"
 		| "1796292000000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
 		| "2020-01-01T00:00:00"
+		| "2022-10-13T12:00:00"
 		| "2023-02-27T20:00:00"
 		| "2023-10-10T11:00:00"
 		| "2025-06-02T10:00:00"
@@ -99,13 +98,13 @@ export interface IapItemDisplayData {
 		| "2025-09-16T10:00:00"
 		| "2025-09-29T10:00:00"
 		| "2025-10-13T10:00:00"
-		| "2025-10-14T00:00:00"
 		| "2025-11-03T10:00:00"
 		| "2025-11-16T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
 		| "1577836800000"
+		| "1665662400000"
 		| "1677528000000"
 		| "1696935600000"
 		| "1748858400000"
@@ -113,7 +112,6 @@ export interface IapItemDisplayData {
 		| "1758016800000"
 		| "1759140000000"
 		| "1760349600000"
-		| "1760400000000"
 		| "1762164000000"
 		| "1763287200000";
 	sortOrder?: number;

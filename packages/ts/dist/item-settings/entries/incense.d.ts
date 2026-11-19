@@ -14,6 +14,7 @@ export type ItemSettingsItemIncenseBelugaBox = S<
 				incenseLifetimeSeconds: 3600;
 				spawnTableProbability: 1;
 			};
+			itemId: "ITEM_INCENSE_BELUGA_BOX";
 			itemType: "ITEM_TYPE_INCENSE";
 		}
 	>
@@ -29,6 +30,7 @@ export type ItemSettingsItemIncenseDailyAdventure = S<
 				incenseLifetimeSeconds: 1800;
 				spawnTableProbability: 0.25;
 			};
+			itemId: "ITEM_INCENSE_DAILY_ADVENTURE";
 			itemType: "ITEM_TYPE_INCENSE";
 		}
 	>
@@ -44,6 +46,7 @@ export type ItemSettingsItemIncenseDayBonus = S<
 				incenseLifetimeSeconds: 3600;
 				spawnTableProbability: 1;
 			};
+			itemId: "ITEM_INCENSE_DAY_BONUS";
 			itemType: "ITEM_TYPE_INCENSE";
 		}
 	>
@@ -59,6 +62,7 @@ export type ItemSettingsItemIncenseNightBonus = S<
 				incenseLifetimeSeconds: 3600;
 				spawnTableProbability: 1;
 			};
+			itemId: "ITEM_INCENSE_NIGHT_BONUS";
 			itemType: "ITEM_TYPE_INCENSE";
 		}
 	>
@@ -72,6 +76,7 @@ export type ItemSettingsItemIncenseOrdinary = S<
 			incense: {
 				incenseLifetimeSeconds: 3600;
 			};
+			itemId: "ITEM_INCENSE_ORDINARY";
 			itemType: "ITEM_TYPE_INCENSE";
 		}
 	>
@@ -87,6 +92,7 @@ export type ItemSettingsItemIncenseSparkly = S<
 				incenseLifetimeSeconds: 1800;
 				spawnTableProbability: 1;
 			};
+			itemId: "ITEM_INCENSE_SPARKLY";
 			itemType: "ITEM_TYPE_INCENSE";
 		}
 	>

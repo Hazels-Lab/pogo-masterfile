@@ -29,7 +29,6 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		"general2.ticket.3",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg";
 			sku: "pgorelease.general2.ticket.3";
 			skuDisableTime: "2026-11-21T17:00:00";
@@ -63,20 +62,18 @@ export type IapItemDisplayGeneral2Ticket11 = S<
 		}
 	>
 >;
-export type IapItemDisplayGowa2026EventPassStoreRedirect = S<
+export type IapItemDisplayGotourticket1 = S<
 	IapItemDisplay<
-		"GOWA2026_EVENT_PASS_STORE_REDIRECT",
+		"gotourticket.1",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "event_pass_gowa_2025_premium_title";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fcfa12bb9_PGO-GOWA_2026_GO_Pass_Deluxe.jpg";
-			sku: "pgorelease.gowa2026_event_pass_track_redirect";
-			skuDisableTime: "2026-11-17T23:59:59";
-			skuDisableTimeUtcMs: "1794959999000";
-			skuEnableTime: "2025-10-14T00:00:00";
-			skuEnableTimeUtcMs: "1760400000000";
+			description: "item_global_event_ticket_desc_GOTour2027";
+			hidden: true;
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg";
+			sku: "pgorelease.gotourticket.1";
 			sortOrder: 1;
-			title: "event_pass_gowa_2025_premium_title";
+			spriteId: "general2.ticket.5";
+			title: "GOTour_2027_ticket_title";
 			useEnvironmentPrefix: true;
 		}
 	>
@@ -121,6 +118,6 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
 	| IapItemDisplayGeneral2Ticket3
 	| IapItemDisplayGeneral2Ticket11
-	| IapItemDisplayGowa2026EventPassStoreRedirect
+	| IapItemDisplayGotourticket1
 	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect
 	| IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect;

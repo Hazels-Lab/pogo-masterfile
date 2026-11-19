@@ -39,6 +39,13 @@ pub struct Food {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum EventBadgeValue {
+    Uint(u64),
+    String(String),
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Candy {
     pub amount: u64,
@@ -91,16 +98,17 @@ pub struct GlobalEventTicket {
     pub background_image_url: Option<String>,
     pub client_event_end_time_utc_ms: String,
     pub client_event_start_time_utc_ms: String,
+    pub cnnkfighcfj: Option<String>,
     pub conflict_story_quest_ids: Option<[String; 2]>,
     pub details_link_key: Option<String>,
     pub display_v2_enabled: Option<bool>,
-    pub event_badge: Option<String>,
+    pub event_badge: Option<EventBadgeValue>,
     pub event_banner_url: Option<String>,
     pub event_datetime_range_key: Option<String>,
     pub event_end_time: String,
     pub event_start_time: String,
     pub giftable: Option<bool>,
-    pub gift_item: Option<String>,
+    pub gift_item: Option<EventBadgeValue>,
     pub grant_badge_before_event_start_ms: Option<String>,
     pub icon_rewards: Option<Vec<IconRewards>>,
     pub item_bag_description_key: String,
@@ -198,7 +206,7 @@ pub struct ItemSettings {
     pub incident_ticket: Option<IncidentTicket>,
     pub inventory_upgrade: Option<InventoryUpgrade>,
     pub item_cap: Option<u64>,
-    pub item_id: String,
+    pub item_id: EventBadgeValue,
     pub item_type: String,
     pub name_override: Option<String>,
     pub name_plural_override: Option<String>,

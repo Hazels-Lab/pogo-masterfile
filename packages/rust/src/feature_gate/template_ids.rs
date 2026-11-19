@@ -29,14 +29,22 @@ pub enum FeatureGateTemplateId {
     AmsFrontendFeatureGate,
     #[serde(rename = "APPRAISAL_FEATURE_GATE")]
     AppraisalFeatureGate,
+    #[serde(rename = "AVATAR_GLOWING_ARTICLES_OPTIMIZATION_FEATURE_GATE")]
+    AvatarGlowingArticlesOptimizationFeatureGate,
+    #[serde(rename = "AVATAR_PROP_OPTIMIZATION_FEATURE_GATE")]
+    AvatarPropOptimizationFeatureGate,
     #[serde(rename = "AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE")]
     AvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate,
     #[serde(rename = "BADGE_SERVICE_FEATURE_GATE")]
     BadgeServiceFeatureGate,
     #[serde(rename = "BREAD_BATTLE_PREP_UI_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE")]
     BreadBattlePrepUiForceRebuildOptimizationFeatureGate,
+    #[serde(rename = "BUDDY_CANDY_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
+    BuddyCandyQuestProgressAggregationFeatureGateSr,
     #[serde(rename = "BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE")]
     BuddySwapPlayerSnapshotFeatureGate,
+    #[serde(rename = "BULK_HEAL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
+    BulkHealQuestProgressAggregationFeatureGateSr,
     #[serde(rename = "COMBAT_ACCEPTED_TURN_SWAP_SUPPRESSION_FEATURE_GATE_CR")]
     CombatAcceptedTurnSwapSuppressionFeatureGateCr,
     #[serde(rename = "COMBAT_SUPPRESS_FAST_MOVE_PREDICTIONS_ON_SWAP_FEATURE_GATE")]
@@ -51,6 +59,8 @@ pub enum FeatureGateTemplateId {
     CombatVnextPreserveAddressableDirtMaterialBugFixFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE")]
     CombatVnextShowMiniorIbfcToastsFeatureGate,
+    #[serde(rename = "COMBAT_VNEXT_STAT_CHANGE_BATCHING_FEATURE_GATE")]
+    CombatVnextStatChangeBatchingFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_SUPPRESS_FM_AT_CM_SCREEN_POINT_FIX_FEATURE_GATE_CR")]
     CombatVnextSuppressFmAtCmScreenPointFixFeatureGateCr,
     #[serde(rename = "COMBAT_VNEXT_TRIGGER_SIMULTANEOUS_IBFC_ON_LATE_CINEMATIC_FEATURE_GATE_CR")]
@@ -125,6 +135,8 @@ pub enum FeatureGateTemplateId {
     ImpersonationStatSyncFeatureGateSr,
     #[serde(rename = "ITEM_USE_SORT_CONTEXT_FEATURE_GATE")]
     ItemUseSortContextFeatureGate,
+    #[serde(rename = "LEGACY_TAPPABLE_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
+    LegacyTappableQuestProgressAggregationFeatureGateSr,
     #[serde(rename = "LOCATION_CARD_BACKGROUNDS_FEATURE_GATE")]
     LocationCardBackgroundsFeatureGate,
     #[serde(rename = "LOCATION_CARD_BACKGROUNDS_RENDERER_FEATURE_GATE")]
@@ -153,6 +165,8 @@ pub enum FeatureGateTemplateId {
     MichelinMapZygardeCellRewardFeatureGate,
     #[serde(rename = "NEARBY_MENU_RSVP_ROUTE_FIX_FEATURE_GATE_CR")]
     NearbyMenuRsvpRouteFixFeatureGateCr,
+    #[serde(rename = "NEARBY_SILHOUTTE_FORM_FEATURE_GATE_SR")]
+    NearbySilhoutteFormFeatureGateSr,
     #[serde(rename = "NEUTRAL_AVATAR_SHOP_ITEM_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE")]
     NeutralAvatarShopItemForceRebuildOptimizationFeatureGate,
     #[serde(rename = "NPC_GIFT_AUTO_CLAIM_FEATURE_GATE")]
@@ -189,6 +203,8 @@ pub enum FeatureGateTemplateId {
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "REMOTE_TRADE_SPEED_GIFT_FIX_FEATURE_GATE")]
     RemoteTradeSpeedGiftFixFeatureGate,
+    #[serde(rename = "ROUTE_TRAVEL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
+    RouteTravelQuestProgressAggregationFeatureGateSr,
     #[serde(rename = "RUN_CELL_UPDATES_BACKGROUND_THREAD_PROCESSING_FEATURE_GATE")]
     RunCellUpdatesBackgroundThreadProcessingFeatureGate,
     #[serde(rename = "SANITIZE_ADVENTURE_EFFECT_SERVER_ONLY_FIELDS_FEATURE_GATE")]
@@ -197,6 +213,8 @@ pub enum FeatureGateTemplateId {
     SavePlayerSnapshotImmediateReasonFeatureGate,
     #[serde(rename = "SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE")]
     SeafGetMapObjectsRateLimiterFeatureGate,
+    #[serde(rename = "SKIP_ZERO_LEVEL_BADGES_FEATURE_GATE_SR")]
+    SkipZeroLevelBadgesFeatureGateSr,
     #[serde(rename = "SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE")]
     SoftSfidaWidgetBackgroundColorFeatureGate,
     #[serde(rename = "STAMP_RALLY_MINI_GAME_ANIMATION_LOCK_FIX_FEATURE_GATE")]
@@ -253,6 +271,8 @@ pub enum FeatureGateTemplateId {
     WaitForDownscaledStatsBeforeEnterStateFeatureGate,
     #[serde(rename = "WAYFARER_SUBMIT_LINKOUT_FEATURE_GATE")]
     WayfarerSubmitLinkoutFeatureGate,
+    #[serde(rename = "ZYGARDE_CELL_REWARD_CELL_CAP_FEATURE_GATE_SR")]
+    ZygardeCellRewardCellCapFeatureGateSr,
     #[serde(rename = "ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR")]
     ZygardeCellRewardQuestFixFeatureGateSr,
 }

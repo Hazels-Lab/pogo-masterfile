@@ -269,9 +269,7 @@ import type {
 	IapItemDisplayGoSafariBallIap10,
 	IapItemDisplayGoSafariBallIap25,
 	IapItemDisplayGoSafariBallIap50,
-	IapItemDisplayGowa2026DeluxeEventPassTrackUnlock,
-	IapItemDisplayGowa2026DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayGowa2026EventPassStoreRedirect,
+	IapItemDisplayGotourticket1,
 	IapItemDisplayHometransport1,
 	IapItemDisplayIncenseordinary1,
 	IapItemDisplayIncenseordinary8,
@@ -1370,9 +1368,7 @@ export interface IapItemDisplayLookup {
 	GO_SAFARI_BALL_IAP_10: IapItemDisplayGoSafariBallIap10;
 	GO_SAFARI_BALL_IAP_25: IapItemDisplayGoSafariBallIap25;
 	GO_SAFARI_BALL_IAP_50: IapItemDisplayGoSafariBallIap50;
-	GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayGowa2026DeluxeEventPassTrackUnlock;
-	GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayGowa2026DeluxeEventPassTrackUnlockPlusPoints;
-	GOWA2026_EVENT_PASS_STORE_REDIRECT: IapItemDisplayGowa2026EventPassStoreRedirect;
+	"gotourticket.1": IapItemDisplayGotourticket1;
 	"hometransport.1": IapItemDisplayHometransport1;
 	"incenseordinary.1": IapItemDisplayIncenseordinary1;
 	"incenseordinary.8": IapItemDisplayIncenseordinary8;

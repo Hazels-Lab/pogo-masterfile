@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", split "premium/leadout", 300 entries.
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", split "premium/gowa2026", 300 entries.
 
 import type { S } from "../../../_utils";
 import type { EventPassTierSettings } from "../../types";
@@ -5350,7 +5350,7 @@ export type EventPassTierSettingsGowa2026Leadout300Premium = S<
 	>
 >;
 
-export type EventPassTierSettingsPremiumLeadoutMasterfileEntry =
+export type EventPassTierSettingsPremiumGowa2026MasterfileEntry =
 	| EventPassTierSettingsGowa2026Leadout1Premium
 	| EventPassTierSettingsGowa2026Leadout2Premium
 	| EventPassTierSettingsGowa2026Leadout3Premium

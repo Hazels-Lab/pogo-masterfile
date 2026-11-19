@@ -273,9 +273,7 @@ const (
 	IapItemDisplayTemplateIDGoSafariBallIap10                                          IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_10"
 	IapItemDisplayTemplateIDGoSafariBallIap25                                          IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_25"
 	IapItemDisplayTemplateIDGoSafariBallIap50                                          IapItemDisplayTemplateID = "GO_SAFARI_BALL_IAP_50"
-	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlock                         IapItemDisplayTemplateID = "GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
-	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlockPlusPoints               IapItemDisplayTemplateID = "GOWA2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
-	IapItemDisplayTemplateIDGowa2026EventPassStoreRedirect                             IapItemDisplayTemplateID = "GOWA2026_EVENT_PASS_STORE_REDIRECT"
+	IapItemDisplayTemplateIDGotourticket1                                              IapItemDisplayTemplateID = "gotourticket.1"
 	IapItemDisplayTemplateIDHometransport1                                             IapItemDisplayTemplateID = "hometransport.1"
 	IapItemDisplayTemplateIDIncenseordinary1                                           IapItemDisplayTemplateID = "incenseordinary.1"
 	IapItemDisplayTemplateIDIncenseordinary8                                           IapItemDisplayTemplateID = "incenseordinary.8"
@@ -1374,9 +1372,7 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDGoSafariBallIap10,
 	IapItemDisplayTemplateIDGoSafariBallIap25,
 	IapItemDisplayTemplateIDGoSafariBallIap50,
-	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlock,
-	IapItemDisplayTemplateIDGowa2026DeluxeEventPassTrackUnlockPlusPoints,
-	IapItemDisplayTemplateIDGowa2026EventPassStoreRedirect,
+	IapItemDisplayTemplateIDGotourticket1,
 	IapItemDisplayTemplateIDHometransport1,
 	IapItemDisplayTemplateIDIncenseordinary1,
 	IapItemDisplayTemplateIDIncenseordinary8,

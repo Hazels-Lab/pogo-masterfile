@@ -85,6 +85,9 @@ import type {
 	ItemSettingsItemEventTicketS23202610ToGift,
 	ItemSettingsItemEventTicketS23202612,
 	ItemSettingsItemEventTicketS23202612ToGift,
+	ItemSettingsItemEventTicketS25202601,
+	ItemSettingsItemEventTicketS25202602,
+	ItemSettingsItemEventTicketS25202616,
 	ItemSettingsItemEvergreenTicket,
 	ItemSettingsItemEvergreenTicketToGift,
 	ItemSettingsItemFreeRaidTicket,
@@ -265,6 +268,9 @@ export interface ItemSettingsLookup {
 	ITEM_EVENT_TICKET_S24_SEP_12_COMMUNITY_TO_GIFT: ItemSettingsItemEventTicketS24Sep12CommunityToGift;
 	ITEM_EVENT_TICKET_S24_SEP_19_MEGARAID: ItemSettingsItemEventTicketS24Sep19Megaraid;
 	ITEM_EVENT_TICKET_S24_SEP_26_CATCH: ItemSettingsItemEventTicketS24Sep26Catch;
+	ITEM_EVENT_TICKET_S25_2026_01: ItemSettingsItemEventTicketS25202601;
+	ITEM_EVENT_TICKET_S25_2026_02: ItemSettingsItemEventTicketS25202602;
+	ITEM_EVENT_TICKET_S25_2026_16: ItemSettingsItemEventTicketS25202616;
 	ITEM_EVERGREEN_TICKET: ItemSettingsItemEvergreenTicket;
 	ITEM_EVERGREEN_TICKET_TO_GIFT: ItemSettingsItemEvergreenTicketToGift;
 	ITEM_FREE_RAID_TICKET: ItemSettingsItemFreeRaidTicket;

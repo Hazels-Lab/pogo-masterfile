@@ -14,6 +14,7 @@ export type ItemSettingsItemPoffin = S<
 				numBuddyHungerPoints: 6;
 				timeFullDurationMs: "21600000";
 			};
+			itemId: "ITEM_POFFIN";
 			itemType: "ITEM_TYPE_FOOD";
 		}
 	>

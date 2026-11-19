@@ -10,6 +10,7 @@ export type ItemSettingsItemEnhancedCurrencyHolder = S<
 			category: "ITEM_CATEGORY_ENHANCED_CURRENCY_HOLDER";
 			ignoreInventorySpace: true;
 			itemCap: 1;
+			itemId: "ITEM_ENHANCED_CURRENCY_HOLDER";
 			itemType: "ITEM_TYPE_ENHANCED_CURRENCY_HOLDER";
 		}
 	>
