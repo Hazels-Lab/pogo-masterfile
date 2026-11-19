@@ -585,6 +585,8 @@ pub enum BadgeSettingsTemplateId {
     BadgeGoTour2026TainanTestPark,
     #[serde(rename = "BADGE_GO_TOUR_2026_TAINAN_VIP")]
     BadgeGoTour2026TainanVip,
+    #[serde(rename = "BADGE_GO_TOUR_2027_GLOBAL")]
+    BadgeGoTour2027Global,
     #[serde(rename = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS")]
     BadgeGofest2019AmericasDay00NorthEarlyaccess,
     #[serde(rename = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL")]

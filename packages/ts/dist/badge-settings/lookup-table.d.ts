@@ -679,6 +679,7 @@ import type {
 	BadgeSettingsGoTour2026TainanTestCity,
 	BadgeSettingsGoTour2026TainanTestPark,
 	BadgeSettingsGoTour2026TainanVip,
+	BadgeSettingsGoTour2027Global,
 	BadgeSettingsGotour2021GreenGlobal,
 	BadgeSettingsGotour2021GreenTest,
 	BadgeSettingsGotour2021RedGlobal,
@@ -1409,6 +1410,7 @@ export interface BadgeSettingsLookup {
 	BADGE_GO_TOUR_2026_TAINAN_TEST_CITY: BadgeSettingsGoTour2026TainanTestCity;
 	BADGE_GO_TOUR_2026_TAINAN_TEST_PARK: BadgeSettingsGoTour2026TainanTestPark;
 	BADGE_GO_TOUR_2026_TAINAN_VIP: BadgeSettingsGoTour2026TainanVip;
+	BADGE_GO_TOUR_2027_GLOBAL: BadgeSettingsGoTour2027Global;
 	BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS: BadgeSettingsGofest2019AmericasDay00NorthEarlyaccess;
 	BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL: BadgeSettingsGofest2019AmericasDay00NorthGeneral;
 	BADGE_GOFEST_2019_AMERICAS_DAY_00_SOUTH_EARLYACCESS: BadgeSettingsGofest2019AmericasDay00SouthEarlyaccess;

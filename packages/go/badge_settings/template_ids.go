@@ -294,6 +294,7 @@ const (
 	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestCity                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_TEST_CITY"
 	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestPark                    BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_TEST_PARK"
 	BadgeSettingsTemplateIDBadgeGoTour2026TainanVip                         BadgeSettingsTemplateID = "BADGE_GO_TOUR_2026_TAINAN_VIP"
+	BadgeSettingsTemplateIDBadgeGoTour2027Global                            BadgeSettingsTemplateID = "BADGE_GO_TOUR_2027_GLOBAL"
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthEarlyaccess     BadgeSettingsTemplateID = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_EARLYACCESS"
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthGeneral         BadgeSettingsTemplateID = "BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH_GENERAL"
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00SouthEarlyaccess     BadgeSettingsTemplateID = "BADGE_GOFEST_2019_AMERICAS_DAY_00_SOUTH_EARLYACCESS"
@@ -1413,6 +1414,7 @@ var BadgeSettingsTemplateIDValues = [...]BadgeSettingsTemplateID{
 	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestCity,
 	BadgeSettingsTemplateIDBadgeGoTour2026TainanTestPark,
 	BadgeSettingsTemplateIDBadgeGoTour2026TainanVip,
+	BadgeSettingsTemplateIDBadgeGoTour2027Global,
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthEarlyaccess,
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00NorthGeneral,
 	BadgeSettingsTemplateIDBadgeGofest2019AmericasDay00SouthEarlyaccess,

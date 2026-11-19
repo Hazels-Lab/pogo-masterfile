@@ -10,6 +10,7 @@ export type ItemSettingsItemSpecialCamera = S<
 			category: "ITEM_CATEGORY_CAMERA";
 			dropTrainerLevel: 100;
 			ignoreInventorySpace: true;
+			itemId: "ITEM_SPECIAL_CAMERA";
 			itemType: "ITEM_TYPE_CAMERA";
 		}
 	>

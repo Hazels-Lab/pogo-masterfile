@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1170 entries.
+// Generated from Pokémon GO masterfile — group "pokemonExtendedSettings", split "form", 1168 entries.
 
 import type { S } from "../../_utils";
 import type { PokemonExtendedSettings } from "../types";
@@ -377,23 +377,6 @@ export type PokemonExtendedSettingsV0026PokemonRaichuAlola = S<
 		}
 	>
 >;
-export type PokemonExtendedSettingsV0027PokemonSandshrewAlola = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0027_POKEMON_SANDSHREW_ALOLA",
-		{
-			form: "SANDSHREW_ALOLA";
-			sizeSettings: {
-				mLowerBound: 0.525;
-				mUpperBound: 0.875;
-				xlUpperBound: 1.05;
-				xsLowerBound: 0.35;
-				xxlUpperBound: 1.225;
-				xxsLowerBound: 0.343;
-			};
-			uniqueId: "SANDSHREW";
-		}
-	>
->;
 export type PokemonExtendedSettingsV0027PokemonSandshrewNormal = S<
 	PokemonExtendedSettings<
 		"EXTENDED_V0027_POKEMON_SANDSHREW_NORMAL",
@@ -408,23 +391,6 @@ export type PokemonExtendedSettingsV0027PokemonSandshrewNormal = S<
 				xxsLowerBound: 0.294;
 			};
 			uniqueId: "SANDSHREW";
-		}
-	>
->;
-export type PokemonExtendedSettingsV0028PokemonSandslashAlola = S<
-	PokemonExtendedSettings<
-		"EXTENDED_V0028_POKEMON_SANDSLASH_ALOLA",
-		{
-			form: "SANDSLASH_ALOLA";
-			sizeSettings: {
-				mLowerBound: 0.9;
-				mUpperBound: 1.5;
-				xlUpperBound: 1.8;
-				xsLowerBound: 0.6;
-				xxlUpperBound: 2.1;
-				xxsLowerBound: 0.588;
-			};
-			uniqueId: "SANDSLASH";
 		}
 	>
 >;
@@ -20067,9 +20033,7 @@ export type PokemonExtendedSettingsFormMasterfileEntry =
 	| PokemonExtendedSettingsV0023PokemonEkansNormal
 	| PokemonExtendedSettingsV0024PokemonArbokNormal
 	| PokemonExtendedSettingsV0026PokemonRaichuAlola
-	| PokemonExtendedSettingsV0027PokemonSandshrewAlola
 	| PokemonExtendedSettingsV0027PokemonSandshrewNormal
-	| PokemonExtendedSettingsV0028PokemonSandslashAlola
 	| PokemonExtendedSettingsV0028PokemonSandslashNormal
 	| PokemonExtendedSettingsV0029PokemonNidoranNormal
 	| PokemonExtendedSettingsV0030PokemonNidorinaNormal

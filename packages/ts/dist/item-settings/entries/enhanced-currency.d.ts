@@ -11,6 +11,7 @@ export type ItemSettingsItemEnhancedCurrency = S<
 			dropTrainerLevel: 1;
 			ignoreInventorySpace: true;
 			itemCap: 600;
+			itemId: "ITEM_ENHANCED_CURRENCY";
 			itemType: "ITEM_TYPE_ENHANCED_CURRENCY";
 		}
 	>

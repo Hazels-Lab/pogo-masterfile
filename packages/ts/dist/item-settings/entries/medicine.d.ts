@@ -9,6 +9,7 @@ export type ItemSettingsItemHyperPotion = S<
 		{
 			category: "ITEM_CATEGORY_MEDICINE";
 			dropTrainerLevel: 15;
+			itemId: "ITEM_HYPER_POTION";
 			itemType: "ITEM_TYPE_POTION";
 			potion: {
 				staAmount: 200;
@@ -22,6 +23,7 @@ export type ItemSettingsItemMaxPotion = S<
 		{
 			category: "ITEM_CATEGORY_MEDICINE";
 			dropTrainerLevel: 25;
+			itemId: "ITEM_MAX_POTION";
 			itemType: "ITEM_TYPE_POTION";
 			potion: {
 				staPercent: 1;
@@ -35,6 +37,7 @@ export type ItemSettingsItemMaxRevive = S<
 		{
 			category: "ITEM_CATEGORY_MEDICINE";
 			dropTrainerLevel: 30;
+			itemId: "ITEM_MAX_REVIVE";
 			itemType: "ITEM_TYPE_REVIVE";
 			revive: {
 				staPercent: 1;
@@ -48,6 +51,7 @@ export type ItemSettingsItemPotion = S<
 		{
 			category: "ITEM_CATEGORY_MEDICINE";
 			dropTrainerLevel: 5;
+			itemId: "ITEM_POTION";
 			itemType: "ITEM_TYPE_POTION";
 			potion: {
 				staAmount: 20;
@@ -61,6 +65,7 @@ export type ItemSettingsItemRevive = S<
 		{
 			category: "ITEM_CATEGORY_MEDICINE";
 			dropTrainerLevel: 5;
+			itemId: "ITEM_REVIVE";
 			itemType: "ITEM_TYPE_REVIVE";
 			revive: {
 				staPercent: 0.5;
@@ -74,6 +79,7 @@ export type ItemSettingsItemSuperPotion = S<
 		{
 			category: "ITEM_CATEGORY_MEDICINE";
 			dropTrainerLevel: 10;
+			itemId: "ITEM_SUPER_POTION";
 			itemType: "ITEM_TYPE_POTION";
 			potion: {
 				staAmount: 50;

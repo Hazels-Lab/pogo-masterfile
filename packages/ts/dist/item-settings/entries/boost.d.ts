@@ -9,6 +9,7 @@ export type ItemSettingsItemMaxBoost = S<
 		{
 			category: "ITEM_CATEGORY_BOOST";
 			dropTrainerLevel: 12;
+			itemId: "ITEM_MAX_BOOST";
 			itemType: "ITEM_TYPE_BATTLE";
 		}
 	>
@@ -19,6 +20,7 @@ export type ItemSettingsItemXAttack = S<
 		{
 			category: "ITEM_CATEGORY_BOOST";
 			dropTrainerLevel: 100;
+			itemId: "ITEM_X_ATTACK";
 			itemType: "ITEM_TYPE_BATTLE";
 		}
 	>
@@ -29,6 +31,7 @@ export type ItemSettingsItemXDefense = S<
 		{
 			category: "ITEM_CATEGORY_BOOST";
 			dropTrainerLevel: 100;
+			itemId: "ITEM_X_DEFENSE";
 			itemType: "ITEM_TYPE_BATTLE";
 		}
 	>
@@ -39,6 +42,7 @@ export type ItemSettingsItemXMiracle = S<
 		{
 			category: "ITEM_CATEGORY_BOOST";
 			dropTrainerLevel: 100;
+			itemId: "ITEM_X_MIRACLE";
 			itemType: "ITEM_TYPE_BATTLE";
 		}
 	>

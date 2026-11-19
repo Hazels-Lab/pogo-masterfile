@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "itemSettings", 177 entries (structural types).
+// Generated from Pokémon GO masterfile — group "itemSettings", 180 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -6,9 +6,7 @@ export interface ItemSettings<TemplateID extends string = string, TData extends 
 	templateId: TemplateID;
 	data: {
 		templateId: TemplateID;
-		itemSettings: TData & {
-			itemId: TemplateID;
-		};
+		itemSettings: TData;
 	};
 }
 export type ItemSettingsType = W<ItemSettings>;
@@ -46,6 +44,7 @@ export interface ItemSettingsData {
 		| "ITEM_CATEGORY_UTILITES"
 		| "ITEM_CATEGORY_XP_BOOST";
 	descriptionOverride?:
+		| "inteleon_gmax_2026_ticket_description"
 		| "item_event_ticket_02_desc_catch_mastery_Phantump"
 		| "item_event_ticket_02_details_CATCH_MASTERY_ORICORIO"
 		| "ITEM_EVENT_TICKET_05_details_gmaxRillaboom26"
@@ -72,6 +71,7 @@ export interface ItemSettingsData {
 		| "item_event_ticket_gray_desc_MegaStaraptorRaidDay"
 		| "item_event_ticket_gray_desc_shayminmasterworkrerun"
 		| "item_event_ticket_gray_details_SandileHatchDay26"
+		| "item_event_ticket_pink_details_CD_Dec2026"
 		| "item_event_ticket_pink_details_CD_Frigibax26"
 		| "item_event_ticket_pink_details_CD_Nickit26"
 		| "item_event_ticket_pink_details_CD_Pawniard26"
@@ -84,6 +84,7 @@ export interface ItemSettingsData {
 		| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26"
 		| "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_desc"
 		| "item_global_event_ticket_details_GOTour2026"
+		| "item_global_event_ticket_details_GOTour2027"
 		| "item_global_event_ticket_details_GOWA26"
 		| "item_postcard_inventory_desc_stamp";
 	dropTrainerLevel?: number;
@@ -147,9 +148,11 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fbda72c6e_PGO-MCS_GMAX_Inteleon_v1_1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fdaa6a9dd_PGO_MCS_CD_Classic_KeyArt_Gible_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
@@ -210,7 +213,10 @@ export interface ItemSettingsData {
 			| "1794765600000"
 			| "1795280400000"
 			| "1795885200000"
-			| "1797422400000";
+			| "1796490000000"
+			| "1797195600000"
+			| "1797422400000"
+			| "1803837600000";
 		clientEventStartTimeUtcMs:
 			| "1696845600000"
 			| "1697364000000"
@@ -250,14 +256,20 @@ export interface ItemSettingsData {
 			| "1794650400000"
 			| "1795269600000"
 			| "1795874400000"
-			| "1796112000000";
+			| "1796112000000"
+			| "1796479200000"
+			| "1797066000000"
+			| "1803722400000";
+		cnnkfighcfj?: "community_day_Dec2026_event_name";
 		conflictStoryQuestIds?: ["RERUN_MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER", "MASTERWORK_SHINY_SHAYMIN_SET_0_HEADER"];
 		detailsLinkKey?:
 			| "details_link_key"
 			| "details_link_key_10th_anniversary"
+			| "details_link_key_CD_Dec2026"
 			| "details_link_key_dmax_sinnoh_lake_max_battle"
 			| "details_link_key_ENTEI_SHADOW_RAID_DAY"
 			| "details_link_key_fashion_raid_day"
+			| "details_link_key_GOTour2026"
 			| "details_link_key_mega_falinks_raid_day"
 			| "details_link_key_mega_skarmory_raid_day"
 			| "details_link_key_mega_staraptor_raid_day"
@@ -270,24 +282,28 @@ export interface ItemSettingsData {
 			| "details_link_key_REPLAY_GO_BIGGER_MAX_BATTLE"
 			| "details_link_key_Riolu_Hatch0426"
 			| "details_link_key_shayminmasterworkrerun"
+			| "inteleon_gmax_2026_details_link"
 			| "item_event_ticket_evergreen_details_PawPrint_20250620"
 			| "item_global_event_ticket_details_GOTour2026"
 			| "nickit_website_link"
 			| "zorua_website_link";
 		displayV2Enabled?: boolean;
-		eventBadge?: "BADGE_GO_TOUR_2026_GLOBAL" | "BADGE_GOWA_2026_GLOBAL";
+		eventBadge?: number | "BADGE_GO_TOUR_2026_GLOBAL" | "BADGE_GOWA_2026_GLOBAL";
 		eventBannerUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31e2d68a_PGO-MCS_CD_December_Recap_2026_v5-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F452fd1a0_PGO-MCS_Chandelure_Super_Mega_Raid_Day_v3_1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58392656_PGO_MCS_S25_GBL_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fbda72c6e_PGO-MCS_GMAX_Inteleon_v1_1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fc397eb56_PGO-MCS_Staraptor_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fe4d25391_PGO-MCS_Phantump_Catch_Mastery_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg"
@@ -379,7 +395,10 @@ export interface ItemSettingsData {
 			| "2026-11-15T18:00:00"
 			| "2026-11-21T17:00:00"
 			| "2026-11-28T17:00:00"
-			| "2026-12-16T12:00:00";
+			| "2026-12-05T17:00:00"
+			| "2026-12-13T21:00:00"
+			| "2026-12-16T12:00:00"
+			| "2027-02-28T18:00:00";
 		eventStartTime:
 			| "2023-10-09T10:00:00"
 			| "2023-10-15T10:00:00"
@@ -419,9 +438,13 @@ export interface ItemSettingsData {
 			| "2026-11-14T10:00:00"
 			| "2026-11-21T14:00:00"
 			| "2026-11-28T14:00:00"
-			| "2026-12-01T08:00:00";
+			| "2026-12-01T08:00:00"
+			| "2026-12-05T14:00:00"
+			| "2026-12-12T09:00:00"
+			| "2027-02-27T10:00:00";
 		giftable?: boolean;
 		giftItem?:
+			| number
 			| "ITEM_EVENT_TICKET_02_TO_GIFT"
 			| "ITEM_EVENT_TICKET_03_TO_GIFT"
 			| "ITEM_EVENT_TICKET_04_TO_GIFT"
@@ -456,7 +479,7 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S24_SEP_26_CATCH_TO_GIFT"
 			| "ITEM_EVERGREEN_TICKET_TO_GIFT"
 			| "ITEM_GLOBAL_EVENT_TICKET_TO_GIFT";
-		grantBadgeBeforeEventStartMs?: "640800000" | "1769904000000";
+		grantBadgeBeforeEventStartMs?: "36000000" | "640800000" | "1769904000000";
 		iconRewards?: Array<{
 			candy?: {
 				amount: number;
@@ -474,6 +497,8 @@ export interface ItemSettingsData {
 					| "ITEM_LUCKY_EGG"
 					| "ITEM_MASTER_BALL"
 					| "ITEM_MAX_BOOST"
+					| "ITEM_MOVE_REROLL_ELITE_FAST_ATTACK"
+					| "ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK"
 					| "ITEM_MOVE_REROLL_OTHER_SPECIAL_ATTACK_A"
 					| "ITEM_MP"
 					| "ITEM_PAID_RAID_TICKET"
@@ -543,6 +568,7 @@ export interface ItemSettingsData {
 			type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "POKEMON_ENCOUNTER" | "STARDUST";
 		}>;
 		itemBagDescriptionKey:
+			| "inteleon_gmax_2026_ticket_details"
 			| "item_battle_pass_ticket_desc"
 			| "item_event_ticket_02_desc_CATCH_MASTERY_ORICORIO"
 			| "item_event_ticket_02_desc_catch_mastery_Phantump"
@@ -571,6 +597,7 @@ export interface ItemSettingsData {
 			| "item_event_ticket_gray_details_MegaRaichuRaidDay"
 			| "item_event_ticket_gray_details_MegaSkarmoryRaidDay"
 			| "item_event_ticket_gray_details_shayminmasterworkrerun"
+			| "item_event_ticket_pink_desc_CD_Dec2026"
 			| "item_event_ticket_pink_desc_CD_Frigibax26"
 			| "item_event_ticket_pink_desc_CD_Nickit26"
 			| "item_event_ticket_pink_desc_CD_Pawniard26"
@@ -584,14 +611,17 @@ export interface ItemSettingsData {
 			| "ITEM_EVENT_TICKET_S24_OCT_3_MAXBATTLE_desc_gmaxCinderace26"
 			| "ITEM_EVENT_TICKET_S24_OCT_24_MAXBATTLE_details"
 			| "item_global_event_ticket_details_GOTour2026"
+			| "item_global_event_ticket_details_GOTour2027"
 			| "item_global_event_ticket_details_GOWA26"
 			| "item_ticket_city_safari_00_desc"
 			| "item_ticket_city_safari_01_desc"
 			| "item_ticket_city_safari_02_desc";
 		textRewardsKey?:
+			| "inteleon_gmax_2026_ticket_rewards"
 			| "text_rewards_key_10THPARTY0726"
 			| "text_rewards_key_CATCH_MASTERY_ORICORIO"
 			| "text_rewards_key_catch_mastery_Phantump"
+			| "text_rewards_key_CD_Dec2026"
 			| "text_rewards_key_CD_Frigibax26"
 			| "text_rewards_key_CD_Nickit26"
 			| "text_rewards_key_CD_Pawniard26"
@@ -607,6 +637,7 @@ export interface ItemSettingsData {
 			| "text_rewards_key_gmaxCinderace26"
 			| "text_rewards_key_gmaxRillaboom26"
 			| "text_rewards_key_GOTour2026"
+			| "text_rewards_key_GOTour2027"
 			| "text_rewards_key_GOWA26"
 			| "text_rewards_key_IntoTDepths26"
 			| "text_rewards_key_masterball25"
@@ -665,6 +696,7 @@ export interface ItemSettingsData {
 		upgradeType: "INCREASE_ITEM_STORAGE" | "INCREASE_POKEMON_STORAGE" | "INCREASE_POSTCARD_STORAGE";
 	};
 	itemCap?: number;
+	itemId: number | string;
 	itemType:
 		| "ITEM_TYPE_BATTLE"
 		| "ITEM_TYPE_BREAKFAST"
@@ -699,6 +731,7 @@ export interface ItemSettingsData {
 		| "ITEM_TYPE_TEAM_CHANGE"
 		| "ITEM_TYPE_XP_BOOST";
 	nameOverride?:
+		| "general1.ticket_CD_Dec2026_title"
 		| "general1.ticket_CD_Frigibax26_title"
 		| "general1.ticket_CD_Nickit26_title"
 		| "general1.ticket_CD_Pawniard26_title"
@@ -732,6 +765,8 @@ export interface ItemSettingsData {
 		| "general2.ticket2.CATCH_MASTERY_ORICORIO"
 		| "general2.ticket4.catch_mastery_Phantump"
 		| "GOTour_2026_ticket_title"
+		| "GOTour_2027_ticket_title"
+		| "inteleon_gmax_2026_ticket_title"
 		| "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name"
 		| "item_postcard_inventory_name_stamp";
 	namePluralOverride?: "ITEM_EVENT_PASS_POINT_GO_TOUR_01_name";

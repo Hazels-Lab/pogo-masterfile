@@ -2,6 +2,8 @@
 
 package item_settings
 
+import "encoding/json"
+
 type ItemSettingsExpiredIncubatorReplacement struct {
 	IncubatorReplacement string `json:"incubatorReplacement"`
 	UsesCountOverride    uint64 `json:"usesCountOverride"`
@@ -71,16 +73,17 @@ type ItemSettingsGlobalEventTicket struct {
 	BackgroundImageUrl           *string                   `json:"backgroundImageUrl,omitempty"`
 	ClientEventEndTimeUtcMs      string                    `json:"clientEventEndTimeUtcMs"`
 	ClientEventStartTimeUtcMs    string                    `json:"clientEventStartTimeUtcMs"`
+	Cnnkfighcfj                  *string                   `json:"cnnkfighcfj,omitempty"`
 	ConflictStoryQuestIds        *[2]string                `json:"conflictStoryQuestIds,omitempty"`
 	DetailsLinkKey               *string                   `json:"detailsLinkKey,omitempty"`
 	DisplayV2enabled             *bool                     `json:"displayV2Enabled,omitempty"`
-	EventBadge                   *string                   `json:"eventBadge,omitempty"`
+	EventBadge                   json.RawMessage           `json:"eventBadge,omitempty"`
 	EventBannerUrl               *string                   `json:"eventBannerUrl,omitempty"`
 	EventDatetimeRangeKey        *string                   `json:"eventDatetimeRangeKey,omitempty"`
 	EventEndTime                 string                    `json:"eventEndTime"`
 	EventStartTime               string                    `json:"eventStartTime"`
 	Giftable                     *bool                     `json:"giftable,omitempty"`
-	GiftItem                     *string                   `json:"giftItem,omitempty"`
+	GiftItem                     json.RawMessage           `json:"giftItem,omitempty"`
 	GrantBadgeBeforeEventStartMs *string                   `json:"grantBadgeBeforeEventStartMs,omitempty"`
 	IconRewards                  []ItemSettingsIconRewards `json:"iconRewards,omitempty"`
 	ItemBagDescriptionKey        string                    `json:"itemBagDescriptionKey"`
@@ -154,7 +157,7 @@ type ItemSettings struct {
 	IncidentTicket       *ItemSettingsIncidentTicket     `json:"incidentTicket,omitempty"`
 	InventoryUpgrade     *ItemSettingsInventoryUpgrade   `json:"inventoryUpgrade,omitempty"`
 	ItemCap              *uint64                         `json:"itemCap,omitempty"`
-	ItemId               string                          `json:"itemId"`
+	ItemId               json.RawMessage                 `json:"itemId"`
 	ItemType             string                          `json:"itemType"`
 	NameOverride         *string                         `json:"nameOverride,omitempty"`
 	NamePluralOverride   *string                         `json:"namePluralOverride,omitempty"`

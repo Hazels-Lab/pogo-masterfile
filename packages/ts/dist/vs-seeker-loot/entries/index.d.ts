@@ -11,7 +11,7 @@ export type VsSeekerLoot1Free = S<
 			reward: [
 				{
 					item: {
-						count: 300;
+						count: 1200;
 						stardust: true;
 					};
 				},
@@ -29,7 +29,7 @@ export type VsSeekerLoot1Free = S<
 				},
 				{
 					item: {
-						count: 600;
+						count: 2400;
 						stardust: true;
 					};
 				},
@@ -45,7 +45,7 @@ export type VsSeekerLoot1Premium = S<
 			reward: [
 				{
 					item: {
-						count: 600;
+						count: 2400;
 						stardust: true;
 					};
 				},
@@ -63,7 +63,7 @@ export type VsSeekerLoot1Premium = S<
 				},
 				{
 					item: {
-						count: 1200;
+						count: 4800;
 						stardust: true;
 					};
 				},
@@ -80,7 +80,7 @@ export type VsSeekerLoot2Free = S<
 			reward: [
 				{
 					item: {
-						count: 330;
+						count: 1320;
 						stardust: true;
 					};
 				},
@@ -98,7 +98,7 @@ export type VsSeekerLoot2Free = S<
 				},
 				{
 					item: {
-						count: 660;
+						count: 2640;
 						stardust: true;
 					};
 				},
@@ -114,7 +114,7 @@ export type VsSeekerLoot2Premium = S<
 			reward: [
 				{
 					item: {
-						count: 660;
+						count: 2640;
 						stardust: true;
 					};
 				},
@@ -132,7 +132,7 @@ export type VsSeekerLoot2Premium = S<
 				},
 				{
 					item: {
-						count: 1320;
+						count: 5280;
 						stardust: true;
 					};
 				},
@@ -149,7 +149,7 @@ export type VsSeekerLoot3Free = S<
 			reward: [
 				{
 					item: {
-						count: 330;
+						count: 1320;
 						stardust: true;
 					};
 				},
@@ -167,7 +167,7 @@ export type VsSeekerLoot3Free = S<
 				},
 				{
 					item: {
-						count: 660;
+						count: 2640;
 						stardust: true;
 					};
 				},
@@ -183,7 +183,7 @@ export type VsSeekerLoot3Premium = S<
 			reward: [
 				{
 					item: {
-						count: 660;
+						count: 2640;
 						stardust: true;
 					};
 				},
@@ -201,7 +201,7 @@ export type VsSeekerLoot3Premium = S<
 				},
 				{
 					item: {
-						count: 1320;
+						count: 5280;
 						stardust: true;
 					};
 				},
@@ -218,7 +218,7 @@ export type VsSeekerLoot4Free = S<
 			reward: [
 				{
 					item: {
-						count: 370;
+						count: 1480;
 						stardust: true;
 					};
 				},
@@ -236,7 +236,7 @@ export type VsSeekerLoot4Free = S<
 				},
 				{
 					item: {
-						count: 740;
+						count: 2960;
 						stardust: true;
 					};
 				},
@@ -252,7 +252,7 @@ export type VsSeekerLoot4Premium = S<
 			reward: [
 				{
 					item: {
-						count: 740;
+						count: 2960;
 						stardust: true;
 					};
 				},
@@ -270,7 +270,7 @@ export type VsSeekerLoot4Premium = S<
 				},
 				{
 					item: {
-						count: 1480;
+						count: 5920;
 						stardust: true;
 					};
 				},
@@ -338,7 +338,7 @@ export type VsSeekerLoot6Free = S<
 			reward: [
 				{
 					item: {
-						count: 400;
+						count: 1600;
 						stardust: true;
 					};
 				},
@@ -356,7 +356,7 @@ export type VsSeekerLoot6Free = S<
 				},
 				{
 					item: {
-						count: 800;
+						count: 3200;
 						stardust: true;
 					};
 				},
@@ -372,7 +372,7 @@ export type VsSeekerLoot6Premium = S<
 			reward: [
 				{
 					item: {
-						count: 800;
+						count: 3200;
 						stardust: true;
 					};
 				},
@@ -390,7 +390,7 @@ export type VsSeekerLoot6Premium = S<
 				},
 				{
 					item: {
-						count: 1600;
+						count: 6400;
 						stardust: true;
 					};
 				},
@@ -407,7 +407,7 @@ export type VsSeekerLoot7Free = S<
 			reward: [
 				{
 					item: {
-						count: 430;
+						count: 1720;
 						stardust: true;
 					};
 				},
@@ -425,7 +425,7 @@ export type VsSeekerLoot7Free = S<
 				},
 				{
 					item: {
-						count: 860;
+						count: 3440;
 						stardust: true;
 					};
 				},
@@ -441,7 +441,7 @@ export type VsSeekerLoot7Premium = S<
 			reward: [
 				{
 					item: {
-						count: 860;
+						count: 3440;
 						stardust: true;
 					};
 				},
@@ -459,7 +459,7 @@ export type VsSeekerLoot7Premium = S<
 				},
 				{
 					item: {
-						count: 1720;
+						count: 6880;
 						stardust: true;
 					};
 				},
@@ -476,7 +476,7 @@ export type VsSeekerLoot8Free = S<
 			reward: [
 				{
 					item: {
-						count: 430;
+						count: 1720;
 						stardust: true;
 					};
 				},
@@ -494,7 +494,7 @@ export type VsSeekerLoot8Free = S<
 				},
 				{
 					item: {
-						count: 860;
+						count: 3440;
 						stardust: true;
 					};
 				},
@@ -510,7 +510,7 @@ export type VsSeekerLoot8Premium = S<
 			reward: [
 				{
 					item: {
-						count: 860;
+						count: 3440;
 						stardust: true;
 					};
 				},
@@ -528,7 +528,7 @@ export type VsSeekerLoot8Premium = S<
 				},
 				{
 					item: {
-						count: 1720;
+						count: 6880;
 						stardust: true;
 					};
 				},
@@ -545,7 +545,7 @@ export type VsSeekerLoot9Free = S<
 			reward: [
 				{
 					item: {
-						count: 470;
+						count: 1880;
 						stardust: true;
 					};
 				},
@@ -563,7 +563,7 @@ export type VsSeekerLoot9Free = S<
 				},
 				{
 					item: {
-						count: 940;
+						count: 3760;
 						stardust: true;
 					};
 				},
@@ -579,7 +579,7 @@ export type VsSeekerLoot9Premium = S<
 			reward: [
 				{
 					item: {
-						count: 940;
+						count: 3760;
 						stardust: true;
 					};
 				},
@@ -597,7 +597,7 @@ export type VsSeekerLoot9Premium = S<
 				},
 				{
 					item: {
-						count: 1880;
+						count: 7520;
 						stardust: true;
 					};
 				},
@@ -614,31 +614,31 @@ export type VsSeekerLoot10Free = S<
 			reward: [
 				{
 					item: {
-						count: 750;
+						count: 3000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 750;
+						count: 3000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 750;
+						count: 3000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 750;
+						count: 3000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 750;
+						count: 3000;
 						stardust: true;
 					};
 				},
@@ -654,31 +654,31 @@ export type VsSeekerLoot10Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1500;
+						count: 6000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 1500;
+						count: 6000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 1500;
+						count: 6000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 1500;
+						count: 6000;
 						stardust: true;
 					};
 				},
 				{
 					item: {
-						count: 1500;
+						count: 6000;
 						stardust: true;
 					};
 				},
@@ -695,7 +695,7 @@ export type VsSeekerLoot11Free = S<
 			reward: [
 				{
 					item: {
-						count: 530;
+						count: 2120;
 						stardust: true;
 					};
 				},
@@ -713,7 +713,7 @@ export type VsSeekerLoot11Free = S<
 				},
 				{
 					item: {
-						count: 1060;
+						count: 4240;
 						stardust: true;
 					};
 				},
@@ -729,7 +729,7 @@ export type VsSeekerLoot11Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1060;
+						count: 4240;
 						stardust: true;
 					};
 				},
@@ -747,7 +747,7 @@ export type VsSeekerLoot11Premium = S<
 				},
 				{
 					item: {
-						count: 2120;
+						count: 8480;
 						stardust: true;
 					};
 				},
@@ -764,7 +764,7 @@ export type VsSeekerLoot12Free = S<
 			reward: [
 				{
 					item: {
-						count: 530;
+						count: 2120;
 						stardust: true;
 					};
 				},
@@ -782,7 +782,7 @@ export type VsSeekerLoot12Free = S<
 				},
 				{
 					item: {
-						count: 1060;
+						count: 4240;
 						stardust: true;
 					};
 				},
@@ -798,7 +798,7 @@ export type VsSeekerLoot12Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1060;
+						count: 4240;
 						stardust: true;
 					};
 				},
@@ -816,7 +816,7 @@ export type VsSeekerLoot12Premium = S<
 				},
 				{
 					item: {
-						count: 2120;
+						count: 8480;
 						stardust: true;
 					};
 				},
@@ -833,7 +833,7 @@ export type VsSeekerLoot13Free = S<
 			reward: [
 				{
 					item: {
-						count: 570;
+						count: 2280;
 						stardust: true;
 					};
 				},
@@ -851,7 +851,7 @@ export type VsSeekerLoot13Free = S<
 				},
 				{
 					item: {
-						count: 1140;
+						count: 4560;
 						stardust: true;
 					};
 				},
@@ -867,7 +867,7 @@ export type VsSeekerLoot13Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1140;
+						count: 4560;
 						stardust: true;
 					};
 				},
@@ -885,7 +885,7 @@ export type VsSeekerLoot13Premium = S<
 				},
 				{
 					item: {
-						count: 2280;
+						count: 9120;
 						stardust: true;
 					};
 				},
@@ -902,7 +902,7 @@ export type VsSeekerLoot14Free = S<
 			reward: [
 				{
 					item: {
-						count: 600;
+						count: 2400;
 						stardust: true;
 					};
 				},
@@ -920,7 +920,7 @@ export type VsSeekerLoot14Free = S<
 				},
 				{
 					item: {
-						count: 1200;
+						count: 4800;
 						stardust: true;
 					};
 				},
@@ -936,7 +936,7 @@ export type VsSeekerLoot14Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1200;
+						count: 4800;
 						stardust: true;
 					};
 				},
@@ -954,7 +954,7 @@ export type VsSeekerLoot14Premium = S<
 				},
 				{
 					item: {
-						count: 2400;
+						count: 9600;
 						stardust: true;
 					};
 				},
@@ -1052,7 +1052,7 @@ export type VsSeekerLoot16Free = S<
 			reward: [
 				{
 					item: {
-						count: 700;
+						count: 2800;
 						stardust: true;
 					};
 				},
@@ -1070,7 +1070,7 @@ export type VsSeekerLoot16Free = S<
 				},
 				{
 					item: {
-						count: 1400;
+						count: 5600;
 						stardust: true;
 					};
 				},
@@ -1086,7 +1086,7 @@ export type VsSeekerLoot16Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1400;
+						count: 5600;
 						stardust: true;
 					};
 				},
@@ -1104,7 +1104,7 @@ export type VsSeekerLoot16Premium = S<
 				},
 				{
 					item: {
-						count: 2800;
+						count: 11200;
 						stardust: true;
 					};
 				},
@@ -1121,7 +1121,7 @@ export type VsSeekerLoot17Free = S<
 			reward: [
 				{
 					item: {
-						count: 730;
+						count: 2920;
 						stardust: true;
 					};
 				},
@@ -1139,7 +1139,7 @@ export type VsSeekerLoot17Free = S<
 				},
 				{
 					item: {
-						count: 1460;
+						count: 5840;
 						stardust: true;
 					};
 				},
@@ -1155,7 +1155,7 @@ export type VsSeekerLoot17Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1460;
+						count: 5840;
 						stardust: true;
 					};
 				},
@@ -1173,7 +1173,7 @@ export type VsSeekerLoot17Premium = S<
 				},
 				{
 					item: {
-						count: 2920;
+						count: 11680;
 						stardust: true;
 					};
 				},
@@ -1190,7 +1190,7 @@ export type VsSeekerLoot18Free = S<
 			reward: [
 				{
 					item: {
-						count: 770;
+						count: 3080;
 						stardust: true;
 					};
 				},
@@ -1208,7 +1208,7 @@ export type VsSeekerLoot18Free = S<
 				},
 				{
 					item: {
-						count: 1540;
+						count: 6160;
 						stardust: true;
 					};
 				},
@@ -1224,7 +1224,7 @@ export type VsSeekerLoot18Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1540;
+						count: 6160;
 						stardust: true;
 					};
 				},
@@ -1242,7 +1242,7 @@ export type VsSeekerLoot18Premium = S<
 				},
 				{
 					item: {
-						count: 3080;
+						count: 12320;
 						stardust: true;
 					};
 				},
@@ -1310,7 +1310,7 @@ export type VsSeekerLoot20Free = S<
 			reward: [
 				{
 					item: {
-						count: 870;
+						count: 3480;
 						stardust: true;
 					};
 				},
@@ -1328,7 +1328,7 @@ export type VsSeekerLoot20Free = S<
 				},
 				{
 					item: {
-						count: 1740;
+						count: 6960;
 						stardust: true;
 					};
 				},
@@ -1344,7 +1344,7 @@ export type VsSeekerLoot20Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1740;
+						count: 6960;
 						stardust: true;
 					};
 				},
@@ -1362,7 +1362,7 @@ export type VsSeekerLoot20Premium = S<
 				},
 				{
 					item: {
-						count: 3480;
+						count: 13920;
 						stardust: true;
 					};
 				},
@@ -1379,7 +1379,7 @@ export type VsSeekerLoot21Free = S<
 			reward: [
 				{
 					item: {
-						count: 900;
+						count: 3600;
 						stardust: true;
 					};
 				},
@@ -1397,7 +1397,7 @@ export type VsSeekerLoot21Free = S<
 				},
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1413,7 +1413,7 @@ export type VsSeekerLoot21Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1431,7 +1431,7 @@ export type VsSeekerLoot21Premium = S<
 				},
 				{
 					item: {
-						count: 3600;
+						count: 14400;
 						stardust: true;
 					};
 				},
@@ -1448,7 +1448,7 @@ export type VsSeekerLoot22Free = S<
 			reward: [
 				{
 					item: {
-						count: 900;
+						count: 3600;
 						stardust: true;
 					};
 				},
@@ -1466,7 +1466,7 @@ export type VsSeekerLoot22Free = S<
 				},
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1482,7 +1482,7 @@ export type VsSeekerLoot22Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1500,7 +1500,7 @@ export type VsSeekerLoot22Premium = S<
 				},
 				{
 					item: {
-						count: 3600;
+						count: 14400;
 						stardust: true;
 					};
 				},
@@ -1517,7 +1517,7 @@ export type VsSeekerLoot23Free = S<
 			reward: [
 				{
 					item: {
-						count: 900;
+						count: 3600;
 						stardust: true;
 					};
 				},
@@ -1535,7 +1535,7 @@ export type VsSeekerLoot23Free = S<
 				},
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1551,7 +1551,7 @@ export type VsSeekerLoot23Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1569,7 +1569,7 @@ export type VsSeekerLoot23Premium = S<
 				},
 				{
 					item: {
-						count: 3600;
+						count: 14400;
 						stardust: true;
 					};
 				},
@@ -1586,7 +1586,7 @@ export type VsSeekerLoot24Free = S<
 			reward: [
 				{
 					item: {
-						count: 900;
+						count: 3600;
 						stardust: true;
 					};
 				},
@@ -1604,7 +1604,7 @@ export type VsSeekerLoot24Free = S<
 				},
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1620,7 +1620,7 @@ export type VsSeekerLoot24Premium = S<
 			reward: [
 				{
 					item: {
-						count: 1800;
+						count: 7200;
 						stardust: true;
 					};
 				},
@@ -1638,7 +1638,7 @@ export type VsSeekerLoot24Premium = S<
 				},
 				{
 					item: {
-						count: 3600;
+						count: 14400;
 						stardust: true;
 					};
 				},

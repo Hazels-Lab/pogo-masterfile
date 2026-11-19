@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 108 entries.
+// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 118 entries.
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -75,6 +75,22 @@ export type FeatureGateAmsFrontend = S<
 		}
 	>
 >;
+export type FeatureGateAvatarGlowingArticlesOptimization = S<
+	FeatureGate<
+		"AVATAR_GLOWING_ARTICLES_OPTIMIZATION_FEATURE_GATE",
+		{
+			status: 838973830;
+		}
+	>
+>;
+export type FeatureGateAvatarPropOptimization = S<
+	FeatureGate<
+		"AVATAR_PROP_OPTIMIZATION_FEATURE_GATE",
+		{
+			status: 838973831;
+		}
+	>
+>;
 export type FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization = S<
 	FeatureGate<
 		"AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE",
@@ -99,9 +115,25 @@ export type FeatureGateBreadBattlePrepUiForceRebuildOptimization = S<
 		}
 	>
 >;
+export type FeatureGateBuddyCandyQuestProgressAggregationFeatureGateSr = S<
+	FeatureGate<
+		"BUDDY_CANDY_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateBuddySwapPlayerSnapshot = S<
 	FeatureGate<
 		"BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateBulkHealQuestProgressAggregationFeatureGateSr = S<
+	FeatureGate<
+		"BULK_HEAL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR",
 		{
 			status: 1;
 		}
@@ -160,6 +192,14 @@ export type FeatureGateCombatVnextShowMiniorIbfcToasts = S<
 		"COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE",
 		{
 			status: 1;
+		}
+	>
+>;
+export type FeatureGateCombatVnextStatChangeBatching = S<
+	FeatureGate<
+		"COMBAT_VNEXT_STAT_CHANGE_BATCHING_FEATURE_GATE",
+		{
+			status: 1810303719;
 		}
 	>
 >;
@@ -443,6 +483,14 @@ export type FeatureGateItemUseSortContext = S<
 		}
 	>
 >;
+export type FeatureGateLegacyTappableQuestProgressAggregationFeatureGateSr = S<
+	FeatureGate<
+		"LEGACY_TAPPABLE_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateLocationCardRoll = S<
 	FeatureGate<
 		"LOCATION_CARD_ROLL_FEATURE_GATE",
@@ -534,6 +582,14 @@ export type FeatureGateMichelinMapZygardeCellReward = S<
 export type FeatureGateNearbyMenuRsvpRouteFixFeatureGateCr = S<
 	FeatureGate<
 		"NEARBY_MENU_RSVP_ROUTE_FIX_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateNearbySilhoutteFormFeatureGateSr = S<
+	FeatureGate<
+		"NEARBY_SILHOUTTE_FORM_FEATURE_GATE_SR",
 		{
 			status: 1;
 		}
@@ -667,6 +723,14 @@ export type FeatureGateRemoteTradeSpeedGiftFix = S<
 		}
 	>
 >;
+export type FeatureGateRouteTravelQuestProgressAggregationFeatureGateSr = S<
+	FeatureGate<
+		"ROUTE_TRAVEL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateRunCellUpdatesBackgroundThreadProcessing = S<
 	FeatureGate<
 		"RUN_CELL_UPDATES_BACKGROUND_THREAD_PROCESSING_FEATURE_GATE",
@@ -694,6 +758,14 @@ export type FeatureGateSavePlayerSnapshotImmediateReason = S<
 export type FeatureGateSeafGetMapObjectsRateLimiter = S<
 	FeatureGate<
 		"SEAF_GET_MAP_OBJECTS_RATE_LIMITER_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateSkipZeroLevelBadgesFeatureGateSr = S<
+	FeatureGate<
+		"SKIP_ZERO_LEVEL_BADGES_FEATURE_GATE_SR",
 		{
 			status: 1;
 		}
@@ -859,6 +931,14 @@ export type FeatureGateWayfarerSubmitLinkout = S<
 		}
 	>
 >;
+export type FeatureGateZygardeCellRewardCellCapFeatureGateSr = S<
+	FeatureGate<
+		"ZYGARDE_CELL_REWARD_CELL_CAP_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateZygardeCellRewardQuestFixFeatureGateSr = S<
 	FeatureGate<
 		"ZYGARDE_CELL_REWARD_QUEST_FIX_FEATURE_GATE_SR",
@@ -878,10 +958,14 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateAdventureEffectsInLobby
 	| FeatureGateAms
 	| FeatureGateAmsFrontend
+	| FeatureGateAvatarGlowingArticlesOptimization
+	| FeatureGateAvatarPropOptimization
 	| FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization
 	| FeatureGateBadgeService
 	| FeatureGateBreadBattlePrepUiForceRebuildOptimization
+	| FeatureGateBuddyCandyQuestProgressAggregationFeatureGateSr
 	| FeatureGateBuddySwapPlayerSnapshot
+	| FeatureGateBulkHealQuestProgressAggregationFeatureGateSr
 	| FeatureGateCombatAcceptedTurnSwapSuppressionFeatureGateCr
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextAllowLateSimultaneousIbfcFeatureGateCr
@@ -889,6 +973,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateCombatVnextPlayMissedFm
 	| FeatureGateCombatVnextPreserveAddressableDirtMaterialBugFix
 	| FeatureGateCombatVnextShowMiniorIbfcToasts
+	| FeatureGateCombatVnextStatChangeBatching
 	| FeatureGateCombatVnextSuppressFmAtCmScreenPointFixFeatureGateCr
 	| FeatureGateCombatVnextTriggerSimultaneousIbfcOnLateCinematicFeatureGateCr
 	| FeatureGateCombatVnextUseSynchronizedFormForCameraScale
@@ -924,6 +1009,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateImmersiveCatchSummary
 	| FeatureGateImpersonationStatSyncFeatureGateSr
 	| FeatureGateItemUseSortContext
+	| FeatureGateLegacyTappableQuestProgressAggregationFeatureGateSr
 	| FeatureGateLocationCardRoll
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMapBackgroundThreadProcessing
@@ -936,6 +1022,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateMichelinMapPokestopSpunContrastUp
 	| FeatureGateMichelinMapZygardeCellReward
 	| FeatureGateNearbyMenuRsvpRouteFixFeatureGateCr
+	| FeatureGateNearbySilhoutteFormFeatureGateSr
 	| FeatureGateNeutralAvatarShopItemForceRebuildOptimization
 	| FeatureGateNpcGiftAutoClaim
 	| FeatureGatePairedDeviceHelp
@@ -952,10 +1039,12 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateRemoteTradeSpeedGiftFix
+	| FeatureGateRouteTravelQuestProgressAggregationFeatureGateSr
 	| FeatureGateRunCellUpdatesBackgroundThreadProcessing
 	| FeatureGateSanitizeAdventureEffectServerOnlyFields
 	| FeatureGateSavePlayerSnapshotImmediateReason
 	| FeatureGateSeafGetMapObjectsRateLimiter
+	| FeatureGateSkipZeroLevelBadgesFeatureGateSr
 	| FeatureGateSoftSfidaWidgetBackgroundColor
 	| FeatureGateStampRallyMiniGameAnimationLockFix
 	| FeatureGateStampRallyTimeTravelClient
@@ -976,4 +1065,5 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateVnextRapidFireFastAttackEffectsFeatureGateCr
 	| FeatureGateWaitForDownscaledStatsBeforeEnterState
 	| FeatureGateWayfarerSubmitLinkout
+	| FeatureGateZygardeCellRewardCellCapFeatureGateSr
 	| FeatureGateZygardeCellRewardQuestFixFeatureGateSr;
