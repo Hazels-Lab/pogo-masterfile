@@ -69,7 +69,7 @@ pub struct NeutralAvatarItemTemplate {
 #[serde(rename_all = "camelCase")]
 pub struct PokemonDisplay {
     pub bread_mode_enum: Option<String>,
-    pub form: String,
+    pub form: Option<String>,
     pub shiny: Option<bool>,
 }
 
@@ -78,6 +78,7 @@ pub struct PokemonDisplay {
 pub struct PokemonEncounter {
     pub pokemon_display: Option<PokemonDisplay>,
     pub pokemon_id: String,
+    pub shiny_probability: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]

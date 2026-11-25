@@ -135,7 +135,6 @@ import type {
 	StationedPokemonTableSettings,
 	StickerCategorySettings,
 	StyleShopSettings,
-	TicketGiftingSettings,
 	TimeBoxedSpawnEventsSettings,
 	TodayViewSettings,
 	TutorialSettings,
@@ -285,7 +284,6 @@ export interface SingletonsLookup {
 	sticker_category_settings: StickerCategorySettings;
 	STYLE_SHOP_SETTINGS: StyleShopSettings;
 	SURVEY_SETTINGS: InAppSurveySettings;
-	TICKET_GIFTING_SETTINGS: TicketGiftingSettings;
 	TIME_BOXED_SPAWN_EVENT_SETTINGS: TimeBoxedSpawnEventsSettings;
 	TODAY_VIEW_SETTINGS_V2: TodayViewSettings;
 	TUTORIALS_SETTINGS: TutorialSettings;

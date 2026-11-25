@@ -299,6 +299,9 @@ const (
 	IapItemDisplayTemplateIDMpReplenishRrp3                                            IapItemDisplayTemplateID = "mp_replenish_rrp.3"
 	IapItemDisplayTemplateIDMpReplenish1                                               IapItemDisplayTemplateID = "mp_replenish.1"
 	IapItemDisplayTemplateIDMpReplenish3                                               IapItemDisplayTemplateID = "mp_replenish.3"
+	IapItemDisplayTemplateIDNovember12026DeluxeEventPassTrackUnlock                    IapItemDisplayTemplateID = "november1_2026_deluxe_event_pass_track_unlock"
+	IapItemDisplayTemplateIDNovember12026DeluxeEventPassTrackUnlockPlusPoints          IapItemDisplayTemplateID = "november1_2026_deluxe_event_pass_track_unlock_plus_points"
+	IapItemDisplayTemplateIDNovember12026DeluxeEventPassTrackUnlockRedirect            IapItemDisplayTemplateID = "november1_2026_deluxe_event_pass_track_unlock_redirect"
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlock                     IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK"
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockPlusPoints           IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS"
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockRedirect             IapItemDisplayTemplateID = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT"
@@ -313,6 +316,9 @@ const (
 	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico2                          IapItemDisplayTemplateID = "pgorelease.bundle.citysafarimexico2"
 	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidbox1                              IapItemDisplayTemplateID = "pgorelease.bundle.eliteraidbox.1"
 	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidmay2023                           IapItemDisplayTemplateID = "pgorelease.bundle.eliteraidmay2023"
+	IapItemDisplayTemplateIDPgoreleaseBundleFiatevergreen1                             IapItemDisplayTemplateID = "pgorelease.bundle.fiatevergreen.1"
+	IapItemDisplayTemplateIDPgoreleaseBundleFiatevergreen2                             IapItemDisplayTemplateID = "pgorelease.bundle.fiatevergreen.2"
+	IapItemDisplayTemplateIDPgoreleaseBundleFiatevergreen3                             IapItemDisplayTemplateID = "pgorelease.bundle.fiatevergreen.3"
 	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures1                             IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.1"
 	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures2                             IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.2"
 	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures3                             IapItemDisplayTemplateID = "pgorelease.bundle.flavoredlures.3"
@@ -1398,6 +1404,9 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDMpReplenishRrp3,
 	IapItemDisplayTemplateIDMpReplenish1,
 	IapItemDisplayTemplateIDMpReplenish3,
+	IapItemDisplayTemplateIDNovember12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayTemplateIDNovember12026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayTemplateIDNovember12026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayTemplateIDOctober12026DeluxeEventPassTrackUnlockRedirect,
@@ -1412,6 +1421,9 @@ var IapItemDisplayTemplateIDValues = [...]IapItemDisplayTemplateID{
 	IapItemDisplayTemplateIDPgoreleaseBundleCitysafarimexico2,
 	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidbox1,
 	IapItemDisplayTemplateIDPgoreleaseBundleEliteraidmay2023,
+	IapItemDisplayTemplateIDPgoreleaseBundleFiatevergreen1,
+	IapItemDisplayTemplateIDPgoreleaseBundleFiatevergreen2,
+	IapItemDisplayTemplateIDPgoreleaseBundleFiatevergreen3,
 	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures1,
 	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures2,
 	IapItemDisplayTemplateIDPgoreleaseBundleFlavoredlures3,

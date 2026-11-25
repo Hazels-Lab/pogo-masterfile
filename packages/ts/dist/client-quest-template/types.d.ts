@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "clientQuestTemplate", 55 entries (structural types).
+// Generated from Pokémon GO masterfile — group "clientQuestTemplate", 58 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -24,6 +24,7 @@ export interface ClientQuestTemplateData {
 				type:
 					| "WITH_BADGE_TYPE"
 					| "WITH_COMBAT_TYPE"
+					| "WITH_CURVE_BALL"
 					| "WITH_DAYS_IN_A_ROW"
 					| "WITH_DISTANCE"
 					| "WITH_INVASION_CHARACTER"
@@ -32,6 +33,7 @@ export interface ClientQuestTemplateData {
 					| "WITH_POKEMON_LEVEL"
 					| "WITH_QUEST_CONTEXT"
 					| "WITH_SINGLE_DAY"
+					| "WITH_STICKER"
 					| "WITH_SUPER_EFFECTIVE_CHARGE"
 					| "WITH_THROW_TYPE"
 					| "WITH_WIN_BATTLE_STATUS"
@@ -156,6 +158,7 @@ export interface ClientQuestTemplateData {
 			| "QUEST_SPIN_POKESTOP"
 			| "QUEST_TRADE_POKEMON"
 			| "QUEST_UPGRADE_POKEMON"
+			| "QUEST_USE_BERRY_IN_ENCOUNTER"
 			| "QUEST_WALK";
 		questUpdateToastProgressPercentageThreshold?: number;
 	};
@@ -164,12 +167,14 @@ export interface ClientQuestTemplateData {
 			| "CHALLENGE_BUDDY_AFFECTION_PLURAL"
 			| "levelup_max_move_plural"
 			| "quest_battle_gbl_win_plural"
+			| "quest_catch_feed_plural"
 			| "quest_catch_in_day_plural"
 			| "quest_catch_pokemon_plural"
 			| "quest_complete_routes_days_row_plural"
 			| "quest_explore_km"
 			| "quest_field_research_plural"
 			| "quest_hatch_egg_plural"
+			| "quest_land_curveball_plural"
 			| "quest_land_excellent_plural"
 			| "quest_land_great_plural"
 			| "quest_land_nice_plural"
@@ -181,6 +186,7 @@ export interface ClientQuestTemplateData {
 			| "quest_rocket_purify_plural"
 			| "quest_ROCKETHQ1_leaders_win_plural"
 			| "quest_send_gifts_plural"
+			| "quest_send_gifts_sticker_plural"
 			| "quest_stardust_plural"
 			| "quest_supereffective_charge_plural"
 			| "quest_trade_300km_plural"
@@ -245,12 +251,14 @@ export interface ClientQuestTemplateData {
 			| "CHALLENGE_BUDDY_AFFECTION_PLURAL"
 			| "levelup_max_move_plural"
 			| "quest_battle_gbl_win_plural"
+			| "quest_catch_feed_plural"
 			| "quest_catch_in_day_plural"
 			| "quest_catch_pokemon_plural"
 			| "quest_complete_routes_days_row_plural"
 			| "quest_explore_km"
 			| "quest_field_research_plural"
 			| "quest_hatch_egg_plural"
+			| "quest_land_curveball_plural"
 			| "quest_land_excellent_plural"
 			| "quest_land_great_plural"
 			| "quest_land_nice_plural"
@@ -262,6 +270,7 @@ export interface ClientQuestTemplateData {
 			| "quest_rocket_purify_plural"
 			| "quest_ROCKETHQ1_leaders_win_plural"
 			| "quest_send_gifts_plural"
+			| "quest_send_gifts_sticker_plural"
 			| "quest_stardust_plural"
 			| "quest_supereffective_charge_plural"
 			| "quest_trade_300km_plural"

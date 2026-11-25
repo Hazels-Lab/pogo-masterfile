@@ -295,6 +295,9 @@ import type {
 	IapItemDisplayMpReplenish3,
 	IapItemDisplayMpReplenishRrp1,
 	IapItemDisplayMpReplenishRrp3,
+	IapItemDisplayNovember12026DeluxeEventPassTrackUnlock,
+	IapItemDisplayNovember12026DeluxeEventPassTrackUnlockPlusPoints,
+	IapItemDisplayNovember12026DeluxeEventPassTrackUnlockRedirect,
 	IapItemDisplayOctober12026DeluxeEventPassTrackUnlock,
 	IapItemDisplayOctober12026DeluxeEventPassTrackUnlockPlusPoints,
 	IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect,
@@ -309,6 +312,9 @@ import type {
 	IapItemDisplayPgoreleaseBundleCitysafarimexico2,
 	IapItemDisplayPgoreleaseBundleEliteraidbox1,
 	IapItemDisplayPgoreleaseBundleEliteraidmay2023,
+	IapItemDisplayPgoreleaseBundleFiatevergreen1,
+	IapItemDisplayPgoreleaseBundleFiatevergreen2,
+	IapItemDisplayPgoreleaseBundleFiatevergreen3,
 	IapItemDisplayPgoreleaseBundleFlavoredlures1,
 	IapItemDisplayPgoreleaseBundleFlavoredlures2,
 	IapItemDisplayPgoreleaseBundleFlavoredlures3,
@@ -1394,6 +1400,9 @@ export interface IapItemDisplayLookup {
 	"mp_replenish_rrp.3": IapItemDisplayMpReplenishRrp3;
 	"mp_replenish.1": IapItemDisplayMpReplenish1;
 	"mp_replenish.3": IapItemDisplayMpReplenish3;
+	november1_2026_deluxe_event_pass_track_unlock: IapItemDisplayNovember12026DeluxeEventPassTrackUnlock;
+	november1_2026_deluxe_event_pass_track_unlock_plus_points: IapItemDisplayNovember12026DeluxeEventPassTrackUnlockPlusPoints;
+	november1_2026_deluxe_event_pass_track_unlock_redirect: IapItemDisplayNovember12026DeluxeEventPassTrackUnlockRedirect;
 	OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK: IapItemDisplayOctober12026DeluxeEventPassTrackUnlock;
 	OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS: IapItemDisplayOctober12026DeluxeEventPassTrackUnlockPlusPoints;
 	OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_REDIRECT: IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect;
@@ -1408,6 +1417,9 @@ export interface IapItemDisplayLookup {
 	"pgorelease.bundle.citysafarimexico2": IapItemDisplayPgoreleaseBundleCitysafarimexico2;
 	"pgorelease.bundle.eliteraidbox.1": IapItemDisplayPgoreleaseBundleEliteraidbox1;
 	"pgorelease.bundle.eliteraidmay2023": IapItemDisplayPgoreleaseBundleEliteraidmay2023;
+	"pgorelease.bundle.fiatevergreen.1": IapItemDisplayPgoreleaseBundleFiatevergreen1;
+	"pgorelease.bundle.fiatevergreen.2": IapItemDisplayPgoreleaseBundleFiatevergreen2;
+	"pgorelease.bundle.fiatevergreen.3": IapItemDisplayPgoreleaseBundleFiatevergreen3;
 	"pgorelease.bundle.flavoredlures.1": IapItemDisplayPgoreleaseBundleFlavoredlures1;
 	"pgorelease.bundle.flavoredlures.2": IapItemDisplayPgoreleaseBundleFlavoredlures2;
 	"pgorelease.bundle.flavoredlures.3": IapItemDisplayPgoreleaseBundleFlavoredlures3;

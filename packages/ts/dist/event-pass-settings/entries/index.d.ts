@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassSettings", 2 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "eventPassSettings", 3 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { EventPassSettings } from "../types";
@@ -7,6 +7,7 @@ export type EventPassSettingsGowa2026Leadout = S<
 	EventPassSettings<
 		"EVENT_PASS_GOWA2026_LEADOUT",
 		{
+			additionalBonusTiersLevel: 101;
 			eventPassDisplaySettings: {
 				backgroundConfiguration: "EVENT_PASS_BACKGROUND_GO_WILD_AREA_02";
 				bonusBoxes: [
@@ -72,6 +73,7 @@ export type EventPassSettingsNovember2026Season = S<
 	EventPassSettings<
 		"EVENT_PASS_NOVEMBER2026_SEASON",
 		{
+			additionalBonusTiersLevel: 101;
 			eventPassDisplaySettings: {
 				bonusBoxes: [
 					{
@@ -129,7 +131,72 @@ export type EventPassSettingsNovember2026Season = S<
 		}
 	>
 >;
+export type EventPassSettingsTwilightTrailsFinale2026 = S<
+	EventPassSettings<
+		"EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026",
+		{
+			additionalBonusTiersLevel: 31;
+			eventPassDisplaySettings: {
+				bonusBoxes: [
+					{
+						iconType: "SPAWN_UNKNOWN";
+						quantity: 5;
+						text: "quest_catch_pokemon_singular";
+					},
+					{
+						iconType: "EGG";
+						quantity: 40;
+						text: "quest_hatch_egg_singular";
+					},
+					{
+						iconType: "RAID";
+						quantity: 100;
+						text: "quest_win_raid_singular";
+					},
+				];
+				eventPassTitleKey: "twilight_trails_finale_event_pass_title";
+				eventPassTrackUpgradeDescriptions: [
+					{
+						detailsLinkKey: "details_link_key";
+						eventDurationKey: "twilight_trails_finale_event_pass_duration";
+						eventPassTrackToUpgradeTo: "PREMIUM";
+						passTrackUpgradeHeaderDescription: "twilight_trails_finale_event_pass_upgrade_header_description";
+						ranksToHighlightRewards: [8, 16, 18];
+						trackUnlockImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
+						trackUnlockPlusPointsImageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe_plus.png";
+						trackUnlockPlusPointsSkuId: "pgorelease.november1_2026_deluxe_event_pass_track_unlock_plus_points";
+						trackUnlockSkuId: "pgorelease.november1_2026_deluxe_event_pass_track_unlock";
+						upgradeDescriptionKey: "twilight_trails_finale_event_pass_upgrade_description";
+					},
+				];
+				premiumRewardBannerBottom: "rank_16_event_pass_banner_bottom";
+				premiumRewardBannerImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7150419b_s24-logo-512x512.png";
+				premiumRewardBannerMiddle: "avatar_pose_starballoon";
+				sectionDisplayPriority: 12;
+				todayViewSection: "SEASONAL_EVENT_PASS_SECTION";
+			};
+			expirationTime: "2026-11-30T20:00:00";
+			gracePeriodEndTime: "2026-12-02T20:00:00";
+			maxTierLevel: 60;
+			pointsItemId: "ITEM_EVENT_PASS_POINT_LIVE_OPS_06";
+			trackConditions: [
+				{
+					track: "FREE";
+					trackTitleKey: "twilight_trails_finale_event_pass_title";
+				},
+				{
+					badge: "BADGE_EVENT_0246";
+					track: "PREMIUM";
+					trackTitleKey: "twilight_trails_finale_event_pass_deluxe_title";
+				},
+			];
+		}
+	>
+>;
 
-export type EventPassSettingsMasterfileEntry = EventPassSettingsGowa2026Leadout | EventPassSettingsNovember2026Season;
+export type EventPassSettingsMasterfileEntry =
+	| EventPassSettingsGowa2026Leadout
+	| EventPassSettingsNovember2026Season
+	| EventPassSettingsTwilightTrailsFinale2026;
 
 export type EventPassSettingsTemplateID = EventPassSettingsMasterfileEntry["templateId"];

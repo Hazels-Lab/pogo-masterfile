@@ -142,13 +142,13 @@ export interface ItemSettingsData {
 	globalEventTicket?: {
 		backgroundImageUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F19ec3f96_PGO-MCS_GO_Tour_2027_Shiny_Poipole_v2-1025x512.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F452fd1a0_PGO-MCS_Chandelure_Super_Mega_Raid_Day_v3_1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
-			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fafa245c1_PGO-MCS_Lake_Guardians_Max_Battle_Day_v1-1025x576.jpg"
@@ -291,6 +291,7 @@ export interface ItemSettingsData {
 		eventBadge?: number | "BADGE_GO_TOUR_2026_GLOBAL" | "BADGE_GOWA_2026_GLOBAL";
 		eventBannerUrl?:
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F0ba8ff0a_20260508_pgo_s23_megarayquaza_1024x576_nologo.jpg"
+			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F19ec3f96_PGO-MCS_GO_Tour_2027_Shiny_Poipole_v2-1025x512.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31e2d68a_PGO-MCS_CD_December_Recap_2026_v5-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F97c2eaee_PGO-MCS_Raichu_Super_Mega_Raid_Day_v3-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F440cb25d_PGO-MCS_Sandile_Hatch_Day_v1-1024x576%20No%20Logo.png"
@@ -298,7 +299,6 @@ export interface ItemSettingsData {
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F4988f5ae_PGO-MCS_Mega_Starmie_Mega_Raid_Day_v1-1024x576-nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F7278ea4f_PGO_MCS_CD_KeyArt_Zorua_v3-1024x576-nologo.jpg"
-			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F20260113_pgo_s22_oricorio_1024x576_nologo.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F58392656_PGO_MCS_S25_GBL_v1-1024x576.jpg"
 			| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg"
@@ -511,7 +511,7 @@ export interface ItemSettingsData {
 			pokemonEncounter?: {
 				pokemonDisplay?: {
 					breadModeEnum?: "BREAD_DOUGH_MODE";
-					form:
+					form?:
 						| "BAXCALIBUR_NORMAL"
 						| "CLAMPERL_NORMAL"
 						| "DIANCIE_NORMAL"
@@ -556,6 +556,7 @@ export interface ItemSettingsData {
 					| "LOTAD"
 					| "MACHAMP"
 					| "PHANTUMP"
+					| "POIPOLE"
 					| "RAYQUAZA"
 					| "ROCKRUFF"
 					| "SHAYMIN"
@@ -563,6 +564,7 @@ export interface ItemSettingsData {
 					| "YAMPER"
 					| "YUNGOOS"
 					| "ZOROARK";
+				shinyProbability?: number;
 			};
 			stardust?: number;
 			type: "AVATAR_CLOTHING" | "CANDY" | "EXPERIENCE" | "ITEM" | "POKEMON_ENCOUNTER" | "STARDUST";

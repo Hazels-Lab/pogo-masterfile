@@ -58,6 +58,7 @@ export const GROUP_NAMES = [
 	"stickerMetadata",
 	"tappableSettings",
 	"temporaryEvolutionSettings",
+	"ticketGiftingSettings",
 	"typeEffective",
 	"vsSeekerLoot",
 	"vsSeekerPokemonRewards",

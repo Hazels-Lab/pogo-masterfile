@@ -37,6 +37,12 @@ import type {
 	StickerMetadataAprilfool20231,
 	StickerMetadataAprilfool20232,
 	StickerMetadataAudino,
+	StickerMetadataBangkokpokemoncenter1,
+	StickerMetadataBangkokpokemoncenter2,
+	StickerMetadataBangkokpokemoncenter3,
+	StickerMetadataBangkokpokemoncenter4,
+	StickerMetadataBangkokpokemoncenter5,
+	StickerMetadataBangkokpokemoncenter6,
 	StickerMetadataBellsproutcd1,
 	StickerMetadataBellsproutcd2,
 	StickerMetadataBellsproutcd3,
@@ -674,6 +680,12 @@ export interface StickerMetadataLookup {
 	STICKER_APRILFOOL2023_1: StickerMetadataAprilfool20231;
 	STICKER_APRILFOOL2023_2: StickerMetadataAprilfool20232;
 	STICKER_AUDINO: StickerMetadataAudino;
+	STICKER_BANGKOKPOKEMONCENTER_1: StickerMetadataBangkokpokemoncenter1;
+	STICKER_BANGKOKPOKEMONCENTER_2: StickerMetadataBangkokpokemoncenter2;
+	STICKER_BANGKOKPOKEMONCENTER_3: StickerMetadataBangkokpokemoncenter3;
+	STICKER_BANGKOKPOKEMONCENTER_4: StickerMetadataBangkokpokemoncenter4;
+	STICKER_BANGKOKPOKEMONCENTER_5: StickerMetadataBangkokpokemoncenter5;
+	STICKER_BANGKOKPOKEMONCENTER_6: StickerMetadataBangkokpokemoncenter6;
 	STICKER_BELLSPROUTCD_1: StickerMetadataBellsproutcd1;
 	STICKER_BELLSPROUTCD_2: StickerMetadataBellsproutcd2;
 	STICKER_BELLSPROUTCD_3: StickerMetadataBellsproutcd3;

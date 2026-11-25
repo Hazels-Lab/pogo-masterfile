@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 285 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "bundle", 288 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -143,7 +143,7 @@ export type IapItemDisplayBundleBlackfridaystickers261 = S<
 		{
 			category: "IAP_CATEGORY_BUNDLE";
 			sku: "bundle.blackfridaystickers26.1";
-			sortOrder: 1;
+			sortOrder: 9;
 			spriteId: "bundle.general.adventure.1";
 			title: "sticker_box";
 		}
@@ -247,15 +247,12 @@ export type IapItemDisplayBundleCd20221 = S<
 		"bundle.cd2022.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			sale: true;
 			sku: "bundle.cd2022.1";
-			skuDisableTime: "2026-11-22T23:59:59";
-			skuDisableTimeUtcMs: "1795391999000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
-			spriteId: "bundle.general4.small.1";
-			title: "bundle.general4.small.1_title";
+			spriteId: "bundle.halloween.small.1";
+			title: "bundle.halloween.small.1_title";
 		}
 	>
 >;
@@ -264,15 +261,12 @@ export type IapItemDisplayBundleCd20222 = S<
 		"bundle.cd2022.2",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
+			hidden: true;
 			sale: true;
 			sku: "bundle.cd2022.2";
-			skuDisableTime: "2026-11-22T23:59:59";
-			skuDisableTimeUtcMs: "1795391999000";
-			skuEnableTime: "2022-10-13T12:00:00";
-			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 2;
-			spriteId: "bundle.general1.medium.1";
-			title: "bundle.general1.medium.1_title";
+			spriteId: "bundle.halloween.adventure.1";
+			title: "bundle.halloween.adventure.1_title";
 		}
 	>
 >;
@@ -3386,6 +3380,41 @@ export type IapItemDisplayPgoreleaseBundleEliteraidbox1 = S<
 		}
 	>
 >;
+export type IapItemDisplayPgoreleaseBundleFiatevergreen1 = S<
+	IapItemDisplay<
+		"pgorelease.bundle.fiatevergreen.1",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			sku: "pgorelease.bundle.fiatevergreen.1";
+			spriteId: "bundle.general3.large.1";
+			title: "sku.name.59a44f3c1ace6b6f069a105fd2dccea0";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseBundleFiatevergreen2 = S<
+	IapItemDisplay<
+		"pgorelease.bundle.fiatevergreen.2",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			sku: "pgorelease.bundle.fiatevergreen.2";
+			sortOrder: 1;
+			spriteId: "bundle1.sprite.b";
+			title: "sku.name.0afb00fcca4118f8649800a4e930db1a";
+		}
+	>
+>;
+export type IapItemDisplayPgoreleaseBundleFiatevergreen3 = S<
+	IapItemDisplay<
+		"pgorelease.bundle.fiatevergreen.3",
+		{
+			category: "IAP_CATEGORY_BUNDLE";
+			sku: "pgorelease.bundle.fiatevergreen.3";
+			sortOrder: 2;
+			spriteId: "bundle.general2.small.1";
+			title: "sku.name.2bdfd5cb0af09322abd5ecc41fa28461";
+		}
+	>
+>;
 export type IapItemDisplayPgoreleaseBundleFlavoredlures1 = S<
 	IapItemDisplay<
 		"pgorelease.bundle.flavoredlures.1",
@@ -4193,6 +4222,9 @@ export type IapItemDisplayBundleMasterfileEntry =
 	| IapItemDisplayPgoreleaseBundle2
 	| IapItemDisplayPgoreleaseBundleBlanchebox1
 	| IapItemDisplayPgoreleaseBundleEliteraidbox1
+	| IapItemDisplayPgoreleaseBundleFiatevergreen1
+	| IapItemDisplayPgoreleaseBundleFiatevergreen2
+	| IapItemDisplayPgoreleaseBundleFiatevergreen3
 	| IapItemDisplayPgoreleaseBundleFlavoredlures1
 	| IapItemDisplayPgoreleaseBundleFlavoredlures2
 	| IapItemDisplayPgoreleaseBundleFlavoredlures3

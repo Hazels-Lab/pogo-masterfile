@@ -136,6 +136,8 @@ import type {
 	TappableSettingsTemplateID,
 	TemporaryEvolutionSettingsMasterfileEntry,
 	TemporaryEvolutionSettingsTemplateID,
+	TicketGiftingSettingsMasterfileEntry,
+	TicketGiftingSettingsTemplateID,
 	TypeEffectiveMasterfileEntry,
 	TypeEffectiveTemplateID,
 	VsSeekerLootMasterfileEntry,
@@ -186,6 +188,7 @@ import type { SingletonsLookup } from "./singletons/lookup-table";
 import type { StickerMetadataLookup } from "./sticker-metadata/lookup-table";
 import type { TappableSettingsLookup } from "./tappable-settings/lookup-table";
 import type { TemporaryEvolutionSettingsLookup } from "./temporary-evolution-settings/lookup-table";
+import type { TicketGiftingSettingsLookup } from "./ticket-gifting-settings/lookup-table";
 import type { TypeEffectiveLookup } from "./type-effective/lookup-table";
 import type { VsSeekerLootLookup } from "./vs-seeker-loot/lookup-table";
 import type { VsSeekerPokemonRewardsLookup } from "./vs-seeker-pokemon-rewards/lookup-table";
@@ -248,6 +251,7 @@ export type { SingletonsLookup } from "./singletons/lookup-table";
 export type { StickerMetadataLookup } from "./sticker-metadata/lookup-table";
 export type { TappableSettingsLookup } from "./tappable-settings/lookup-table";
 export type { TemporaryEvolutionSettingsLookup } from "./temporary-evolution-settings/lookup-table";
+export type { TicketGiftingSettingsLookup } from "./ticket-gifting-settings/lookup-table";
 export type { TypeEffectiveLookup } from "./type-effective/lookup-table";
 export type { VsSeekerLootLookup } from "./vs-seeker-loot/lookup-table";
 export type { VsSeekerPokemonRewardsLookup } from "./vs-seeker-pokemon-rewards/lookup-table";
@@ -310,6 +314,7 @@ export type GroupName =
 	| "stickerMetadata"
 	| "tappableSettings"
 	| "temporaryEvolutionSettings"
+	| "ticketGiftingSettings"
 	| "typeEffective"
 	| "vsSeekerLoot"
 	| "vsSeekerPokemonRewards"
@@ -377,6 +382,7 @@ export interface LookupByGroup {
 	stickerMetadata: StickerMetadataLookup;
 	tappableSettings: TappableSettingsLookup;
 	temporaryEvolutionSettings: TemporaryEvolutionSettingsLookup;
+	ticketGiftingSettings: TicketGiftingSettingsLookup;
 	typeEffective: TypeEffectiveLookup;
 	vsSeekerLoot: VsSeekerLootLookup;
 	vsSeekerPokemonRewards: VsSeekerPokemonRewardsLookup;
@@ -441,6 +447,7 @@ export interface EntriesByGroup {
 	stickerMetadata: StickerMetadataMasterfileEntry;
 	tappableSettings: TappableSettingsMasterfileEntry;
 	temporaryEvolutionSettings: TemporaryEvolutionSettingsMasterfileEntry;
+	ticketGiftingSettings: TicketGiftingSettingsMasterfileEntry;
 	typeEffective: TypeEffectiveMasterfileEntry;
 	vsSeekerLoot: VsSeekerLootMasterfileEntry;
 	vsSeekerPokemonRewards: VsSeekerPokemonRewardsMasterfileEntry;
@@ -505,6 +512,7 @@ export interface TemplateIDsByGroup {
 	stickerMetadata: StickerMetadataTemplateID;
 	tappableSettings: TappableSettingsTemplateID;
 	temporaryEvolutionSettings: TemporaryEvolutionSettingsTemplateID;
+	ticketGiftingSettings: TicketGiftingSettingsTemplateID;
 	typeEffective: TypeEffectiveTemplateID;
 	vsSeekerLoot: VsSeekerLootTemplateID;
 	vsSeekerPokemonRewards: VsSeekerPokemonRewardsTemplateID;
@@ -573,6 +581,7 @@ export interface EntryByTemplateID
 		StickerMetadataLookup,
 		TappableSettingsLookup,
 		TemporaryEvolutionSettingsLookup,
+		TicketGiftingSettingsLookup,
 		TypeEffectiveLookup,
 		VsSeekerLootLookup,
 		VsSeekerPokemonRewardsLookup,

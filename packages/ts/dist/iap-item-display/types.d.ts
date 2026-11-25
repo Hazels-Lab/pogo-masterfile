@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1096 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1102 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -38,12 +38,13 @@ export interface IapItemDisplayData {
 		| "POSTCARD_EXPANSION_1_description";
 	hidden?: boolean;
 	imageUrl?:
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3b514292_PGO-MCS_S24_Finale_Key_Art_TICKET_v4_1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3cd7734c_PGO-MCS_Harvest_Festival_2026_TICKET_v1-1024x512_nologo.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F13d4dacd_PGO-MCS_Avatar_Maschiff_Top_v2-1024x576%20no%20logo.png"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F19ec3f96_PGO-MCS_GO_Tour_2027_Shiny_Poipole_v2-1025x512.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F25acca32_PGO-MCS_Ticket%20Art_Poke%CC%81Coin_1024x576.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F920494a5_PGO-GOWA_Eternatus.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
@@ -68,8 +69,8 @@ export interface IapItemDisplayData {
 		| "2026-10-08T10:00:00"
 		| "2026-11-15T20:00:00"
 		| "2026-11-21T17:00:00"
-		| "2026-11-22T23:59:59"
 		| "2026-11-25T20:00:00"
+		| "2026-12-02T20:00:00"
 		| "2026-12-03T10:00:00";
 	skuDisableTimeUtcMs?:
 		| "1718456400000"
@@ -83,14 +84,13 @@ export interface IapItemDisplayData {
 		| "1791453600000"
 		| "1794772800000"
 		| "1795280400000"
-		| "1795391999000"
 		| "1795636800000"
+		| "1796241600000"
 		| "1796292000000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
 		| "2020-01-01T00:00:00"
-		| "2022-10-13T12:00:00"
 		| "2023-02-27T20:00:00"
 		| "2023-10-10T11:00:00"
 		| "2025-06-02T10:00:00"
@@ -99,12 +99,12 @@ export interface IapItemDisplayData {
 		| "2025-09-29T10:00:00"
 		| "2025-10-13T10:00:00"
 		| "2025-11-03T10:00:00"
-		| "2025-11-16T10:00:00";
+		| "2025-11-16T10:00:00"
+		| "2025-11-24T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
 		| "1577836800000"
-		| "1665662400000"
 		| "1677528000000"
 		| "1696935600000"
 		| "1748858400000"
@@ -113,7 +113,8 @@ export interface IapItemDisplayData {
 		| "1759140000000"
 		| "1760349600000"
 		| "1762164000000"
-		| "1763287200000";
+		| "1763287200000"
+		| "1763978400000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;

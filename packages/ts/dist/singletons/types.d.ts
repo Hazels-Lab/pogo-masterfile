@@ -136,7 +136,6 @@ import type {
 	StationedPokemonTableSettings,
 	StickerCategorySettings,
 	StyleShopSettings,
-	TicketGiftingSettings,
 	TimeBoxedSpawnEventsSettings,
 	TodayViewSettings,
 	TutorialSettings,
@@ -285,7 +284,6 @@ export type StampCollectionSettingsType = W<StampCollectionSettings>;
 export type StationedPokemonTableSettingsType = W<StationedPokemonTableSettings>;
 export type StickerCategorySettingsType = W<StickerCategorySettings>;
 export type StyleShopSettingsType = W<StyleShopSettings>;
-export type TicketGiftingSettingsType = W<TicketGiftingSettings>;
 export type TimeBoxedSpawnEventsSettingsType = W<TimeBoxedSpawnEventsSettings>;
 export type TodayViewSettingsType = W<TodayViewSettings>;
 export type TutorialSettingsType = W<TutorialSettings>;
@@ -434,7 +432,6 @@ export type Singletons =
 	| StationedPokemonTableSettingsType
 	| StickerCategorySettingsType
 	| StyleShopSettingsType
-	| TicketGiftingSettingsType
 	| TimeBoxedSpawnEventsSettingsType
 	| TodayViewSettingsType
 	| TutorialSettingsType

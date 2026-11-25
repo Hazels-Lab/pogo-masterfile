@@ -2,12 +2,15 @@
 
 import type { EventPassTierSettingsPremiumGowa2026MasterfileEntry } from "./gowa2026";
 import type { EventPassTierSettingsPremiumNovember2026MasterfileEntry } from "./november2026";
+import type { EventPassTierSettingsPremiumTwilightMasterfileEntry } from "./twilight";
 
 export type * from "./gowa2026";
 export type * from "./november2026";
+export type * from "./twilight";
 
 export type EventPassTierSettingsPremiumMasterfileEntry =
 	| EventPassTierSettingsPremiumGowa2026MasterfileEntry
-	| EventPassTierSettingsPremiumNovember2026MasterfileEntry;
+	| EventPassTierSettingsPremiumNovember2026MasterfileEntry
+	| EventPassTierSettingsPremiumTwilightMasterfileEntry;
 
 export type EventPassTierSettingsPremiumTemplateID = EventPassTierSettingsPremiumMasterfileEntry["templateId"];

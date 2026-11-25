@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 22 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 24 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -156,6 +156,40 @@ export type IapItemDisplayMpReplenishRrp3 = S<
 		"mp_replenish_rrp.3",
 		{
 			sku: "mp_replenish_rrp.3";
+		}
+	>
+>;
+export type IapItemDisplayNovember12026DeluxeEventPassTrackUnlock = S<
+	IapItemDisplay<
+		"november1_2026_deluxe_event_pass_track_unlock",
+		{
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3b514292_PGO-MCS_S24_Finale_Key_Art_TICKET_v4_1024x576.jpg";
+			sku: "pgorelease.november1_2026_deluxe_event_pass_track_unlock";
+			skuDisableTime: "2026-12-02T20:00:00";
+			skuDisableTimeUtcMs: "1796241600000";
+			skuEnableTime: "2025-11-24T10:00:00";
+			skuEnableTimeUtcMs: "1763978400000";
+			sortOrder: 1;
+			title: "twilight_trails_finale_event_pass_deluxe_title";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
+export type IapItemDisplayNovember12026DeluxeEventPassTrackUnlockPlusPoints = S<
+	IapItemDisplay<
+		"november1_2026_deluxe_event_pass_track_unlock_plus_points",
+		{
+			description: "event_pass_plus_points_6_ranks_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3b514292_PGO-MCS_S24_Finale_Key_Art_TICKET_v4_1024x576.jpg";
+			sku: "pgorelease.november1_2026_deluxe_event_pass_track_unlock_plus_points";
+			skuDisableTime: "2026-12-02T20:00:00";
+			skuDisableTimeUtcMs: "1796241600000";
+			skuEnableTime: "2025-11-24T10:00:00";
+			skuEnableTimeUtcMs: "1763978400000";
+			sortOrder: 1;
+			title: "twilight_trails_finale_event_pass_plus_six_levels_title";
+			useEnvironmentPrefix: true;
 		}
 	>
 >;
@@ -358,6 +392,8 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayMonth3DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayMpReplenishRrp1
 	| IapItemDisplayMpReplenishRrp3
+	| IapItemDisplayNovember12026DeluxeEventPassTrackUnlock
+	| IapItemDisplayNovember12026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlock
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect

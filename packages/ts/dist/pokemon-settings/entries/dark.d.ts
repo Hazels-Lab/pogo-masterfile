@@ -6839,6 +6839,7 @@ export type PokemonSettingsV0983PokemonKingambit = S<
 			cinematicMoves: ["DARK_PULSE", "IRON_HEAD", "X_SCISSOR", "FOCUS_BLAST", "FOUL_PLAY"];
 			combatOpponentFocusCameraAngle: [0.6, -1, 0];
 			combatPlayerFocusCameraAngle: [-0.6, -1, 0];
+			eliteCinematicMove: ["KOWTOW_CLEAVE"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 7;
@@ -6898,6 +6899,7 @@ export type PokemonSettingsV0983PokemonKingambitNormal = S<
 			cinematicMoves: ["DARK_PULSE", "IRON_HEAD", "X_SCISSOR", "FOCUS_BLAST", "FOUL_PLAY"];
 			combatOpponentFocusCameraAngle: [0.6, -1, 0];
 			combatPlayerFocusCameraAngle: [-0.6, -1, 0];
+			eliteCinematicMove: ["KOWTOW_CLEAVE"];
 			encounter: {
 				attackProbability: 0.1;
 				bonusCandyCaptureReward: 7;

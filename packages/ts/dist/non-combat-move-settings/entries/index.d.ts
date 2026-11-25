@@ -203,8 +203,8 @@ export type NonCombatMoveSettingsV0482MoveDynamaxCannon = S<
 			};
 			bonusType: "MAX_MOVE_BONUS";
 			cost: {
-				candyCost: 15;
-				stardustCost: 2500;
+				candyCost: 30;
+				stardustCost: 5000;
 			};
 			durationMs: "600000";
 			innLobbyActivationSettings: {

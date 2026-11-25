@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 118 entries.
+// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 142 entries.
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -91,6 +91,14 @@ export type FeatureGateAvatarPropOptimization = S<
 		}
 	>
 >;
+export type FeatureGateAvatarStageQueuedBuddyFeatureGateCr = S<
+	FeatureGate<
+		"AVATAR_STAGE_QUEUED_BUDDY_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization = S<
 	FeatureGate<
 		"AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE",
@@ -118,6 +126,14 @@ export type FeatureGateBreadBattlePrepUiForceRebuildOptimization = S<
 export type FeatureGateBuddyCandyQuestProgressAggregationFeatureGateSr = S<
 	FeatureGate<
 		"BUDDY_CANDY_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateBuddyScreenRendererSlotFeatureGateCr = S<
+	FeatureGate<
+		"BUDDY_SCREEN_RENDERER_SLOT_FEATURE_GATE_CR",
 		{
 			status: 1;
 		}
@@ -163,6 +179,22 @@ export type FeatureGateCombatVnextAllowLateSimultaneousIbfcFeatureGateCr = S<
 		}
 	>
 >;
+export type FeatureGateCombatVnextClearInputBufferOnFaintsFeatureGateCr = S<
+	FeatureGate<
+		"COMBAT_VNEXT_CLEAR_INPUT_BUFFER_ON_FAINTS_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateCombatVnextFixFlashingCmButtonsFeatureGateCr = S<
+	FeatureGate<
+		"COMBAT_VNEXT_FIX_FLASHING_CM_BUTTONS_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateCombatVnextInitializeBdLast = S<
 	FeatureGate<
 		"COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE",
@@ -182,6 +214,14 @@ export type FeatureGateCombatVnextPlayMissedFm = S<
 export type FeatureGateCombatVnextPreserveAddressableDirtMaterialBugFix = S<
 	FeatureGate<
 		"COMBAT_VNEXT_PRESERVE_ADDRESSABLE_DIRT_MATERIAL_BUG_FIX_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateCombatVnextReactToShieldActionResponseFeatureGateCr = S<
+	FeatureGate<
+		"COMBAT_VNEXT_REACT_TO_SHIELD_ACTION_RESPONSE_FEATURE_GATE_CR",
 		{
 			status: 1;
 		}
@@ -240,6 +280,22 @@ export type FeatureGateCompassSortingOrderFix = S<
 		"COMPASS_SORTING_ORDER_FIX_FEATURE_GATE",
 		{
 			status: 738214905;
+		}
+	>
+>;
+export type FeatureGateConditionStringFeatureGateCr = S<
+	FeatureGate<
+		"CONDITION_STRING_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateCutsceneDismissWaitsForPlayedStateFeatureGateCr = S<
+	FeatureGate<
+		"CUTSCENE_DISMISS_WAITS_FOR_PLAYED_STATE_FEATURE_GATE_CR",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -523,9 +579,33 @@ export type FeatureGateMapEffectPriorityFeatureGateCr = S<
 		}
 	>
 >;
+export type FeatureGateMapHotspotOptimizationsFeatureGateCr = S<
+	FeatureGate<
+		"MAP_HOTSPOT_OPTIMIZATIONS_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateMapPokemonDisposeCleanupFeatureGateCr = S<
+	FeatureGate<
+		"MAP_POKEMON_DISPOSE_CLEANUP_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateMapPokemonRings = S<
 	FeatureGate<
 		"MAP_POKEMON_RINGS_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateMaterialOverrideEntryCheckerCacheFeatureGateCr = S<
+	FeatureGate<
+		"MATERIAL_OVERRIDE_ENTRY_CHECKER_CACHE_FEATURE_GATE_CR",
 		{
 			status: 1;
 		}
@@ -547,9 +627,25 @@ export type FeatureGateMepBattleDurabilityTrackingRecord = S<
 		}
 	>
 >;
+export type FeatureGateMichelinMapGymHeartRemoval = S<
+	FeatureGate<
+		"MICHELIN_MAP_GYM_HEART_REMOVAL_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateMichelinMapLureBottomRingRemoval = S<
 	FeatureGate<
 		"MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateMichelinMapNewBattleTopper = S<
+	FeatureGate<
+		"MICHELIN_MAP_NEW_BATTLE_TOPPER_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -576,6 +672,14 @@ export type FeatureGateMichelinMapZygardeCellReward = S<
 		"MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE",
 		{
 			status: 58439049;
+		}
+	>
+>;
+export type FeatureGateMlPersonalizedResearch = S<
+	FeatureGate<
+		"ML_PERSONALIZED_RESEARCH_FEATURE_GATE",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -619,9 +723,25 @@ export type FeatureGatePairedDeviceHelp = S<
 		}
 	>
 >;
+export type FeatureGatePhoneBoothLateSpawnFeatureGateCr = S<
+	FeatureGate<
+		"PHONE_BOOTH_LATE_SPAWN_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGatePhotobombTimePortalFutureFeatureGateSr = S<
 	FeatureGate<
 		"PHOTOBOMB_TIME_PORTAL_FUTURE_FEATURE_GATE_SR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGatePlayPokemonPoolReuseFeatureGateCr = S<
+	FeatureGate<
+		"PLAY_POKEMON_POOL_REUSE_FEATURE_GATE_CR",
 		{
 			status: 1;
 		}
@@ -635,11 +755,27 @@ export type FeatureGatePlayerEncounterRandomizationSalt = S<
 		}
 	>
 >;
+export type FeatureGatePlayerProfileScaleFeatureGateCr = S<
+	FeatureGate<
+		"PLAYER_PROFILE_SCALE_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGatePokedexDefenderGymFix = S<
 	FeatureGate<
 		"POKEDEX_DEFENDER_GYM_FIX_FEATURE_GATE",
 		{
 			status: 305603001;
+		}
+	>
+>;
+export type FeatureGatePokedexRegionMaterialMemoryLeakFixFeatureGateCr = S<
+	FeatureGate<
+		"POKEDEX_REGION_MATERIAL_MEMORY_LEAK_FIX_FEATURE_GATE_CR",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -699,6 +835,22 @@ export type FeatureGateRaidRsvpRemoteJoinFixFeatureGateCr = S<
 		}
 	>
 >;
+export type FeatureGateRaidcoinMaterialMemoryLeakFixFeatureGateCr = S<
+	FeatureGate<
+		"RAIDCOIN_MATERIAL_MEMORY_LEAK_FIX_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateReapplyMaterialStateDelegateCacheFeatureGateCr = S<
+	FeatureGate<
+		"REAPPLY_MATERIAL_STATE_DELEGATE_CACHE_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateRegisterDevice = S<
 	FeatureGate<
 		"REGISTER_DEVICE_FEATURE_GATE",
@@ -720,6 +872,14 @@ export type FeatureGateRemoteTradeSpeedGiftFix = S<
 		"REMOTE_TRADE_SPEED_GIFT_FIX_FEATURE_GATE",
 		{
 			status: 2125789674;
+		}
+	>
+>;
+export type FeatureGateReplaySbVfxFeatureGateCr = S<
+	FeatureGate<
+		"REPLAY_SB_VFX_FEATURE_GATE_CR",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -771,6 +931,14 @@ export type FeatureGateSkipZeroLevelBadgesFeatureGateSr = S<
 		}
 	>
 >;
+export type FeatureGateSoftSfidaPastDayRecapFeatureGateCr = S<
+	FeatureGate<
+		"SOFT_SFIDA_PAST_DAY_RECAP_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
 export type FeatureGateSoftSfidaWidgetBackgroundColor = S<
 	FeatureGate<
 		"SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE",
@@ -800,6 +968,22 @@ export type FeatureGateStampRallyTimeTravelServer = S<
 		"STAMP_RALLY_TIME_TRAVEL_SERVER_FEATURE_GATE",
 		{
 			status: 293813;
+		}
+	>
+>;
+export type FeatureGateTgrNoLocationExitFeatureGateCr = S<
+	FeatureGate<
+		"TGR_NO_LOCATION_EXIT_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateThemeConfigCacheFeatureGateCr = S<
+	FeatureGate<
+		"THEME_CONFIG_CACHE_FEATURE_GATE_CR",
+		{
+			status: 1;
 		}
 	>
 >;
@@ -854,6 +1038,14 @@ export type FeatureGateTransfer = S<
 export type FeatureGateUncostumedOverrideFeatureGateCr = S<
 	FeatureGate<
 		"UNCOSTUMED_OVERRIDE_FEATURE_GATE_CR",
+		{
+			status: 1;
+		}
+	>
+>;
+export type FeatureGateUnifiedSku = S<
+	FeatureGate<
+		"UNIFIED_SKU_FEATURE_GATE",
 		{
 			status: 1;
 		}
@@ -960,18 +1152,23 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateAmsFrontend
 	| FeatureGateAvatarGlowingArticlesOptimization
 	| FeatureGateAvatarPropOptimization
+	| FeatureGateAvatarStageQueuedBuddyFeatureGateCr
 	| FeatureGateAvatarSubcategoryHeaderForceRebuildOptimization
 	| FeatureGateBadgeService
 	| FeatureGateBreadBattlePrepUiForceRebuildOptimization
 	| FeatureGateBuddyCandyQuestProgressAggregationFeatureGateSr
+	| FeatureGateBuddyScreenRendererSlotFeatureGateCr
 	| FeatureGateBuddySwapPlayerSnapshot
 	| FeatureGateBulkHealQuestProgressAggregationFeatureGateSr
 	| FeatureGateCombatAcceptedTurnSwapSuppressionFeatureGateCr
 	| FeatureGateCombatSuppressFastMovePredictionsOnSwap
 	| FeatureGateCombatVnextAllowLateSimultaneousIbfcFeatureGateCr
+	| FeatureGateCombatVnextClearInputBufferOnFaintsFeatureGateCr
+	| FeatureGateCombatVnextFixFlashingCmButtonsFeatureGateCr
 	| FeatureGateCombatVnextInitializeBdLast
 	| FeatureGateCombatVnextPlayMissedFm
 	| FeatureGateCombatVnextPreserveAddressableDirtMaterialBugFix
+	| FeatureGateCombatVnextReactToShieldActionResponseFeatureGateCr
 	| FeatureGateCombatVnextShowMiniorIbfcToasts
 	| FeatureGateCombatVnextStatChangeBatching
 	| FeatureGateCombatVnextSuppressFmAtCmScreenPointFixFeatureGateCr
@@ -979,6 +1176,8 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateCombatVnextUseSynchronizedFormForCameraScale
 	| FeatureGateCombineCompassAndWeather
 	| FeatureGateCompassSortingOrderFix
+	| FeatureGateConditionStringFeatureGateCr
+	| FeatureGateCutsceneDismissWaitsForPlayedStateFeatureGateCr
 	| FeatureGateDailyEncounterGenerationContext
 	| FeatureGateDeprecateVerifyEligibility
 	| FeatureGateDisableLegacyNearbyPokemon
@@ -1014,21 +1213,31 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateLuckyTradeNewStrings
 	| FeatureGateMapBackgroundThreadProcessing
 	| FeatureGateMapEffectPriorityFeatureGateCr
+	| FeatureGateMapHotspotOptimizationsFeatureGateCr
+	| FeatureGateMapPokemonDisposeCleanupFeatureGateCr
 	| FeatureGateMapPokemonRings
+	| FeatureGateMaterialOverrideEntryCheckerCacheFeatureGateCr
 	| FeatureGateMeetupReminderNotifications
 	| FeatureGateMepBattleDurabilityTrackingRecord
+	| FeatureGateMichelinMapGymHeartRemoval
 	| FeatureGateMichelinMapLureBottomRingRemoval
+	| FeatureGateMichelinMapNewBattleTopper
 	| FeatureGateMichelinMapPokemonAttractantFog
 	| FeatureGateMichelinMapPokestopSpunContrastUp
 	| FeatureGateMichelinMapZygardeCellReward
+	| FeatureGateMlPersonalizedResearch
 	| FeatureGateNearbyMenuRsvpRouteFixFeatureGateCr
 	| FeatureGateNearbySilhoutteFormFeatureGateSr
 	| FeatureGateNeutralAvatarShopItemForceRebuildOptimization
 	| FeatureGateNpcGiftAutoClaim
 	| FeatureGatePairedDeviceHelp
+	| FeatureGatePhoneBoothLateSpawnFeatureGateCr
 	| FeatureGatePhotobombTimePortalFutureFeatureGateSr
+	| FeatureGatePlayPokemonPoolReuseFeatureGateCr
 	| FeatureGatePlayerEncounterRandomizationSalt
+	| FeatureGatePlayerProfileScaleFeatureGateCr
 	| FeatureGatePokedexDefenderGymFix
+	| FeatureGatePokedexRegionMaterialMemoryLeakFixFeatureGateCr
 	| FeatureGatePokedexScrollingFix
 	| FeatureGatePokemonNameChip
 	| FeatureGatePokemonSpawnAvoidanceRework
@@ -1036,19 +1245,25 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateQuestProgressAggregationFeatureGateSr
 	| FeatureGateQuestTotalDaysCatchResultFix
 	| FeatureGateRaidRsvpRemoteJoinFixFeatureGateCr
+	| FeatureGateRaidcoinMaterialMemoryLeakFixFeatureGateCr
+	| FeatureGateReapplyMaterialStateDelegateCacheFeatureGateCr
 	| FeatureGateRegisterDevice
 	| FeatureGateRemoteTradeImprovements
 	| FeatureGateRemoteTradeSpeedGiftFix
+	| FeatureGateReplaySbVfxFeatureGateCr
 	| FeatureGateRouteTravelQuestProgressAggregationFeatureGateSr
 	| FeatureGateRunCellUpdatesBackgroundThreadProcessing
 	| FeatureGateSanitizeAdventureEffectServerOnlyFields
 	| FeatureGateSavePlayerSnapshotImmediateReason
 	| FeatureGateSeafGetMapObjectsRateLimiter
 	| FeatureGateSkipZeroLevelBadgesFeatureGateSr
+	| FeatureGateSoftSfidaPastDayRecapFeatureGateCr
 	| FeatureGateSoftSfidaWidgetBackgroundColor
 	| FeatureGateStampRallyMiniGameAnimationLockFix
 	| FeatureGateStampRallyTimeTravelClient
 	| FeatureGateStampRallyTimeTravelServer
+	| FeatureGateTgrNoLocationExitFeatureGateCr
+	| FeatureGateThemeConfigCacheFeatureGateCr
 	| FeatureGateTimeTravelPowerspotSchedulingFeatureGateSr
 	| FeatureGateTodayViewInnerTabEqualWidthFeatureGateCr
 	| FeatureGateTodayViewInnerTabsHeader
@@ -1056,6 +1271,7 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateTodayViewV3CollapseRedraw
 	| FeatureGateTransfer
 	| FeatureGateUncostumedOverrideFeatureGateCr
+	| FeatureGateUnifiedSku
 	| FeatureGateUseAccurateModelScaleFeatureGateCr
 	| FeatureGateUseHalfLevelsForCpLimiter
 	| FeatureGateUseReworkedPvpNameplateFeatureGateCr

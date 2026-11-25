@@ -87,6 +87,7 @@ mod template_ids {
     pub use pogo_masterfile_types::sticker_metadata::StickerMetadataTemplateId;
     pub use pogo_masterfile_types::tappable_settings::TappableSettingsTemplateId;
     pub use pogo_masterfile_types::temporary_evolution_settings::TemporaryEvolutionSettingsTemplateId;
+    pub use pogo_masterfile_types::ticket_gifting_settings::TicketGiftingSettingsTemplateId;
     pub use pogo_masterfile_types::type_effective::TypeEffectiveTemplateId;
     pub use pogo_masterfile_types::vs_seeker_loot::VsSeekerLootTemplateId;
     pub use pogo_masterfile_types::vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsTemplateId;
@@ -225,6 +226,8 @@ pub(crate) struct GroupIndexes {
     pub(crate) temporary_evolution_settings_index:
         HashMap<TemporaryEvolutionSettingsTemplateId, usize>,
     pub(crate) temporary_evolution_settings_order: Vec<usize>,
+    pub(crate) ticket_gifting_settings_index: HashMap<TicketGiftingSettingsTemplateId, usize>,
+    pub(crate) ticket_gifting_settings_order: Vec<usize>,
     pub(crate) type_effective_index: HashMap<TypeEffectiveTemplateId, usize>,
     pub(crate) type_effective_order: Vec<usize>,
     pub(crate) vs_seeker_loot_index: HashMap<VsSeekerLootTemplateId, usize>,
@@ -418,6 +421,9 @@ impl GroupIndexes {
             usize,
         > = HashMap::new();
         let mut temporary_evolution_settings_order: Vec<usize> = Vec::new();
+        let mut ticket_gifting_settings_index: HashMap<TicketGiftingSettingsTemplateId, usize> =
+            HashMap::new();
+        let mut ticket_gifting_settings_order: Vec<usize> = Vec::new();
         let mut type_effective_index: HashMap<TypeEffectiveTemplateId, usize> = HashMap::new();
         let mut type_effective_order: Vec<usize> = Vec::new();
         let mut vs_seeker_loot_index: HashMap<VsSeekerLootTemplateId, usize> = HashMap::new();
@@ -854,6 +860,15 @@ impl GroupIndexes {
                         temporary_evolution_settings_order.push(idx);
                     }
                 }
+                MasterfileEntry::TicketGiftingSettings(_) => {
+                    if let Ok(typed) = entry
+                        .template_id()
+                        .parse::<TicketGiftingSettingsTemplateId>()
+                    {
+                        ticket_gifting_settings_index.insert(typed, idx);
+                        ticket_gifting_settings_order.push(idx);
+                    }
+                }
                 MasterfileEntry::TypeEffective(_) => {
                     if let Ok(typed) = entry.template_id().parse::<TypeEffectiveTemplateId>() {
                         type_effective_index.insert(typed, idx);
@@ -998,6 +1013,8 @@ impl GroupIndexes {
             tappable_settings_order,
             temporary_evolution_settings_index,
             temporary_evolution_settings_order,
+            ticket_gifting_settings_index,
+            ticket_gifting_settings_order,
             type_effective_index,
             type_effective_order,
             vs_seeker_loot_index,
@@ -1470,6 +1487,14 @@ impl Masterfile {
             entries: &self.entries,
             index: &self.groups.temporary_evolution_settings_index,
             order: &self.groups.temporary_evolution_settings_order,
+        }
+    }
+
+    pub fn ticket_gifting_settings(&self) -> accessor::TicketGiftingSettingsAccessor<'_> {
+        accessor::TicketGiftingSettingsAccessor {
+            entries: &self.entries,
+            index: &self.groups.ticket_gifting_settings_index,
+            order: &self.groups.ticket_gifting_settings_order,
         }
     }
 
@@ -1967,6 +1992,14 @@ impl blocking::Masterfile {
             entries: &self.entries,
             index: &self.groups.temporary_evolution_settings_index,
             order: &self.groups.temporary_evolution_settings_order,
+        }
+    }
+
+    pub fn ticket_gifting_settings(&self) -> accessor::TicketGiftingSettingsAccessor<'_> {
+        accessor::TicketGiftingSettingsAccessor {
+            entries: &self.entries,
+            index: &self.groups.ticket_gifting_settings_index,
+            order: &self.groups.ticket_gifting_settings_order,
         }
     }
 

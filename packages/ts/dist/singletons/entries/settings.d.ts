@@ -2970,7 +2970,7 @@ export interface GymTopperDistanceSettings {
 	data: {
 		templateId: "GYM_TOPPER_DISTANCE_SETTINGS";
 		gymTopperDistanceSettings: {
-			guardPokemonMaxVisualDistanceMeters: 5000;
+			guardPokemonMaxVisualDistanceMeters: 600;
 		};
 	};
 }
@@ -3672,6 +3672,7 @@ export interface MapDisplaySettings {
 		templateId: "MAP_DISPLAY_SETTINGS";
 		mapDisplaySettings: {
 			showEnhancedSky: true;
+			skyEffectName: "EventSkyFX_S8";
 		};
 	};
 }
@@ -5053,6 +5054,31 @@ export interface RaidEntryCostSettings {
 					];
 					raidLevel: "RAID_LEVEL_MEGA_5";
 				},
+				{
+					raidEntryCost: [
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_PAID_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_REMOTE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_REMOTE";
+						},
+						{
+							itemRequirement: {
+								count: 1;
+								item: "ITEM_FREE_RAID_TICKET";
+							};
+							raidType: "RAID_LOCATION_REQUERIMENT_IN_PERSON";
+						},
+					];
+				},
 			];
 		};
 	};
@@ -6008,18 +6034,6 @@ export interface StyleShopSettings {
 	};
 }
 
-export interface TicketGiftingSettings {
-	templateId: "TICKET_GIFTING_SETTINGS";
-	data: {
-		templateId: "TICKET_GIFTING_SETTINGS";
-		ticketGiftingSettings: {
-			dailyPlayerGiftingLimit: 20;
-			minPlayerLevel: 5;
-			minRequiredFriendshipLevel: "FRIENDSHIP_LEVEL_2";
-		};
-	};
-}
-
 export interface TimeBoxedSpawnEventsSettings {
 	templateId: "TIME_BOXED_SPAWN_EVENT_SETTINGS";
 	data: {
@@ -6310,11 +6324,7 @@ export interface VsSeekerClientSettings {
 	data: {
 		templateId: "VS_SEEKER_CLIENT_SETTINGS";
 		vsSeekerClientSettings: {
-			allowedVsSeekerLeagueTemplateId: [
-				"COMBAT_LEAGUE_VS_SEEKER_ULTRA",
-				"COMBAT_LEAGUE_VS_SEEKER_MASTER_MEGAS",
-				"COMBAT_LEAGUE_VS_SEEKER_GREAT_CHAMPIONSHIP_SERIES",
-			];
+			allowedVsSeekerLeagueTemplateId: ["COMBAT_LEAGUE_VS_SEEKER_MASTER", "COMBAT_LEAGUE_VS_SEEKER_GREAT_CATCH_S24_MEGAS"];
 		};
 	};
 }
@@ -6657,7 +6667,6 @@ export type SingletonsSettingsMasterfileEntry =
 	| StationedPokemonTableSettings
 	| StickerCategorySettings
 	| StyleShopSettings
-	| TicketGiftingSettings
 	| TimeBoxedSpawnEventsSettings
 	| TodayViewSettings
 	| TutorialSettings
