@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "clientQuestTemplate", 55 entries (variant aliases).
+// Generated from Pokémon GO masterfile — group "clientQuestTemplate", 58 entries (variant aliases).
 
 import type { S } from "../../_utils";
 import type { ClientQuestTemplate } from "../types";
@@ -1935,6 +1935,163 @@ export type ClientQuestTemplateWeeklyChallengePartyQuestWeek4 = S<
 		}
 	>
 >;
+export type ClientQuestTemplateWeeklyChallengeS25Dec2026Berries = S<
+	ClientQuestTemplate<
+		"WEEKLY_CHALLENGE_S25_DEC2026_BERRIES",
+		{
+			quest: {
+				difficulty: "EASY";
+				goal: {
+					target: 200;
+				};
+				questContext: "WEEKLY_CHALLENGE_QUEST";
+				questRewards: [
+					{
+						stardust: 6000;
+						type: "STARDUST";
+					},
+					{
+						friendshipPoints: 30;
+						type: "FRIENDSHIP_POINTS";
+					},
+					{
+						exp: 20000;
+						type: "EXPERIENCE";
+					},
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "TANDEMAUS_NORMAL";
+							};
+							pokemonId: "TANDEMAUS";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						item: {
+							amount: 250;
+							item: "ITEM_ENHANCED_CURRENCY";
+						};
+						type: "ITEM";
+					},
+				];
+				questType: "QUEST_USE_BERRY_IN_ENCOUNTER";
+			};
+			questDisplay: {
+				description: "quest_catch_feed_plural";
+				title: "quest_catch_feed_plural";
+			};
+		}
+	>
+>;
+export type ClientQuestTemplateWeeklyChallengeS25Dec2026Curveballs = S<
+	ClientQuestTemplate<
+		"WEEKLY_CHALLENGE_S25_DEC2026_CURVEBALLS",
+		{
+			quest: {
+				difficulty: "EASY";
+				goal: {
+					condition: [
+						{
+							type: "WITH_CURVE_BALL";
+						},
+					];
+					target: 270;
+				};
+				questContext: "WEEKLY_CHALLENGE_QUEST";
+				questRewards: [
+					{
+						stardust: 6000;
+						type: "STARDUST";
+					},
+					{
+						friendshipPoints: 30;
+						type: "FRIENDSHIP_POINTS";
+					},
+					{
+						exp: 20000;
+						type: "EXPERIENCE";
+					},
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "TANDEMAUS_NORMAL";
+							};
+							pokemonId: "TANDEMAUS";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						item: {
+							amount: 250;
+							item: "ITEM_ENHANCED_CURRENCY";
+						};
+						type: "ITEM";
+					},
+				];
+				questType: "QUEST_LAND_THROW";
+			};
+			questDisplay: {
+				description: "quest_land_curveball_plural";
+				title: "quest_land_curveball_plural";
+			};
+		}
+	>
+>;
+export type ClientQuestTemplateWeeklyChallengeS25Dec2026Stickers = S<
+	ClientQuestTemplate<
+		"WEEKLY_CHALLENGE_S25_DEC2026_STICKERS",
+		{
+			quest: {
+				difficulty: "EASY";
+				goal: {
+					condition: [
+						{
+							type: "WITH_STICKER";
+						},
+					];
+					target: 100;
+				};
+				questContext: "WEEKLY_CHALLENGE_QUEST";
+				questRewards: [
+					{
+						stardust: 6000;
+						type: "STARDUST";
+					},
+					{
+						friendshipPoints: 30;
+						type: "FRIENDSHIP_POINTS";
+					},
+					{
+						exp: 20000;
+						type: "EXPERIENCE";
+					},
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								form: "TANDEMAUS_NORMAL";
+							};
+							pokemonId: "TANDEMAUS";
+						};
+						type: "POKEMON_ENCOUNTER";
+					},
+					{
+						item: {
+							amount: 250;
+							item: "ITEM_ENHANCED_CURRENCY";
+						};
+						type: "ITEM";
+					},
+				];
+				questType: "QUEST_SEND_GIFT";
+			};
+			questDisplay: {
+				description: "quest_send_gifts_sticker_plural";
+				title: "quest_send_gifts_sticker_plural";
+			};
+		}
+	>
+>;
 
 export type ClientQuestTemplateMasterfileEntry =
 	| ClientQuestTemplateLevel71Cap
@@ -1991,6 +2148,9 @@ export type ClientQuestTemplateMasterfileEntry =
 	| ClientQuestTemplateWeeklyChallengePartyQuestWeek1
 	| ClientQuestTemplateWeeklyChallengePartyQuestWeek2
 	| ClientQuestTemplateWeeklyChallengePartyQuestWeek3
-	| ClientQuestTemplateWeeklyChallengePartyQuestWeek4;
+	| ClientQuestTemplateWeeklyChallengePartyQuestWeek4
+	| ClientQuestTemplateWeeklyChallengeS25Dec2026Berries
+	| ClientQuestTemplateWeeklyChallengeS25Dec2026Curveballs
+	| ClientQuestTemplateWeeklyChallengeS25Dec2026Stickers;
 
 export type ClientQuestTemplateTemplateID = ClientQuestTemplateMasterfileEntry["templateId"];

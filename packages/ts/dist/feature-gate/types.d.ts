@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", 134 entries (structural types).
+// Generated from Pokémon GO masterfile — group "featureGate", 159 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -43,6 +43,8 @@ export interface FeatureGateData {
 			| "DESTROY_UI_WIDGET_GAMEOBJECTS_SUB_GATE"
 			| "DETAIL_RENDERER_DUPLICATE_MODELS_SUB_FEATURE_GATE"
 			| "FIELD_EFFECT_FTUE_DEFERRAL_SUB_FEATURE_GATE"
+			| "GYM_DEFAULT"
+			| "GYM_RAID"
 			| "INVITE_BY_CODE"
 			| "INVITE_FRIENDS"
 			| "MAP_FOLLOWER_LEFTOVER_CHARACTER_SUB_FEATURE_GATE"

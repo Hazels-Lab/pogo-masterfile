@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 7 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -29,6 +29,7 @@ export type IapItemDisplayGeneral2Ticket3 = S<
 		"general2.ticket.3",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			hidden: true;
 			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg";
 			sku: "pgorelease.general2.ticket.3";
 			skuDisableTime: "2026-11-21T17:00:00";
@@ -69,7 +70,7 @@ export type IapItemDisplayGotourticket1 = S<
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
 			description: "item_global_event_ticket_desc_GOTour2027";
 			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F19ec3f96_PGO-MCS_GO_Tour_2027_Shiny_Poipole_v2-1025x512.jpg";
 			sku: "pgorelease.gotourticket.1";
 			sortOrder: 1;
 			spriteId: "general2.ticket.5";
@@ -92,6 +93,24 @@ export type IapItemDisplayMonth3DeluxeEventPassTrackRedirect = S<
 			skuEnableTimeUtcMs: "1762164000000";
 			sortOrder: 1;
 			title: "season_pass_premium_track_title_nov";
+			useEnvironmentPrefix: true;
+		}
+	>
+>;
+export type IapItemDisplayNovember12026DeluxeEventPassTrackUnlockRedirect = S<
+	IapItemDisplay<
+		"november1_2026_deluxe_event_pass_track_unlock_redirect",
+		{
+			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
+			description: "deluxe_event_pass_track_unlock_description";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F3b514292_PGO-MCS_S24_Finale_Key_Art_TICKET_v4_1024x576.jpg";
+			sku: "pgorelease.november1_2026_deluxe_event_pass_track_unlock_redirect";
+			skuDisableTime: "2026-12-02T20:00:00";
+			skuDisableTimeUtcMs: "1796241600000";
+			skuEnableTime: "2025-11-24T10:00:00";
+			skuEnableTimeUtcMs: "1763978400000";
+			sortOrder: 1;
+			title: "twilight_trails_finale_event_pass_deluxe_title";
 			useEnvironmentPrefix: true;
 		}
 	>
@@ -120,4 +139,5 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket11
 	| IapItemDisplayGotourticket1
 	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect
+	| IapItemDisplayNovember12026DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect;

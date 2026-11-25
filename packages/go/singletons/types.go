@@ -1078,7 +1078,8 @@ type MainMenuChanges struct {
 }
 
 type MapDisplaySettings struct {
-	ShowEnhancedSky bool `json:"showEnhancedSky"`
+	ShowEnhancedSky bool   `json:"showEnhancedSky"`
+	SkyEffectName   string `json:"skyEffectName"`
 }
 
 type MapObjectCollisionAvoidanceSettings struct {
@@ -1655,8 +1656,12 @@ type RaidEntryCostSettingsRaidLevelEntryCost struct {
 	RaidLevel     string                                `json:"raidLevel"`
 }
 
+type RaidEntryCostSettingsRaidLevelEntryCostV2 struct {
+	RaidEntryCost [3]RaidEntryCostSettingsRaidEntryCost `json:"raidEntryCost"`
+}
+
 type RaidEntryCostSettings struct {
-	RaidLevelEntryCost [4]RaidEntryCostSettingsRaidLevelEntryCost `json:"raidLevelEntryCost"`
+	RaidLevelEntryCost []any `json:"raidLevelEntryCost"`
 }
 
 type RaidLobbyCounterSettings struct {
@@ -2011,12 +2016,6 @@ type StyleShopSettings struct {
 	V2enabled                bool      `json:"v2Enabled"`
 }
 
-type TicketGiftingSettings struct {
-	DailyPlayerGiftingLimit    uint64 `json:"dailyPlayerGiftingLimit"`
-	MinPlayerLevel             uint64 `json:"minPlayerLevel"`
-	MinRequiredFriendshipLevel string `json:"minRequiredFriendshipLevel"`
-}
-
 type TimeBoxedSpawnEventsSettingsEndDayLocal struct {
 	Day   uint64 `json:"day"`
 	Month uint64 `json:"month"`
@@ -2170,7 +2169,7 @@ type VnextBattleConfig struct {
 }
 
 type VsSeekerClientSettings struct {
-	AllowedVsSeekerLeagueTemplateId [3]string `json:"allowedVsSeekerLeagueTemplateId"`
+	AllowedVsSeekerLeagueTemplateId [2]string `json:"allowedVsSeekerLeagueTemplateId"`
 }
 
 type VsSeekerScheduleSettingsVsSeekerSchedules struct {
@@ -3843,18 +3842,6 @@ func (StyleShopSettingsEntry) MasterfileEntry() {}
 type StyleShopSettingsEntryData struct {
 	TemplateID        string            `json:"templateId"`
 	StyleShopSettings StyleShopSettings `json:"styleShopSettings"`
-}
-
-type TicketGiftingSettingsEntry struct {
-	TemplateID string                         `json:"templateId"`
-	Data       TicketGiftingSettingsEntryData `json:"data"`
-}
-
-func (TicketGiftingSettingsEntry) MasterfileEntry() {}
-
-type TicketGiftingSettingsEntryData struct {
-	TemplateID            string                `json:"templateId"`
-	TicketGiftingSettings TicketGiftingSettings `json:"ticketGiftingSettings"`
 }
 
 type TimeBoxedSpawnEventsSettingsEntry struct {

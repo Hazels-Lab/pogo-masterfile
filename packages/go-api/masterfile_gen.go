@@ -64,6 +64,7 @@ import (
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/sticker_metadata"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/tappable_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/temporary_evolution_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/ticket_gifting_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/type_effective"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/vs_seeker_loot"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/vs_seeker_pokemon_rewards"
@@ -107,6 +108,7 @@ type Masterfile struct {
 	PokestopInvasionAvailabilitySettings *accessor.PokestopInvasionAvailabilitySettingsAccessor
 	CodeGateProto                        *accessor.CodeGateProtoAccessor
 	ItemExpirationSettings               *accessor.ItemExpirationSettingsAccessor
+	TicketGiftingSettings                *accessor.TicketGiftingSettingsAccessor
 	LocationCardSettings                 *accessor.LocationCardSettingsAccessor
 	ClientQuestTemplate                  *accessor.ClientQuestTemplateAccessor
 	LimitedPurchaseSkuSettings           *accessor.LimitedPurchaseSkuSettingsAccessor
@@ -173,6 +175,7 @@ var GroupNames = []string{
 	"pokestopInvasionAvailabilitySettings",
 	"codeGateProto",
 	"itemExpirationSettings",
+	"ticketGiftingSettings",
 	"locationCardSettings",
 	"clientQuestTemplate",
 	"limitedPurchaseSkuSettings",
@@ -241,6 +244,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	pokestopInvasionAvailabilitySettingsBucket := []pokestop_invasion_availability_settings.PokestopInvasionAvailabilitySettingsEntry{}
 	codeGateProtoBucket := []code_gate_proto.CodeGateProtoEntry{}
 	itemExpirationSettingsBucket := []item_expiration_settings.ItemExpirationSettingsEntry{}
+	ticketGiftingSettingsBucket := []ticket_gifting_settings.TicketGiftingSettingsEntry{}
 	locationCardSettingsBucket := []location_card_settings.LocationCardSettingsEntry{}
 	clientQuestTemplateBucket := []client_quest_template.ClientQuestTemplateEntry{}
 	limitedPurchaseSkuSettingsBucket := []limited_purchase_sku_settings.LimitedPurchaseSkuSettingsEntry{}
@@ -368,6 +372,9 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 		case item_expiration_settings.ItemExpirationSettingsEntry:
 			m.byID[v.TemplateID] = i
 			itemExpirationSettingsBucket = append(itemExpirationSettingsBucket, v)
+		case ticket_gifting_settings.TicketGiftingSettingsEntry:
+			m.byID[v.TemplateID] = i
+			ticketGiftingSettingsBucket = append(ticketGiftingSettingsBucket, v)
 		case location_card_settings.LocationCardSettingsEntry:
 			m.byID[v.TemplateID] = i
 			locationCardSettingsBucket = append(locationCardSettingsBucket, v)
@@ -496,6 +503,7 @@ func newMasterfile(entries []masterfile.MasterfileEntry) *Masterfile {
 	m.PokestopInvasionAvailabilitySettings = accessor.NewPokestopInvasionAvailabilitySettingsAccessor(pokestopInvasionAvailabilitySettingsBucket)
 	m.CodeGateProto = accessor.NewCodeGateProtoAccessor(codeGateProtoBucket)
 	m.ItemExpirationSettings = accessor.NewItemExpirationSettingsAccessor(itemExpirationSettingsBucket)
+	m.TicketGiftingSettings = accessor.NewTicketGiftingSettingsAccessor(ticketGiftingSettingsBucket)
 	m.LocationCardSettings = accessor.NewLocationCardSettingsAccessor(locationCardSettingsBucket)
 	m.ClientQuestTemplate = accessor.NewClientQuestTemplateAccessor(clientQuestTemplateBucket)
 	m.LimitedPurchaseSkuSettings = accessor.NewLimitedPurchaseSkuSettingsAccessor(limitedPurchaseSkuSettingsBucket)

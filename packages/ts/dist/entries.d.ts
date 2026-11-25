@@ -57,6 +57,7 @@ import type { SingletonsMasterfileEntry } from "./singletons/entries";
 import type { StickerMetadataMasterfileEntry } from "./sticker-metadata/entries";
 import type { TappableSettingsMasterfileEntry } from "./tappable-settings/entries";
 import type { TemporaryEvolutionSettingsMasterfileEntry } from "./temporary-evolution-settings/entries";
+import type { TicketGiftingSettingsMasterfileEntry } from "./ticket-gifting-settings/entries";
 import type { TypeEffectiveMasterfileEntry } from "./type-effective/entries";
 import type { VsSeekerLootMasterfileEntry } from "./vs-seeker-loot/entries";
 import type { VsSeekerPokemonRewardsMasterfileEntry } from "./vs-seeker-pokemon-rewards/entries";
@@ -119,6 +120,7 @@ export type * from "./singletons/entries";
 export type * from "./sticker-metadata/entries";
 export type * from "./tappable-settings/entries";
 export type * from "./temporary-evolution-settings/entries";
+export type * from "./ticket-gifting-settings/entries";
 export type * from "./type-effective/entries";
 export type * from "./vs-seeker-loot/entries";
 export type * from "./vs-seeker-pokemon-rewards/entries";
@@ -182,6 +184,7 @@ export type MasterfileEntry =
 	| StickerMetadataMasterfileEntry
 	| TappableSettingsMasterfileEntry
 	| TemporaryEvolutionSettingsMasterfileEntry
+	| TicketGiftingSettingsMasterfileEntry
 	| TypeEffectiveMasterfileEntry
 	| VsSeekerLootMasterfileEntry
 	| VsSeekerPokemonRewardsMasterfileEntry

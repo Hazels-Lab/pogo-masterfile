@@ -50,13 +50,14 @@ type ItemSettingsNeutralAvatarItemTemplate struct {
 
 type ItemSettingsPokemonDisplay struct {
 	BreadModeEnum *string `json:"breadModeEnum,omitempty"`
-	Form          string  `json:"form"`
+	Form          *string `json:"form,omitempty"`
 	Shiny         *bool   `json:"shiny,omitempty"`
 }
 
 type ItemSettingsPokemonEncounter struct {
-	PokemonDisplay *ItemSettingsPokemonDisplay `json:"pokemonDisplay,omitempty"`
-	PokemonId      string                      `json:"pokemonId"`
+	PokemonDisplay   *ItemSettingsPokemonDisplay `json:"pokemonDisplay,omitempty"`
+	PokemonId        string                      `json:"pokemonId"`
+	ShinyProbability *float64                    `json:"shinyProbability,omitempty"`
 }
 
 type ItemSettingsIconRewards struct {

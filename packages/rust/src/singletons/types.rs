@@ -1566,6 +1566,7 @@ pub struct MainMenuChanges {
 #[serde(rename_all = "camelCase")]
 pub struct MapDisplaySettings {
     pub show_enhanced_sky: bool,
+    pub sky_effect_name: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2331,8 +2332,20 @@ pub struct RaidLevelEntryCost {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct RaidLevelEntryCostV2 {
+    pub raid_entry_cost: [RaidEntryCost; 3],
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct RaidEntryCostSettings {
-    pub raid_level_entry_cost: [RaidLevelEntryCost; 4],
+    pub raid_level_entry_cost: (
+        RaidLevelEntryCost,
+        RaidLevelEntryCost,
+        RaidLevelEntryCost,
+        RaidLevelEntryCost,
+        RaidLevelEntryCostV2,
+    ),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -2805,14 +2818,6 @@ pub struct StyleShopSettings {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct TicketGiftingSettings {
-    pub daily_player_gifting_limit: u64,
-    pub min_player_level: u64,
-    pub min_required_friendship_level: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(rename_all = "camelCase")]
 pub struct EndDayLocal {
     pub day: u64,
     pub month: u64,
@@ -3004,7 +3009,7 @@ pub struct VnextBattleConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct VsSeekerClientSettings {
-    pub allowed_vs_seeker_league_template_id: [String; 3],
+    pub allowed_vs_seeker_league_template_id: [String; 2],
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -3385,8 +3390,6 @@ crate::masterfile_entry!(StationedPokemonTableSettingsEntry, StationedPokemonTab
 crate::masterfile_entry!(StickerCategorySettingsEntry, StickerCategorySettingsEntryData, sticker_category_settings: StickerCategorySettings);
 
 crate::masterfile_entry!(StyleShopSettingsEntry, StyleShopSettingsEntryData, style_shop_settings: StyleShopSettings);
-
-crate::masterfile_entry!(TicketGiftingSettingsEntry, TicketGiftingSettingsEntryData, ticket_gifting_settings: TicketGiftingSettings);
 
 crate::masterfile_entry!(TimeBoxedSpawnEventsSettingsEntry, TimeBoxedSpawnEventsSettingsEntryData, time_boxed_spawn_events_settings: TimeBoxedSpawnEventsSettings);
 

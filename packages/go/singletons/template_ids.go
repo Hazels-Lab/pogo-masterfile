@@ -139,7 +139,6 @@ const (
 	SingletonsTemplateIDStickerCategorySettings                 SingletonsTemplateID = "sticker_category_settings"
 	SingletonsTemplateIDStyleShopSettings                       SingletonsTemplateID = "STYLE_SHOP_SETTINGS"
 	SingletonsTemplateIDSurveySettings                          SingletonsTemplateID = "SURVEY_SETTINGS"
-	SingletonsTemplateIDTicketGiftingSettings                   SingletonsTemplateID = "TICKET_GIFTING_SETTINGS"
 	SingletonsTemplateIDTimeBoxedSpawnEventSettings             SingletonsTemplateID = "TIME_BOXED_SPAWN_EVENT_SETTINGS"
 	SingletonsTemplateIDTodayViewSettingsV2                     SingletonsTemplateID = "TODAY_VIEW_SETTINGS_V2"
 	SingletonsTemplateIDTutorialsSettings                       SingletonsTemplateID = "TUTORIALS_SETTINGS"
@@ -289,7 +288,6 @@ var SingletonsTemplateIDValues = [...]SingletonsTemplateID{
 	SingletonsTemplateIDStickerCategorySettings,
 	SingletonsTemplateIDStyleShopSettings,
 	SingletonsTemplateIDSurveySettings,
-	SingletonsTemplateIDTicketGiftingSettings,
 	SingletonsTemplateIDTimeBoxedSpawnEventSettings,
 	SingletonsTemplateIDTodayViewSettingsV2,
 	SingletonsTemplateIDTutorialsSettings,

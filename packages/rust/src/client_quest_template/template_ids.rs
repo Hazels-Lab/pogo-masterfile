@@ -117,4 +117,10 @@ pub enum ClientQuestTemplateTemplateId {
     WeeklyChallengePartyQuestWeek3,
     #[serde(rename = "WEEKLY_CHALLENGE_PARTY_QUEST_WEEK4")]
     WeeklyChallengePartyQuestWeek4,
+    #[serde(rename = "WEEKLY_CHALLENGE_S25_DEC2026_BERRIES")]
+    WeeklyChallengeS25Dec2026Berries,
+    #[serde(rename = "WEEKLY_CHALLENGE_S25_DEC2026_CURVEBALLS")]
+    WeeklyChallengeS25Dec2026Curveballs,
+    #[serde(rename = "WEEKLY_CHALLENGE_S25_DEC2026_STICKERS")]
+    WeeklyChallengeS25Dec2026Stickers,
 }

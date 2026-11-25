@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 122 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 126 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -230,6 +230,46 @@ export type StickerMetadataAprilfool20232 = S<
 			category: ["Pokemon"];
 			pokemonId: "PIDGEY";
 			releaseDate: 20230331;
+		}
+	>
+>;
+export type StickerMetadataBangkokpokemoncenter1 = S<
+	StickerMetadata<
+		"STICKER_BANGKOKPOKEMONCENTER_1",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20261201;
+		}
+	>
+>;
+export type StickerMetadataBangkokpokemoncenter3 = S<
+	StickerMetadata<
+		"STICKER_BANGKOKPOKEMONCENTER_3",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20261201;
+		}
+	>
+>;
+export type StickerMetadataBangkokpokemoncenter4 = S<
+	StickerMetadata<
+		"STICKER_BANGKOKPOKEMONCENTER_4",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20261201;
+		}
+	>
+>;
+export type StickerMetadataBangkokpokemoncenter5 = S<
+	StickerMetadata<
+		"STICKER_BANGKOKPOKEMONCENTER_5",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20261201;
 		}
 	>
 >;
@@ -1248,6 +1288,10 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataAcornPartnership5
 	| StickerMetadataAprilfool20231
 	| StickerMetadataAprilfool20232
+	| StickerMetadataBangkokpokemoncenter1
+	| StickerMetadataBangkokpokemoncenter3
+	| StickerMetadataBangkokpokemoncenter4
+	| StickerMetadataBangkokpokemoncenter5
 	| StickerMetadataBellsproutcd1
 	| StickerMetadataBellsproutcd2
 	| StickerMetadataBellsproutcd3

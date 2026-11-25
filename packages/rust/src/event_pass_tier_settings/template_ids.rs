@@ -2007,4 +2007,244 @@ pub enum EventPassTierSettingsTemplateId {
     EventPassNovember2026Season200Free,
     #[serde(rename = "EVENT_PASS_NOVEMBER2026_SEASON_200_PREMIUM")]
     EventPassNovember2026Season200Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_1_FREE")]
+    EventPassTwilightTrailsFinale20261Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_1_PREMIUM")]
+    EventPassTwilightTrailsFinale20261Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_2_FREE")]
+    EventPassTwilightTrailsFinale20262Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_2_PREMIUM")]
+    EventPassTwilightTrailsFinale20262Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_3_FREE")]
+    EventPassTwilightTrailsFinale20263Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_3_PREMIUM")]
+    EventPassTwilightTrailsFinale20263Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_4_FREE")]
+    EventPassTwilightTrailsFinale20264Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_4_PREMIUM")]
+    EventPassTwilightTrailsFinale20264Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_5_FREE")]
+    EventPassTwilightTrailsFinale20265Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_5_PREMIUM")]
+    EventPassTwilightTrailsFinale20265Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_6_FREE")]
+    EventPassTwilightTrailsFinale20266Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_6_PREMIUM")]
+    EventPassTwilightTrailsFinale20266Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_7_FREE")]
+    EventPassTwilightTrailsFinale20267Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_7_PREMIUM")]
+    EventPassTwilightTrailsFinale20267Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_8_FREE")]
+    EventPassTwilightTrailsFinale20268Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_8_PREMIUM")]
+    EventPassTwilightTrailsFinale20268Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_9_FREE")]
+    EventPassTwilightTrailsFinale20269Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_9_PREMIUM")]
+    EventPassTwilightTrailsFinale20269Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_10_FREE")]
+    EventPassTwilightTrailsFinale202610Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_10_PREMIUM")]
+    EventPassTwilightTrailsFinale202610Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_11_FREE")]
+    EventPassTwilightTrailsFinale202611Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_11_PREMIUM")]
+    EventPassTwilightTrailsFinale202611Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_12_FREE")]
+    EventPassTwilightTrailsFinale202612Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_12_PREMIUM")]
+    EventPassTwilightTrailsFinale202612Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_13_FREE")]
+    EventPassTwilightTrailsFinale202613Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_13_PREMIUM")]
+    EventPassTwilightTrailsFinale202613Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_14_FREE")]
+    EventPassTwilightTrailsFinale202614Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_14_PREMIUM")]
+    EventPassTwilightTrailsFinale202614Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_15_FREE")]
+    EventPassTwilightTrailsFinale202615Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_15_PREMIUM")]
+    EventPassTwilightTrailsFinale202615Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_16_FREE")]
+    EventPassTwilightTrailsFinale202616Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_16_PREMIUM")]
+    EventPassTwilightTrailsFinale202616Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_17_FREE")]
+    EventPassTwilightTrailsFinale202617Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_17_PREMIUM")]
+    EventPassTwilightTrailsFinale202617Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_18_FREE")]
+    EventPassTwilightTrailsFinale202618Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_18_PREMIUM")]
+    EventPassTwilightTrailsFinale202618Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_19_FREE")]
+    EventPassTwilightTrailsFinale202619Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_19_PREMIUM")]
+    EventPassTwilightTrailsFinale202619Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_20_FREE")]
+    EventPassTwilightTrailsFinale202620Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_20_PREMIUM")]
+    EventPassTwilightTrailsFinale202620Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_21_FREE")]
+    EventPassTwilightTrailsFinale202621Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_21_PREMIUM")]
+    EventPassTwilightTrailsFinale202621Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_22_FREE")]
+    EventPassTwilightTrailsFinale202622Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_22_PREMIUM")]
+    EventPassTwilightTrailsFinale202622Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_23_FREE")]
+    EventPassTwilightTrailsFinale202623Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_23_PREMIUM")]
+    EventPassTwilightTrailsFinale202623Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_24_FREE")]
+    EventPassTwilightTrailsFinale202624Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_24_PREMIUM")]
+    EventPassTwilightTrailsFinale202624Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_25_FREE")]
+    EventPassTwilightTrailsFinale202625Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_25_PREMIUM")]
+    EventPassTwilightTrailsFinale202625Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_26_FREE")]
+    EventPassTwilightTrailsFinale202626Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_26_PREMIUM")]
+    EventPassTwilightTrailsFinale202626Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_27_FREE")]
+    EventPassTwilightTrailsFinale202627Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_27_PREMIUM")]
+    EventPassTwilightTrailsFinale202627Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_28_FREE")]
+    EventPassTwilightTrailsFinale202628Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_28_PREMIUM")]
+    EventPassTwilightTrailsFinale202628Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_29_FREE")]
+    EventPassTwilightTrailsFinale202629Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_29_PREMIUM")]
+    EventPassTwilightTrailsFinale202629Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_30_FREE")]
+    EventPassTwilightTrailsFinale202630Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_30_PREMIUM")]
+    EventPassTwilightTrailsFinale202630Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_31_FREE")]
+    EventPassTwilightTrailsFinale202631Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_31_PREMIUM")]
+    EventPassTwilightTrailsFinale202631Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_32_FREE")]
+    EventPassTwilightTrailsFinale202632Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_32_PREMIUM")]
+    EventPassTwilightTrailsFinale202632Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_33_FREE")]
+    EventPassTwilightTrailsFinale202633Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_33_PREMIUM")]
+    EventPassTwilightTrailsFinale202633Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_34_FREE")]
+    EventPassTwilightTrailsFinale202634Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_34_PREMIUM")]
+    EventPassTwilightTrailsFinale202634Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_35_FREE")]
+    EventPassTwilightTrailsFinale202635Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_35_PREMIUM")]
+    EventPassTwilightTrailsFinale202635Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_36_FREE")]
+    EventPassTwilightTrailsFinale202636Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_36_PREMIUM")]
+    EventPassTwilightTrailsFinale202636Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_37_FREE")]
+    EventPassTwilightTrailsFinale202637Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_37_PREMIUM")]
+    EventPassTwilightTrailsFinale202637Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_38_FREE")]
+    EventPassTwilightTrailsFinale202638Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_38_PREMIUM")]
+    EventPassTwilightTrailsFinale202638Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_39_FREE")]
+    EventPassTwilightTrailsFinale202639Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_39_PREMIUM")]
+    EventPassTwilightTrailsFinale202639Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_40_FREE")]
+    EventPassTwilightTrailsFinale202640Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_40_PREMIUM")]
+    EventPassTwilightTrailsFinale202640Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_41_FREE")]
+    EventPassTwilightTrailsFinale202641Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_41_PREMIUM")]
+    EventPassTwilightTrailsFinale202641Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_42_FREE")]
+    EventPassTwilightTrailsFinale202642Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_42_PREMIUM")]
+    EventPassTwilightTrailsFinale202642Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_43_FREE")]
+    EventPassTwilightTrailsFinale202643Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_43_PREMIUM")]
+    EventPassTwilightTrailsFinale202643Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_44_FREE")]
+    EventPassTwilightTrailsFinale202644Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_44_PREMIUM")]
+    EventPassTwilightTrailsFinale202644Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_45_FREE")]
+    EventPassTwilightTrailsFinale202645Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_45_PREMIUM")]
+    EventPassTwilightTrailsFinale202645Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_46_FREE")]
+    EventPassTwilightTrailsFinale202646Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_46_PREMIUM")]
+    EventPassTwilightTrailsFinale202646Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_47_FREE")]
+    EventPassTwilightTrailsFinale202647Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_47_PREMIUM")]
+    EventPassTwilightTrailsFinale202647Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_48_FREE")]
+    EventPassTwilightTrailsFinale202648Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_48_PREMIUM")]
+    EventPassTwilightTrailsFinale202648Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_49_FREE")]
+    EventPassTwilightTrailsFinale202649Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_49_PREMIUM")]
+    EventPassTwilightTrailsFinale202649Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_50_FREE")]
+    EventPassTwilightTrailsFinale202650Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_50_PREMIUM")]
+    EventPassTwilightTrailsFinale202650Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_51_FREE")]
+    EventPassTwilightTrailsFinale202651Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_51_PREMIUM")]
+    EventPassTwilightTrailsFinale202651Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_52_FREE")]
+    EventPassTwilightTrailsFinale202652Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_52_PREMIUM")]
+    EventPassTwilightTrailsFinale202652Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_53_FREE")]
+    EventPassTwilightTrailsFinale202653Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_53_PREMIUM")]
+    EventPassTwilightTrailsFinale202653Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_54_FREE")]
+    EventPassTwilightTrailsFinale202654Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_54_PREMIUM")]
+    EventPassTwilightTrailsFinale202654Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_55_FREE")]
+    EventPassTwilightTrailsFinale202655Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_55_PREMIUM")]
+    EventPassTwilightTrailsFinale202655Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_56_FREE")]
+    EventPassTwilightTrailsFinale202656Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_56_PREMIUM")]
+    EventPassTwilightTrailsFinale202656Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_57_FREE")]
+    EventPassTwilightTrailsFinale202657Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_57_PREMIUM")]
+    EventPassTwilightTrailsFinale202657Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_58_FREE")]
+    EventPassTwilightTrailsFinale202658Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_58_PREMIUM")]
+    EventPassTwilightTrailsFinale202658Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_59_FREE")]
+    EventPassTwilightTrailsFinale202659Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_59_PREMIUM")]
+    EventPassTwilightTrailsFinale202659Premium,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_60_FREE")]
+    EventPassTwilightTrailsFinale202660Free,
+    #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026_60_PREMIUM")]
+    EventPassTwilightTrailsFinale202660Premium,
 }

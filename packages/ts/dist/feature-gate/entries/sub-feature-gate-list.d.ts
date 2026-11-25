@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", split "sub-feature-gate-list", 15 entries.
+// Generated from Pokémon GO masterfile — group "featureGate", split "sub-feature-gate-list", 16 entries.
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -58,6 +58,26 @@ export type FeatureGateEventTicketDatetimeRange = S<
 					name: "ALWAYS_USE_EXPANDED_TIME_RANGE";
 					rolloutPercentage: 100;
 					status: 1;
+				},
+			];
+		}
+	>
+>;
+export type FeatureGateGymDefaultRaidLevel = S<
+	FeatureGate<
+		"GYM_DEFAULT_RAID_LEVEL_FEATURE_GATE",
+		{
+			status: 838973827;
+			subFeatureGateList: [
+				{
+					name: "GYM_DEFAULT";
+					rolloutPercentage: 100;
+					status: 455134900;
+				},
+				{
+					name: "GYM_RAID";
+					rolloutPercentage: 100;
+					status: 677717643;
 				},
 			];
 		}
@@ -368,6 +388,7 @@ export type FeatureGateSubFeatureGateListMasterfileEntry =
 	| FeatureGateAppraisal
 	| FeatureGateDetailRendererDuplicateModels
 	| FeatureGateEventTicketDatetimeRange
+	| FeatureGateGymDefaultRaidLevel
 	| FeatureGateLocationCardBackgrounds
 	| FeatureGateLocationCardBackgroundsRenderer
 	| FeatureGatePoolTrimmer

@@ -2087,13 +2087,13 @@ export type ItemSettingsItemEventTicketS25202616 = S<
 			category: "ITEM_CATEGORY_GLOBAL_EVENT_TICKET";
 			descriptionOverride: "item_global_event_ticket_details_GOTour2027";
 			globalEventTicket: {
-				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg";
+				backgroundImageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F19ec3f96_PGO-MCS_GO_Tour_2027_Shiny_Poipole_v2-1025x512.jpg";
 				clientEventEndTimeUtcMs: "1803837600000";
 				clientEventStartTimeUtcMs: "1803722400000";
 				detailsLinkKey: "details_link_key_GOTour2026";
 				displayV2Enabled: true;
 				eventBadge: 6446;
-				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F31519c82_pgo-generic-ticket-banner-682x384.jpg";
+				eventBannerUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F19ec3f96_PGO-MCS_GO_Tour_2027_Shiny_Poipole_v2-1025x512.jpg";
 				eventEndTime: "2027-02-28T18:00:00";
 				eventStartTime: "2027-02-27T10:00:00";
 				giftable: true;
@@ -2106,6 +2106,16 @@ export type ItemSettingsItemEventTicketS25202616 = S<
 							item: "ITEM_FREE_RAID_TICKET";
 						};
 						type: "ITEM";
+					},
+					{
+						pokemonEncounter: {
+							pokemonDisplay: {
+								shiny: true;
+							};
+							pokemonId: "POIPOLE";
+							shinyProbability: 1;
+						};
+						type: "POKEMON_ENCOUNTER";
 					},
 				];
 				itemBagDescriptionKey: "item_global_event_ticket_details_GOTour2027";

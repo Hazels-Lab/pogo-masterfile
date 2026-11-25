@@ -33,6 +33,8 @@ pub enum FeatureGateTemplateId {
     AvatarGlowingArticlesOptimizationFeatureGate,
     #[serde(rename = "AVATAR_PROP_OPTIMIZATION_FEATURE_GATE")]
     AvatarPropOptimizationFeatureGate,
+    #[serde(rename = "AVATAR_STAGE_QUEUED_BUDDY_FEATURE_GATE_CR")]
+    AvatarStageQueuedBuddyFeatureGateCr,
     #[serde(rename = "AVATAR_SUBCATEGORY_HEADER_FORCE_REBUILD_OPTIMIZATION_FEATURE_GATE")]
     AvatarSubcategoryHeaderForceRebuildOptimizationFeatureGate,
     #[serde(rename = "BADGE_SERVICE_FEATURE_GATE")]
@@ -41,6 +43,8 @@ pub enum FeatureGateTemplateId {
     BreadBattlePrepUiForceRebuildOptimizationFeatureGate,
     #[serde(rename = "BUDDY_CANDY_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
     BuddyCandyQuestProgressAggregationFeatureGateSr,
+    #[serde(rename = "BUDDY_SCREEN_RENDERER_SLOT_FEATURE_GATE_CR")]
+    BuddyScreenRendererSlotFeatureGateCr,
     #[serde(rename = "BUDDY_SWAP_PLAYER_SNAPSHOT_FEATURE_GATE")]
     BuddySwapPlayerSnapshotFeatureGate,
     #[serde(rename = "BULK_HEAL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
@@ -51,12 +55,18 @@ pub enum FeatureGateTemplateId {
     CombatSuppressFastMovePredictionsOnSwapFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_ALLOW_LATE_SIMULTANEOUS_IBFC_FEATURE_GATE_CR")]
     CombatVnextAllowLateSimultaneousIbfcFeatureGateCr,
+    #[serde(rename = "COMBAT_VNEXT_CLEAR_INPUT_BUFFER_ON_FAINTS_FEATURE_GATE_CR")]
+    CombatVnextClearInputBufferOnFaintsFeatureGateCr,
+    #[serde(rename = "COMBAT_VNEXT_FIX_FLASHING_CM_BUTTONS_FEATURE_GATE_CR")]
+    CombatVnextFixFlashingCmButtonsFeatureGateCr,
     #[serde(rename = "COMBAT_VNEXT_INITIALIZE_BD_LAST_FEATURE_GATE")]
     CombatVnextInitializeBdLastFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_PLAY_MISSED_FM_FEATURE_GATE")]
     CombatVnextPlayMissedFmFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_PRESERVE_ADDRESSABLE_DIRT_MATERIAL_BUG_FIX_FEATURE_GATE")]
     CombatVnextPreserveAddressableDirtMaterialBugFixFeatureGate,
+    #[serde(rename = "COMBAT_VNEXT_REACT_TO_SHIELD_ACTION_RESPONSE_FEATURE_GATE_CR")]
+    CombatVnextReactToShieldActionResponseFeatureGateCr,
     #[serde(rename = "COMBAT_VNEXT_SHOW_MINIOR_IBFC_TOASTS_FEATURE_GATE")]
     CombatVnextShowMiniorIbfcToastsFeatureGate,
     #[serde(rename = "COMBAT_VNEXT_STAT_CHANGE_BATCHING_FEATURE_GATE")]
@@ -71,6 +81,10 @@ pub enum FeatureGateTemplateId {
     CombineCompassAndWeatherFeatureGate,
     #[serde(rename = "COMPASS_SORTING_ORDER_FIX_FEATURE_GATE")]
     CompassSortingOrderFixFeatureGate,
+    #[serde(rename = "CONDITION_STRING_FEATURE_GATE_CR")]
+    ConditionStringFeatureGateCr,
+    #[serde(rename = "CUTSCENE_DISMISS_WAITS_FOR_PLAYED_STATE_FEATURE_GATE_CR")]
+    CutsceneDismissWaitsForPlayedStateFeatureGateCr,
     #[serde(rename = "DAILY_ENCOUNTER_GENERATION_CONTEXT_FEATURE_GATE")]
     DailyEncounterGenerationContextFeatureGate,
     #[serde(rename = "DEPRECATE_VERIFY_ELIGIBILITY_FEATURE_GATE")]
@@ -125,6 +139,8 @@ pub enum FeatureGateTemplateId {
     GmoWildPokemonS2LocationServerFeatureGate,
     #[serde(rename = "GRANT_CHECK_IN_BADGE_WITHOUT_REWARDS_FEATURE_GATE")]
     GrantCheckInBadgeWithoutRewardsFeatureGate,
+    #[serde(rename = "GYM_DEFAULT_RAID_LEVEL_FEATURE_GATE")]
+    GymDefaultRaidLevelFeatureGate,
     #[serde(rename = "GYM_SPRITE_FIX_FEATURE_GATE")]
     GymSpriteFixFeatureGate,
     #[serde(rename = "HIDE_UI_IN_MINIOR_IBFC_FEATURE_GATE")]
@@ -149,20 +165,32 @@ pub enum FeatureGateTemplateId {
     MapBackgroundThreadProcessingFeatureGate,
     #[serde(rename = "MAP_EFFECT_PRIORITY_FEATURE_GATE_CR")]
     MapEffectPriorityFeatureGateCr,
+    #[serde(rename = "MAP_HOTSPOT_OPTIMIZATIONS_FEATURE_GATE_CR")]
+    MapHotspotOptimizationsFeatureGateCr,
+    #[serde(rename = "MAP_POKEMON_DISPOSE_CLEANUP_FEATURE_GATE_CR")]
+    MapPokemonDisposeCleanupFeatureGateCr,
     #[serde(rename = "MAP_POKEMON_RINGS_FEATURE_GATE")]
     MapPokemonRingsFeatureGate,
+    #[serde(rename = "MATERIAL_OVERRIDE_ENTRY_CHECKER_CACHE_FEATURE_GATE_CR")]
+    MaterialOverrideEntryCheckerCacheFeatureGateCr,
     #[serde(rename = "MEETUP_REMINDER_NOTIFICATIONS_FEATURE_GATE")]
     MeetupReminderNotificationsFeatureGate,
     #[serde(rename = "MEP_BATTLE_DURABILITY_TRACKING_RECORD_FEATURE_GATE")]
     MepBattleDurabilityTrackingRecordFeatureGate,
+    #[serde(rename = "MICHELIN_MAP_GYM_HEART_REMOVAL_FEATURE_GATE")]
+    MichelinMapGymHeartRemovalFeatureGate,
     #[serde(rename = "MICHELIN_MAP_LURE_BOTTOM_RING_REMOVAL_FEATURE_GATE")]
     MichelinMapLureBottomRingRemovalFeatureGate,
+    #[serde(rename = "MICHELIN_MAP_NEW_BATTLE_TOPPER_FEATURE_GATE")]
+    MichelinMapNewBattleTopperFeatureGate,
     #[serde(rename = "MICHELIN_MAP_POKEMON_ATTRACTANT_FOG_FEATURE_GATE")]
     MichelinMapPokemonAttractantFogFeatureGate,
     #[serde(rename = "MICHELIN_MAP_POKESTOP_SPUN_CONTRAST_UP_FEATURE_GATE")]
     MichelinMapPokestopSpunContrastUpFeatureGate,
     #[serde(rename = "MICHELIN_MAP_ZYGARDE_CELL_REWARD_FEATURE_GATE")]
     MichelinMapZygardeCellRewardFeatureGate,
+    #[serde(rename = "ML_PERSONALIZED_RESEARCH_FEATURE_GATE")]
+    MlPersonalizedResearchFeatureGate,
     #[serde(rename = "NEARBY_MENU_RSVP_ROUTE_FIX_FEATURE_GATE_CR")]
     NearbyMenuRsvpRouteFixFeatureGateCr,
     #[serde(rename = "NEARBY_SILHOUTTE_FORM_FEATURE_GATE_SR")]
@@ -173,12 +201,20 @@ pub enum FeatureGateTemplateId {
     NpcGiftAutoClaimFeatureGate,
     #[serde(rename = "PAIRED_DEVICE_HELP_FEATURE_GATE")]
     PairedDeviceHelpFeatureGate,
+    #[serde(rename = "PHONE_BOOTH_LATE_SPAWN_FEATURE_GATE_CR")]
+    PhoneBoothLateSpawnFeatureGateCr,
     #[serde(rename = "PHOTOBOMB_TIME_PORTAL_FUTURE_FEATURE_GATE_SR")]
     PhotobombTimePortalFutureFeatureGateSr,
+    #[serde(rename = "PLAY_POKEMON_POOL_REUSE_FEATURE_GATE_CR")]
+    PlayPokemonPoolReuseFeatureGateCr,
     #[serde(rename = "PLAYER_ENCOUNTER_RANDOMIZATION_SALT_FEATURE_GATE")]
     PlayerEncounterRandomizationSaltFeatureGate,
+    #[serde(rename = "PLAYER_PROFILE_SCALE_FEATURE_GATE_CR")]
+    PlayerProfileScaleFeatureGateCr,
     #[serde(rename = "POKEDEX_DEFENDER_GYM_FIX_FEATURE_GATE")]
     PokedexDefenderGymFixFeatureGate,
+    #[serde(rename = "POKEDEX_REGION_MATERIAL_MEMORY_LEAK_FIX_FEATURE_GATE_CR")]
+    PokedexRegionMaterialMemoryLeakFixFeatureGateCr,
     #[serde(rename = "POKEDEX_SCROLLING_FIX_FEATURE_GATE")]
     PokedexScrollingFixFeatureGate,
     #[serde(rename = "POKEMON_NAME_CHIP_FEATURE_GATE")]
@@ -197,12 +233,18 @@ pub enum FeatureGateTemplateId {
     QuestTotalDaysCatchResultFixFeatureGate,
     #[serde(rename = "RAID_RSVP_REMOTE_JOIN_FIX_FEATURE_GATE_CR")]
     RaidRsvpRemoteJoinFixFeatureGateCr,
+    #[serde(rename = "RAIDCOIN_MATERIAL_MEMORY_LEAK_FIX_FEATURE_GATE_CR")]
+    RaidcoinMaterialMemoryLeakFixFeatureGateCr,
+    #[serde(rename = "REAPPLY_MATERIAL_STATE_DELEGATE_CACHE_FEATURE_GATE_CR")]
+    ReapplyMaterialStateDelegateCacheFeatureGateCr,
     #[serde(rename = "REGISTER_DEVICE_FEATURE_GATE")]
     RegisterDeviceFeatureGate,
     #[serde(rename = "REMOTE_TRADE_IMPROVEMENTS_FEATURE_GATE")]
     RemoteTradeImprovementsFeatureGate,
     #[serde(rename = "REMOTE_TRADE_SPEED_GIFT_FIX_FEATURE_GATE")]
     RemoteTradeSpeedGiftFixFeatureGate,
+    #[serde(rename = "REPLAY_SB_VFX_FEATURE_GATE_CR")]
+    ReplaySbVfxFeatureGateCr,
     #[serde(rename = "ROUTE_TRAVEL_QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR")]
     RouteTravelQuestProgressAggregationFeatureGateSr,
     #[serde(rename = "RUN_CELL_UPDATES_BACKGROUND_THREAD_PROCESSING_FEATURE_GATE")]
@@ -215,6 +257,8 @@ pub enum FeatureGateTemplateId {
     SeafGetMapObjectsRateLimiterFeatureGate,
     #[serde(rename = "SKIP_ZERO_LEVEL_BADGES_FEATURE_GATE_SR")]
     SkipZeroLevelBadgesFeatureGateSr,
+    #[serde(rename = "SOFT_SFIDA_PAST_DAY_RECAP_FEATURE_GATE_CR")]
+    SoftSfidaPastDayRecapFeatureGateCr,
     #[serde(rename = "SOFT_SFIDA_WIDGET_BACKGROUND_COLOR_FEATURE_GATE")]
     SoftSfidaWidgetBackgroundColorFeatureGate,
     #[serde(rename = "STAMP_RALLY_MINI_GAME_ANIMATION_LOCK_FIX_FEATURE_GATE")]
@@ -223,6 +267,10 @@ pub enum FeatureGateTemplateId {
     StampRallyTimeTravelClientFeatureGate,
     #[serde(rename = "STAMP_RALLY_TIME_TRAVEL_SERVER_FEATURE_GATE")]
     StampRallyTimeTravelServerFeatureGate,
+    #[serde(rename = "TGR_NO_LOCATION_EXIT_FEATURE_GATE_CR")]
+    TgrNoLocationExitFeatureGateCr,
+    #[serde(rename = "THEME_CONFIG_CACHE_FEATURE_GATE_CR")]
+    ThemeConfigCacheFeatureGateCr,
     #[serde(rename = "TIME_TRAVEL_POWERSPOT_SCHEDULING_FEATURE_GATE_SR")]
     TimeTravelPowerspotSchedulingFeatureGateSr,
     #[serde(rename = "TODAY_VIEW_INNER_TAB_EQUAL_WIDTH_FEATURE_GATE_CR")]
@@ -251,6 +299,8 @@ pub enum FeatureGateTemplateId {
     TutorialCollisionFixesFeatureGate,
     #[serde(rename = "UNCOSTUMED_OVERRIDE_FEATURE_GATE_CR")]
     UncostumedOverrideFeatureGateCr,
+    #[serde(rename = "UNIFIED_SKU_FEATURE_GATE")]
+    UnifiedSkuFeatureGate,
     #[serde(rename = "USE_ACCURATE_MODEL_SCALE_FEATURE_GATE_CR")]
     UseAccurateModelScaleFeatureGateCr,
     #[serde(rename = "USE_HALF_LEVELS_FOR_CP_LIMITER_FEATURE_GATE")]

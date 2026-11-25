@@ -56,6 +56,9 @@ import type {
 	ClientQuestTemplateWeeklyChallengePartyQuestWeek2,
 	ClientQuestTemplateWeeklyChallengePartyQuestWeek3,
 	ClientQuestTemplateWeeklyChallengePartyQuestWeek4,
+	ClientQuestTemplateWeeklyChallengeS25Dec2026Berries,
+	ClientQuestTemplateWeeklyChallengeS25Dec2026Curveballs,
+	ClientQuestTemplateWeeklyChallengeS25Dec2026Stickers,
 } from "./entries";
 
 export interface ClientQuestTemplateLookup {
@@ -114,4 +117,7 @@ export interface ClientQuestTemplateLookup {
 	WEEKLY_CHALLENGE_PARTY_QUEST_WEEK2: ClientQuestTemplateWeeklyChallengePartyQuestWeek2;
 	WEEKLY_CHALLENGE_PARTY_QUEST_WEEK3: ClientQuestTemplateWeeklyChallengePartyQuestWeek3;
 	WEEKLY_CHALLENGE_PARTY_QUEST_WEEK4: ClientQuestTemplateWeeklyChallengePartyQuestWeek4;
+	WEEKLY_CHALLENGE_S25_DEC2026_BERRIES: ClientQuestTemplateWeeklyChallengeS25Dec2026Berries;
+	WEEKLY_CHALLENGE_S25_DEC2026_CURVEBALLS: ClientQuestTemplateWeeklyChallengeS25Dec2026Curveballs;
+	WEEKLY_CHALLENGE_S25_DEC2026_STICKERS: ClientQuestTemplateWeeklyChallengeS25Dec2026Stickers;
 }

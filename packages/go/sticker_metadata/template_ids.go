@@ -41,6 +41,12 @@ const (
 	StickerMetadataTemplateIDStickerAprilfool20231               StickerMetadataTemplateID = "STICKER_APRILFOOL2023_1"
 	StickerMetadataTemplateIDStickerAprilfool20232               StickerMetadataTemplateID = "STICKER_APRILFOOL2023_2"
 	StickerMetadataTemplateIDStickerAudino                       StickerMetadataTemplateID = "STICKER_AUDINO"
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter1        StickerMetadataTemplateID = "STICKER_BANGKOKPOKEMONCENTER_1"
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter2        StickerMetadataTemplateID = "STICKER_BANGKOKPOKEMONCENTER_2"
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter3        StickerMetadataTemplateID = "STICKER_BANGKOKPOKEMONCENTER_3"
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter4        StickerMetadataTemplateID = "STICKER_BANGKOKPOKEMONCENTER_4"
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter5        StickerMetadataTemplateID = "STICKER_BANGKOKPOKEMONCENTER_5"
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter6        StickerMetadataTemplateID = "STICKER_BANGKOKPOKEMONCENTER_6"
 	StickerMetadataTemplateIDStickerBellsproutcd1                StickerMetadataTemplateID = "STICKER_BELLSPROUTCD_1"
 	StickerMetadataTemplateIDStickerBellsproutcd2                StickerMetadataTemplateID = "STICKER_BELLSPROUTCD_2"
 	StickerMetadataTemplateIDStickerBellsproutcd3                StickerMetadataTemplateID = "STICKER_BELLSPROUTCD_3"
@@ -678,6 +684,12 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerAprilfool20231,
 	StickerMetadataTemplateIDStickerAprilfool20232,
 	StickerMetadataTemplateIDStickerAudino,
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter1,
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter2,
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter3,
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter4,
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter5,
+	StickerMetadataTemplateIDStickerBangkokpokemoncenter6,
 	StickerMetadataTemplateIDStickerBellsproutcd1,
 	StickerMetadataTemplateIDStickerBellsproutcd2,
 	StickerMetadataTemplateIDStickerBellsproutcd3,

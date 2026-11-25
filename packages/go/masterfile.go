@@ -64,6 +64,7 @@ import (
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/sticker_metadata"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/tappable_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/temporary_evolution_settings"
+	"github.com/Hazels-Lab/pogo-masterfile/packages/go/ticket_gifting_settings"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/type_effective"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/vs_seeker_loot"
 	"github.com/Hazels-Lab/pogo-masterfile/packages/go/vs_seeker_pokemon_rewards"
@@ -150,6 +151,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "badgeSettings":
 		var e badge_settings.BadgeSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -164,12 +171,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "formSettings":
 		var e form_settings.FormSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -222,14 +223,14 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "megaEvoLevelSettings":
-		var e mega_evo_level_settings.MegaEvoLevelSettingsEntry
+	case "featureGate":
+		var e feature_gate.FeatureGateEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
 		return e, nil
-	case "featureGate":
-		var e feature_gate.FeatureGateEntry
+	case "megaEvoLevelSettings":
+		var e mega_evo_level_settings.MegaEvoLevelSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -438,6 +439,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
+	case "eventPassSettings":
+		var e event_pass_settings.EventPassSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
 	case "languageSettings":
 		var e language_settings.LanguageSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -456,12 +463,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassSettings":
-		var e event_pass_settings.EventPassSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "partyPlayGeneralSettings":
 		var e party_play_general_settings.PartyPlayGeneralSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -470,6 +471,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "pokemonUpgrades":
 		var e pokemon_upgrades.PokemonUpgradesEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "ticketGiftingSettings":
+		var e ticket_gifting_settings.TicketGiftingSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -1274,12 +1281,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "styleShopSettings":
 		var e singletons.StyleShopSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
-	case "ticketGiftingSettings":
-		var e singletons.TicketGiftingSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

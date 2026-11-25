@@ -79,6 +79,18 @@ pub enum StickerMetadataTemplateId {
     StickerAprilfool20232,
     #[serde(rename = "STICKER_AUDINO")]
     StickerAudino,
+    #[serde(rename = "STICKER_BANGKOKPOKEMONCENTER_1")]
+    StickerBangkokpokemoncenter1,
+    #[serde(rename = "STICKER_BANGKOKPOKEMONCENTER_2")]
+    StickerBangkokpokemoncenter2,
+    #[serde(rename = "STICKER_BANGKOKPOKEMONCENTER_3")]
+    StickerBangkokpokemoncenter3,
+    #[serde(rename = "STICKER_BANGKOKPOKEMONCENTER_4")]
+    StickerBangkokpokemoncenter4,
+    #[serde(rename = "STICKER_BANGKOKPOKEMONCENTER_5")]
+    StickerBangkokpokemoncenter5,
+    #[serde(rename = "STICKER_BANGKOKPOKEMONCENTER_6")]
+    StickerBangkokpokemoncenter6,
     #[serde(rename = "STICKER_BELLSPROUTCD_1")]
     StickerBellsproutcd1,
     #[serde(rename = "STICKER_BELLSPROUTCD_2")]

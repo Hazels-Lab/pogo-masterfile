@@ -595,6 +595,12 @@ pub enum IapItemDisplayTemplateId {
     MpReplenish1,
     #[serde(rename = "mp_replenish.3")]
     MpReplenish3,
+    #[serde(rename = "november1_2026_deluxe_event_pass_track_unlock")]
+    November12026DeluxeEventPassTrackUnlock,
+    #[serde(rename = "november1_2026_deluxe_event_pass_track_unlock_plus_points")]
+    November12026DeluxeEventPassTrackUnlockPlusPoints,
+    #[serde(rename = "november1_2026_deluxe_event_pass_track_unlock_redirect")]
+    November12026DeluxeEventPassTrackUnlockRedirect,
     #[serde(rename = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK")]
     October12026DeluxeEventPassTrackUnlock,
     #[serde(rename = "OCTOBER1_2026_DELUXE_EVENT_PASS_TRACK_UNLOCK_PLUS_POINTS")]
@@ -623,6 +629,12 @@ pub enum IapItemDisplayTemplateId {
     PgoreleaseBundleEliteraidbox1,
     #[serde(rename = "pgorelease.bundle.eliteraidmay2023")]
     PgoreleaseBundleEliteraidmay2023,
+    #[serde(rename = "pgorelease.bundle.fiatevergreen.1")]
+    PgoreleaseBundleFiatevergreen1,
+    #[serde(rename = "pgorelease.bundle.fiatevergreen.2")]
+    PgoreleaseBundleFiatevergreen2,
+    #[serde(rename = "pgorelease.bundle.fiatevergreen.3")]
+    PgoreleaseBundleFiatevergreen3,
     #[serde(rename = "pgorelease.bundle.flavoredlures.1")]
     PgoreleaseBundleFlavoredlures1,
     #[serde(rename = "pgorelease.bundle.flavoredlures.2")]

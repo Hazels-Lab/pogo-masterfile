@@ -158,6 +158,7 @@ pub mod singletons;
 pub mod sticker_metadata;
 pub mod tappable_settings;
 pub mod temporary_evolution_settings;
+pub mod ticket_gifting_settings;
 pub mod type_effective;
 pub mod vs_seeker_loot;
 pub mod vs_seeker_pokemon_rewards;
@@ -183,10 +184,10 @@ pub enum MasterfileEntry {
     PokemonExtendedSettings(pokemon_extended_settings::PokemonExtendedSettingsEntry),
     AvatarCustomization(avatar_customization::AvatarCustomizationEntry),
     AvatarItemDisplay(avatar_item_display::AvatarItemDisplayEntry),
+    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     BadgeSettings(badge_settings::BadgeSettingsEntry),
     IapItemDisplay(iap_item_display::IapItemDisplayEntry),
     FormSettings(form_settings::FormSettingsEntry),
-    EventPassTierSettings(event_pass_tier_settings::EventPassTierSettingsEntry),
     StickerMetadata(sticker_metadata::StickerMetadataEntry),
     PokemonFamily(pokemon_family::PokemonFamilyEntry),
     MoveSettings(move_settings::MoveSettingsEntry),
@@ -195,8 +196,8 @@ pub enum MasterfileEntry {
     LocationCardSettings(location_card_settings::LocationCardSettingsEntry),
     SettingsOverrideRule(settings_override_rule::SettingsOverrideRuleEntry),
     ItemSettings(item_settings::ItemSettingsEntry),
-    MegaEvoLevelSettings(mega_evo_level_settings::MegaEvoLevelSettingsEntry),
     FeatureGate(feature_gate::FeatureGateEntry),
+    MegaEvoLevelSettings(mega_evo_level_settings::MegaEvoLevelSettingsEntry),
     CombatLeague(combat_league::CombatLeagueEntry),
     InvasionNpcDisplaySettings(invasion_npc_display_settings::InvasionNpcDisplaySettingsEntry),
     LevelUpRewards(level_up_rewards::LevelUpRewardsEntry),
@@ -237,12 +238,13 @@ pub enum MasterfileEntry {
     FortPowerUpLevelSettings(fort_power_up_level_settings::FortPowerUpLevelSettingsEntry),
     PokemonHomeEnergyCosts(pokemon_home_energy_costs::PokemonHomeEnergyCostsEntry),
     CombatNpcPersonality(combat_npc_personality::CombatNpcPersonalityEntry),
+    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     LanguageSettings(language_settings::LanguageSettingsEntry),
     QuestSettings(quest_settings::QuestSettingsEntry),
     AvatarGroupOrderSettings(avatar_group_order_settings::AvatarGroupOrderSettingsEntry),
-    EventPassSettings(event_pass_settings::EventPassSettingsEntry),
     PartyPlayGeneralSettings(party_play_general_settings::PartyPlayGeneralSettingsEntry),
     PokemonUpgrades(pokemon_upgrades::PokemonUpgradesEntry),
+    TicketGiftingSettings(ticket_gifting_settings::TicketGiftingSettingsEntry),
     VsSeekerPokemonRewards(vs_seeker_pokemon_rewards::VsSeekerPokemonRewardsEntry),
     AccessibilitySettings(singletons::AccessibilitySettingsEntry),
     AdditiveSceneSettings(singletons::AdditiveSceneSettingsEntry),
@@ -380,7 +382,6 @@ pub enum MasterfileEntry {
     StationedPokemonTableSettings(singletons::StationedPokemonTableSettingsEntry),
     StickerCategorySettings(singletons::StickerCategorySettingsEntry),
     StyleShopSettings(singletons::StyleShopSettingsEntry),
-    TicketGiftingSettings(singletons::TicketGiftingSettingsEntry),
     TimeBoxedSpawnEventsSettings(singletons::TimeBoxedSpawnEventsSettingsEntry),
     TodayViewSettings(singletons::TodayViewSettingsEntry),
     TutorialSettings(singletons::TutorialSettingsEntry),
@@ -430,12 +431,12 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::AvatarCustomization)
                 }
                 "avatarItemDisplay" => serde_json::from_value(value).map(Self::AvatarItemDisplay),
-                "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
-                "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
-                "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "eventPassTierSettings" => {
                     serde_json::from_value(value).map(Self::EventPassTierSettings)
                 }
+                "badgeSettings" => serde_json::from_value(value).map(Self::BadgeSettings),
+                "iapItemDisplay" => serde_json::from_value(value).map(Self::IapItemDisplay),
+                "formSettings" => serde_json::from_value(value).map(Self::FormSettings),
                 "stickerMetadata" => serde_json::from_value(value).map(Self::StickerMetadata),
                 "pokemonFamily" => serde_json::from_value(value).map(Self::PokemonFamily),
                 "moveSettings" => serde_json::from_value(value).map(Self::MoveSettings),
@@ -450,10 +451,10 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::SettingsOverrideRule)
                 }
                 "itemSettings" => serde_json::from_value(value).map(Self::ItemSettings),
+                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "megaEvoLevelSettings" => {
                     serde_json::from_value(value).map(Self::MegaEvoLevelSettings)
                 }
-                "featureGate" => serde_json::from_value(value).map(Self::FeatureGate),
                 "combatLeague" => serde_json::from_value(value).map(Self::CombatLeague),
                 "invasionNpcDisplaySettings" => {
                     serde_json::from_value(value).map(Self::InvasionNpcDisplaySettings)
@@ -532,16 +533,19 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                 "combatNpcPersonality" => {
                     serde_json::from_value(value).map(Self::CombatNpcPersonality)
                 }
+                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "languageSettings" => serde_json::from_value(value).map(Self::LanguageSettings),
                 "questSettings" => serde_json::from_value(value).map(Self::QuestSettings),
                 "avatarGroupOrderSettings" => {
                     serde_json::from_value(value).map(Self::AvatarGroupOrderSettings)
                 }
-                "eventPassSettings" => serde_json::from_value(value).map(Self::EventPassSettings),
                 "partyPlayGeneralSettings" => {
                     serde_json::from_value(value).map(Self::PartyPlayGeneralSettings)
                 }
                 "pokemonUpgrades" => serde_json::from_value(value).map(Self::PokemonUpgrades),
+                "ticketGiftingSettings" => {
+                    serde_json::from_value(value).map(Self::TicketGiftingSettings)
+                }
                 "vsSeekerPokemonRewards" => {
                     serde_json::from_value(value).map(Self::VsSeekerPokemonRewards)
                 }
@@ -850,9 +854,6 @@ impl<'de> Deserialize<'de> for MasterfileEntry {
                     serde_json::from_value(value).map(Self::StickerCategorySettings)
                 }
                 "styleShopSettings" => serde_json::from_value(value).map(Self::StyleShopSettings),
-                "ticketGiftingSettings" => {
-                    serde_json::from_value(value).map(Self::TicketGiftingSettings)
-                }
                 "timeBoxedSpawnEventsSettings" => {
                     serde_json::from_value(value).map(Self::TimeBoxedSpawnEventsSettings)
                 }
