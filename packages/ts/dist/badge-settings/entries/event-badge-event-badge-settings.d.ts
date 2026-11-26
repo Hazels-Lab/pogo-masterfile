@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 167 entries.
+// Generated from Pokémon GO masterfile — group "badgeSettings", split "event-badge-event-badge-settings", 168 entries.
 
 import type { S } from "../../_utils";
 import type { BadgeSettings } from "../types";
@@ -1445,6 +1445,20 @@ export type BadgeSettingsEvent0262 = S<
 		}
 	>
 >;
+export type BadgeSettingsEvent0263 = S<
+	BadgeSettings<
+		"BADGE_EVENT_0263",
+		{
+			badgeRank: 2;
+			badgeType: "BADGE_EVENT_0263";
+			eventBadge: true;
+			eventBadgeSettings: {
+				obEventBadgeSettingsNumber6: 1;
+			};
+			targets: [100];
+		}
+	>
+>;
 export type BadgeSettingsEvent0271 = S<
 	BadgeSettings<
 		"BADGE_EVENT_0271",
@@ -2446,6 +2460,7 @@ export type BadgeSettingsEventBadgeEventBadgeSettingsMasterfileEntry =
 	| BadgeSettingsEvent0259
 	| BadgeSettingsEvent0260
 	| BadgeSettingsEvent0262
+	| BadgeSettingsEvent0263
 	| BadgeSettingsEvent0271
 	| BadgeSettingsEvent0272
 	| BadgeSettingsEvent0273

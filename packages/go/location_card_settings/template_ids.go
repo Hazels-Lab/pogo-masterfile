@@ -261,6 +261,7 @@ const (
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002                        LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_MEWTWO_002"
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Wcs                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_2026_WCS"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundBatik2026                            LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_BATIK_2026"
+	LocationCardSettingsTemplateIDLcSpecialbackgroundCha2026                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_CHA_2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025                              LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_CON2025"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundDiaDeLosMuertos2026                  LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_DIA_DE_LOS_MUERTOS_2026"
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501                          LocationCardSettingsTemplateID = "LC_SPECIALBACKGROUND_EXTRA_2025_01"
@@ -543,6 +544,7 @@ var LocationCardSettingsTemplateIDValues = [...]LocationCardSettingsTemplateID{
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Mewtwo002,
 	LocationCardSettingsTemplateIDLcSpecialbackground2026Wcs,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundBatik2026,
+	LocationCardSettingsTemplateIDLcSpecialbackgroundCha2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundCon2025,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundDiaDeLosMuertos2026,
 	LocationCardSettingsTemplateIDLcSpecialbackgroundExtra202501,

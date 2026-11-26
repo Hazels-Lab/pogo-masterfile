@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 24 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "no-category", 23 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -244,22 +244,6 @@ export type IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlock = S<
-	IapItemDisplay<
-		"pgorelease.gowa2026_leadout_event_pass_track_unlock",
-		{
-			description: "deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
-			sku: "pgorelease.gowa2026_leadout_event_pass_track_unlock";
-			skuDisableTime: "2026-11-25T20:00:00";
-			skuDisableTimeUtcMs: "1795636800000";
-			skuEnableTime: "2025-11-16T10:00:00";
-			skuEnableTimeUtcMs: "1763287200000";
-			sortOrder: 1;
-			title: "event_pass_premium_track_title_gowa_leadout_2026";
-		}
-	>
->;
 export type IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect = S<
 	IapItemDisplay<
 		"pgorelease.september2_2026_deluxe_event_pass_track_unlock_redirect",
@@ -397,7 +381,6 @@ export type IapItemDisplayNoCategoryMasterfileEntry =
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlock
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockPlusPoints
 	| IapItemDisplayOctober12026DeluxeEventPassTrackUnlockRedirect
-	| IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlock
 	| IapItemDisplayPgoreleaseSeptember22026DeluxeEventPassTrackUnlockRedirect
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlock
 	| IapItemDisplaySeptember12026DeluxeEventPassTrackUnlockPlusPoints

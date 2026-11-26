@@ -151,12 +151,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassTierSettings":
-		var e event_pass_tier_settings.EventPassTierSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "badgeSettings":
 		var e badge_settings.BadgeSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -183,6 +177,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "pokemonFamily":
 		var e pokemon_family.PokemonFamilyEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "eventPassTierSettings":
+		var e event_pass_tier_settings.EventPassTierSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}
@@ -439,12 +439,6 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 			return nil, err
 		}
 		return e, nil
-	case "eventPassSettings":
-		var e event_pass_settings.EventPassSettingsEntry
-		if err := json.Unmarshal(data, &e); err != nil {
-			return nil, err
-		}
-		return e, nil
 	case "languageSettings":
 		var e language_settings.LanguageSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
@@ -459,6 +453,12 @@ func parseEntry(data json.RawMessage) (MasterfileEntry, error) {
 		return e, nil
 	case "avatarGroupOrderSettings":
 		var e avatar_group_order_settings.AvatarGroupOrderSettingsEntry
+		if err := json.Unmarshal(data, &e); err != nil {
+			return nil, err
+		}
+		return e, nil
+	case "eventPassSettings":
+		var e event_pass_settings.EventPassSettingsEntry
 		if err := json.Unmarshal(data, &e); err != nil {
 			return nil, err
 		}

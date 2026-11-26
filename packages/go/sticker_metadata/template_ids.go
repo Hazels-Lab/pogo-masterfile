@@ -64,6 +64,9 @@ const (
 	StickerMetadataTemplateIDStickerBreadkorea004                StickerMetadataTemplateID = "STICKER_BREADKOREA_004"
 	StickerMetadataTemplateIDStickerBreadkorea005                StickerMetadataTemplateID = "STICKER_BREADKOREA_005"
 	StickerMetadataTemplateIDStickerBreadkorea006                StickerMetadataTemplateID = "STICKER_BREADKOREA_006"
+	StickerMetadataTemplateIDStickerChampionsGarchomp            StickerMetadataTemplateID = "STICKER_CHAMPIONS_GARCHOMP"
+	StickerMetadataTemplateIDStickerChampionsIncineroar          StickerMetadataTemplateID = "STICKER_CHAMPIONS_INCINEROAR"
+	StickerMetadataTemplateIDStickerChampionsPikachu             StickerMetadataTemplateID = "STICKER_CHAMPIONS_PIKACHU"
 	StickerMetadataTemplateIDStickerChanseycd1                   StickerMetadataTemplateID = "STICKER_CHANSEYCD_1"
 	StickerMetadataTemplateIDStickerChanseycd2                   StickerMetadataTemplateID = "STICKER_CHANSEYCD_2"
 	StickerMetadataTemplateIDStickerChanseycd3                   StickerMetadataTemplateID = "STICKER_CHANSEYCD_3"
@@ -707,6 +710,9 @@ var StickerMetadataTemplateIDValues = [...]StickerMetadataTemplateID{
 	StickerMetadataTemplateIDStickerBreadkorea004,
 	StickerMetadataTemplateIDStickerBreadkorea005,
 	StickerMetadataTemplateIDStickerBreadkorea006,
+	StickerMetadataTemplateIDStickerChampionsGarchomp,
+	StickerMetadataTemplateIDStickerChampionsIncineroar,
+	StickerMetadataTemplateIDStickerChampionsPikachu,
 	StickerMetadataTemplateIDStickerChanseycd1,
 	StickerMetadataTemplateIDStickerChanseycd2,
 	StickerMetadataTemplateIDStickerChanseycd3,

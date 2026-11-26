@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1102 entries (structural types).
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", 1100 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -45,13 +45,11 @@ export interface IapItemDisplayData {
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F25acca32_PGO-MCS_Ticket%20Art_Poke%CC%81Coin_1024x576.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F833d6091_PGO_GOWA-2026-Global-KeyArt_1024x512_sku.png"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F9272deab_PGO-MCS_Fall_Marathon_Buddy_Trek_TICKET_v1-1024x576.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F920494a5_PGO-GOWA_Eternatus.jpg"
+		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fb8786503_PGO-MCS_GO_Pass_September_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fec63551c_PGO-MCS_Horizon_Celebration_2026_TICKET_v1-1024x576.jpg"
 		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Ff0183154_PGO_MCS_CD_KeyArt_Pawniard_v2_1024x576_nologo.jpg"
-		| "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg"
-		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg"
-		| "https://storage.googleapis.com/prod-public-images/ic_eventpass_deluxe.png";
+		| "https://storage.googleapis.com/prod-public-images/GBL_SharedSkies_2024.jpeg";
 	maxLevel?: number;
 	sale?: boolean;
 	showDiscountTag?: boolean;
@@ -64,12 +62,12 @@ export interface IapItemDisplayData {
 		| "2025-10-07T20:00:00"
 		| "2025-10-21T20:00:00"
 		| "2026-01-25T23:59:00"
-		| "2026-05-02T17:00:00"
 		| "2026-09-24T20:00:00"
 		| "2026-10-08T10:00:00"
 		| "2026-11-15T20:00:00"
 		| "2026-11-21T17:00:00"
-		| "2026-11-25T20:00:00"
+		| "2026-11-28T17:00:00"
+		| "2026-11-29T17:00:00"
 		| "2026-12-02T20:00:00"
 		| "2026-12-03T10:00:00";
 	skuDisableTimeUtcMs?:
@@ -79,18 +77,19 @@ export interface IapItemDisplayData {
 		| "1759867200000"
 		| "1761076800000"
 		| "1769385540000"
-		| "1777741200000"
 		| "1790280000000"
 		| "1791453600000"
 		| "1794772800000"
 		| "1795280400000"
-		| "1795636800000"
+		| "1795885200000"
+		| "1795971600000"
 		| "1796241600000"
 		| "1796292000000";
 	skuEnableTime?:
 		| "2019-03-14T08:00:00"
 		| "2019-10-31T21:00:00"
 		| "2020-01-01T00:00:00"
+		| "2022-10-13T12:00:00"
 		| "2023-02-27T20:00:00"
 		| "2023-10-10T11:00:00"
 		| "2025-06-02T10:00:00"
@@ -99,12 +98,12 @@ export interface IapItemDisplayData {
 		| "2025-09-29T10:00:00"
 		| "2025-10-13T10:00:00"
 		| "2025-11-03T10:00:00"
-		| "2025-11-16T10:00:00"
 		| "2025-11-24T10:00:00";
 	skuEnableTimeUtcMs?:
 		| "1552550400000"
 		| "1572555600000"
 		| "1577836800000"
+		| "1665662400000"
 		| "1677528000000"
 		| "1696935600000"
 		| "1748858400000"
@@ -113,13 +112,12 @@ export interface IapItemDisplayData {
 		| "1759140000000"
 		| "1760349600000"
 		| "1762164000000"
-		| "1763287200000"
 		| "1763978400000";
 	sortOrder?: number;
 	spriteId?: string;
 	title?: string;
 	totalValue?: number;
 	useEnvironmentPrefix?: boolean;
-	webstoreSkuId?: "web-gowa-global-2026-ticket" | "web-shadow-entei-raid-box-ultra";
+	webstoreSkuId?: "web-gowa-global-2026-ticket";
 	webstoreSkuPriceE6?: number;
 }

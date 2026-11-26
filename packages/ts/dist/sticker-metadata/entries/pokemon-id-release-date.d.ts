@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 126 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-release-date", 127 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -370,6 +370,16 @@ export type StickerMetadataBreadkorea006 = S<
 			category: ["Pokemon"];
 			pokemonId: "PIKACHU";
 			releaseDate: 20220801;
+		}
+	>
+>;
+export type StickerMetadataChampionsPikachu = S<
+	StickerMetadata<
+		"STICKER_CHAMPIONS_PIKACHU",
+		{
+			category: ["Pokemon"];
+			pokemonId: "PIKACHU";
+			releaseDate: 20261208;
 		}
 	>
 >;
@@ -1302,6 +1312,7 @@ export type StickerMetadataPokemonIdReleaseDateMasterfileEntry =
 	| StickerMetadataBreadkorea004
 	| StickerMetadataBreadkorea005
 	| StickerMetadataBreadkorea006
+	| StickerMetadataChampionsPikachu
 	| StickerMetadataChanseycd1
 	| StickerMetadataChanseycd4
 	| StickerMetadataCharizard1

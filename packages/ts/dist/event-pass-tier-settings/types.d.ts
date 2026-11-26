@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 1120 entries (structural types).
+// Generated from Pokémon GO masterfile — group "eventPassTierSettings", 520 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -14,36 +14,32 @@ export type EventPassTierSettingsType = W<EventPassTierSettings>;
 export interface EventPassTierSettingsData {
 	activeBonusDisplaySettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE";
 			text:
 				| "catch_stardust_double"
 				| "catch_stardust_triple"
 				| "dai_duration_double"
-				| "dynamax_cannon_ae_half_cost_bonus"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "gowa_2026_leadout_max_candy_bonus"
 				| "lucky_friend_increase"
 				| "lucky_trade_increase"
 				| "season_pass_bonus_hatch_xp_stardust"
 				| "trade_extra_candy"
 				| "trade_guaranteed_candyxl";
 		}>;
-		eventName: "active_bonuses_label" | "go_pass_cumulative_bonuses_header";
+		eventName: "go_pass_cumulative_bonuses_header";
 	};
 	bonusSettings?: {
 		bonusBoxes: Array<{
-			iconType: "CANDY_GENERAL" | "CANDY_XL" | "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE";
+			iconType: "EGG_INCUBATOR" | "GIFT" | "INCENSE" | "STARDUST" | "TRADE";
 			text:
 				| "catch_stardust_double"
 				| "catch_stardust_triple"
 				| "dai_duration_double"
-				| "dynamax_cannon_ae_half_cost_bonus"
 				| "gift_open_more_daily"
 				| "gift_send_more_daily"
 				| "gift_storage_more"
-				| "gowa_2026_leadout_max_candy_bonus"
 				| "lucky_friend_increase"
 				| "lucky_trade_increase"
 				| "season_pass_bonus_hatch_xp_stardust"
@@ -69,7 +65,6 @@ export interface EventPassTierSettingsData {
 				| "DIGLETT"
 				| "DRATINI"
 				| "DURALUDON"
-				| "ETERNATUS"
 				| "FALINKS"
 				| "FIDOUGH"
 				| "FLITTLE"
@@ -99,23 +94,18 @@ export interface EventPassTierSettingsData {
 				| "ITEM_GOLDEN_PINAP_BERRY"
 				| "ITEM_GOLDEN_RAZZ_BERRY"
 				| "ITEM_GREAT_BALL"
-				| "ITEM_HYPER_POTION"
 				| "ITEM_INCUBATOR_SUPER"
 				| "ITEM_LEADER_MAP_FRAGMENT"
 				| "ITEM_LUCKY_EGG"
-				| "ITEM_MAX_POTION"
-				| "ITEM_MAX_REVIVE"
 				| "ITEM_MOVE_REROLL_FAST_ATTACK"
 				| "ITEM_MOVE_REROLL_SPECIAL_ATTACK"
 				| "ITEM_MP"
 				| "ITEM_NANAB_BERRY"
 				| "ITEM_PAID_RAID_TICKET"
-				| "ITEM_PINAP_BERRY"
 				| "ITEM_POFFIN"
 				| "ITEM_POKE_BALL"
 				| "ITEM_RARE_CANDY"
 				| "ITEM_RAZZ_BERRY"
-				| "ITEM_REVIVE"
 				| "ITEM_STAR_PIECE"
 				| "ITEM_ULTRA_BALL"
 				| "ITEM_XL_RARE_CANDY";
@@ -129,11 +119,8 @@ export interface EventPassTierSettingsData {
 			itemTemplateId: "N_AVATAR_n_pose_starballoon";
 		};
 		playerAttribute?: {
-			durationMins?: number;
+			durationMins: number;
 			key:
-				| "gowa_2026_leadout_rank_15"
-				| "gowa_2026_leadout_rank_35"
-				| "gowa_2026_leadout_rank_55"
 				| "november2026_season_pass_entitlement"
 				| "november2026_season_pass_rank_01"
 				| "november2026_season_pass_rank_02"
@@ -146,11 +133,11 @@ export interface EventPassTierSettingsData {
 		};
 		pokecoin?: number;
 		pokemonEncounter?: {
-			isFeaturedPokemon?: boolean;
+			isFeaturedPokemon: boolean;
 			pokemonDisplay?: {
 				breadModeEnum?: "BREAD_MODE";
 				costume?: "FALL_2022_NOEVOLVE" | "HALLOWEEN_2021_NOEVOLVE" | "SPRING_2024";
-				form?:
+				form:
 					| "ABSOL_NORMAL"
 					| "APPLIN_NORMAL"
 					| "BRAMBLIN_NORMAL"
@@ -193,14 +180,8 @@ export interface EventPassTierSettingsData {
 					| "TURTONATOR_NORMAL"
 					| "UMBREON_GOFEST_2024_MSCARF"
 					| "VIGOROTH_NORMAL";
-				locationCard?: {
-					locationCard: "LC_SPECIALBACKGROUND_2025_GLOBAL_GOFEST_DD_001";
-				};
 			};
-			pokemonEncounterDistribution?: {
-				questDistributionTemplateId: "QUEST_POKEMON_ENCOUNTER_GOWA_2026_LEADOUT";
-			};
-			pokemonId?:
+			pokemonId:
 				| "ABSOL"
 				| "APPLIN"
 				| "BRAMBLIN"
@@ -250,10 +231,6 @@ export interface EventPassTierSettingsData {
 			};
 		};
 		stardust?: number;
-		sticker?: {
-			amount: number;
-			stickerId: "STICKER_ETERNATUS";
-		};
 		type:
 			| "AVATAR_CLOTHING"
 			| "CANDY"
@@ -264,7 +241,6 @@ export interface EventPassTierSettingsData {
 			| "POKECOIN"
 			| "POKEMON_ENCOUNTER"
 			| "STARDUST"
-			| "STICKER"
 			| "XL_CANDY";
 		xlCandy?: {
 			amount: number;
@@ -272,7 +248,6 @@ export interface EventPassTierSettingsData {
 				| "COMBEE"
 				| "DIGLETT"
 				| "DRATINI"
-				| "ETERNATUS"
 				| "FALINKS"
 				| "FIDOUGH"
 				| "GIBLE"

@@ -1747,11 +1747,17 @@ export type IapItemDisplayBundleHisuiraidday20231 = S<
 		"bundle.hisuiraidday2023.1",
 		{
 			category: "IAP_CATEGORY_BUNDLE";
-			hidden: true;
+			showDiscountTag: true;
+			showStrikethroughPrice: true;
 			sku: "bundle.hisuiraidday2023.1";
+			skuDisableTime: "2026-11-29T17:00:00";
+			skuDisableTimeUtcMs: "1795971600000";
+			skuEnableTime: "2022-10-13T12:00:00";
+			skuEnableTimeUtcMs: "1665662400000";
 			sortOrder: 1;
 			spriteId: "bundle.general.remotebox.medium.1";
 			title: "great_raid_box_title";
+			totalValue: 1035;
 		}
 	>
 >;

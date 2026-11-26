@@ -50,8 +50,8 @@ export interface AdvancedSettings {
 		templateId: "ADVANCED_SETTINGS";
 		advancedSettings: {
 			downloadAllAssetsEnabled: true;
-			maxDeviceMemoryForHighQualityModeMb: 6144;
-			maxDeviceMemoryForStandardQualityModeMb: 6100;
+			maxDeviceMemoryForHighQualityModeMb: 3584;
+			maxDeviceMemoryForStandardQualityModeMb: 2048;
 		};
 	};
 }

@@ -64,7 +64,6 @@ const (
 	FeatureGateTemplateIDExpireMinuteStringFeatureGateCr                                FeatureGateTemplateID = "EXPIRE_MINUTE_STRING_FEATURE_GATE_CR"
 	FeatureGateTemplateIDFortSearchTimeTravelFeatureGateSr                              FeatureGateTemplateID = "FORT_SEARCH_TIME_TRAVEL_FEATURE_GATE_SR"
 	FeatureGateTemplateIDFortStableDataDiffingFeatureGate                               FeatureGateTemplateID = "FORT_STABLE_DATA_DIFFING_FEATURE_GATE"
-	FeatureGateTemplateIDFriendNicknameSymbolFilterFeatureGate                          FeatureGateTemplateID = "FRIEND_NICKNAME_SYMBOL_FILTER_FEATURE_GATE"
 	FeatureGateTemplateIDFriendshipLevelPageRefreshFeatureGate                          FeatureGateTemplateID = "FRIENDSHIP_LEVEL_PAGE_REFRESH_FEATURE_GATE"
 	FeatureGateTemplateIDGetGmtAnalysisForPlayerFeatureGate                             FeatureGateTemplateID = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE"
 	FeatureGateTemplateIDGlobalChallengeBonusesModalShownFeatureGateCr                  FeatureGateTemplateID = "GLOBAL_CHALLENGE_BONUSES_MODAL_SHOWN_FEATURE_GATE_CR"
@@ -117,6 +116,7 @@ const (
 	FeatureGateTemplateIDProfileFtueRewardsBannerRecheckFeatureGate                     FeatureGateTemplateID = "PROFILE_FTUE_REWARDS_BANNER_RECHECK_FEATURE_GATE"
 	FeatureGateTemplateIDQuestProgressAggregationFeatureGateSr                          FeatureGateTemplateID = "QUEST_PROGRESS_AGGREGATION_FEATURE_GATE_SR"
 	FeatureGateTemplateIDQuestTotalDaysCatchResultFixFeatureGate                        FeatureGateTemplateID = "QUEST_TOTAL_DAYS_CATCH_RESULT_FIX_FEATURE_GATE"
+	FeatureGateTemplateIDRaidLobbyFullEarlyStartCatchupFeatureGate                      FeatureGateTemplateID = "RAID_LOBBY_FULL_EARLY_START_CATCHUP_FEATURE_GATE"
 	FeatureGateTemplateIDRaidRsvpRemoteJoinFixFeatureGateCr                             FeatureGateTemplateID = "RAID_RSVP_REMOTE_JOIN_FIX_FEATURE_GATE_CR"
 	FeatureGateTemplateIDRaidcoinMaterialMemoryLeakFixFeatureGateCr                     FeatureGateTemplateID = "RAIDCOIN_MATERIAL_MEMORY_LEAK_FIX_FEATURE_GATE_CR"
 	FeatureGateTemplateIDReapplyMaterialStateDelegateCacheFeatureGateCr                 FeatureGateTemplateID = "REAPPLY_MATERIAL_STATE_DELEGATE_CACHE_FEATURE_GATE_CR"
@@ -226,7 +226,6 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDExpireMinuteStringFeatureGateCr,
 	FeatureGateTemplateIDFortSearchTimeTravelFeatureGateSr,
 	FeatureGateTemplateIDFortStableDataDiffingFeatureGate,
-	FeatureGateTemplateIDFriendNicknameSymbolFilterFeatureGate,
 	FeatureGateTemplateIDFriendshipLevelPageRefreshFeatureGate,
 	FeatureGateTemplateIDGetGmtAnalysisForPlayerFeatureGate,
 	FeatureGateTemplateIDGlobalChallengeBonusesModalShownFeatureGateCr,
@@ -279,6 +278,7 @@ var FeatureGateTemplateIDValues = [...]FeatureGateTemplateID{
 	FeatureGateTemplateIDProfileFtueRewardsBannerRecheckFeatureGate,
 	FeatureGateTemplateIDQuestProgressAggregationFeatureGateSr,
 	FeatureGateTemplateIDQuestTotalDaysCatchResultFixFeatureGate,
+	FeatureGateTemplateIDRaidLobbyFullEarlyStartCatchupFeatureGate,
 	FeatureGateTemplateIDRaidRsvpRemoteJoinFixFeatureGateCr,
 	FeatureGateTemplateIDRaidcoinMaterialMemoryLeakFixFeatureGateCr,
 	FeatureGateTemplateIDReapplyMaterialStateDelegateCacheFeatureGateCr,
