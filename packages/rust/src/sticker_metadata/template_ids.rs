@@ -125,6 +125,12 @@ pub enum StickerMetadataTemplateId {
     StickerBreadkorea005,
     #[serde(rename = "STICKER_BREADKOREA_006")]
     StickerBreadkorea006,
+    #[serde(rename = "STICKER_CHAMPIONS_GARCHOMP")]
+    StickerChampionsGarchomp,
+    #[serde(rename = "STICKER_CHAMPIONS_INCINEROAR")]
+    StickerChampionsIncineroar,
+    #[serde(rename = "STICKER_CHAMPIONS_PIKACHU")]
+    StickerChampionsPikachu,
     #[serde(rename = "STICKER_CHANSEYCD_1")]
     StickerChanseycd1,
     #[serde(rename = "STICKER_CHANSEYCD_2")]

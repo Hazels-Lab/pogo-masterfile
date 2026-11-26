@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 270 entries.
+// Generated from Pokémon GO masterfile — group "stickerMetadata", split "pokemon-id-region-id-release-date", 272 entries.
 
 import type { S } from "../../_utils";
 import type { StickerMetadata } from "../types";
@@ -121,6 +121,28 @@ export type StickerMetadataBangkokpokemoncenter6 = S<
 			pokemonId: "SHAYMIN";
 			regionId: 3;
 			releaseDate: 20261201;
+		}
+	>
+>;
+export type StickerMetadataChampionsGarchomp = S<
+	StickerMetadata<
+		"STICKER_CHAMPIONS_GARCHOMP",
+		{
+			category: ["Pokemon"];
+			pokemonId: "GARCHOMP";
+			regionId: 3;
+			releaseDate: 20261208;
+		}
+	>
+>;
+export type StickerMetadataChampionsIncineroar = S<
+	StickerMetadata<
+		"STICKER_CHAMPIONS_INCINEROAR",
+		{
+			category: ["Pokemon"];
+			pokemonId: "INCINEROAR";
+			regionId: 6;
+			releaseDate: 20261208;
 		}
 	>
 >;
@@ -2986,6 +3008,8 @@ export type StickerMetadataPokemonIdRegionIdReleaseDateMasterfileEntry =
 	| StickerMetadataAlolaishi4
 	| StickerMetadataBangkokpokemoncenter2
 	| StickerMetadataBangkokpokemoncenter6
+	| StickerMetadataChampionsGarchomp
+	| StickerMetadataChampionsIncineroar
 	| StickerMetadataChanseycd2
 	| StickerMetadataChanseycd3
 	| StickerMetadataChespin1

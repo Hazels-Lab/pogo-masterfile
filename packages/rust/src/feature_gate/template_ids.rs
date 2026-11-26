@@ -125,8 +125,6 @@ pub enum FeatureGateTemplateId {
     FortSearchTimeTravelFeatureGateSr,
     #[serde(rename = "FORT_STABLE_DATA_DIFFING_FEATURE_GATE")]
     FortStableDataDiffingFeatureGate,
-    #[serde(rename = "FRIEND_NICKNAME_SYMBOL_FILTER_FEATURE_GATE")]
-    FriendNicknameSymbolFilterFeatureGate,
     #[serde(rename = "FRIENDSHIP_LEVEL_PAGE_REFRESH_FEATURE_GATE")]
     FriendshipLevelPageRefreshFeatureGate,
     #[serde(rename = "GET_GMT_ANALYSIS_FOR_PLAYER_FEATURE_GATE")]
@@ -231,6 +229,8 @@ pub enum FeatureGateTemplateId {
     QuestProgressAggregationFeatureGateSr,
     #[serde(rename = "QUEST_TOTAL_DAYS_CATCH_RESULT_FIX_FEATURE_GATE")]
     QuestTotalDaysCatchResultFixFeatureGate,
+    #[serde(rename = "RAID_LOBBY_FULL_EARLY_START_CATCHUP_FEATURE_GATE")]
+    RaidLobbyFullEarlyStartCatchupFeatureGate,
     #[serde(rename = "RAID_RSVP_REMOTE_JOIN_FIX_FEATURE_GATE_CR")]
     RaidRsvpRemoteJoinFixFeatureGateCr,
     #[serde(rename = "RAIDCOIN_MATERIAL_MEMORY_LEAK_FIX_FEATURE_GATE_CR")]

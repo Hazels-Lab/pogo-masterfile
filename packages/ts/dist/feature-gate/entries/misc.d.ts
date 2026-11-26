@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 142 entries.
+// Generated from Pokémon GO masterfile — group "featureGate", split "misc", 141 entries.
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -440,14 +440,6 @@ export type FeatureGateFortStableDataDiffing = S<
 		"FORT_STABLE_DATA_DIFFING_FEATURE_GATE",
 		{
 			status: 1;
-		}
-	>
->;
-export type FeatureGateFriendNicknameSymbolFilter = S<
-	FeatureGate<
-		"FRIEND_NICKNAME_SYMBOL_FILTER_FEATURE_GATE",
-		{
-			status: 618403927;
 		}
 	>
 >;
@@ -1196,7 +1188,6 @@ export type FeatureGateMiscMasterfileEntry =
 	| FeatureGateExpireMinuteStringFeatureGateCr
 	| FeatureGateFortSearchTimeTravelFeatureGateSr
 	| FeatureGateFortStableDataDiffing
-	| FeatureGateFriendNicknameSymbolFilter
 	| FeatureGateFriendshipLevelPageRefresh
 	| FeatureGateGetGmtAnalysisForPlayer
 	| FeatureGateGlobalChallengeBonusesModalShownFeatureGateCr

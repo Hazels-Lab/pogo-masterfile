@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", 279 entries (structural types).
+// Generated from Pokémon GO masterfile — group "locationCardSettings", 280 entries (structural types).
 
 import type { W } from "../_utils";
 
@@ -24,6 +24,7 @@ export interface LocationCardSettingsData {
 		| "bgfx_10thAnniGlobe"
 		| "bgfx_arraia_2026"
 		| "bgfx_Black"
+		| "bgfx_Champions_2026"
 		| "bgfx_CommunityDay_2026"
 		| "bgfx_DelightfulDays"
 		| "bgfx_diaDeMuertos_2026"

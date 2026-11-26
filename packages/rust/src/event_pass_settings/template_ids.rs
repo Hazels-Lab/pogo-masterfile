@@ -7,8 +7,6 @@ use serde::{Deserialize, Serialize};
     Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize, AllVariants, AsStr, FromStrEnum,
 )]
 pub enum EventPassSettingsTemplateId {
-    #[serde(rename = "EVENT_PASS_GOWA2026_LEADOUT")]
-    EventPassGowa2026Leadout,
     #[serde(rename = "EVENT_PASS_NOVEMBER2026_SEASON")]
     EventPassNovember2026Season,
     #[serde(rename = "EVENT_PASS_TWILIGHT_TRAILS_FINALE_2026")]

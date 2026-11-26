@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 7 entries.
+// Generated from Pokémon GO masterfile — group "iapItemDisplay", split "global-event-ticket", 6 entries.
 
 import type { S } from "../../_utils";
 import type { IapItemDisplay } from "../types";
@@ -8,19 +8,16 @@ export type IapItemDisplayGeneral1Ticket5 = S<
 		"general1.ticket.5",
 		{
 			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			hidden: true;
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2Fpgo-entei-shadow-raid-day-2026-nologo.jpg";
+			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F93565839_PGO-MCS_Clefable_Super_Mega_Raid_Day_v1-1024x576.jpg";
 			sku: "pgorelease.general1.ticket.5";
-			skuDisableTime: "2026-05-02T17:00:00";
-			skuDisableTimeUtcMs: "1777741200000";
+			skuDisableTime: "2026-11-28T17:00:00";
+			skuDisableTimeUtcMs: "1795885200000";
 			skuEnableTime: "2019-03-14T08:00:00";
 			skuEnableTimeUtcMs: "1552550400000";
 			sortOrder: 2;
-			spriteId: "general1.ticket.5";
-			title: "general1.ticket.5.ENTEI_SHADOW_RAID_DAY";
+			spriteId: "general2.ticket.5";
+			title: "general2.ticket.5_MegaClefableRaidDay";
 			useEnvironmentPrefix: true;
-			webstoreSkuId: "web-shadow-entei-raid-box-ultra";
-			webstoreSkuPriceE6: 4990000;
 		}
 	>
 >;
@@ -115,23 +112,6 @@ export type IapItemDisplayNovember12026DeluxeEventPassTrackUnlockRedirect = S<
 		}
 	>
 >;
-export type IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect = S<
-	IapItemDisplay<
-		"pgorelease.gowa2026_leadout_event_pass_track_unlock_redirect",
-		{
-			category: "IAP_CATEGORY_GLOBAL_EVENT_TICKET";
-			description: "deluxe_event_pass_track_unlock_description";
-			imageUrl: "https://asset-cdn-rel.nianticstatic.com/GameDesignAssets%2F920494a5_PGO-GOWA_Eternatus.jpg";
-			sku: "pgorelease.gowa2026_leadout_event_pass_track_unlock_redirect";
-			skuDisableTime: "2026-11-25T20:00:00";
-			skuDisableTimeUtcMs: "1795636800000";
-			skuEnableTime: "2025-11-16T10:00:00";
-			skuEnableTimeUtcMs: "1763287200000";
-			sortOrder: 1;
-			title: "event_pass_premium_track_title_gowa_leadout_2026";
-		}
-	>
->;
 
 export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral1Ticket5
@@ -139,5 +119,4 @@ export type IapItemDisplayGlobalEventTicketMasterfileEntry =
 	| IapItemDisplayGeneral2Ticket11
 	| IapItemDisplayGotourticket1
 	| IapItemDisplayMonth3DeluxeEventPassTrackRedirect
-	| IapItemDisplayNovember12026DeluxeEventPassTrackUnlockRedirect
-	| IapItemDisplayPgoreleaseGowa2026LeadoutEventPassTrackUnlockRedirect;
+	| IapItemDisplayNovember12026DeluxeEventPassTrackUnlockRedirect;

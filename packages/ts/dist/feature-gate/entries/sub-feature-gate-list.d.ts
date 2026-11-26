@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "featureGate", split "sub-feature-gate-list", 16 entries.
+// Generated from Pokémon GO masterfile — group "featureGate", split "sub-feature-gate-list", 17 entries.
 
 import type { S } from "../../_utils";
 import type { FeatureGate } from "../types";
@@ -228,6 +228,21 @@ export type FeatureGatePrivateMaxLobbies = S<
 		}
 	>
 >;
+export type FeatureGateRaidLobbyFullEarlyStartCatchup = S<
+	FeatureGate<
+		"RAID_LOBBY_FULL_EARLY_START_CATCHUP_FEATURE_GATE",
+		{
+			status: 1;
+			subFeatureGateList: [
+				{
+					name: "RAID_LOBBY_ALL_READY_CATCHUP_SUB_FEATURE_GATE";
+					rolloutPercentage: 100;
+					status: 1;
+				},
+			];
+		}
+	>
+>;
 export type FeatureGateTodayViewV3DeferredTabLoad = S<
 	FeatureGate<
 		"TODAY_VIEW_V3_DEFERRED_TAB_LOAD_FEATURE_GATE",
@@ -393,6 +408,7 @@ export type FeatureGateSubFeatureGateListMasterfileEntry =
 	| FeatureGateLocationCardBackgroundsRenderer
 	| FeatureGatePoolTrimmer
 	| FeatureGatePrivateMaxLobbies
+	| FeatureGateRaidLobbyFullEarlyStartCatchup
 	| FeatureGateTodayViewV3DeferredTabLoad
 	| FeatureGateTodayViewV3IncrementalCleanup
 	| FeatureGateTodayViewV3LoadPresentation

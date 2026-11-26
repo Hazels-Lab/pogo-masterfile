@@ -1,4 +1,4 @@
-// Generated from Pokémon GO masterfile — group "locationCardSettings", split "specialbackground", 61 entries.
+// Generated from Pokémon GO masterfile — group "locationCardSettings", split "specialbackground", 62 entries.
 
 import type { S } from "../../_utils";
 import type { LocationCardSettings } from "../types";
@@ -451,6 +451,16 @@ export type LocationCardSettingsSpecialbackgroundBatik2026 = S<
 		}
 	>
 >;
+export type LocationCardSettingsSpecialbackgroundCha2026 = S<
+	LocationCardSettings<
+		"LC_SPECIALBACKGROUND_CHA_2026",
+		{
+			cardType: "SPECIAL_BACKGROUND";
+			imageUrl: "sb_champions2026";
+			vfxAddress: "bgfx_Champions_2026";
+		}
+	>
+>;
 export type LocationCardSettingsSpecialbackgroundCon2025 = S<
 	LocationCardSettings<
 		"LC_SPECIALBACKGROUND_CON2025",
@@ -657,6 +667,7 @@ export type LocationCardSettingsSpecialbackgroundMasterfileEntry =
 	| LocationCardSettingsSpecialbackground2026Mewtwo002
 	| LocationCardSettingsSpecialbackground2026Wcs
 	| LocationCardSettingsSpecialbackgroundBatik2026
+	| LocationCardSettingsSpecialbackgroundCha2026
 	| LocationCardSettingsSpecialbackgroundCon2025
 	| LocationCardSettingsSpecialbackgroundDiaDeLosMuertos2026
 	| LocationCardSettingsSpecialbackgroundExtra202501

@@ -203,6 +203,7 @@ import type {
 	BadgeSettingsEvent0259,
 	BadgeSettingsEvent0260,
 	BadgeSettingsEvent0262,
+	BadgeSettingsEvent0263,
 	BadgeSettingsEvent0271,
 	BadgeSettingsEvent0272,
 	BadgeSettingsEvent0273,
@@ -1323,6 +1324,7 @@ export interface BadgeSettingsLookup {
 	BADGE_EVENT_0259: BadgeSettingsEvent0259;
 	BADGE_EVENT_0260: BadgeSettingsEvent0260;
 	BADGE_EVENT_0262: BadgeSettingsEvent0262;
+	BADGE_EVENT_0263: BadgeSettingsEvent0263;
 	BADGE_EVENT_0271: BadgeSettingsEvent0271;
 	BADGE_EVENT_0272: BadgeSettingsEvent0272;
 	BADGE_EVENT_0273: BadgeSettingsEvent0273;

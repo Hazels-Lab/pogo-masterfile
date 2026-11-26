@@ -60,6 +60,9 @@ import type {
 	StickerMetadataBreadkorea004,
 	StickerMetadataBreadkorea005,
 	StickerMetadataBreadkorea006,
+	StickerMetadataChampionsGarchomp,
+	StickerMetadataChampionsIncineroar,
+	StickerMetadataChampionsPikachu,
 	StickerMetadataChanseycd1,
 	StickerMetadataChanseycd2,
 	StickerMetadataChanseycd3,
@@ -703,6 +706,9 @@ export interface StickerMetadataLookup {
 	STICKER_BREADKOREA_004: StickerMetadataBreadkorea004;
 	STICKER_BREADKOREA_005: StickerMetadataBreadkorea005;
 	STICKER_BREADKOREA_006: StickerMetadataBreadkorea006;
+	STICKER_CHAMPIONS_GARCHOMP: StickerMetadataChampionsGarchomp;
+	STICKER_CHAMPIONS_INCINEROAR: StickerMetadataChampionsIncineroar;
+	STICKER_CHAMPIONS_PIKACHU: StickerMetadataChampionsPikachu;
 	STICKER_CHANSEYCD_1: StickerMetadataChanseycd1;
 	STICKER_CHANSEYCD_2: StickerMetadataChanseycd2;
 	STICKER_CHANSEYCD_3: StickerMetadataChanseycd3;
